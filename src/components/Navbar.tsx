@@ -162,7 +162,7 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="navbar-middle lg:flex text-white hidden">
+      <div className="blured-bg rounded-xl lg:flex text-white hidden">
         <ul className="px-2 mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
           {navLinks.map((link: any, i: number) => {
             return (
@@ -210,9 +210,9 @@ const Navbar = () => {
       </div>
 
       <div className="hidden items-center justify-center lg:flex">
-        <Button className={cn("gap-2")}>
+        <Button className='gap-2 group' size='full-size'>
           Lets get started
-          <ArrowRight />
+          <ArrowRight className="group-hover:translate-x-2 transition-all" />
         </Button>
       </div>
     </nav>

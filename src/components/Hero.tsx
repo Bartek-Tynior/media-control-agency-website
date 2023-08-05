@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { Button } from "./ui/Button";
 import websiteContent from "../../website-content";
+import { ArrowRightIcon, Users } from "lucide-react";
 
 const Hero = () => {
   const heroContent = websiteContent.hero;
 
   return (
     <section className="h-screen flex items-center justify-center pt-[6rem]">
-      <div className="grid mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
+      <div className="grid mx-auto gap-2 lg:gap-8 xl:gap-0 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
             {heroContent.title}
@@ -16,15 +17,13 @@ const Hero = () => {
             {heroContent.description}
           </p>
           <div className="flex gap-4">
-            <Button variant="default">
-              <a href="#">Get started</a>
-            </Button>
-            <Button variant="default">
-              <a href="#">Speak to Sales</a>
+            <Button size='lg' className="group" variant="default">
+              <a href="#">Get Started</a>
+              <ArrowRightIcon className="ml-2 group-hover:translate-x-2 transition-all" />
             </Button>
           </div>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="lg:mt-0 lg:col-span-5 items-center justify-center flex">
           <Image height={500} width={500} src="/img/hand.png" alt="mockup" />
         </div>
       </div>

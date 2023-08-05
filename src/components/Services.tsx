@@ -49,7 +49,7 @@ const Services = () => {
         className="flex items-center h-screen w-full justify-between overflow-hidden"
         ref={servicesRef}
       >
-        <div className="content-section relative h-[400px] w-full flex-[0_1_45%]">
+        <div className="content-section relative h-[400px] w-full flex-[0_1_100%] md:flex-[0_1_45%]">
           {services.map(({ title, description, i }) => {
             return (
               <div
@@ -63,7 +63,7 @@ const Services = () => {
           })}
         </div>
 
-        <div className="images-section relative h-[400px] w-full flex items-center justify-center flex-[0_1_45%]">
+        <div className="images-section hidden md:flex relative h-[400px] w-full items-center justify-center md:flex-[0_1_45%]">
           {services.map(({ imageLocation, i }) => {
             return (
               <Image

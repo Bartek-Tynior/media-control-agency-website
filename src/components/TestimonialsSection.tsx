@@ -3,9 +3,9 @@ import TestimonialsSwiper from "./TestimonialsSwiper";
 
 const TestimonialsSection = () => {
   return (
-    <section className="h-screen pt-[6rem]">
+    <section className="h-screen pt-[6rem]" id="testimonials">
       <div className="flex flex-col gap-2">
-        <h2 className="text-2xl font-bold py-2 px-4 bg-gray-700 w-fit rounded-lg">
+        <h2 className="text-2xl blured-bg font-bold py-2 px-4 bg-gray-700 w-fit rounded-lg">
           Testimonials
         </h2>
         <h3 className="text-4xl mb-6 lg:w-1/2 font-bold leading-tight">
