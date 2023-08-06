@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Button } from "./ui/Button";
 import websiteContent from "../../website-content";
-import { ArrowRightIcon, Users } from "lucide-react";
+import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   const heroContent = websiteContent.hero;
@@ -18,12 +19,12 @@ const Hero = () => {
           </p>
           <div className="flex gap-4">
             <Button size='lg' className="group" variant="default">
-              <a href="#">Get Started</a>
+              <Link href='#contact'>Get Started</Link>
               <ArrowRightIcon className="ml-2 group-hover:translate-x-2 transition-all" />
             </Button>
           </div>
         </div>
-        <div className="lg:mt-0 lg:col-span-5 items-center justify-center flex">
+        <div className="lg:col-span-5 items-center justify-center flex">
           <Image height={500} width={500} src="/img/hand.png" alt="mockup" />
         </div>
       </div>

@@ -7,12 +7,15 @@ import Link from "next/link";
 import { Button } from "./ui/Button";
 import { ArrowRight } from "lucide-react";
 import websiteContent from "../../website-content";
-import { cn } from "@/lib/utils";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
 
 const Navbar = () => {
   const navLinks = websiteContent.navbar;
   const [isOpen, setOpen] = useState(true);
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isHomePage, setIsHomePage] = useState(false);
 
   const toggleNavbar = () => {
     setOpen(!isOpen);
@@ -25,6 +28,14 @@ const Navbar = () => {
       document.body.style.overflow = "";
     }
   };
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setIsHomePage(true);
+    } else {
+      setIsHomePage(false);
+    }
+  }, [pathname]);
 
   useLayoutEffect(() => {
     const sections = gsap.utils.toArray(
@@ -83,7 +94,7 @@ const Navbar = () => {
     >
       <div className="navbar_logo flex z-20">
         <Link
-          href={"#home"}
+          href={"/"}
           className="text-2xl font-bold tracking-tight leading-5 text-white"
         >
           <Image src={"/img/logo.png"} width="100" height="60" alt="logo" />
@@ -91,8 +102,8 @@ const Navbar = () => {
       </div>
 
       {!isOpen && (
-        <div className="menu_mobile_wrap" id="menu_mobile_wrap">
-          <div className="menu_mobile_wrap-content">
+        <div className="menu-mobile-wrap" id="menu_mobile_wrap">
+          <div className="menu-mobile-wrap-content">
             <div className="menu">
               {navLinks.map((link, i) => {
                 return (
@@ -110,9 +121,8 @@ const Navbar = () => {
                   </div>
                 );
               })}
-              <div className="navbar_action_button my-5">
-                <Button variant="default">Lets get started</Button>
-              </div>
+
+              <Button variant="default">Lets get started</Button>
 
               <div className="navbar_bottom_section-wrapper">
                 <p className="text-2xl text-gray-400 py-2 font-medium">
@@ -172,7 +182,7 @@ const Navbar = () => {
               >
                 <Link
                   className="text-base font-bold"
-                  href={link.link}
+                  href={isHomePage ? link.link : `/${link.link}`}
                   id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
                 >
                   {link.name}
@@ -180,9 +190,11 @@ const Navbar = () => {
               </li>
             );
           })}
-          <div className="menu_wrapper">
-            <div className="menu_shape-bg"></div>
-          </div>
+          {isHomePage && (
+            <div className="menu_wrapper">
+              <div className="menu_shape-bg"></div>
+            </div>
+          )}
         </ul>
       </div>
 
@@ -210,8 +222,12 @@ const Navbar = () => {
       </div>
 
       <div className="hidden items-center justify-center lg:flex">
-        <Button className='gap-2 group' size='full-size'>
-          Lets get started
+        <Button
+          className="gap-2 group"
+          size="full-size"
+          onClick={() => router.push("/contact")}
+        >
+          Let's get started
           <ArrowRight className="group-hover:translate-x-2 transition-all" />
         </Button>
       </div>
