@@ -10,28 +10,55 @@ export default {
       title: "Product Design & Development",
       description:
         "Our team of experienced developers is here to help you create a website that not only looks great, but is also functional, user-friendly, and tailored to your unique needs. Whether you're starting from scratch or need to revamp an existing site, we've got you covered.",
-      imageLocation: "/img/hand.png",
+      imageLocation: "/img/website-building-of-shopping-sale.gif",
+      toolstack: [
+        {
+          name: "Webflow",
+          imageLocation: "/img/webflow-logo-toolstack.png",
+        },
+        {
+          name: "Framer",
+          imageLocation: "/img/framer-logo-toolstack.png",
+        },
+        {
+          name: "Custom Code",
+          imageLocation: "/img/webflow-logo-toolstack.png",
+        },
+      ],
     },
     {
       i: 2,
       title: "Social Media Marketing",
       description:
         "Our expert team will help you create compelling content, engage with your followers, and increase your visibility on all major social media platforms. Let us help you take your online presence to the next level and achieve your marketing goals.",
-      imageLocation: "/img/hand.png",
+      imageLocation: "/img/content-creator-for-digital-marketing.gif",
+      toolstack: [
+        {
+          name: "Webflow",
+          imageLocation: "/img/webflow-logo-toolstack.png",
+        },
+        {
+          name: "Framer",
+          imageLocation: "/img/framer-logo-toolstack.png",
+        },
+        {
+          name: "Custom Code",
+          imageLocation: "/img/webflow-logo-toolstack.png",
+        },
+      ],
     },
     {
       i: 3,
       title: "Pay-Per-Click Advertising",
       description:
         "Our skilled team of PPC specialists will create and manage your ad campaigns across popular platforms such as Google Ads, Bing Ads, and social media channels. We conduct in-depth keyword research to identify relevant terms and phrases that your target audience is searching for, ensuring that your ads appear in front of the right people at the right time.",
-      imageLocation: "/img/tiktok-logo-3D.png",
-    },
-    {
-      i: 4,
-      title: "SEO-optimization",
-      description:
-        "Our team of experienced SEO experts employs cutting-edge strategies and industry best practices to optimize your website's performance. From comprehensive keyword research to on-page optimization, we meticulously fine-tune every aspect of your website to ensure it meets the latest search engine algorithms.",
-      imageLocation: "/img/hand.png",
+      imageLocation: "/img/pay-per-click-digital-marketing.gif",
+      toolstack: [
+        {
+          name: "Google Ads",
+          imageLocation: "/img/webflow-logo-toolstack.png",
+        },
+      ],
     },
   ],
   navbar: [

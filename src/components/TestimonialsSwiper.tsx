@@ -1,6 +1,6 @@
 "use client";
 
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TestimonialsSwiperCard from "./TestimonialsSwiperCard";
@@ -8,21 +8,23 @@ import TestimonialsSwiperCard from "./TestimonialsSwiperCard";
 const TestimonialsSwiper = () => {
   return (
     <Swiper
-      grabCursor={true}
-      spaceBetween={50}
-      modules={[Pagination]}
+      slidesPerView='auto'
+      spaceBetween={30}
+      loop={true}
+      navigation={true}
+      modules={[Pagination, Navigation]}
       breakpoints={{
-        576: {
-          width: 576,
+        640: {
           slidesPerView: 1,
+          spaceBetween: 20,
         },
         768: {
-          width: 768,
           slidesPerView: 2,
+          spaceBetween: 40,
         },
-        1200: {
-          width: 1200,
-          slidesPerView: 3,
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
         },
       }}
     >

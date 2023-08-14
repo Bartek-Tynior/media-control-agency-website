@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section className="h-screen flex items-center justify-center pt-[6rem]">
-      <div className="grid mx-auto gap-2 lg:gap-8 xl:gap-0 lg:grid-cols-12">
+      <div className="grid mx-auto gap-2 lg:gap-8 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
             {heroContent.title}
@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="lg:col-span-5 items-center justify-center flex">
-          <Image height={500} width={500} src="/img/hand.png" alt="mockup" />
+          <Image className="w-1/2 md:w-1/2 lg:w-fit" height={500} width={500} src="/img/hand.png" alt="mockup" />
         </div>
       </div>
     </section>

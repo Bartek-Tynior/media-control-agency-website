@@ -5,6 +5,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 import websiteContent from "../../website-content";
 import Image from "next/image";
+import Toolstack from "./Toolstack";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -34,10 +35,6 @@ const Services = () => {
       tl.to([".service-2", ".service-image-2"], { autoAlpha: 0 });
 
       tl.from([".service-3", ".service-image-3"], { autoAlpha: 0, y: 20 });
-
-      tl.to([".service-3", ".service-image-3"], { autoAlpha: 0 });
-
-      tl.from([".service-4", ".service-image-4"], { autoAlpha: 0, y: 20 });
     });
 
     return () => ctx.revert();
@@ -50,28 +47,32 @@ const Services = () => {
         ref={servicesRef}
       >
         <div className="content-section relative h-[400px] w-full flex-[0_1_100%] md:flex-[0_1_45%]">
-          {services.map(({ title, description, i }) => {
+          {services.map(({ title, description, toolstack, i }) => {
             return (
               <div
                 className={`coneten-panels absolute top-[50%] translate-y-[-50%] service-${i}`}
                 key={i}
               >
-                <h2 className="text-4xl font-bold pb-5">{title}</h2>
-                <p className="text-xl font-light">{description}</p>
+                <h2 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold pb-5">
+                  {title}
+                </h2>
+                <p className="text-2xl font-medium">{description}</p>
+
+                <Toolstack toolstack={toolstack} />
               </div>
             );
           })}
         </div>
 
-        <div className="images-section hidden md:flex relative h-[400px] w-full items-center justify-center md:flex-[0_1_45%]">
+        <div className="images-section hidden md:flex relative h-[600px] w-full items-center justify-center md:flex-[0_1_45%]">
           {services.map(({ imageLocation, i }) => {
             return (
               <Image
                 className={`absolute top-[50%] translate-y-[-50%] service-image-${i}`}
                 src={imageLocation}
                 alt="service"
-                width={300}
-                height={300}
+                width={600}
+                height={600}
               />
             );
           })}

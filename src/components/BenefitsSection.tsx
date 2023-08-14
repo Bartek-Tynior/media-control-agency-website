@@ -11,7 +11,7 @@ const BenefitsSection = () => {
 
   return (
     <div className="flex flex-col sm:grid grid-cols-4 my-6 overflow-hidden">
-      <span className="mb-4 sm:mb-0 text-base">Why choosing for us:</span>
+      <span className="mb-4 sm:mb-0 text-base font-semibold">Why choosing for us:</span>
       <Swiper
         className="col-span-3 swiper-benefits w-full"
         speed={11000}

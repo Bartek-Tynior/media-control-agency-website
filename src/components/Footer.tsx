@@ -3,7 +3,7 @@ import { Button } from "./ui/Button";
 const Footer = () => {
   return (
     <footer className="text-white mb-40">
-      <div className="separator mb-20"></div>
+      <div className="w-full h-[1px] bg-[hsla(0,_0%,_94.9%,_0.2)]  mb-20"></div>
       <div className="flex flex-row justify-between">
         <h2 className="text-[#f2f2f2]">
           © 2023 Media Control Agency. All right reserved.

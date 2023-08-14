@@ -12,8 +12,9 @@ module.exports = {
         DEFAULT: '1rem',
         sm: '2rem',
         lg: '5rem',
-        xl: '7rem',
+        xl: '6rem',
         '2xl': '8rem',
+        '3xl': '9rem',
       },
       screens: {
         sm: "640px",
@@ -21,6 +22,7 @@ module.exports = {
         lg: "1024px",
         xl: "1280px",
         '2xl': "1400px",
+        '3xl': "1600px"
       },
     },
   },

@@ -15,7 +15,7 @@ const BenefitsSectionCard: FC<BenefitsSectionCardProps> = ({ description }) => {
         height={20}
         alt="checkIcon"
       />
-      <span>{description}</span>
+      <span className="text-base font-medium">{description}</span>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const ContactSection = () => {
       </div>
       <div className="flex items-center md:justify-start justify-center w-full">
         <a
-          className="text-2xl md:text-5xl flex flex-row gap-3 font-extrabold"
+          className="text-3xl sm:text-4xl md:text-5xl flex flex-row gap-3 font-extrabold"
           id="contactLink"
           href="mailto:email@example.com?subject=Collaboration"
         >
