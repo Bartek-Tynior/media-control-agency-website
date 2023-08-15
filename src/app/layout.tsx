@@ -27,14 +27,13 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-screen bg-black antialiased">
-        {/* <Providers> */}
-        <Navbar />
+        <Providers>
+          <Navbar />
 
-        <div className="container" id="container">
-          {children}
-        </div>
-
-        {/* </Providers> */}
+          <div className="container" id="container">
+            {children}
+          </div>
+        </Providers>
       </body>
     </html>
   );

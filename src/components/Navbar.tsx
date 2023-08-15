@@ -227,7 +227,7 @@ const Navbar = () => {
           size="full-size"
           onClick={() => router.push("/contact")}
         >
-          Let's get started
+          Get in touch
           <ArrowRight className="group-hover:translate-x-2 transition-all" />
         </Button>
       </div>

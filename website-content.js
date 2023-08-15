@@ -56,7 +56,7 @@ export default {
       toolstack: [
         {
           name: "Google Ads",
-          imageLocation: "/img/webflow-logo-toolstack.png",
+          imageLocation: "/img/google-ads-logo-toolstack.png",
         },
       ],
     },
