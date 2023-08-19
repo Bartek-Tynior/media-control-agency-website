@@ -1,8 +1,19 @@
 export default {
   hero: {
     title: "Elevate your brand's online presence with us!",
-    description:
-      "We will take your brand to the next level by combining media, data-driven strategies and creativity.",
+    description: {
+      paragaraph: "We help businesses improve their digital presence and generate leads by ",
+      typed: [
+        "building outstanding websites.",
+        1000,
+        "creating succesfull marketing campaigns.",
+        1000,
+        "managing social media accounts.",
+        1000,
+        "implemenitng AI solutions.",
+        1000,
+      ]
+    },
   },
   services: [
     {

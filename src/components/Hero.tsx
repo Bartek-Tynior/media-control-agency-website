@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "./ui/Button";
 import websiteContent from "../../website-content";
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   const heroContent = websiteContent.hero;
@@ -15,17 +18,32 @@ const Hero = () => {
             {heroContent.title}
           </h1>
           <p className="max-w-2xl mb-6 font-medium text-white lg:mb-8 md:text-lg lg:text-xl">
-            {heroContent.description}
+            {heroContent.description.paragaraph}
+            <TypeAnimation
+              className="font-bold"
+              sequence={heroContent.description.typed}
+              wrapper="span"
+              speed={10}
+              repeat={Infinity}
+            />
           </p>
           <div className="flex gap-4">
-            <Button size='lg' className="group" variant="default">
-              <Link href='#contact'>Get Started</Link>
-              <ArrowRightIcon className="ml-2 group-hover:translate-x-2 transition-all" />
-            </Button>
+            <Link href="#contact">
+              <Button size="xl" className="group" variant="default">
+                Get Started
+                <ArrowRightIcon className="ml-2 group-hover:translate-x-2 transition-all" />
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="lg:col-span-5 items-center justify-center flex">
-          <Image className="w-1/2 md:w-1/2 lg:w-fit" height={500} width={500} src="/img/hand.png" alt="mockup" />
+          <Image
+            className="w-1/2 md:w-1/2 lg:w-fit"
+            height={500}
+            width={500}
+            src="/img/hand.png"
+            alt="mockup"
+          />
         </div>
       </div>
     </section>

@@ -39,7 +39,7 @@ const page = () => {
         message: email.message,
       };
 
-      const { data } = await axios.post("/api/contact", payload);      
+      const { data } = await axios.post("/api/contact", payload);
       return data;
     },
     onSuccess: () => {},
@@ -68,15 +68,25 @@ const page = () => {
             ...or book a meeting with the founder and discuss yoor project and
             possible approaches!
           </h2>
-          <Button className="mt-4" onClick={() => setIsOpen(true)}>
+          <Button className="my-4" onClick={() => setIsOpen(true)}>
             Schedule meeting
             <Calendar className="ml-2 w-4 h-4" />
           </Button>
+
+          <p>
+            By the end of this Audit call, you will have a clear understanding
+            of the next steps you can take for your business to start generating
+            consistent and reliable results online with Funnels & Paid
+            Advertising.
+          </p>
         </div>
 
         <div className="col-span-6 mx-auto">
           <h2 className="text-2xl mb-5 font-bold">Contact form</h2>
-          <form className="flex flex-col gap-3" onSubmit={handleSubmit((e) => sendMail(e))}>
+          <form
+            className="flex flex-col gap-3"
+            onSubmit={handleSubmit((e) => sendMail(e))}
+          >
             <Label className="" htmlFor="fullName">
               Full name
             </Label>
