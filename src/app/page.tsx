@@ -1,3 +1,4 @@
+import AboutSection from "@/components/AboutSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import ContactSection from "@/components/ContactSection";
 import FAQ from "@/components/FAQ";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <AboutSection />
       <CaseStudiesSection />
       <Services />
       <TestimonialsSection />
