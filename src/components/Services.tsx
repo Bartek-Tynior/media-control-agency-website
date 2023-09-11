@@ -28,13 +28,10 @@ const Services = () => {
         },
       });
 
-      tl.to([".service-1", ".service-image-1"], { autoAlpha: 0 });
+      tl.to([".service-1", ".service-image-1"], { autoAlpha: 0});
 
-      tl.from([".service-2", ".service-image-2"], { autoAlpha: 0, y: 20 });
+      tl.from([".service-2", ".service-image-2"], { autoAlpha: 0 });
 
-      tl.to([".service-2", ".service-image-2"], { autoAlpha: 0 });
-
-      tl.from([".service-3", ".service-image-3"], { autoAlpha: 0, y: 20 });
     });
 
     return () => ctx.revert();
@@ -64,15 +61,15 @@ const Services = () => {
           })}
         </div>
 
-        <div className="images-section hidden md:flex relative h-[600px] w-full items-center justify-center md:flex-[0_1_45%]">
+        <div className="images-section hidden md:flex relative w-full items-center justify-center md:flex-[0_1_45%]">
           {services.map(({ imageLocation, i }) => {
             return (
               <Image
-                className={`absolute top-[50%] translate-y-[-50%] service-image-${i}`}
+                className={`absolute top-[50%] object-none w-full h-[400px] object-bottom translate-y-[-50%] service-image-${i}`}
                 src={imageLocation}
                 alt="service"
-                width={600}
-                height={600}
+                width={300}
+                height={300}
               />
             );
           })}

@@ -11,6 +11,7 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { Label } from "@/components/ui/Label";
 import { Calendar } from "lucide-react";
+import SectionLabel from "@/components/ui/SectionLabel";
 
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,8 +50,11 @@ const page = () => {
   });
 
   return (
-    <div className="min-h-screen pt-[10rem]">
-      <h1 className="text-5xl mb-5 font-bold">Reach out to us</h1>
+    <div className="min-h-screen pt-[10rem] mb-5">
+      <div className="flex flex-col gap-2">
+        <SectionLabel sectionName="Contact Form" />
+        <h1 className="text-5xl mb-5 font-bold">Reach out to us</h1>
+      </div>
       <div className="gap-10 md:gap-3 grid grid-cols-1 md:grid-cols-12">
         <PopupModal
           url="https://calendly.com/btynior"
@@ -59,30 +63,11 @@ const page = () => {
           rootElement={document.getElementsByTagName("body")[0]}
         />
         <div className="col-span-6">
-          <h2>
+          <h2 className="mb-5">
             Our team is growing. We’d love for you to join us. Reach us by
             filling up this form...
           </h2>
 
-          <h2 className="mt-10">
-            ...or book a meeting with the founder and discuss yoor project and
-            possible approaches!
-          </h2>
-          <Button className="my-4" onClick={() => setIsOpen(true)}>
-            Schedule meeting
-            <Calendar className="ml-2 w-4 h-4" />
-          </Button>
-
-          <p>
-            By the end of this Audit call, you will have a clear understanding
-            of the next steps you can take for your business to start generating
-            consistent and reliable results online with Funnels & Paid
-            Advertising.
-          </p>
-        </div>
-
-        <div className="col-span-6 mx-auto">
-          <h2 className="text-2xl mb-5 font-bold">Contact form</h2>
           <form
             className="flex flex-col gap-3"
             onSubmit={handleSubmit((e) => sendMail(e))}
@@ -168,6 +153,24 @@ const page = () => {
               Submit form
             </Button>
           </form>
+        </div>
+
+        <div className="col-span-6 mx-auto">
+          <h2>
+            ...or book a meeting with the founder and discuss yoor project and
+            possible approaches!
+          </h2>
+          <Button className="my-4" onClick={() => setIsOpen(true)}>
+            Schedule meeting
+            <Calendar className="ml-2 w-4 h-4" />
+          </Button>
+
+          <p>
+            By the end of this Audit call, you will have a clear understanding
+            of the next steps you can take for your business to start generating
+            consistent and reliable results online with Funnels & Paid
+            Advertising.
+          </p>
         </div>
       </div>
     </div>
