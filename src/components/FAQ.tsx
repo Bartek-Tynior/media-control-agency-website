@@ -7,7 +7,7 @@ import {
 
 const FAQ = () => {
   return (
-    <div>
+    <div className="my-10 sm:my-0">
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger className="font-bold">

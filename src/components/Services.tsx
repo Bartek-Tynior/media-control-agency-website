@@ -65,9 +65,9 @@ const Services = () => {
           {services.map(({ imageLocation, i }) => {
             return (
               <Image
-                className={`absolute top-[50%] object-none w-full h-[400px] object-bottom translate-y-[-50%] service-image-${i}`}
+                className={`absolute top-[50%] w-full translate-y-[-60%] service-image-${i}`}
                 src={imageLocation}
-                alt="service"
+                alt="service image"
                 width={300}
                 height={300}
               />

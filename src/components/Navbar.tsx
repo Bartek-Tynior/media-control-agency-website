@@ -97,7 +97,7 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl font-bold tracking-tight leading-5 text-white"
         >
-          <Image src={"/img/logo.png"} width="100" height="60" alt="logo" />
+          <Image src="/img/logo.png" width="100" height="60" alt="logo" />
         </Link>
       </div>
 
@@ -108,39 +108,50 @@ const Navbar = () => {
               return (
                 <div key={link.name} className="py-[0.5rem]">
                   <Link
+                    href={isHomePage ? link.link : `/${link.link}`}
+                    id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
                     className="text-3xl text-white font-bold"
                     onClick={toggleNavbar}
-                    href={link.link}
-                    passHref
-                    scroll={false}
-                    id={"link_" + i++}
                   >
                     {link.name}
                   </Link>
                 </div>
               );
             })}
+
+            <Link href="/contact">
+              <Button variant="default" onClick={() => setOpen(true)}>Lets get started</Button>
+            </Link>
           </div>
 
-          <Link href="/contact">
-            <Button variant="default">Lets get started</Button>
-          </Link>
-
           <div className="flex flex-col">
-            <p className="text-2xl text-gray-400 py-2 font-medium">
+            <h2 className="text-2xl text-gray-400 py-2 font-medium">
               Social Media
-            </p>
+            </h2>
 
-            <a href="" className="inline-flex">
-              <Image src="" alt="" />
-              <span>Instagram</span>
-            </a>
+            <div className="flex flex-col gap-3">
+              <a href="" className="inline-flex items-center gap-3 text-xl">
+                <Image
+                  className="w-8 h-8"
+                  src="/img/icons/instagram-icon.png"
+                  alt=""
+                  width={200}
+                  height={200}
+                />
+                Instagram
+              </a>
 
-            <a href="" className="inline-flex">
-              <Image src="" alt="" />
-              <span>LinkedIn</span>
-            </a>
-
+              <a href="" className="inline-flex items-center gap-3 text-xl">
+                <Image
+                  className="w-8 h-8"
+                  src="/img/icons/linkedin-icon.png"
+                  alt=""
+                  width={200}
+                  height={200}
+                />
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       )}

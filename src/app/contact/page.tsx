@@ -12,9 +12,12 @@ import axios from "axios";
 import { Label } from "@/components/ui/Label";
 import { Calendar } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
+import websiteContent from "../../../website-content";
+
 
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const content = websiteContent.contact_page;
 
   const {
     handleSubmit,
@@ -53,7 +56,7 @@ const page = () => {
     <div className="min-h-screen pt-[10rem] mb-5">
       <div className="flex flex-col gap-2">
         <SectionLabel sectionName="Contact Form" />
-        <h1 className="text-5xl mb-5 font-bold">Reach out to us</h1>
+        <h1 className="text-5xl mb-8 font-bold antialiased">Reach out to us</h1>
       </div>
       <div className="gap-10 md:gap-3 grid grid-cols-1 md:grid-cols-12">
         <PopupModal
@@ -63,9 +66,8 @@ const page = () => {
           rootElement={document.getElementsByTagName("body")[0]}
         />
         <div className="col-span-6">
-          <h2 className="mb-5">
-            Our team is growing. We’d love for you to join us. Reach us by
-            filling up this form...
+          <h2 className="text-2xl font-bold mb-8 antialiased">
+            {content.subtitle_1}
           </h2>
 
           <form
@@ -156,21 +158,15 @@ const page = () => {
         </div>
 
         <div className="col-span-6 mx-auto">
-          <h2>
-            ...or book a meeting with the founder and discuss yoor project and
-            possible approaches!
+          <h2 className="text-2xl font-bold antialiased">
+            {content.subtitle_2}
           </h2>
-          <Button className="my-4" onClick={() => setIsOpen(true)}>
+          <Button className="my-10" onClick={() => setIsOpen(true)}>
             Schedule meeting
             <Calendar className="ml-2 w-4 h-4" />
           </Button>
 
-          <p>
-            By the end of this Audit call, you will have a clear understanding
-            of the next steps you can take for your business to start generating
-            consistent and reliable results online with Funnels & Paid
-            Advertising.
-          </p>
+          <p className="text-lg font-semibold">{content.meeting_description}</p>
         </div>
       </div>
     </div>

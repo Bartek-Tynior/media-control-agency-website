@@ -27,15 +27,18 @@ export default {
       toolstack: [
         {
           name: "Webflow",
-          imageLocation: "/img/webflow-logo-toolstack.png",
+          imageLocation: "/img/icons/webflow-logo-toolstack.png",
+          alt: "Webflow Icon",
         },
         {
           name: "Framer",
-          imageLocation: "/img/framer-logo-toolstack.png",
+          imageLocation: "/img/icons/framer-logo-toolsatck.png",
+          alt: "Framer Icon",
         },
         {
           name: "Custom Code",
-          imageLocation: "/img/code-logo-toolstack.png",
+          imageLocation: "/img/icons/code-logo-toolstack.png",
+          alt: "Custom Code Icon",
         },
       ],
     },
@@ -49,19 +52,23 @@ export default {
       toolstack: [
         {
           name: "Google Ads",
-          imageLocation: "/img/google-ads-logo-toolstack.png",
+          imageLocation: "/img/icons/google-ads-logo-toolstack.png",
+          alt: "Google Ads Icon",
         },
         {
           name: "Instagram",
-          imageLocation: "/img/instagram-logo-toolstack.png",
+          imageLocation: "/img/icons/instagram-logo-toolstack.png",
+          alt: "Instagram Icon",
         },
         {
           name: "Facebook",
-          imageLocation: "/img/facebook-logo-toolstack.png",
+          imageLocation: "/img/icons/facebook-logo-toolstack.png",
+          alt: "Facebook Icon",
         },
         {
           name: "TikTok",
-          imageLocation: "/img/tiktok-logo-toolstack.png",
+          imageLocation: "/img/icons/tiktok-logo-toolstack.png",
+          alt: "TikTok Icon",
         },
       ],
     },
@@ -146,11 +153,25 @@ export default {
       {
         name: "Cookies Settings",
         link: "/cookies-settings",
-      }
+      },
     ],
   },
   about: {
     description:
       ", a dynamic digital marketing agency based in the Netherlands. We are fueled by our passion for strategy, design, and user interaction. Our expertise lies in crafting exceptional websites and optimizing advertising campaigns for our clients through effective strategies. Our philosophy revolves around the principles of logic, simplicity, and concise communication to maximize the potential of your brand. We take great joy in assisting you in enhancing your online presence.",
+  },
+  contact_homepage: {
+    phone: "+31 629 628 588",
+    email: "barttynior@media-control-agency.com",
+    kvk: "91179947",
+    tax: "NL004874490B47",
+  },
+  contact_page: {
+    subtitle_1:
+      "Our team is growing. We’d love for you to join us. Reach us by filling up this form...",
+    subtitle_2:
+      "...or book a meeting with the founder and discuss yoor project and possible approaches!",
+    meeting_description:
+      "By the end of this Audit call, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with Funnels & Paid Advertising.",
   },
 };

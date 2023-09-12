@@ -22,7 +22,7 @@ const Toolstack = ({ toolstack }: ToolstackProps) => {
                 src={tool.imageLocation}
                 width={40}
                 height={40}
-                alt=""
+                alt={tool.alt}
               />
             </div>
           );

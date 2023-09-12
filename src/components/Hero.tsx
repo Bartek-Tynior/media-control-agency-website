@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Button } from "./ui/Button";
 import websiteContent from "../../website-content";
 import { ArrowRightIcon } from "lucide-react";
@@ -9,8 +8,6 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   const heroContent = websiteContent.hero;
-
-  
 
   return (
     <section className="h-screen flex items-center justify-center pt-[6rem]">
@@ -42,8 +39,8 @@ const Hero = () => {
         </div>
       </div>
       <img
-        src="/img/MESH_GRADIENT_BACKGROUND.png"
-        alt=""
+        src="/img/mesh-gradient-background.png"
+        alt="Hero Background"
         className="absolute object-cover top-0 w-screen h-full z-0"
       />
     </section>
