@@ -1,24 +1,17 @@
-import nodemailer from "nodemailer";
+import type { NextApiRequest, NextApiResponse } from "next";
+import { render } from "@react-email/render";
+import { sendEmail } from "@/lib/email";
+import { Email } from "../../../../emails";
 
-export async function POST(req: Request) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  await sendEmail({
+    to: "kiran@example.com",
+    subject: "Welcome to NextAPI",
+    html: render(Email()),
+  });
 
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
-
-    const options = {
-      from: "you@example.com",
-      to: "btynior@gmail.com",
-      subject: "hello world",
-    };
-
-    await transporter.sendMail(options);
-
-  return new Response('Succes', { status: 200 });
+  return res.status(200).json({ message: "Email sent successfully" });
 }

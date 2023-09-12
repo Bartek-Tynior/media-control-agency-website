@@ -28,7 +28,7 @@ const CaseStudiesCard: FC<CaseStudiesCardProps> = ({
         src={imageLocation}
         width="200"
         height="200"
-        alt="hand"
+        alt="Case"
       />
       <div className="case-studies-card-description p-8 bottom-0">
         <h2 className="client-name text-2xl font-bold leading-tight">

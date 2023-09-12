@@ -7,18 +7,20 @@ import { Autoplay } from "swiper/modules";
 import BenefitsSectionCard from "./BenefitsSectionCard";
 
 const BenefitsSection = () => {
-  const serviceBenefits = websiteContent.service_benefits;
+  const content = websiteContent.service_benefits;
 
   return (
     <div className="flex flex-col sm:grid grid-cols-4 my-6 overflow-hidden">
-      <span className="mb-4 sm:mb-0 text-base font-semibold">Why choosing for us:</span>
+      <span className="mb-4 sm:mb-0 text-base font-semibold">
+        Why choosing for us:
+      </span>
       <Swiper
         className="col-span-3 swiper-benefits w-full"
         speed={11000}
         freeMode={true}
         grabCursor={true}
         spaceBetween={70}
-        slidesPerView='auto'
+        slidesPerView="auto"
         loop={true}
         modules={[Autoplay]}
         autoplay={{
@@ -41,7 +43,7 @@ const BenefitsSection = () => {
         }}
       >
         <div className="swiper-benefits-background"></div>
-        {serviceBenefits.map(({ description, id }) => (
+        {content.map(({ description, id }) => (
           <SwiperSlide key={id}>
             <BenefitsSectionCard description={description} />
           </SwiperSlide>

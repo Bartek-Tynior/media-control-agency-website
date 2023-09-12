@@ -3,6 +3,7 @@ import Image from "next/image";
 type Toolstack = {
   name: string;
   imageLocation: string;
+  imageAlt: string
 };
 
 interface ToolstackProps {
@@ -22,7 +23,7 @@ const Toolstack = ({ toolstack }: ToolstackProps) => {
                 src={tool.imageLocation}
                 width={40}
                 height={40}
-                alt={tool.alt}
+                alt={tool.imageAlt}
               />
             </div>
           );

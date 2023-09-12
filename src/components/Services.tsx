@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
 }
 
 const Services = () => {
-  const services = websiteContent.services;
+  const content = websiteContent.services;
   const servicesRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -28,10 +28,9 @@ const Services = () => {
         },
       });
 
-      tl.to([".service-1", ".service-image-1"], { autoAlpha: 0});
+      tl.to([".service-1", ".service-image-1"], { autoAlpha: 0 });
 
       tl.from([".service-2", ".service-image-2"], { autoAlpha: 0 });
-
     });
 
     return () => ctx.revert();
@@ -44,7 +43,7 @@ const Services = () => {
         ref={servicesRef}
       >
         <div className="content-section relative h-[400px] w-full flex-[0_1_100%] md:flex-[0_1_45%]">
-          {services.map(({ title, description, toolstack, i }) => {
+          {content.map(({ title, description, toolstack, i }) => {
             return (
               <div
                 className={`coneten-panels absolute top-[50%] translate-y-[-50%] service-${i}`}
@@ -62,7 +61,7 @@ const Services = () => {
         </div>
 
         <div className="images-section hidden md:flex relative w-full items-center justify-center md:flex-[0_1_45%]">
-          {services.map(({ imageLocation, i }) => {
+          {content.map(({ imageLocation, i }) => {
             return (
               <Image
                 className={`absolute top-[50%] w-full translate-y-[-60%] service-image-${i}`}

@@ -23,22 +23,23 @@ export default {
       description:
         "We are passionate about crafting websites that not only look stunning but also perform seamlessly. With our expert team of developers, we turn your digital vision into a reality, ensuring your online presence is a powerful asset for your business.",
       imageLocation: "/img/website-building-of-shopping-sale.gif",
+      altImage: "Website Building Image",
       detailPage: "/services/web-development",
       toolstack: [
         {
           name: "Webflow",
           imageLocation: "/img/icons/webflow-logo-toolstack.png",
-          alt: "Webflow Icon",
+          imageAlt: "Webflow Icon",
         },
         {
           name: "Framer",
           imageLocation: "/img/icons/framer-logo-toolsatck.png",
-          alt: "Framer Icon",
+          imageAlt: "Framer Icon",
         },
         {
           name: "Custom Code",
           imageLocation: "/img/icons/code-logo-toolstack.png",
-          alt: "Custom Code Icon",
+          imageAlt: "Custom Code Icon",
         },
       ],
     },
@@ -48,27 +49,28 @@ export default {
       description:
         "We understand that one size does not fit all when it comes to paid advertising. That's why we take a personalized approach to ensure your brand's success. Our expert team customizes every campaign to your unique goals and needs, ensuring that you get the results you deserve.",
       imageLocation: "/img/pay-per-click-digital-marketing.gif",
+      altImage: "Paid Advertisment Image",
       detailPage: "/services/paid-advertising",
       toolstack: [
         {
           name: "Google Ads",
           imageLocation: "/img/icons/google-ads-logo-toolstack.png",
-          alt: "Google Ads Icon",
+          imageAlt: "Google Ads Icon",
         },
         {
           name: "Instagram",
           imageLocation: "/img/icons/instagram-logo-toolstack.png",
-          alt: "Instagram Icon",
+          imageAlt: "Instagram Icon",
         },
         {
           name: "Facebook",
           imageLocation: "/img/icons/facebook-logo-toolstack.png",
-          alt: "Facebook Icon",
+          imageAlt: "Facebook Icon",
         },
         {
           name: "TikTok",
           imageLocation: "/img/icons/tiktok-logo-toolstack.png",
-          alt: "TikTok Icon",
+          imageAlt: "TikTok Icon",
         },
       ],
     },
@@ -101,24 +103,28 @@ export default {
   //     client: "Otto",
   //     service: "Product Design",
   //     imageLocation: "/img/UI-device-example.jpg",
+  //     imageAlt: "Client's Project Image",
   //   },
   //   {
   //     id: 2,
   //     client: "Otto",
   //     service: "Product Design",
   //     imageLocation: "/img/UI-device-example.jpg",
+  //     imageAlt: "Client's Project Image",
   //   },
   //   {
   //     id: 3,
   //     client: "Otto",
   //     service: "Product Design",
   //     imageLocation: "/img/UI-device-example.jpg",
+  //     imageAlt: "Client's Project Image",
   //   },
   //   {
   //     id: 4,
   //     client: "Otto",
   //     service: "Product Design",
   //     imageLocation: "/img/UI-device-example.jpg",
+  //     imageAlt: "Client's Project Image",
   //   },
   // ],
   service_benefits: [
@@ -174,5 +180,12 @@ export default {
       "...or book a meeting with the founder and discuss yoor project and possible approaches!",
     meeting_description:
       "By the end of this meeting, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with outstanding websites & paid advertising.",
+  },
+  FAQ: {
+    section_1: "",
+    section_2: "",
+    section_3: "",
+    section_4: "",
+    section_5: "",
   },
 };
