@@ -1,17 +1,22 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { render } from "@react-email/render";
 import { sendEmail } from "@/lib/email";
-import { Email } from "../../../../emails";
+import FormMail from "../../../../emails/formMail";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  await sendEmail({
-    to: "kiran@example.com",
-    subject: "Welcome to NextAPI",
-    html: render(Email()),
-  });
+export async function POST(req: Request) {
+  const body = await req.json();
 
-  return res.status(200).json({ message: "Email sent successfully" });
+  try {
+
+    await sendEmail({
+      to: process.env.SMTP_TO_EMAIL || "",
+      subject: "Welcome to NextAPI",
+      sender: body.email,
+      html: render(FormMail(body)),
+    });
+
+    return new Response("Email Succesfully Sent!", { status: 200 });
+  } catch (error) {
+
+    return new Response("Something went wrong!", { status: 500 });
+  }
 }

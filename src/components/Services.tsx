@@ -64,6 +64,7 @@ const Services = () => {
           {content.map(({ imageLocation, i }) => {
             return (
               <Image
+                key={i}
                 className={`absolute top-[50%] w-full translate-y-[-60%] service-image-${i}`}
                 src={imageLocation}
                 alt="service image"
