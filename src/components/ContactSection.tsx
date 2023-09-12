@@ -1,6 +1,7 @@
 import { ExternalLink, Home, Mail, Phone } from "lucide-react";
 import SectionLabel from "./ui/SectionLabel";
 import websiteContent from "../../website-content";
+import Image from "next/image";
 
 const ContactSection = () => {
 
@@ -28,7 +29,7 @@ const ContactSection = () => {
         </a>
       </div>
 
-      <div className="w-full lg:w-1/2">
+      <div className="w-full">
         <div className="flex flex-col gap-2 text-sm md:text-base">
           <h3 className="font-bold text-lg sm:text-md">Contact Information</h3>
           <div className="flex flex-col sm:flex-row gap-2 md:gap-4 text-sm sm:text-md">
@@ -38,17 +39,35 @@ const ContactSection = () => {
                 {content.phone}
               </p>
               <p className="inline-flex gap-3 font-semibold">
-                <Mail className="w-5 h-5"/>
+                <Mail className="w-5 h-5" />
                 {content.email}
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-semibold">
-                KVK: {content.kvk}
+              <p className="font-normal antialiased">
+                KVK: <span className="font-semibold">{content.kvk}</span>
               </p>
-              <p className="font-semibold">
-                TAX. NO.: {content.tax}
+              <p className="font-normal antialiased">
+                TAX. NO.: <span className="font-semibold">{content.tax}</span>
               </p>
+            </div>
+            <div className="flex flex-row w-1/3 justify-end sm:justify-end gap-3 items-end">
+              <a href="">
+                <Image
+                  src="/img/icons/instagram-icon.png"
+                  alt="Instagram Icon"
+                  width={30}
+                  height={30}
+                />
+              </a>
+              <a href="">
+                <Image
+                  src="/img/icons/linkedin-icon.png"
+                  alt="LinkedIn Icon"
+                  width={30}
+                  height={30}
+                />
+              </a>
             </div>
           </div>
         </div>
