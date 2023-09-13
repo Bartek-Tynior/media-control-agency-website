@@ -14,7 +14,7 @@ const FAQ = () => {
       <Accordion type="single" collapsible>
         {content.map(({ title, description, index }) => {
           return (
-            <AccordionItem value={`item-${index}`}>
+            <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger
                 className="font-bold"
               >

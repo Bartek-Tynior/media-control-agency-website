@@ -14,7 +14,7 @@ import { Calendar } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
 import websiteContent from "../../../website-content";
 
-const page = () => {
+const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const content = websiteContent.contact_page;
 
@@ -174,4 +174,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPage;
