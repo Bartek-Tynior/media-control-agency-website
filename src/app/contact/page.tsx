@@ -15,7 +15,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 import websiteContent from "../../../website-content";
 import { useRouter } from "next/navigation";
 
-const ContactPage = () => {
+const ContactPage = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
   const content = websiteContent.contact_page;
   const router = useRouter();
@@ -63,12 +63,14 @@ const ContactPage = () => {
         </h1>
       </div>
       <div className="gap-10 md:gap-3 grid grid-cols-1 md:grid-cols-12">
-        <PopupModal
+        
+        { typeof window !== "undefined" ? <PopupModal
           url="https://calendly.com/btynior"
           onModalClose={() => setIsOpen(false)}
           open={isOpen}
           rootElement={document.getElementsByTagName("body")[0]}
-        />
+        /> : "" }
+        
         <div className="col-span-6">
           <h2 className="text-lg sm:text-2xl font-bold mb-8 antialiased">
             {content.subtitle_1}
