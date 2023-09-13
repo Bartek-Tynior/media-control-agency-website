@@ -11,7 +11,8 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const navLinks = websiteContent.navbar;
+  const content = websiteContent.navbar;
+  const contactInfo = websiteContent.contact;
   const [isOpen, setOpen] = useState(true);
   const router = useRouter();
   const pathname = usePathname();
@@ -47,36 +48,44 @@ const Navbar = () => {
     let ctx = gsap.context(() => {
       sections.forEach((section, i) => {
         ScrollTrigger.create({
+          // @ts-expect-error
           trigger: section,
           start: "top 50%",
+          // @ts-expect-error
           end: () => `+=${section?.offsetHeight} 50%`,
           onEnter: () => {
+            // @ts-expect-error
             const position = navLinks[i]?.offsetLeft;
 
             if (navLinks[i + 1]) {
               gsap.to(menu_shape, {
                 x: `${position}`,
+                // @ts-expect-error
                 width: `${navLinks[i]?.offsetWidth}`,
                 color: "white",
               });
             }
           },
           onLeave: () => {
+            // @ts-expect-error
             const position = navLinks[i + 1]?.offsetLeft;
 
             if (navLinks[i + 1]) {
               gsap.to(menu_shape, {
                 x: `${position}`,
+                // @ts-expect-error
                 width: `${navLinks[i + 1]?.offsetWidth}`,
                 color: "white",
               });
             }
           },
           onEnterBack: () => {
+            // @ts-expect-error
             const positionBack = navLinks[i]?.offsetLeft;
 
             gsap.to(menu_shape, {
               x: `${positionBack}`,
+              // @ts-expect-error
               width: `${navLinks[i]?.offsetWidth}`,
               color: "white",
             });
@@ -97,14 +106,14 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl font-bold tracking-tight leading-5 text-white"
         >
-          <Image src="/img/logo.png" width="100" height="60" alt="logo" />
+          <Image src={content.logo.imageLocation} width="100" height="60" alt={content.logo.altImage} />
         </Link>
       </div>
 
       {!isOpen && (
         <div className="menu-mobile-wrap" id="menu_mobile_wrap">
           <div>
-            {navLinks.map((link, i) => {
+            {content.links.map((link, i) => {
               return (
                 <div key={link.name} className="py-[0.5rem]">
                   <Link
@@ -120,7 +129,9 @@ const Navbar = () => {
             })}
 
             <Link href="/contact">
-              <Button variant="default" onClick={() => setOpen(true)}>Lets get started</Button>
+              <Button variant="default" onClick={toggleNavbar}>
+                Lets get started
+              </Button>
             </Link>
           </div>
 
@@ -133,23 +144,12 @@ const Navbar = () => {
               <a href="" className="inline-flex items-center gap-3 text-xl">
                 <Image
                   className="w-8 h-8"
-                  src="/img/icons/instagram-icon.png"
-                  alt=""
+                  src={contactInfo.instagram.imageLocation}
+                  alt={contactInfo.instagram.imageAlt}
                   width={200}
                   height={200}
                 />
                 Instagram
-              </a>
-
-              <a href="" className="inline-flex items-center gap-3 text-xl">
-                <Image
-                  className="w-8 h-8"
-                  src="/img/icons/linkedin-icon.png"
-                  alt=""
-                  width={200}
-                  height={200}
-                />
-                LinkedIn
               </a>
             </div>
           </div>
@@ -158,7 +158,7 @@ const Navbar = () => {
 
       <div className="blured-bg rounded-xl lg:flex text-white hidden">
         <ul className="px-2 mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-          {navLinks.map((link: any, i: number) => {
+          {content.links.map((link: any, i: number) => {
             return (
               <li
                 key={link.name}

@@ -1,6 +1,7 @@
 export default {
   hero: {
     title: "Elevate your brand's online presence with us!",
+    subtitle: "Result Focused Agency",
     description: {
       paragaraph:
         "We help businesses improve thier conversion rate and generate leads by ",
@@ -9,12 +10,12 @@ export default {
         1000,
         "creating succesfull marketing campaigns.",
         1000,
-        // "setting up and managing social media accounts.",
-        // 1000,
         "implemenitng AI solutions.",
         1000,
       ],
     },
+    imageLocation: "/img/mesh-gradient-background.png",
+    altImage: "Mesh Gradient Background",
   },
   services: [
     {
@@ -75,58 +76,26 @@ export default {
       ],
     },
   ],
-  navbar: [
-    {
-      name: "Home",
-      link: "#home",
+  navbar: {
+    logo: {
+      imageLocation: "/img/logo.png",
+      altImage: "Media Control Agency Logo",
     },
-    // {
-    //   name: "Case Studies",
-    //   link: "#case-studies",
-    // },
-    {
-      name: "Services",
-      link: "#services",
-    },
-    // {
-    //   name: "Testimonials",
-    //   link: "#testimonials",
-    // },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
-  ],
-  // case_studies: [
-  //   {
-  //     id: 1,
-  //     client: "Otto",
-  //     service: "Product Design",
-  //     imageLocation: "/img/UI-device-example.jpg",
-  //     imageAlt: "Client's Project Image",
-  //   },
-  //   {
-  //     id: 2,
-  //     client: "Otto",
-  //     service: "Product Design",
-  //     imageLocation: "/img/UI-device-example.jpg",
-  //     imageAlt: "Client's Project Image",
-  //   },
-  //   {
-  //     id: 3,
-  //     client: "Otto",
-  //     service: "Product Design",
-  //     imageLocation: "/img/UI-device-example.jpg",
-  //     imageAlt: "Client's Project Image",
-  //   },
-  //   {
-  //     id: 4,
-  //     client: "Otto",
-  //     service: "Product Design",
-  //     imageLocation: "/img/UI-device-example.jpg",
-  //     imageAlt: "Client's Project Image",
-  //   },
-  // ],
+    links: [
+      {
+        name: "Home",
+        link: "#home",
+      },
+      {
+        name: "Services",
+        link: "#services",
+      },
+      {
+        name: "Contact",
+        link: "#contact",
+      },
+    ],
+  },
   service_benefits: [
     {
       id: 1,
@@ -147,6 +116,7 @@ export default {
   ],
   testimonials: [],
   footer: {
+    footer_credit: "© 2023 Media Control Agency. All right reserved.",
     links: [
       {
         name: "Privacy Policy",
@@ -167,11 +137,16 @@ export default {
     description:
       ", a dynamic digital marketing agency based in the Netherlands. We are fueled by our passion for strategy, design, and user interaction. Our expertise lies in crafting exceptional websites and optimizing advertising campaigns for our clients through effective strategies. Our philosophy revolves around the principles of logic, simplicity, and concise communication to maximize the potential of your brand. We take great joy in assisting you in enhancing your online presence.",
   },
-  contact_homepage: {
+  contact: {
     phone: "+31 629 628 588",
-    email: "barttynior@media-control-agency.com",
+    email: "info@media-control-agency.com",
     kvk: "91179947",
     tax: "NL004874490B47",
+    instagram: {
+      link: "",
+      imageLocation: "/img/icons/instagram-icon.png",
+      imageAlt: "Instagram Icon",
+    },
   },
   contact_page: {
     subtitle_1:
@@ -181,11 +156,90 @@ export default {
     meeting_description:
       "By the end of this meeting, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with outstanding websites & paid advertising.",
   },
-  FAQ: {
-    section_1: "",
-    section_2: "",
-    section_3: "",
-    section_4: "",
-    section_5: "",
+  FAQ: [
+    {
+      title: "What services do you offer?",
+      description: (
+        <div>
+          Currently our agency offers the following services:
+          <ul>
+            <li>- Product Design</li>
+            <li>
+              - Web/Software Development (using Webflow, Framer or Custom Code)
+            </li>
+            <li>- Pay Per Click Advertising</li>
+            <li>- Implementation of AI Solutions</li>
+          </ul>
+        </div>
+      ),
+      index: 1,
+    },
+    {
+      title: "How do you build websites?",
+      description: (
+        <div>
+          Our process is simple yet effective. It divides into these steps:
+          <ul>
+            <li>- Discovery (getting to know the client and his needs)</li>
+            <li>
+              - Designing (translating our joint vision into wireframes in
+              Figma)
+            </li>
+            <li>
+              - Development (implementing the designs in Figma in Webflow or
+              other tools)
+            </li>
+            <li>- QA (review & testing) </li>
+            <li>- Improvements (implementing fixes)</li>
+          </ul>
+        </div>
+      ),
+      index: 2,
+    },
+    {
+      title: "How do you create effective campaigns?",
+      description: (
+        <div>
+          Our process is effective and focused on individual needs of each
+          client. It divides into these steps:
+          <ul>
+            <li>- Discovery (getting to know the client and his needs)</li>
+            <li>- Research (getting to know the markt and requirments)</li>
+            <li>
+              - Strategy (setting up an individual strategy based on the
+              research)
+            </li>
+            <li>
+              - Implementation (implementing the strategy and analysing the
+              results)
+            </li>
+            <li>
+              - Review (reviewing the results and making improvements with the
+              client)
+            </li>
+          </ul>
+        </div>
+      ),
+      index: 3,
+    },
+    {
+      title: "Do you provide ongoing support?",
+      description:
+        "Certainly! We prioritize lasting partnerships and take immense joy in witnessing our clients' continuous growth. When you're with us, you'll always have our unwavering support.",
+      index: 4,
+    },
+    {
+      title: "What are the costs?",
+      description:
+        "We charge a fixed price for each project. The price depends on the complexity of the project. We also offer a monthly subscription for ongoing campaings, support and maintenance.",
+      index: 5,
+    },
+  ],
+  not_found: {
+    title: "404: Page Not Found",
+    description:
+      "We couldn't find the requested resource. Please make sure that the path of the resource you are looking for is correct or return to the homepage.",
+    return_home: "Return to Homepage",
+    imageLocation: "/img/icons/404-error.svg",
   },
 };

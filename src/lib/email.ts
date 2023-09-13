@@ -3,13 +3,12 @@ import nodemailer from "nodemailer";
 type EmailPayload = {
   to: string;
   subject: string;
-  sender: string;
   html: string;
 };
 
 const smtpOptions = {
   host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || "2525"),
+  port: parseInt(process.env.SMTP_PORT || "465"),
   secure: true,
   auth: {
     user: process.env.SMTP_USER,
@@ -18,15 +17,12 @@ const smtpOptions = {
 };
 
 export const sendEmail = async (data: EmailPayload) => {
-
-  console.log("sendEmail", data);
-  
   const transporter = nodemailer.createTransport({
     ...smtpOptions,
   });
 
   return await transporter.sendMail({
-    from: data.sender,
+    from: process.env.SMTP_EMAIL,
     ...data,
   });
 };

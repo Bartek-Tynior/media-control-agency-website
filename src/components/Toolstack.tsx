@@ -3,7 +3,7 @@ import Image from "next/image";
 type Toolstack = {
   name: string;
   imageLocation: string;
-  imageAlt: string
+  imageAlt: string;
 };
 
 interface ToolstackProps {
@@ -17,7 +17,10 @@ const Toolstack = ({ toolstack }: ToolstackProps) => {
       <div className="flex flex-row gap-3">
         {toolstack.map((tool, id) => {
           return (
-            <div key={id} className="w-[3.5rem] h-[3.5rem] blured-bg p-2 rounded-md border border-solid border-[rgba(255,255,255,0.1)]">
+            <div
+              key={id}
+              className="w-[3.5rem] h-[3.5rem] blured-bg p-2 rounded-md border border-solid border-[rgba(255,255,255,0.1)]"
+            >
               <Image
                 className="w-full h-full object-fit"
                 src={tool.imageLocation}

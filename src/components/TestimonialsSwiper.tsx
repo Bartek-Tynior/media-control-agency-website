@@ -8,7 +8,7 @@ import TestimonialsSwiperCard from "./TestimonialsSwiperCard";
 const TestimonialsSwiper = () => {
   return (
     <Swiper
-      slidesPerView='auto'
+      slidesPerView="auto"
       spaceBetween={30}
       loop={true}
       navigation={true}

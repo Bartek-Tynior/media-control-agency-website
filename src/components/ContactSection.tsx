@@ -4,8 +4,7 @@ import websiteContent from "../../website-content";
 import Image from "next/image";
 
 const ContactSection = () => {
-
-  const content = websiteContent.contact_homepage;
+  const content = websiteContent.contact;
 
   return (
     <section
@@ -22,7 +21,7 @@ const ContactSection = () => {
         <a
           className="text-2xl sm:text-4xl inline-flex gap-3 font-extrabold"
           id="contactLink"
-          href="mailto:email@example.com?subject=Collaboration"
+          href={`mailto:${content.email}?subject=Collaboration`}
         >
           {content.email}
           <ExternalLink className="h-8 w-8 sm:h-10 md:w-10" />
@@ -33,7 +32,7 @@ const ContactSection = () => {
         <div className="flex flex-col gap-2 text-sm md:text-base">
           <h3 className="font-bold text-lg sm:text-md">Contact Information</h3>
           <div className="flex flex-col sm:flex-row gap-2 md:gap-4 text-sm sm:text-md">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full sm:w-1/3">
               <p className="inline-flex gap-3 font-semibold">
                 <Phone className="w-5 h-5" />
                 {content.phone}
@@ -43,7 +42,7 @@ const ContactSection = () => {
                 {content.email}
               </p>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full sm:w-1/3">
               <p className="font-normal antialiased">
                 KVK: <span className="font-semibold">{content.kvk}</span>
               </p>
@@ -51,19 +50,11 @@ const ContactSection = () => {
                 TAX. NO.: <span className="font-semibold">{content.tax}</span>
               </p>
             </div>
-            <div className="flex flex-row w-1/3 justify-end sm:justify-end gap-3 items-end">
+            <div className="flex flex-row w-full sm:w-1/3 justify-start sm:justify-end gap-3 items-end">
               <a href="">
                 <Image
-                  src="/img/icons/instagram-icon.png"
+                  src={content.instagram.imageLocation}
                   alt="Instagram Icon"
-                  width={30}
-                  height={30}
-                />
-              </a>
-              <a href="">
-                <Image
-                  src="/img/icons/linkedin-icon.png"
-                  alt="LinkedIn Icon"
                   width={30}
                   height={30}
                 />

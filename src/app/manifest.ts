@@ -2,13 +2,11 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Next.js App",
+    name: "Media Control Agency Landing Page",
     short_name: "Next.js App",
-    description: "Next.js App",
+    description: "Media Control Agency is a digital agency specialized in software development and paid advertisment.",
     start_url: "/",
     display: "standalone",
-    background_color: "#fff",
-    theme_color: "#fff",
     icons: [
       {
         src: "/favicon.ico",

@@ -9,7 +9,7 @@ import { Montserrat } from "next/font/google";
 export const metadata: Metadata = {
   title: "Media Control Agency: Level Up Your Digital Presence",
   description:
-    "Media Control Agency is a digital marketing agency that helps businesses grow their online presence through Social Media, Product Design and Development and more.",
+    "Media Control Agency is a digital agency that helps businesses grow their online presence through software development and digital marketing.",
 };
 
 const montserrat = Montserrat({ subsets: ["latin"] });

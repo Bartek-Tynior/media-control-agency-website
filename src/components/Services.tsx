@@ -67,7 +67,7 @@ const Services = () => {
                 key={i}
                 className={`absolute top-[50%] w-full translate-y-[-60%] service-image-${i}`}
                 src={imageLocation}
-                alt="service image"
+                alt="Service Image"
                 width={300}
                 height={300}
               />

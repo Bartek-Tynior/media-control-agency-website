@@ -14,7 +14,6 @@ import { Calendar } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
 import websiteContent from "../../../website-content";
 
-
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const content = websiteContent.contact_page;
@@ -56,7 +55,9 @@ const page = () => {
     <div className="min-h-screen pt-[10rem] mb-5">
       <div className="flex flex-col gap-2">
         <SectionLabel sectionName="Contact Form" />
-        <h1 className="text-5xl mb-8 font-bold antialiased">Reach out to us</h1>
+        <h1 className="text-4xl xl:text-5xl 2xl:text-6xl mb-8 font-bold antialiased">
+          Reach out to us
+        </h1>
       </div>
       <div className="gap-10 md:gap-3 grid grid-cols-1 md:grid-cols-12">
         <PopupModal
@@ -66,7 +67,7 @@ const page = () => {
           rootElement={document.getElementsByTagName("body")[0]}
         />
         <div className="col-span-6">
-          <h2 className="text-2xl font-bold mb-8 antialiased">
+          <h2 className="text-lg sm:text-2xl font-bold mb-8 antialiased">
             {content.subtitle_1}
           </h2>
 
@@ -158,7 +159,7 @@ const page = () => {
         </div>
 
         <div className="col-span-6 mx-auto">
-          <h2 className="text-2xl font-bold antialiased">
+          <h2 className="text-lg sm:text-2xl font-bold antialiased">
             {content.subtitle_2}
           </h2>
           <Button className="my-10" onClick={() => setIsOpen(true)}>

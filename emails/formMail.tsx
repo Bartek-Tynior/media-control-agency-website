@@ -1,4 +1,12 @@
-import { Body, Container, Heading, Html, Img, Tailwind, Text } from '@react-email/components';
+import {
+  Body,
+  Container,
+  Heading,
+  Html,
+  Img,
+  Tailwind,
+  Text,
+} from "@react-email/components";
 
 type Sender = {
   fullName: string;
@@ -6,9 +14,15 @@ type Sender = {
   phone: string;
   message: string;
   company: string;
-}
+};
 
-export default function FormMail({ fullName, email, phone, message, company }: Sender) {
+export default function FormMail({
+  fullName,
+  email,
+  phone,
+  message,
+  company,
+}: Sender) {
   return (
     <Html>
       <Tailwind>

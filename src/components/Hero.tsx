@@ -7,23 +7,23 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
-  const heroContent = websiteContent.hero;
+  const content = websiteContent.hero;
 
   return (
     <section className="h-screen flex items-center justify-center pt-[6rem]">
       <div className="place-self-center z-40 lg:w-3/4">
         <span className="flex gap-4 justify-center mb-4 text-xl tracking-widest">
-          Result Focused Agency
+          {content.subtitle}
         </span>
         <h1 className="mb-4 text-4xl text-center font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
-          {heroContent.title}
+          {content.title}
         </h1>
         <p className="mb-6 font-medium text-center text-white lg:mb-8 md:text-lg lg:text-xl">
-          {heroContent.description.paragaraph}
+          {content.description.paragaraph}
           <br />
           <TypeAnimation
             className="font-bold"
-            sequence={heroContent.description.typed}
+            sequence={content.description.typed}
             wrapper="span"
             speed={10}
             repeat={Infinity}
@@ -39,8 +39,8 @@ const Hero = () => {
         </div>
       </div>
       <img
-        src="/img/mesh-gradient-background.png"
-        alt="Hero Background"
+        src={content.imageLocation}
+        alt={content.altImage}
         className="absolute object-cover top-0 w-screen h-full z-0"
       />
     </section>
