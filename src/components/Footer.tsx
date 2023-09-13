@@ -13,9 +13,9 @@ const Footer = () => {
           {content.footer_credit}
         </h2>
         <div className="flex text-[#f2f2f2] gap-x-6 antialiased">
-          {content.links.map(({name, link}) => {
+          {content.links.map(({name, link, index}) => {
             return (
-              <Button className="px-0 sm:px-4" variant="link">
+              <Button key={index} className="px-0 sm:px-4" variant="link">
                 <a href={link}>{name}</a>
               </Button>
             )

@@ -121,14 +121,17 @@ export default {
       {
         name: "Privacy Policy",
         link: "/privacy-policy",
+        index: 1,
       },
       {
         name: "Terms of Service",
         link: "/terms-of-service",
+        index: 2,
       },
       {
         name: "Cookies Settings",
         link: "/cookies-settings",
+        index: 3,
       },
     ],
   },
