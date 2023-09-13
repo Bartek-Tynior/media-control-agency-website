@@ -13,10 +13,12 @@ import { Label } from "@/components/ui/Label";
 import { Calendar } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
 import websiteContent from "../../../website-content";
+import { useRouter } from "next/navigation";
 
 const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const content = websiteContent.contact_page;
+  const router = useRouter();
 
   const {
     handleSubmit,
@@ -42,10 +44,11 @@ const ContactPage = () => {
         message: email.message,
       };
 
-      const { data } = await axios.post("/api/contact", payload);
-      return data;
+      await axios.post("/api/contact", payload);
     },
-    onSuccess: () => {},
+    onSuccess: () => {
+      router.refresh();
+    },
     onError: (error) => {
       console.log(error);
     },
