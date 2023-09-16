@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default {
   hero: {
     title: "Elevate your brand's online presence with us!",
@@ -8,7 +10,7 @@ export default {
       typed: [
         "building outstanding websites.",
         1000,
-        "creating succesfull marketing campaigns.",
+        "creating successful marketing campaigns.",
         1000,
         "implemenitng AI solutions.",
         1000,
@@ -72,6 +74,27 @@ export default {
           name: "TikTok",
           imageLocation: "/img/icons/tiktok-logo-toolstack.png",
           imageAlt: "TikTok Icon",
+        },
+      ],
+    },
+    {
+      i: 3,
+      title: "AI Solutions",
+      description:
+        "At our core, we're driven by a passion for seamlessly integrating AI solutions into your business, propelling you toward your goals. Our team of seasoned experts specializes in implementing AI solutions that enhance your business's efficiency and productivity. We're here to guide you through every phase of your journey, from harnessing the potential of chatbots to delving into the realm of machine learning",
+      imageLocation: "",
+      altImage: "AI Solutions Image",
+      detailPage: "/services/web-ai",
+      toolstack: [
+        {
+          name: "ChatGPT",
+          imageLocation: "/img/icons/chatgpt-logo-toolstack.webp",
+          imageAlt: "ChatGPT Icon",
+        },
+        {
+          name: "Custom Code",
+          imageLocation: "/img/icons/code-logo-toolstack.png",
+          imageAlt: "Custom Code Icon",
         },
       ],
     },
@@ -141,15 +164,28 @@ export default {
       ", a dynamic digital marketing agency based in the Netherlands. We are fueled by our passion for strategy, design, and user interaction. Our expertise lies in crafting exceptional websites and optimizing advertising campaigns for our clients through effective strategies. Our philosophy revolves around the principles of logic, simplicity, and concise communication to maximize the potential of your brand. We take great joy in assisting you in enhancing your online presence.",
   },
   contact: {
-    phone: "+31 629 628 588",
-    email: "info@media-control-agency.com",
+    phone: (
+      <a href="tel:+31629628588" className="">
+        +31 629 628 588
+      </a>
+    ),
+    email: (
+      <a href="mailto:info@media-control-agency.com?subject=Collaboration">
+        info@media-control-agency.com
+      </a>
+    ),
     kvk: "91179947",
     tax: "NL004874490B47",
-    instagram: {
-      link: "",
-      imageLocation: "/img/icons/instagram-icon.png",
-      imageAlt: "Instagram Icon",
-    },
+    instagram: (
+      <a href="https://www.instagram.com/mediacontrolag/">
+        <Image
+          src="/img/icons/instagram-icon.png"
+          alt="Instagram Icon"
+          width={30}
+          height={30}
+        />
+      </a>
+    ),
   },
   contact_page: {
     subtitle_1:

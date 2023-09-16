@@ -1,31 +1,29 @@
-import { ExternalLink, Home, Mail, Phone } from "lucide-react";
+import { ExternalLink, Mail, Phone } from "lucide-react";
 import SectionLabel from "./ui/SectionLabel";
 import websiteContent from "../../website-content";
-import Image from "next/image";
 
 const ContactSection = () => {
   const content = websiteContent.contact;
 
   return (
     <section
-      className="text-white relative h-full sm:h-screen pt-[6rem] grid grid-rows-[100px_150px_150px] sm:grid-rows-[200px_1fr_150px]"
+      className="text-white animate relative h-full sm:h-screen pt-[6rem] grid grid-rows-[100px_150px_150px] sm:grid-rows-[200px_1fr_150px]"
       id="contact"
     >
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col title gap-2">
         <SectionLabel sectionName="Contact" />
-        <h2 className="text-xl sm:text-4xl lg:w-1/2 font-bold leading-tight">
+        <h2 className="text-2xl sm:text-4xl lg:w-1/2 font-bold leading-tight">
           Ready to collaborate or any questions?
         </h2>
       </div>
       <div className="flex items-center justify-start w-full">
-        <a
-          className="text-2xl sm:text-4xl inline-flex gap-3 font-extrabold"
+        <span
+          className="text-2xl sm:text-4xl inline-flex gap-3 font-medium sm:font-extrabold"
           id="contactLink"
-          href={`mailto:${content.email}?subject=Collaboration`}
         >
           {content.email}
           <ExternalLink className="h-8 w-8 sm:h-10 md:w-10" />
-        </a>
+        </span>
       </div>
 
       <div className="w-full">
@@ -51,14 +49,7 @@ const ContactSection = () => {
               </p>
             </div>
             <div className="flex flex-row w-full sm:w-1/3 justify-start sm:justify-end gap-3 items-end">
-              <a href="">
-                <Image
-                  src={content.instagram.imageLocation}
-                  alt="Instagram Icon"
-                  width={30}
-                  height={30}
-                />
-              </a>
+              {content.instagram}
             </div>
           </div>
         </div>

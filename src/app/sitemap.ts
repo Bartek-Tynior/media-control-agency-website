@@ -1,31 +1,23 @@
 import { MetadataRoute } from "next";
 
-type Sitemap = Array<{
-  url: string;
-  lastModified?: string | Date;
-  changeFrequency?:
-    | "always"
-    | "hourly"
-    | "daily"
-    | "weekly"
-    | "monthly"
-    | "yearly"
-    | "never";
-  priority?: number;
-}>;
-
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: "https://media-control-agency.com",
+      priority: 1,
+      changeFrequency: "daily",
       lastModified: new Date(),
     },
     {
       url: "https://media-control-agency.com/contact",
+      priority: 1,
+      changeFrequency: "daily",
       lastModified: new Date(),
     },
     {
       url: "https://media-control-agency.com/privacy-policy",
+      priority: 1,
+      changeFrequency: "daily",
       lastModified: new Date(),
     },
   ];

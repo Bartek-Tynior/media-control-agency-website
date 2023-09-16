@@ -30,6 +30,10 @@ const Navbar = () => {
     }
   };
 
+  if (typeof window !== "undefined") {
+    gsap.registerPlugin(ScrollTrigger);
+  }
+
   useEffect(() => {
     if (pathname === "/") {
       setIsHomePage(true);
@@ -106,7 +110,12 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl font-bold tracking-tight leading-5 text-white"
         >
-          <Image src={content.logo.imageLocation} width="100" height="60" alt={content.logo.altImage} />
+          <Image
+            src={content.logo.imageLocation}
+            width="100"
+            height="60"
+            alt={content.logo.altImage}
+          />
         </Link>
       </div>
 
@@ -141,16 +150,12 @@ const Navbar = () => {
             </h2>
 
             <div className="flex flex-col gap-3">
-              <a href="" className="inline-flex items-center gap-3 text-xl">
-                <Image
-                  className="w-8 h-8"
-                  src={contactInfo.instagram.imageLocation}
-                  alt={contactInfo.instagram.imageAlt}
-                  width={200}
-                  height={200}
-                />
-                Instagram
-              </a>
+              <span className="inline-flex items-center gap-3 text-xl">
+                {contactInfo.instagram}
+                <a href="https://www.instagram.com/mediacontrolag/">
+                  Instagram
+                </a>
+              </span>
             </div>
           </div>
         </div>

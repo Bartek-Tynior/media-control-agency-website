@@ -7,6 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Media Control Agency is a digital agency specialized in software development and paid advertisment.",
     start_url: "/",
     display: "standalone",
+    background_color: '#000000',
+    theme_color: '#000000',
     icons: [
       {
         src: "/favicon.ico",
