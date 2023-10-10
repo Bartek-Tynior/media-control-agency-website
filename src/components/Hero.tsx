@@ -40,7 +40,7 @@ const Hero = () => {
       <Image
         width={1920}
         height={1080}
-        unoptimized={true}
+        quality={100}
         src={content.imageLocation}
         alt={content.altImage}
         className="absolute select-none object-cover top-0 w-screen h-full z-0"

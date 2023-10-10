@@ -25,7 +25,7 @@ export default function Home() {
             start: "top 70%",
             end: "bottom bottom",
           },
-          ease: "back",
+          ease: "power2.out",
           autoAlpha: 0,
           y: 80,
           stagger: 0.3,
