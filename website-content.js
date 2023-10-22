@@ -3,7 +3,7 @@ import Image from "next/image";
 export default {
   hero: {
     title: "Elevate your brand's online presence with us!",
-    subtitle: "Result Focused Agency",
+    subtitle: "Result Focused Digital Agency",
     description: {
       paragaraph:
         "We help businesses improve thier conversion rate and generate leads by ",
@@ -164,6 +164,7 @@ export default {
       ", a dynamic digital marketing agency based in the Netherlands. We are fueled by our passion for strategy, design, and user interaction. Our expertise lies in crafting exceptional websites and optimizing advertising campaigns for our clients through effective strategies. Our philosophy revolves around the principles of logic, simplicity, and concise communication to maximize the potential of your brand. We take great joy in assisting you in enhancing your online presence.",
   },
   contact: {
+    subtitle: "Ready to collaborate?",
     phone: (
       <a href="tel:+31629628588" className="">
         +31 629 628 588
@@ -194,6 +195,7 @@ export default {
       "...or book a meeting with the founder and discuss yoor project and possible approaches!",
     meeting_description:
       "By the end of this meeting, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with outstanding websites & paid advertising.",
+    meeting_link: "https://calendly.com/media-control-agency/consultation",
   },
   FAQ: [
     {

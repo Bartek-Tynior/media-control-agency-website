@@ -9,7 +9,7 @@ const BenefitsSectionCard: FC<BenefitsSectionCardProps> = ({ description }) => {
   return (
     <div className="text-white flex w-fit justify-center">
       <Image
-        className="check-icon mx-2 w-[20px] h-[20px]"
+        className="check-icon mx-2 w-[20px] h-[20px] pointer-events-none"
         src="/img/icons/check-icon.svg"
         width={20}
         height={20}

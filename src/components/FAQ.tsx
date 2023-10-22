@@ -16,11 +16,11 @@ const FAQ = () => {
           return (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger
-                className="font-bold"
+                className="font-bold text-base text-start"
               >
                 {title}
               </AccordionTrigger>
-              <AccordionContent className="font-medium">
+              <AccordionContent className="font-medium text-base">
                 {description}
               </AccordionContent>
             </AccordionItem>

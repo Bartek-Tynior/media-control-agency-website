@@ -9,6 +9,7 @@ import { ArrowRight } from "lucide-react";
 import websiteContent from "../../website-content";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import { animated, useSpring } from "@react-spring/web";
 
 const Navbar = () => {
   const content = websiteContent.navbar;
@@ -30,19 +31,13 @@ const Navbar = () => {
     }
   };
 
-  if (typeof window !== "undefined") {
-    gsap.registerPlugin(ScrollTrigger);
-  }
-
   useEffect(() => {
-    if (pathname === "/") {
-      setIsHomePage(true);
-    } else {
-      setIsHomePage(false);
-    }
+    setIsHomePage(pathname === "/");
   }, [pathname]);
 
   useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     const sections = gsap.utils.toArray(
       document.getElementsByTagName("section")
     );
@@ -52,45 +47,40 @@ const Navbar = () => {
     let ctx = gsap.context(() => {
       sections.forEach((section, i) => {
         ScrollTrigger.create({
-          // @ts-expect-error
-          trigger: section,
+          trigger: section as HTMLElement,
           start: "top 50%",
-          // @ts-expect-error
-          end: () => `+=${section?.offsetHeight} 50%`,
+          end: () => `+=${(section as HTMLElement)?.offsetHeight} 50%`,
           onEnter: () => {
-            // @ts-expect-error
-            const position = navLinks[i]?.offsetLeft;
+            const position = (navLinks[i] as HTMLElement)?.offsetLeft;
 
             if (navLinks[i + 1]) {
               gsap.to(menu_shape, {
                 x: `${position}`,
-                // @ts-expect-error
-                width: `${navLinks[i]?.offsetWidth}`,
+                width: `${(navLinks[i] as HTMLElement)?.offsetWidth}`,
                 color: "white",
               });
             }
           },
           onLeave: () => {
-            // @ts-expect-error
+            const navLinks = gsap.utils.toArray(
+              ".link-wrapper"
+            ) as HTMLElement[];
             const position = navLinks[i + 1]?.offsetLeft;
 
             if (navLinks[i + 1]) {
               gsap.to(menu_shape, {
                 x: `${position}`,
-                // @ts-expect-error
                 width: `${navLinks[i + 1]?.offsetWidth}`,
                 color: "white",
               });
             }
           },
           onEnterBack: () => {
-            // @ts-expect-error
-            const positionBack = navLinks[i]?.offsetLeft;
+            const positionBack = (navLinks[i] as HTMLElement)?.offsetLeft;
 
             gsap.to(menu_shape, {
               x: `${positionBack}`,
-              // @ts-expect-error
-              width: `${navLinks[i]?.offsetWidth}`,
+              width: `${(navLinks[i] as HTMLElement)?.offsetWidth}`,
               color: "white",
             });
           },
@@ -103,9 +93,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`h-[6rem] z-50 w-full fixed flex justify-between px-6 py-4`}
+      className={`h-[6rem] z-50 w-full fixed flex justify-between px-6 py-4 ${
+        isOpen
+          ? "max-lg:bg-[rgba(255,255,255,0.0)] max-lg:backdrop-blur-md max-lg:shadow-[7px_7px_12px_0_rgba(0,_0,_0,_0.1)]"
+          : ""
+      }`}
     >
-      <div className="navbar_logo flex z-20">
+      {/* Logo Section */}
+      <div className="navbar_logo flex z-20 w-[175px]">
         <Link
           href={"/"}
           className="text-2xl font-bold tracking-tight leading-5 text-white"
@@ -114,21 +109,24 @@ const Navbar = () => {
             src={content.logo.imageLocation}
             width="100"
             height="60"
+            quality={100}
+            className="lg:w-[100px] w-[88px] pointer-events-none"
             alt={content.logo.altImage}
           />
         </Link>
       </div>
 
+      {/* Mobile Menu */}
       {!isOpen && (
         <div className="menu-mobile-wrap" id="menu_mobile_wrap">
           <div>
-            {content.links.map((link, i) => {
+            {content.links.map((link) => {
               return (
                 <div key={link.name} className="py-[0.5rem]">
                   <Link
                     href={isHomePage ? link.link : `/${link.link}`}
                     id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
-                    className="text-3xl text-white font-bold"
+                    className="text-3xl text-white font-bold hover:text-zinc-300 transform transition-all"
                     onClick={toggleNavbar}
                   >
                     {link.name}
@@ -161,6 +159,7 @@ const Navbar = () => {
         </div>
       )}
 
+      {/* Desktop Menu */}
       <div className="blured-bg rounded-xl lg:flex text-white hidden">
         <ul className="px-2 mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
           {content.links.map((link: any, i: number) => {
@@ -187,15 +186,14 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="navigation_hamburger flex lg:hidden">
-        {isOpen && (
+      {/* Mobile Hamburger Component */}
+      <div className="navigation_hamburger flex justify-center items-center lg:hidden">
+        {isOpen ? (
           <button className="hamburger" onClick={toggleNavbar}>
             <div className="hamburger-line"></div>
             <div className="hamburger-line-2"></div>
           </button>
-        )}
-
-        {!isOpen && (
+        ) : (
           <button className="close-btn" onClick={toggleNavbar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -210,9 +208,10 @@ const Navbar = () => {
         )}
       </div>
 
-      <div className="hidden items-center justify-center lg:flex">
+      {/* Call-to-action Button */}
+      <div className="hidden items-center justify-center lg:flex w-[175px]">
         <Button
-          className="gap-2 group"
+          className="gap-2 group text-base font-bold"
           variant="default"
           size="full-size"
           onClick={() => router.push("/contact")}

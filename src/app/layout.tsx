@@ -36,21 +36,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={cn(
-        "antialiased text-white scroll-smooth",
-        montserrat.className
-      )}
-    >
-      <body className="min-h-screen bg-black antialiased">
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={cn(
+          "min-h-screen bg-black text-white font-sans antialiased",
+          montserrat.className
+        )}
+      >
         <Providers>
           <Navbar />
-
-          <div className="container" id="container">
-            {children}
-          </div>
-
+          {children}
           <Footer />
         </Providers>
       </body>

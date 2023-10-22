@@ -1,22 +1,54 @@
 import { ExternalLink, Mail, Phone } from "lucide-react";
 import SectionLabel from "./ui/SectionLabel";
 import websiteContent from "../../website-content";
+import { animated, useChain, useInView } from "@react-spring/web";
 
 const ContactSection = () => {
   const content = websiteContent.contact;
 
+  const animationConfig = () => ({
+    threshold: 0.5,
+    rootMargin: "-100px 0px",
+    from: {
+      opacity: 0,
+      y: 100,
+    },
+    to: {
+      opacity: 1,
+      y: 0,
+    }
+  });
+
+  const [ref, springs] = useInView(animationConfig);
+  const [refMail, springsMail] = useInView(animationConfig);
+  const [refContacts, springsContacts] = useInView(animationConfig);
+
+  // @ts-ignore
+  useChain([ref, refMail, refContacts], [0, 0.5, 1], 5000);
+
   return (
     <section
-      className="text-white animate relative h-full sm:h-screen pt-[6rem] grid grid-rows-[100px_150px_150px] sm:grid-rows-[200px_1fr_150px]"
+      className="text-white relative h-full pt-[3rem] sm:pt-[6rem] pb-[3rem] grid grid-rows-[100px_150px_150px] sm:grid-rows-[200px_300px_150px]"
       id="contact"
     >
-      <div className="flex flex-col title gap-2">
+      {/* Label Section */}
+      <animated.div
+        ref={ref}
+        style={springs}
+        className="flex flex-col title gap-5"
+      >
         <SectionLabel sectionName="Contact" />
         <h2 className="text-2xl sm:text-4xl lg:w-1/2 font-bold leading-tight">
-          Ready to collaborate or any questions?
+          {content.subtitle}
         </h2>
-      </div>
-      <div className="flex items-center justify-start w-full">
+      </animated.div>
+
+      {/* Mail Section */}
+      <animated.div
+        ref={refMail}
+        style={springsMail}
+        className="flex items-center justify-start w-full"
+      >
         <span
           className="text-2xl sm:text-4xl inline-flex gap-3 font-medium sm:font-extrabold"
           id="contactLink"
@@ -24,12 +56,17 @@ const ContactSection = () => {
           {content.email}
           <ExternalLink className="h-8 w-8 sm:h-10 md:w-10" />
         </span>
-      </div>
+      </animated.div>
 
-      <div className="w-full">
+      {/* Contact Information Section */}
+      <animated.div
+        ref={refContacts}
+        style={springsContacts}
+        className="w-full"
+      >
         <div className="flex flex-col gap-2 text-sm md:text-base">
           <h3 className="font-bold text-lg sm:text-md">Contact Information</h3>
-          <div className="flex flex-col sm:flex-row gap-2 md:gap-4 text-sm sm:text-md">
+          <div className="flex flex-col sm:flex-row gap-5 md:gap-4 text-sm sm:text-md">
             <div className="flex flex-col gap-2 w-full sm:w-1/3">
               <p className="inline-flex gap-3 font-semibold">
                 <Phone className="w-5 h-5" />
@@ -53,7 +90,7 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </animated.div>
     </section>
   );
 };

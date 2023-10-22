@@ -16,7 +16,7 @@ const BenefitsSection = () => {
       </span>
       <Swiper
         className="col-span-3 swiper-benefits w-full"
-        speed={11000}
+        speed={6000}
         freeMode={true}
         grabCursor={true}
         spaceBetween={10}
