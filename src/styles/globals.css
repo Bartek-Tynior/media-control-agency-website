@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face { 
+font-family: "Satoshi"; 
+src: url('/fonts/Satoshi/Satoshi-Regular.ttf'); 
+font-weight: normal; 
+font-style: normal; 
+}
+
+@font-face { 
+font-family: "Satoshi"; 
+src: url('/fonts/Satoshi/Satoshi-Bold.ttf'); 
+font-weight: bold; 
+font-style: normal; 
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -42,7 +57,7 @@
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -156,10 +171,10 @@
     z-index: 2;
     background-image: linear-gradient(
       90deg,
-      #000000,
+      #0F0F0F,
       rgba(22, 22, 24, 0) 25%,
       rgba(22, 22, 24, 0) 75%,
-      #000000
+      #0F0F0F
     );
     position: absolute;
     top: 0%;

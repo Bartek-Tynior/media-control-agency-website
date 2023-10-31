@@ -6,13 +6,13 @@ export default {
     subtitle: "Result Focused Digital Agency",
     description: {
       paragaraph:
-        "We help businesses improve thier conversion rate and generate leads by ",
+        "WE HELP BUSINESSES IMPROVE THEIR CONVERSION RATE AND GENERATE LEADS BY",
       typed: [
-        "building outstanding websites.",
+        "BUILDING OUTSTANDING WEBSITES.",
         1000,
-        "creating successful marketing campaigns.",
+        "CREATING SUCCESSFUL MARKETING CAMPAIGNS.",
         1000,
-        "implemenitng AI solutions.",
+        "IMPLEMENTING AI SOLUTIONS.",
         1000,
       ],
     },

@@ -6,12 +6,7 @@ import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
-import {
-  useSpring,
-  animated,
-  useIsomorphicLayoutEffect,
-  useInView,
-} from "@react-spring/web";
+import { animated, useInView } from "@react-spring/web";
 import { buildInteractionObserverThreshold } from "@/lib/utils";
 
 const Hero = () => {
@@ -29,46 +24,39 @@ const Hero = () => {
   });
 
   const additionalAnimationConfig = {
-    rootMargin: "-45% 0px -45% 0px",
+    rootMargin: "-45% 0px 0% 0px",
     amount: buildInteractionObserverThreshold(),
   };
 
   const [ref, springs] = useInView(animationConfig, additionalAnimationConfig);
 
   return (
-    <section className="h-screen flex items-center justify-center">
+    <section className="h-screen flex items-end justify-center">
       <animated.div
         ref={ref}
         style={springs}
-        className="place-self-center z-40 h-[400px] lg:w-3/4"
+        className="z-40 pb-[5em] flex justify-between"
       >
-        {/* Hero Text */}
-        <span className="flex gap-4 text-zinc-200 justify-center mb-4 text-xl tracking-widest">
-          {content.subtitle}
-        </span>
-        <h1 className="mb-4 text-4xl sm:text-6xl md:text-[5rem] xl:text-7xl text-center font-extrabold tracking-tight leading-none">
-          {content.title}
-        </h1>
-        <p className="mb-6 font-medium md:text-xl lg:text-2xl text-center text-white lg:mb-8">
-          {content.description.paragaraph}
-          <br />
-          <TypeAnimation
-            className="font-bold"
-            sequence={content.description.typed}
-            wrapper="span"
-            speed={10}
-            repeat={Infinity}
-          />
-        </p>
+        <div className="w-[70%] flex flex-col gap-2">
+          <span className="text-zinc-200 justify-center font-semibold text-xl tracking-widest">
+            {content.subtitle}
+          </span>
+          <h1 className="text-8xl font-semibold tracking-wide">
+            {content.title}
+          </h1>
+        </div>
 
-        {/* Call-to-action Button */}
-        <div className="flex gap-4 justify-center">
-          <Link href="#contact">
-            <Button size="xl" className="group" variant="default">
-              Get Started
-              <ArrowRightIcon className="ml-2 group-hover:translate-x-2 transition-all" />
-            </Button>
-          </Link>
+        <div className="w-[25%] flex items-end justify-end">
+          <p className="text-xl font-semibold h-1/2">
+            {content.description.paragaraph}
+            <br />
+            <TypeAnimation
+              sequence={content.description.typed}
+              wrapper="span"
+              speed={10}
+              repeat={Infinity}
+            />
+          </p>
         </div>
       </animated.div>
 

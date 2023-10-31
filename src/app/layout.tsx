@@ -4,7 +4,7 @@ import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import localFont from "@next/font/local";
 
 export const metadata: Metadata = {
   title: "Media Control Agency: Level Up Your Digital Presence",
@@ -28,7 +28,10 @@ export const metadata: Metadata = {
   publisher: "Media Control Agency",
 };
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const satoshi = localFont({
+  src: "./fonts/Satoshi/Satoshi-Regular.woff2",
+  variable: "--font-satoshi",
+});
 
 export default function RootLayout({
   children,
@@ -39,8 +42,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body
         className={cn(
-          "min-h-screen bg-black text-white font-sans antialiased",
-          montserrat.className
+          "min-h-screen bg-[#0F0F0F] text-white font-sans antialiased",
+          satoshi.variable
         )}
       >
         <Providers>
