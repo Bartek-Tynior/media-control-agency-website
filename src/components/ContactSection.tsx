@@ -1,3 +1,5 @@
+"use client";
+
 import { ExternalLink, Mail, Phone } from "lucide-react";
 import SectionLabel from "./ui/SectionLabel";
 import websiteContent from "../../website-content";
@@ -16,7 +18,7 @@ const ContactSection = () => {
     to: {
       opacity: 1,
       y: 0,
-    }
+    },
   });
 
   const [ref, springs] = useInView(animationConfig);
@@ -28,7 +30,7 @@ const ContactSection = () => {
 
   return (
     <section
-      className="text-white relative h-full pt-[3rem] sm:pt-[6rem] pb-[3rem] grid grid-rows-[100px_150px_150px] sm:grid-rows-[200px_300px_150px]"
+      className="text-white relative h-full pt-14 sm:pt-28 pb-14 grid grid-rows-[100px_150px_150px] sm:grid-rows-[200px_300px_150px]"
       id="contact"
     >
       {/* Label Section */}
@@ -87,6 +89,7 @@ const ContactSection = () => {
             </div>
             <div className="flex flex-row w-full sm:w-1/3 justify-start sm:justify-end gap-3 items-end">
               {content.instagram}
+              {content.linkedin}
             </div>
           </div>
         </div>

@@ -93,13 +93,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed h-14 inset-x-0 top-0 z-30 ${
+      className={`fixed h-20 sm:h-14 w-screen inset-x-0 top-0 z-50 ${
         isOpen
           ? "max-lg:bg-[rgba(255,255,255,0.0)] max-lg:backdrop-blur-md max-lg:shadow-[7px_7px_12px_0_rgba(0,_0,_0,_0.1)]"
           : ""
       }`}
     >
-      <MaxWidthWrapper className="flex justify-between py-6">
+      <MaxWidthWrapper className="flex justify-between py-3 sm:py-6">
         {/* Logo Section */}
         <div className="navbar_logo flex z-20 w-[175px]">
           <Link href={"/"}>
@@ -108,7 +108,7 @@ const Navbar = () => {
               width="100"
               height="60"
               quality={100}
-              className="lg:w-[88px] w-[60px] pointer-events-none"
+              className="w-[88px] pointer-events-none"
               alt={content.logo.altImage}
             />
           </Link>
@@ -150,6 +150,12 @@ const Navbar = () => {
                   {contactInfo.instagram}
                   <a href="https://www.instagram.com/mediacontrolag/">
                     Instagram
+                  </a>
+                </span>
+                <span className="inline-flex items-center gap-3 text-xl">
+                  {contactInfo.linkedin}
+                  <a href="https://www.linkedin.com/company/media-control-agency">
+                    LinkedIn
                   </a>
                 </span>
               </div>

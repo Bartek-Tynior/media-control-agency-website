@@ -57,14 +57,14 @@ const ContactPage = ({}) => {
 
   return (
     <MaxWidthWrapper>
-      <div className="min-h-screen pt-[10rem] mb-5">
-        <div className="flex flex-col gap-2">
+      <div className="pt-28 mb-14">
+        <div className="flex flex-col gap-5">
           <SectionLabel sectionName="Contact Form" />
           <h1 className="text-4xl xl:text-5xl 2xl:text-6xl mb-8 font-bold antialiased">
-            Reach out to us
+            Reach out to us.
           </h1>
         </div>
-        <div className="gap-10 md:gap-3 grid grid-cols-1 md:grid-cols-12">
+        <div className="gap-10 md:gap-20 grid grid-cols-1 md:grid-cols-12">
           {typeof window !== "undefined" ? (
             <PopupModal
               url={content.meeting_link}
@@ -86,11 +86,11 @@ const ContactPage = ({}) => {
               onSubmit={handleSubmit((e) => sendMail(e))}
             >
               <Label className="" htmlFor="fullName">
-                Full name
+                Full Name
               </Label>
 
               <Input
-                className="md:w-[300px] pl-6"
+                className="w-full border-white/40 pl-6"
                 size={32}
                 id="fullName"
                 {...register("fullName")}
@@ -105,7 +105,7 @@ const ContactPage = ({}) => {
               <Label htmlFor="email">Email</Label>
 
               <Input
-                className="md:w-[300px] pl-6"
+                className="w-full border-white/40 pl-6"
                 size={32}
                 id="email"
                 {...register("email")}
@@ -120,7 +120,7 @@ const ContactPage = ({}) => {
               <Label htmlFor="phone">Phone Number</Label>
 
               <Input
-                className="md:w-[300px] pl-6"
+                className="w-full border-white/40 pl-6"
                 size={32}
                 id="phone"
                 {...register("phone")}
@@ -135,7 +135,7 @@ const ContactPage = ({}) => {
               <Label htmlFor="company">Company</Label>
 
               <Input
-                className="md:w-[300px] pl-6"
+                className="w-full border-white/40 pl-6"
                 size={32}
                 id="company"
                 {...register("company")}
@@ -150,7 +150,7 @@ const ContactPage = ({}) => {
               <Label htmlFor="message">Your Message</Label>
 
               <Input
-                className="md:w-[300px] pl-6"
+                className="w-full border-white/40 pl-6"
                 size={32}
                 id="message"
                 {...register("message")}

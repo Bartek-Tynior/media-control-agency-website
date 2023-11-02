@@ -4,7 +4,7 @@ import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title: "Media Control Agency: Level Up Your Digital Presence",

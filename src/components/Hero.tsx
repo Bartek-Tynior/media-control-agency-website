@@ -1,9 +1,6 @@
 "use client";
 
-import { Button } from "./ui/Button";
 import websiteContent from "../../website-content";
-import { ArrowRightIcon } from "lucide-react";
-import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 import { animated, useInView } from "@react-spring/web";
@@ -24,7 +21,7 @@ const Hero = () => {
   });
 
   const additionalAnimationConfig = {
-    rootMargin: "-45% 0px 0% 0px",
+    rootMargin: "0% 0px 0% 0px",
     amount: buildInteractionObserverThreshold(),
   };
 
@@ -35,19 +32,19 @@ const Hero = () => {
       <animated.div
         ref={ref}
         style={springs}
-        className="z-40 pb-[5em] flex justify-between"
+        className="z-40 pb-[5em] h-full sm:h-auto justify-center sm:justify-between flex flex-col sm:flex-row "
       >
-        <div className="w-[70%] flex flex-col gap-2">
-          <span className="text-zinc-200 justify-center font-semibold text-xl tracking-widest">
+        <div className="w-full sm:w-[70%] mb-10 flex flex-col gap-2">
+          <span className="text-zinc-200 text-center sm:text-start justify-center font-semibold text-xl tracking-widest">
             {content.subtitle}
           </span>
-          <h1 className="text-8xl font-semibold tracking-wide">
+          <h1 className="text-5xl text-center sm:text-start sm:text-8xl font-semibold tracking-wide">
             {content.title}
           </h1>
         </div>
 
-        <div className="w-[25%] flex items-end justify-end">
-          <p className="text-xl font-semibold h-1/2">
+        <div className="w-full sm:w-[25%] flex items-end justify-end">
+          <p className="text-xl font-semibold h-1/2 text-end">
             {content.description.paragaraph}
             <br />
             <TypeAnimation

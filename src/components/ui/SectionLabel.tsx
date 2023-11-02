@@ -6,7 +6,7 @@ interface SectionLabelProps {
 
 const SectionLabel: FC<SectionLabelProps> = ({ sectionName }) => {
     return (
-      <h2 className="text-2xl py-2 px-4 blured-bg bg-gray-700 w-fit rounded-lg font-bold">
+      <h2 className="text-2xl py-2 px-4 blured-bg w-fit border border-white/10 rounded-lg">
             { sectionName }
       </h2>
     );

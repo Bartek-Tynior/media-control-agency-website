@@ -187,6 +187,18 @@ export default {
         />
       </a>
     ),
+    linkedin: (
+      <a
+        href="https://www.linkedin.com/company/media-control-agency"
+      >
+        <Image
+          src="/img/icons/linkedin-icon.png"
+          alt="LinkedIn Icon"
+          width={30}
+          height={30}
+        />
+      </a>
+    ),
   },
   contact_page: {
     subtitle_1:

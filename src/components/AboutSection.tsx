@@ -1,3 +1,5 @@
+"use client";
+
 import { animated, useInView } from "@react-spring/web";
 import websiteContent from "../../website-content";
 import BenefitsSection from "./BenefitsSection";
@@ -17,26 +19,15 @@ const AboutSection = () => {
     },
   });
 
-  const benefitsAnimationConfig = () => ({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    delay: 5000,
-  });
-
   const additionalAnimationConfig = {
-    rootMargin: "-20% 0px -20% 0px",
+    rootMargin: "0% 0px 0% 0px",
     amount: buildInteractionObserverThreshold(),
   };
 
   const [ref, springs] = useInView(animationConfig, additionalAnimationConfig);
-  const [refBenefits, springsBenefits] = useInView(benefitsAnimationConfig);
 
   return (
-    <div className="h-fit pt-[3rem] isolate flex flex-col justify-center items-center">
+    <div className="pt-14">
       <animated.div ref={ref} style={springs}>
         <p className="text-lg md:text-2xl h-fit">
           {content.header}
