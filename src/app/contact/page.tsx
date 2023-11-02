@@ -15,6 +15,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 import websiteContent from "../../../website-content";
 import { useRouter } from "next/navigation";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { toast } from "@/components/ui/use-toast";
 
 const ContactPage = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,8 +51,12 @@ const ContactPage = ({}) => {
     onSuccess: () => {
       router.refresh();
     },
-    onError: (error) => {
-      console.log(error);
+    onError: () => {
+      toast({
+        variant: "destructive",
+        title: "Something went wrong!",
+        description: "Please try again later.",
+      });
     },
   });
 
@@ -162,8 +167,12 @@ const ContactPage = ({}) => {
                 </p>
               )}
 
-              <Button className="mt-4" type="submit" isLoading={isLoadingEmail}>
-                Submit form
+              <Button
+                className="gap-2 h-14 text-base border border-white/10 my-4"
+                type="submit"
+                isLoading={isLoadingEmail}
+              >
+                Submit Form
               </Button>
             </form>
           </div>
@@ -172,8 +181,11 @@ const ContactPage = ({}) => {
             <h2 className="text-lg sm:text-2xl font-bold antialiased">
               {content.subtitle_2}
             </h2>
-            <Button className="my-10" onClick={() => setIsOpen(true)}>
-              Schedule meeting
+            <Button
+              className="gap-2 h-14 text-base border border-white/10 my-6"
+              onClick={() => setIsOpen(true)}
+            >
+              Schedule Meeting
               <Calendar className="ml-2 w-4 h-4" />
             </Button>
 

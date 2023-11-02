@@ -133,11 +133,19 @@ const Navbar = () => {
                 );
               })}
 
-              <Link href="/contact">
-                <Button variant="default" onClick={toggleNavbar}>
-                  Lets get started
-                </Button>
-              </Link>
+              <div className="py-6">
+                <Link href="/contact">
+                  <Button
+                    className="gap-2 group h-14 text-base border border-white/10"
+                    variant="default"
+                    size="full-size"
+                    onClick={toggleNavbar}
+                  >
+                    Get in touch
+                    <ArrowRight className="group-hover:translate-x-2 transition-all" />
+                  </Button>
+                </Link>
+              </div>
             </div>
 
             <div className="flex flex-col">
@@ -165,10 +173,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="blured-bg rounded-[80px] h-[50px] lg:flex border border-white/10 hidden">
-          <ul className="flex px-16 flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+          <ul className="flex px-6 flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
             {content.links.map((link: any, i: number) => {
               return (
-                <li key={link.name} className="link-wrapper z-10 px-[0.75rem]">
+                <li key={link.name} className="link-wrapper z-10 px-6">
                   <Link
                     className="text-base font-normal"
                     href={isHomePage ? link.link : `/${link.link}`}

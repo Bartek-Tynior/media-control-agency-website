@@ -1,6 +1,8 @@
+import CookiesConsent from "@/components/CookiesConsent";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
+import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
@@ -48,8 +50,10 @@ export default function RootLayout({
       >
         <Providers>
           <Navbar />
+          <CookiesConsent />
           {children}
           <Footer />
+          <Toaster />
         </Providers>
       </body>
     </html>

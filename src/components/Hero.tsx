@@ -59,9 +59,10 @@ const Hero = () => {
 
       {/* Bakcground Image */}
       <Image
-        width={1920}
-        height={1080}
+        fill={true}
         quality={100}
+        priority={true}
+        placeholder="empty"
         src={content.imageLocation}
         alt={content.altImage}
         className="absolute select-none object-cover pointer-events-none top-0 w-screen h-full z-0"
