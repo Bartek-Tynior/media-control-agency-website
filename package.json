@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.0",
-    "@next/font": "^14.0.1",
     "@radix-ui/react-accordion": "^1.0.3",
     "@radix-ui/react-label": "^2.0.2",
     "@react-email/components": "^0.0.7",
