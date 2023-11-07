@@ -93,13 +93,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed h-20 sm:h-14 w-screen inset-x-0 top-0 z-50 ${
+      className={`fixed h-20 w-screen inset-x-0 top-0 z-50 ${
         isOpen
           ? "max-lg:bg-[rgba(255,255,255,0.0)] max-lg:backdrop-blur-md max-lg:shadow-[7px_7px_12px_0_rgba(0,_0,_0,_0.1)]"
           : ""
       }`}
     >
-      <MaxWidthWrapper className="flex justify-between py-3 sm:py-6">
+      <MaxWidthWrapper className="flex justify-between max-lg:py-3 py-6">
         {/* Logo Section */}
         <div className="navbar_logo flex z-20 w-[175px]">
           <Link href={"/"}>

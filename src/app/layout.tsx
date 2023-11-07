@@ -9,13 +9,15 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 export const metadata: Metadata = {
-  title: "Media Control Agency: Level Up Your Digital Presence",
+  title:
+    "Media Control Agency: Digital Marketing, Web Development & Software Solutions",
   description:
-    "Media Control Agency is a digital agency that helps businesses grow their online presence through software development and digital marketing.",
+    "Media Control Agency is a result-driven digital agency that understands and helps businesses with the digital marketing, website development even software solutions.",
   openGraph: {
-    title: "Media Control Agency: Level Up Your Digital Presence",
+    title:
+      "Media Control Agency: Digital Marketing, Web Development & Software Solutions",
     description:
-      "Media Control Agency is a digital agency that helps businesses grow their online presence through software development and digital marketing.",
+      "Media Control Agency is a result-driven digital agency that understands and helps businesses with the digital marketing, website development even software solutions.",
     type: "website",
     locale: "nl_NL",
     url: "https://media-control-agency.nl",

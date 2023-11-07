@@ -15,7 +15,14 @@ const ServiceCard: FC<ServiceCardProps> = ({ service }) => {
       <h2 className="text-xl md:text-2xl font-bold mb-5">{service.title}</h2>
       <p className="font-medium text-base">{service.description}</p>
 
-      <Toolstack toolstack={service.toolstack} />
+      <div className="h-full mt-5 flex items-end">
+        <div>
+          <h3 className="font-semibold text-base text-zinc-400 mb-3">
+            Toolstack
+          </h3>
+          <Toolstack toolstack={service.toolstack} />
+        </div>
+      </div>
     </div>
   );
 };

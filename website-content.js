@@ -110,6 +110,10 @@ export default {
         link: "#home",
       },
       {
+        name: "Case Studies",
+        link: "#case-studies",
+      },
+      {
         name: "Services",
         link: "#services",
       },
@@ -188,9 +192,7 @@ export default {
       </a>
     ),
     linkedin: (
-      <a
-        href="https://www.linkedin.com/company/media-control-agency"
-      >
+      <a href="https://www.linkedin.com/company/media-control-agency">
         <Image
           src="/img/icons/linkedin-icon.png"
           alt="LinkedIn Icon"
@@ -295,4 +297,90 @@ export default {
     return_home: "Return to Homepage",
     imageLocation: "/img/icons/404-error.svg",
   },
+  case_studies: [
+    {
+      id: 1,
+      client: "Plus 44",
+      service: "Web Development & Advertising",
+      website: "https://www.plus44-clo.com/",
+      project: {
+        scopeOfWork: ["Product Design", "Web Development", "Paid Advertising"],
+        description: "Description",
+        industry: "Clothing",
+        techStack: [
+          {
+            name: "Shopify",
+            imageLocation: "/img/icons/webflow-logo-toolstack.png",
+            imageAlt: "Shopify Icon",
+          },
+          {
+            name: "Adobe XD",
+            imageLocation: "/img/icons/framer-logo-toolsatck.png",
+            imageAlt: "Adobe XD Icon",
+          },
+          {
+            name: "Custom Code",
+            imageLocation: "/img/icons/code-logo-toolstack.png",
+            imageAlt: "Custom Code Icon",
+          },
+        ],
+        challenges: {
+          title:
+            "Creating a website that represents the Media Control Agency's brand, values and services.",
+          description: [
+            "Professional and modern design with clear identity representation",
+            "Easy access to critical information",
+            "Waking up the user's interest in the services",
+            "Providing a trustworthy and reliable image of the company",
+          ],
+        },
+        solution:
+          "Unleashing the power of custom code, we were able to create a website that is not only visually appealing but also highly functional. The website is fully responsive and optimized for all devices. It is also integrated with Google Analytics and Google Tag Manager.",
+        result:
+          "Achieved a top-notch website, with a clear identity representation and easy information accessibility.",
+        testimonial: "Testimonial",
+      },
+      imageLocation: "/img/UI-device-example.jpg",
+      imageAlt: "Client's Project Image",
+    },
+    {
+      id: 2,
+      client: "Media Control Agency",
+      service: "Web Development",
+      website: "https://media-control-agency.com/",
+      project: {
+        scopeOfWork: ["Product Design", "Web Development"],
+        description: "Description",
+        industry: "Digital Marketing",
+        techStack: [
+          {
+            name: "Adobe XD",
+            imageLocation: "/img/icons/framer-logo-toolsatck.png",
+            imageAlt: "Adobe XD Icon",
+          },
+          {
+            name: "Custom Code",
+            imageLocation: "/img/icons/code-logo-toolstack.png",
+            imageAlt: "Custom Code Icon",
+          },
+        ],
+        challenges: {
+          title:
+            "Creating a website that represents the Media Control Agency's brand, values and services.",
+          description: [
+            "Professional and modern design with clear identity representation",
+            "Easy access to critical information",
+            "Waking up the user's interest in the services",
+            "Providing a trustworthy and reliable image of the company",
+          ],
+        },
+        solution:
+          "Unleashing the power of custom code, we were able to create a website that is not only visually appealing but also highly functional. The website is fully responsive and optimized for all devices. It is also integrated with Google Analytics and Google Tag Manager.",
+        result:
+          "Achieved a top-notch website, with a clear identity representation and easy information accessibility.",
+      },
+      imageLocation: "/img/UI-device-example.jpg",
+      imageAlt: "Client's Project Image",
+    },
+  ],
 };

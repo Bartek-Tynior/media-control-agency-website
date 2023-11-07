@@ -3,7 +3,7 @@
 // import { Pagination, Navigation } from "swiper/modules";
 // import "swiper/css";
 // import { Swiper, SwiperSlide } from "swiper/react";
-// import TestimonialsSwiperCard from "./TestimonialsSwiperCard";
+// import TestimonialCard from "./TestimonialsSwiperCard";
 
 // const TestimonialsSwiper = () => {
 //   return (
@@ -29,16 +29,16 @@
 //       }}
 //     >
 //       <SwiperSlide>
-//         <TestimonialsSwiperCard />
+//         <TestimonialCard />
 //       </SwiperSlide>
 //       <SwiperSlide>
-//         <TestimonialsSwiperCard />
+//         <TestimonialCard />
 //       </SwiperSlide>
 //       <SwiperSlide>
-//         <TestimonialsSwiperCard />
+//         <TestimonialCard />
 //       </SwiperSlide>
 //       <SwiperSlide>
-//         <TestimonialsSwiperCard />
+//         <TestimonialCard />
 //       </SwiperSlide>
 //     </Swiper>
 //   );

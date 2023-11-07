@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="flex text-[#f2f2f2] gap-x-6 antialiased">
             {content.links.map(({ name, link, index }) => {
               return (
-                <Button key={index} className="px-0 sm:px-4" variant="link">
+                <Button key={index} className="px-0 sm:px-4 text-white" variant="link">
                   <a href={link}>{name}</a>
                 </Button>
               );

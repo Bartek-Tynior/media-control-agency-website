@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import CaseStudiesSection from "@/components/CaseStudiesSection";
 import ContactSection from "@/components/ContactSection";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
       <MaxWidthWrapper>
         <Hero />
         <AboutSection />
+        <CaseStudiesSection />
         <Services />
         <ContactSection />
         <FAQ />

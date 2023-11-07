@@ -32,7 +32,7 @@ const Hero = () => {
       <animated.div
         ref={ref}
         style={springs}
-        className="z-40 pb-[5em] h-full sm:h-auto justify-center sm:justify-between flex flex-col sm:flex-row "
+        className="z-40 pb-[5em] pt-20 h-full sm:h-auto justify-center sm:justify-between flex flex-col sm:flex-row "
       >
         <div className="w-full sm:w-[70%] mb-10 flex flex-col gap-2">
           <span className="text-zinc-200 text-center sm:text-start justify-center font-semibold text-xl tracking-widest">
@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
 
         <div className="w-full sm:w-[25%] flex items-end justify-end">
-          <p className="text-xl font-semibold h-1/2 text-end">
+          <p className="text-xl font-semibold h-[200px] text-end">
             {content.description.paragaraph}
             <br />
             <TypeAnimation

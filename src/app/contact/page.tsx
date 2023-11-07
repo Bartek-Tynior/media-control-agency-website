@@ -182,7 +182,7 @@ const ContactPage = ({}) => {
               {content.subtitle_2}
             </h2>
             <Button
-              className="gap-2 h-14 text-base border border-white/10 my-6"
+              className="gap-2 h-14 w-full sm:w-auto text-base border border-white/10 my-6"
               onClick={() => setIsOpen(true)}
             >
               Schedule Meeting

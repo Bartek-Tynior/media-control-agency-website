@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import websiteContent from "../../website-content";
 
+export const metadata = {
+  title: "Not Found",
+};
+
 export default function NotFound() {
   const content = websiteContent.not_found;
 
@@ -19,7 +23,7 @@ export default function NotFound() {
           height={600}
         />
         <Link className="mt-10" href="/">
-          <Button className="text-2xl" variant="link">
+          <Button className="text-2xl text-white" variant="link">
             {content.return_home}
           </Button>
         </Link>
