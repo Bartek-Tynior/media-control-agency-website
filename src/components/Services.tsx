@@ -36,7 +36,7 @@ const Services = () => {
 
   return (
     <>
-      <section className="md:h-fit pt-14 sm:pt-28 pb-14" id="services">
+      <section className="md:h-fit pt-28 sm:pb-14" id="services">
         {/* Label Section */}
         <animated.div ref={ref} style={springs} className="flex flex-col gap-5">
           <SectionLabel sectionName="Services" />

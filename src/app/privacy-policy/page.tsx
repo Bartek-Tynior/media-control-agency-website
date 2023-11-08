@@ -2,7 +2,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata = {
-  title: "Privacy Policy",
+  title: "Privacy Policy | Media Control Agency",
 };
 
 const page = () => {

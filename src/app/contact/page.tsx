@@ -82,103 +82,105 @@ const ContactPage = ({}) => {
           )}
 
           <div className="col-span-6">
-            <h2 className="text-lg sm:text-2xl font-bold mb-8 antialiased">
+            <h2 className="text-lg sm:text-2xl font-normal mb-8 antialiased">
               {content.subtitle_1}
             </h2>
 
-            <form
-              className="flex flex-col gap-3"
-              onSubmit={handleSubmit((e) => sendMail(e))}
-            >
-              <Label className="" htmlFor="fullName">
-                Full Name
-              </Label>
-
-              <Input
-                className="w-full border-white/40 pl-6"
-                size={32}
-                id="fullName"
-                {...register("fullName")}
-              />
-
-              {errors?.fullName && (
-                <p className="text-sm font-semibold text-red-700">
-                  {errors.fullName?.message}
-                </p>
-              )}
-
-              <Label htmlFor="email">Email</Label>
-
-              <Input
-                className="w-full border-white/40 pl-6"
-                size={32}
-                id="email"
-                {...register("email")}
-              />
-
-              {errors?.email && (
-                <p className="text-sm font-semibold text-red-700">
-                  {errors.email?.message}
-                </p>
-              )}
-
-              <Label htmlFor="phone">Phone Number</Label>
-
-              <Input
-                className="w-full border-white/40 pl-6"
-                size={32}
-                id="phone"
-                {...register("phone")}
-              />
-
-              {errors?.phone && (
-                <p className="text-sm font-semibold text-red-700">
-                  {errors.phone?.message}
-                </p>
-              )}
-
-              <Label htmlFor="company">Company</Label>
-
-              <Input
-                className="w-full border-white/40 pl-6"
-                size={32}
-                id="company"
-                {...register("company")}
-              />
-
-              {errors?.company && (
-                <p className="text-sm font-semibold text-red-700">
-                  {errors.email?.message}
-                </p>
-              )}
-
-              <Label htmlFor="message">Your Message</Label>
-
-              <Input
-                className="w-full border-white/40 pl-6"
-                size={32}
-                id="message"
-                {...register("message")}
-              />
-
-              {errors?.message && (
-                <p className="text-sm font-semibold text-red-700">
-                  {errors.message?.message}
-                </p>
-              )}
-
-              <Button
-                className="gap-2 h-14 text-base border border-white/10 my-4"
-                type="submit"
-                isLoading={isLoadingEmail}
+            <div className="border border-white/10 rounded-lg shadow-lg">
+              <form
+                className="flex flex-col gap-3 p-6"
+                onSubmit={handleSubmit((e) => sendMail(e))}
               >
-                Submit Form
-              </Button>
-            </form>
+                <Label className="" htmlFor="fullName">
+                  Full Name
+                </Label>
+
+                <Input
+                  className="w-full border-white/40 pl-6"
+                  size={32}
+                  id="fullName"
+                  {...register("fullName")}
+                />
+
+                {errors?.fullName && (
+                  <p className="text-sm font-semibold text-red-700">
+                    {errors.fullName?.message}
+                  </p>
+                )}
+
+                <Label htmlFor="email">Email</Label>
+
+                <Input
+                  className="w-full border-white/40 pl-6"
+                  size={32}
+                  id="email"
+                  {...register("email")}
+                />
+
+                {errors?.email && (
+                  <p className="text-sm font-semibold text-red-700">
+                    {errors.email?.message}
+                  </p>
+                )}
+
+                <Label htmlFor="phone">Phone Number</Label>
+
+                <Input
+                  className="w-full border-white/40 pl-6"
+                  size={32}
+                  id="phone"
+                  {...register("phone")}
+                />
+
+                {errors?.phone && (
+                  <p className="text-sm font-semibold text-red-700">
+                    {errors.phone?.message}
+                  </p>
+                )}
+
+                <Label htmlFor="company">Company</Label>
+
+                <Input
+                  className="w-full border-white/40 pl-6"
+                  size={32}
+                  id="company"
+                  {...register("company")}
+                />
+
+                {errors?.company && (
+                  <p className="text-sm font-semibold text-red-700">
+                    {errors.email?.message}
+                  </p>
+                )}
+
+                <Label htmlFor="message">Your Message</Label>
+
+                <Input
+                  className="w-full border-white/40 pl-6"
+                  size={32}
+                  id="message"
+                  {...register("message")}
+                />
+
+                {errors?.message && (
+                  <p className="text-sm font-semibold text-red-700">
+                    {errors.message?.message}
+                  </p>
+                )}
+
+                <Button
+                  className="gap-2 h-14 text-base border border-white/10 my-4"
+                  type="submit"
+                  isLoading={isLoadingEmail}
+                >
+                  Submit Form
+                </Button>
+              </form>
+            </div>
           </div>
 
           <div className="col-span-6 mx-auto">
-            <h2 className="text-lg sm:text-2xl font-bold antialiased">
+            <h2 className="text-lg sm:text-2xl font-normal antialiased">
               {content.subtitle_2}
             </h2>
             <Button
@@ -189,7 +191,7 @@ const ContactPage = ({}) => {
               <Calendar className="ml-2 w-4 h-4" />
             </Button>
 
-            <p className="text-lg font-semibold">
+            <p className="text-lg font-normal">
               {content.meeting_description}
             </p>
           </div>

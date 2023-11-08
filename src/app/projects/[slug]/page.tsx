@@ -21,8 +21,8 @@ const page = () => {
   return (
     <MaxWidthWrapper>
       {content && (
-        <div className="pt-28">
-          <div className="flex flex-col md:flex-row gap-8">
+        <div className="pt-36">
+          <div className="flex flex-col md:flex-row gap-14">
             <div className="flex flex-col gap-5 w-full md:w-1/2">
               <h1 className="text-5xl font-bold leading-tight">
                 {content.client}
@@ -33,7 +33,7 @@ const page = () => {
             <div className="flex flex-col w-full md:w-1/2 gap-5">
               <div>
                 <h2 className="font-bold text-lg">Industry</h2>
-                <p className="text-lg pt-2">{content.project.industry}</p>
+                <p className="text-lg">{content.project.industry}</p>
               </div>
 
               <div>
@@ -59,7 +59,7 @@ const page = () => {
                 <h2 className="font-bold text-lg">Website</h2>
                 <Button
                   variant="link"
-                  className="text-white p-0 text-lg font-normal"
+                  className="text-white p-0 h-0 text-lg font-normal"
                 >
                   <a href={content.website}>
                     {content.website.replace(/(^\w+:|^)\/\//, "")}

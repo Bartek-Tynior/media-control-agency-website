@@ -44,6 +44,16 @@ export default {
           imageLocation: "/img/icons/code-logo-toolstack.png",
           imageAlt: "Custom Code Icon",
         },
+        {
+          name: "Adobe XD",
+          imageLocation: "/img/icons/adobe-xd-logo-toolstack.png",
+          imageAlt: "Adobe XD Icon",
+        },
+        {
+          name: "Blender",
+          imageLocation: "/img/icons/blender-logo-toolstack.png",
+          imageAlt: "Blender Icon",
+        },
       ],
     },
     {
@@ -154,11 +164,6 @@ export default {
         name: "Terms of Service",
         link: "/terms-of-service",
         index: 2,
-      },
-      {
-        name: "Cookies Settings",
-        link: "/cookies-settings",
-        index: 3,
       },
     ],
   },
@@ -305,17 +310,18 @@ export default {
       website: "https://www.plus44-clo.com/",
       project: {
         scopeOfWork: ["Product Design", "Web Development", "Paid Advertising"],
-        description: "Description",
+        description:
+          "We've designed and developed a custom e-commerce website for Plus 44, a streetwear fashion brand based in the Netherlands. We've also created and implemented a paid advertising strategy to increase the brand's awareness and sales",
         industry: "Clothing",
         techStack: [
           {
             name: "Shopify",
-            imageLocation: "/img/icons/webflow-logo-toolstack.png",
+            imageLocation: "/img/icons/shopify-logo-toolstack.png",
             imageAlt: "Shopify Icon",
           },
           {
             name: "Adobe XD",
-            imageLocation: "/img/icons/framer-logo-toolsatck.png",
+            imageLocation: "/img/icons/adobe-xd-logo-toolstack.png",
             imageAlt: "Adobe XD Icon",
           },
           {
@@ -323,25 +329,31 @@ export default {
             imageLocation: "/img/icons/code-logo-toolstack.png",
             imageAlt: "Custom Code Icon",
           },
+          {
+            name: "Blender",
+            imageLocation: "/img/icons/blender-logo-toolstack.png",
+            imageAlt: "Blender Icon",
+          },
         ],
         challenges: {
           title:
-            "Creating a website that represents the Media Control Agency's brand, values and services.",
+            "Plus 44 needed a website that would represent their brand, values and overall image. They also needed a digital marketing to increase their brand awareness and accessibility.",
           description: [
-            "Professional and modern design with clear identity representation",
-            "Easy access to critical information",
-            "Waking up the user's interest in the services",
-            "Providing a trustworthy and reliable image of the company",
+            "Creative solutions using 3D modeling",
+            "Implementing smart solutions like IDeal payment",
+            "Clear identity representation",
           ],
         },
         solution:
-          "Unleashing the power of custom code, we were able to create a website that is not only visually appealing but also highly functional. The website is fully responsive and optimized for all devices. It is also integrated with Google Analytics and Google Tag Manager.",
+          "Media Control agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
         result:
-          "Achieved a top-notch website, with a clear identity representation and easy information accessibility.",
-        testimonial: "Testimonial",
+          "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
       },
-      imageLocation: "/img/UI-device-example.jpg",
-      imageAlt: "Client's Project Image",
+      coverImageLocation: {
+        type: "video",
+        src: "/img/PLUS_44_WEBSITE_CASESTUDY.mp4",
+      },
+      coverImageAlt: "Client's Project Image",
     },
     {
       id: 2,
@@ -355,7 +367,7 @@ export default {
         techStack: [
           {
             name: "Adobe XD",
-            imageLocation: "/img/icons/framer-logo-toolsatck.png",
+            imageLocation: "/img/icons/adobe-xd-logo-toolstack.png",
             imageAlt: "Adobe XD Icon",
           },
           {
@@ -379,8 +391,11 @@ export default {
         result:
           "Achieved a top-notch website, with a clear identity representation and easy information accessibility.",
       },
-      imageLocation: "/img/UI-device-example.jpg",
-      imageAlt: "Client's Project Image",
+      coverImageLocation: {
+        type: "video",
+        src: "/img/MCA_WEBSITE_CASESTUDY.mp4",
+      },
+      coverImageAlt: "Client's Project Image",
     },
   ],
 };

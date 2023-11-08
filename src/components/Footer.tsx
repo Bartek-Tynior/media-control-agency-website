@@ -13,7 +13,7 @@ const Footer = () => {
           <h2 className="text-[#f2f2f2] antialiased inline-flex items-center justify-center font-medium text-sm sm:text-md align-middle">
             {content.footer_credit}
           </h2>
-          <div className="flex text-[#f2f2f2] gap-x-6 antialiased">
+          <div className="flex text-[#f2f2f2] gap-x-6 justify-around antialiased">
             {content.links.map(({ name, link, index }) => {
               return (
                 <Button key={index} className="px-0 sm:px-4 text-white" variant="link">

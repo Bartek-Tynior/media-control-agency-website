@@ -30,7 +30,7 @@ const ContactSection = () => {
 
   return (
     <section
-      className="text-white relative h-full pt-14 sm:pt-28 pb-14 grid grid-rows-[100px_150px_150px] sm:grid-rows-[200px_300px_150px]"
+      className="text-white relative h-full pt-28 pb-14 grid grid-rows-[100px_150px_150px] sm:grid-rows-[200px_300px_150px]"
       id="contact"
     >
       {/* Label Section */}
