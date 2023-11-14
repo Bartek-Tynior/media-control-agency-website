@@ -10,18 +10,20 @@ import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title:
-    "Media Control Agency: Digital Marketing, Web Development & Software Solutions",
+    "Media Control Agency: Web Development, Digital Marketing & Software Solutions",
   description:
-    "Media Control Agency is a result-driven digital agency that understands and helps businesses with the digital marketing, website development even software solutions.",
+    "Media Control Agency: A dynamic digital agency delivering results through expert digital marketing, website development, and software solutions for businesses.",
   openGraph: {
     title:
-      "Media Control Agency: Digital Marketing, Web Development & Software Solutions",
+      "Media Control Agency: Web Development, Digital Marketing & Software Solutions",
     description:
-      "Media Control Agency is a result-driven digital agency that understands and helps businesses with the digital marketing, website development even software solutions.",
+      "Media Control Agency is a dynamic digital agency delivering results through expert digital marketing, website development, and software solutions for businesses.",
     type: "website",
     locale: "nl_NL",
     url: "https://media-control-agency.nl",
     siteName: "Media Control Agency",
+    countryName: "the Netherlands",
+    alternateLocale: "en_US",
   },
   authors: [
     {
@@ -30,6 +32,7 @@ export const metadata: Metadata = {
   ],
   creator: "Media Control Agency",
   publisher: "Media Control Agency",
+  twitter: {},
 };
 
 const satoshi = localFont({
