@@ -56,15 +56,17 @@ const page = () => {
               </div>
 
               <div>
-                <h2 className="font-bold text-lg">Website</h2>
-                <Button
-                  variant="link"
-                  className="text-white p-0 h-0 text-lg font-normal"
-                >
-                  <a href={content.website}>
-                    {content.website.replace(/(^\w+:|^)\/\//, "")}
-                  </a>
-                </Button>
+                <h2 className="font-bold text-lg mb-2">Website</h2>
+                <a href={content.website}> 
+                  <Button
+                    className="gap-2 group h-[50px] text-base"
+                    variant="default_white"
+                    size="lg"
+                  >
+                    Visit Website
+                    <ArrowRight className="group-hover:translate-x-2 transition-all" />
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -107,6 +109,7 @@ const page = () => {
               <p className="pt-4 text-xl">{content.project.result}</p>
             </div>
 
+            {/* @ts-ignore */}
             {content.project.testimonial && (
               <>
                 <div className="w-full h-[1px] bg-white/40"></div>

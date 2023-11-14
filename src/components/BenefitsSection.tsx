@@ -12,7 +12,7 @@ const BenefitsSection = () => {
   return (
     <div className="w-full flex flex-col sm:grid grid-cols-4 my-6 overflow-hidden">
       <span className="mb-4 sm:mb-0 text-base sm:text-lg font-bold">
-        Why choosing for us:
+        What sets us apart:
       </span>
       <Swiper
         className="col-span-3 swiper-benefits w-full"

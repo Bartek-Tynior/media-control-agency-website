@@ -10,7 +10,7 @@ const SectionLabel: FC<SectionLabelProps> = ({ sectionName, className }) => {
   return (
     <h2
       className={cn(
-        "text-2xl py-2 px-4 blured-bg w-fit border border-white/10 rounded-lg",
+        "text-2xl py-2 px-4 blured-bg w-fit border border-white/10 rounded-lg shadow-lg",
         className
       )}
     >

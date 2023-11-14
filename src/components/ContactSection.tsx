@@ -90,6 +90,7 @@ const ContactSection = () => {
             <div className="flex flex-row w-full sm:w-1/3 justify-start sm:justify-end gap-3 items-end">
               {content.instagram}
               {content.linkedin}
+              {content.facebook}
             </div>
           </div>
         </div>

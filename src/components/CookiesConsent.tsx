@@ -31,7 +31,12 @@ const CookiesConsent = () => {
             website you consent to all cookies in accordance with our Privacy
             Policy.
           </span>
-          <Button className={cn('flex items-center')} onClick={() => acceptCookie()}>Accept</Button>
+          <Button
+            className={cn("flex items-center")}
+            onClick={() => acceptCookie()}
+          >
+            Accept
+          </Button>
         </div>
       </div>
     </div>

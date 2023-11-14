@@ -38,10 +38,7 @@ const CaseStudiesSection = () => {
   );
 
   return (
-    <section
-      className="text-white h-fit pt-28 sm:pb-14"
-      id="case-studies"
-    >
+    <section className="text-white h-fit pt-28 sm:pb-14" id="case-studies">
       <animated.div ref={ref} style={springs} className="flex flex-col gap-5">
         <SectionLabel sectionName="Case Studies" />
         <h2 className="text-2xl sm:text-4xl lg:w-1/2 font-bold leading-tight">

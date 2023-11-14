@@ -8,12 +8,12 @@ export async function POST(req: Request) {
   try {
     await sendEmail({
       to: process.env.SMTP_EMAIL || "",
-      subject: "New Contact Form Submission",
+      subject: "New Contact Form Submission!",
       html: render(FormMail(body)),
     });
-  } catch (error) {
-    return new Response("Email Failed to Send!", { status: 500 });
+  } catch (error: any) {
+    return new Response("Internal Server Error!", { status: 500 });
   }
 
-  return new Response("Email Succesfully Sent!", { status: 200 });
+  return new Response("Succesfully Performed the Action!", { status: 200 });
 }

@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face { 
-font-family: "Satoshi"; 
-src: url('/fonts/Satoshi/Satoshi-Regular.ttf'); 
-font-weight: normal; 
-font-style: normal; 
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi/Satoshi-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face { 
-font-family: "Satoshi"; 
-src: url('/fonts/Satoshi/Satoshi-Bold.ttf'); 
-font-weight: bold; 
-font-style: normal; 
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi/Satoshi-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
-
 
 * {
   box-sizing: border-box;
@@ -61,28 +60,6 @@ font-style: normal;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.hamburger {
-  display: flex;
-  z-index: 20;
-  width: 40px;
-  height: 17.5px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.hamburger-line {
-  width: 40px;
-  height: 3.5px;
-  background-color: #fff;
-}
-
-.hamburger-line-2 {
-  width: 25px;
-  height: 3.5px;
-  background-color: #fff;
-}
-
 .menu-mobile-wrap {
   position: fixed;
   display: flex;
@@ -101,11 +78,6 @@ font-style: normal;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(2rem);
   backdrop-filter: blur(2rem);
-}
-
-.close-btn {
-  display: flex;
-  z-index: 20;
 }
 
 .cursor {
@@ -171,10 +143,10 @@ font-style: normal;
     z-index: 2;
     background-image: linear-gradient(
       90deg,
-      #0F0F0F,
+      #0f0f0f,
       rgba(22, 22, 24, 0) 25%,
       rgba(22, 22, 24, 0) 75%,
-      #0F0F0F
+      #0f0f0f
     );
     position: absolute;
     top: 0%;
@@ -185,38 +157,36 @@ font-style: normal;
 }
 
 .cursor {
-width: 20px;
-height: 20px;
-border: 1px solid white;
-border-radius: 50%;
-position: absolute;
-pointer-events: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
 }
 .cursor::after {
-content: "";
-width: 20px;
-height: 20px;
-position: absolute;
-border: 2px solid blue;
-border-radius: 50%;
-opacity: .5;
-top: -8px;
-left: -8px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 2px solid blue;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
 }
 @keyframes cursorAnim {
-0% {
-transform: scale(1);
-}
-50% {
-transform: scale(5);
-}
-100% {
-transform: scale(1);
-opacity: 0;
-}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 .expand {
-animation: cursorAnim .5s forwards;
+  animation: cursorAnim 0.5s forwards;
 }
-
-

@@ -25,7 +25,7 @@ const CaseStudiesCard: FC<CaseStudiesCardProps> = ({
       //   big ? "md:col-span-2" : ""
       // } h-64 relative`}
       className={`case-studies-card border border-white/10 shadow-lg col-span-2 h-full relative`}
-      id="case-studies-card"
+      id={`case-studies-card-${client.replace(/\s+/g, "-").toLowerCase()}}`}
     >
       {(image.type === "video" && (
         <video

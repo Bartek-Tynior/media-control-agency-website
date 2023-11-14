@@ -191,9 +191,7 @@ const ContactPage = ({}) => {
               <Calendar className="ml-2 w-4 h-4" />
             </Button>
 
-            <p className="text-lg font-normal">
-              {content.meeting_description}
-            </p>
+            <p className="text-lg font-normal">{content.meeting_description}</p>
           </div>
         </div>
       </div>

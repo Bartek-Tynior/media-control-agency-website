@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { createTransport } from "nodemailer";
 
 type EmailPayload = {
   to: string;
@@ -17,7 +17,7 @@ const smtpOptions = {
 };
 
 export const sendEmail = async (data: EmailPayload) => {
-  const transporter = nodemailer.createTransport({
+  const transporter = createTransport({
     ...smtpOptions,
   });
 

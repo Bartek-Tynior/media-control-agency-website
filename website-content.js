@@ -24,7 +24,7 @@ export default {
       i: 1,
       title: "Product Design & Development",
       description:
-        "We are passionate about crafting websites that not only look stunning but also perform seamlessly. With our expert team of developers, we turn your digital vision into a reality, ensuring your online presence is a powerful asset for your business.",
+        "Turn your concepts into cutting-edge designs, brought to life by our team of experts. We excel in crafting contemporary and distinctive websites, web applications, and software. Utilizing the latest technologies and tools, we ensure your product not only mirrors your brand but also embodies your values.",
       imageLocation: "/img/website-building-of-shopping-sale.gif",
       altImage: "Website Building Image",
       detailPage: "/services/web-development",
@@ -91,7 +91,7 @@ export default {
       i: 3,
       title: "AI Solutions",
       description:
-        "At our core, we're driven by a passion for seamlessly integrating AI solutions into your business, propelling you toward your goals. Our team of seasoned experts specializes in implementing AI solutions that enhance your business's efficiency and productivity. We're here to guide you through every phase of your journey, from harnessing the potential of chatbots to delving into the realm of machine learning",
+        "As a creative and innovative agency, we're aware of the power and potential of AI. We're committed to helping you leverage this technology to its fullest potential. Our team of experts will work with you to create a custom AI solution that will help you achieve your goals and take your business to the next level.",
       imageLocation: "",
       altImage: "AI Solutions Image",
       detailPage: "/services/web-ai",
@@ -170,7 +170,7 @@ export default {
   about: {
     header: <span className="font-bold">We are Media Control Agency</span>,
     description:
-      ", a dynamic digital marketing agency based in the Netherlands. We are fueled by our passion for strategy, design, and user interaction. Our expertise lies in crafting exceptional websites and optimizing advertising campaigns for our clients through effective strategies. Our philosophy revolves around the principles of logic, simplicity, and concise communication to maximize the potential of your brand. We take great joy in assisting you in enhancing your online presence.",
+      ", a creative digital agency driven by a passion for design, strategy, and development. Specializing in distinctive websites, targeted ad campaigns, and practical custom software, we're committed to delivering outstanding results. Our dedication extends to both our work and the collaborative partnerships we value. Every day, we're geared up to craft exceptional projects together.",
   },
   contact: {
     subtitle: "Ready to collaborate?",
@@ -206,6 +206,16 @@ export default {
         />
       </a>
     ),
+    facebook: (
+      <a href="https://www.facebook.com/people/Media-Control-Agency/61551901261084/">
+        <Image
+          src="/img/icons/facebook-icon.png"
+          alt="Facebook Icon"
+          width={30}
+          height={30}
+        />
+      </a>
+    ),
   },
   contact_page: {
     subtitle_1:
@@ -216,85 +226,87 @@ export default {
       "By the end of this meeting, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with outstanding websites & paid advertising.",
     meeting_link: "https://calendly.com/media-control-agency/consultation",
   },
-  FAQ: [
-    {
-      title: "What services do you offer?",
-      description: (
-        <div>
-          Currently our agency offers the following services:
-          <ul>
-            <li>- Product Design</li>
-            <li>
-              - Web/Software Development (using Webflow, Framer or Custom Code)
-            </li>
-            <li>- Pay Per Click Advertising</li>
-            <li>- Implementation of AI Solutions</li>
-          </ul>
-        </div>
-      ),
-      index: 1,
-    },
-    {
-      title: "How do you build websites?",
-      description: (
-        <div>
-          Our process is simple yet effective. It divides into these steps:
-          <ul>
-            <li>- Discovery (getting to know the client and his needs)</li>
-            <li>
-              - Designing (translating our joint vision into wireframes in
-              Figma)
-            </li>
-            <li>
-              - Development (implementing the designs in Figma in Webflow or
-              other tools)
-            </li>
-            <li>- QA (review & testing) </li>
-            <li>- Improvements (implementing fixes)</li>
-          </ul>
-        </div>
-      ),
-      index: 2,
-    },
-    {
-      title: "How do you create effective campaigns?",
-      description: (
-        <div>
-          Our process is effective and focused on individual needs of each
-          client. It divides into these steps:
-          <ul>
-            <li>- Discovery (getting to know the client and his needs)</li>
-            <li>- Research (getting to know the markt and requirments)</li>
-            <li>
-              - Strategy (setting up an individual strategy based on the
-              research)
-            </li>
-            <li>
-              - Implementation (implementing the strategy and analysing the
-              results)
-            </li>
-            <li>
-              - Review (reviewing the results and making improvements with the
-              client)
-            </li>
-          </ul>
-        </div>
-      ),
-      index: 3,
-    },
-    {
-      title: "Do you provide ongoing support?",
-      description:
-        "Certainly! We prioritize lasting partnerships and take immense joy in witnessing our clients' continuous growth. When you're with us, you'll always have our unwavering support.",
-      index: 4,
-    },
-    {
-      title: "What are the costs?",
-      description:
-        "We charge a fixed price for each project. The price depends on the complexity of the project. We also offer a monthly subscription for ongoing campaings, support and maintenance.",
-      index: 5,
-    },
-  ],
+  FAQ: {
+    title: "Still have questions?",
+    subtitle: "These are some frequently asked questions from our clients. Feel free to reach out to us directly.",
+    faq_sections: [
+      {
+        title: "What services do you offer?",
+        description: (
+          <div>
+            Currently our agency offers the following services:
+            <ul>
+              <li>- Product Design</li>
+              <li>
+                - Web/Software Development (using Webflow, Framer or Custom Code)
+              </li>
+              <li>- Paid Advertising</li>
+              <li>- Implementation of AI Solutions</li>
+            </ul>
+          </div>
+        ),
+        index: 1,
+      },
+      {
+        title: "How do you build websites?",
+        description: (
+          <div>
+            Our process is simple yet effective. It divides into these steps:
+            <ul>
+              <li>- Discovery (getting to know the client and his needs)</li>
+              <li>
+                - Designing (translating our joint vision into designs)
+              </li>
+              <li>
+                - Development (crafting the website using tools fitting the client's needs and vision based on the designs)
+              </li>
+              <li>- QA (review & testing) </li>
+              <li>- Improvements (implementing fixes)</li>
+            </ul>
+          </div>
+        ),
+        index: 2,
+      },
+      {
+        title: "How do you create effective campaigns?",
+        description: (
+          <div>
+            Our process is effective and focused on individual needs of each
+            client. It divides into these steps:
+            <ul>
+              <li>- Discovery (getting to know the client and his needs)</li>
+              <li>- Research (getting to know the markt and requirments)</li>
+              <li>
+                - Strategy (setting up an individual strategy based on the
+                research)
+              </li>
+              <li>
+                - Implementation (implementing the strategy and analysing the
+                results)
+              </li>
+              <li>
+                - Review (reviewing the results and making improvements with the
+                client)
+              </li>
+            </ul>
+          </div>
+        ),
+        index: 3,
+      },
+      {
+        title: "Do you provide ongoing support?",
+        description:
+          "Definitely! We prioritize lasting partnerships and take immense joy in witnessing our clients' continuous growth. When you're with us, you'll always have our unwavering support.",
+        index: 4,
+      },
+      {
+        title: "What are the costs?",
+        description:
+          "We believe in tailoring our approach to the uniqueness of each project, with pricing determined by its complexity and time requirements. For AI solutions and paid advertising services, a monthly maintenance fee is applied to ensure ongoing support and optimization.",
+        index: 5,
+      },
+    ],
+  },
   not_found: {
     title: "404: Page Not Found",
     description:
@@ -311,7 +323,7 @@ export default {
       project: {
         scopeOfWork: ["Product Design", "Web Development", "Paid Advertising"],
         description:
-          "We've designed and developed a custom e-commerce website for Plus 44, a streetwear fashion brand based in the Netherlands. We've also created and implemented a paid advertising strategy to increase the brand's awareness and sales",
+          "We've designed and developed a custom e-commerce website for Plus 44, a streetwear fashion brand based in the Netherlands. We've also created and implemented a paid advertising strategy to increase the brand's awareness and sales.",
         industry: "Clothing",
         techStack: [
           {
@@ -345,7 +357,7 @@ export default {
           ],
         },
         solution:
-          "Media Control agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
+          "Media Control Agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
         result:
           "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
       },
@@ -362,7 +374,8 @@ export default {
       website: "https://media-control-agency.com/",
       project: {
         scopeOfWork: ["Product Design", "Web Development"],
-        description: "Description",
+        description:
+          "Design and development of our own website using custom code. We've used modern technologies and pure code to create a unique and modern website that represents our brand and values.",
         industry: "Digital Marketing",
         techStack: [
           {

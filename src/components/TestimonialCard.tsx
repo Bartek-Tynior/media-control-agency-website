@@ -2,13 +2,18 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { FC } from "react";
 
-interface PageProps { 
+interface PageProps {
   className?: string;
 }
 
-const TestimonialCard:FC<PageProps> = ({ className }) => {
+const TestimonialCard: FC<PageProps> = ({ className }) => {
   return (
-    <div className={cn("blured-bg text-start flex flex-col gap-6 border border-solid border-white/10 mx-auto p-8 rounded-lg", className)}>
+    <div
+      className={cn(
+        "blured-bg text-start flex flex-col gap-6 border border-solid border-white/10 mx-auto p-8 rounded-lg",
+        className
+      )}
+    >
       <p className="text-xl font-semibold">
         &quot;We were delighted with the pace of work, good communication, and
         planning for project implementation. We liked the creative and modern

@@ -8,7 +8,7 @@ import {
   Text,
 } from "@react-email/components";
 
-type Sender = {
+type leadInformation = {
   fullName: string;
   email: string;
   phone: string;
@@ -22,16 +22,16 @@ export default function FormMail({
   phone,
   message,
   company,
-}: Sender) {
+}: leadInformation) {
   return (
     <Html>
       <Tailwind>
         <Body className="bg-white my-12 mx-auto font-sans">
-          <Container className="p-8 rounded-lg shadow-lg text-center">
-            {/* <Img src='/img/logo.png' alt='' /> */}
-            <Heading className="text-xl pt-4">
-              New message from {fullName} ({email})
+          <Container className="p-8 border-white/10 rounded-lg shadow-lg text-center">
+            <Heading className="text-2xl pt-4">
+              There is a new reach out from {fullName} | {email}
             </Heading>
+            <Heading className="text-lg pt-4">Message</Heading>
             <Text className="text-lg font-medium text-gray-700">{message}</Text>
             <Heading className="text-lg pt-4">Contact details</Heading>
             <Text className="text-lg font-medium text-gray-700">

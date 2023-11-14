@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/Button";
-import { ArrowRight } from "lucide-react";
+import { AlignJustify, ArrowRight, X } from "lucide-react";
 import websiteContent from "../../website-content";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
@@ -13,7 +13,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Navbar = () => {
   const content = websiteContent.navbar;
-  const contactInfo = websiteContent.contact;
+  const contact = websiteContent.contact;
   const [isOpen, setOpen] = useState(true);
   const router = useRouter();
   const pathname = usePathname();
@@ -116,7 +116,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {!isOpen && (
-          <div className="menu-mobile-wrap" id="menu_mobile_wrap">
+          <div className="menu-mobile-wrap shadow-lg" id="menu_mobile_wrap">
             <div>
               {content.links.map((link) => {
                 return (
@@ -133,7 +133,7 @@ const Navbar = () => {
                 );
               })}
 
-              <div className="py-6">
+              <div className="py-6 ">
                 <Link href="/contact">
                   <Button
                     className="gap-2 group h-14 text-base border border-white/10"
@@ -155,15 +155,21 @@ const Navbar = () => {
 
               <div className="flex flex-col gap-3">
                 <span className="inline-flex items-center gap-3 text-xl">
-                  {contactInfo.instagram}
+                  {contact.instagram}
                   <a href="https://www.instagram.com/mediacontrolag/">
                     Instagram
                   </a>
                 </span>
                 <span className="inline-flex items-center gap-3 text-xl">
-                  {contactInfo.linkedin}
+                  {contact.linkedin}
                   <a href="https://www.linkedin.com/company/media-control-agency">
                     LinkedIn
+                  </a>
+                </span>
+                <span className="inline-flex items-center gap-3 text-xl">
+                  {contact.facebook}
+                  <a href="https://www.facebook.com/people/Media-Control-Agency/61551901261084/">
+                    Facebook
                   </a>
                 </span>
               </div>
@@ -172,7 +178,7 @@ const Navbar = () => {
         )}
 
         {/* Desktop Menu */}
-        <div className="blured-bg rounded-[80px] h-[50px] lg:flex border border-white/10 hidden">
+        <div className="blured-bg rounded-[80px] h-[50px] lg:flex border border-white/10 hidden shadow-lg">
           <ul className="flex px-6 flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
             {content.links.map((link: any, i: number) => {
               return (
@@ -198,21 +204,12 @@ const Navbar = () => {
         {/* Mobile Hamburger Component */}
         <div className="navigation_hamburger flex justify-center items-center lg:hidden">
           {isOpen ? (
-            <button className="hamburger" onClick={toggleNavbar}>
-              <div className="hamburger-line"></div>
-              <div className="hamburger-line-2"></div>
+            <button className="flex z-20 hamburger-button" onClick={toggleNavbar}>
+              <AlignJustify className="w-10 h-10" />
             </button>
           ) : (
-            <button className="close-btn" onClick={toggleNavbar}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="fill-current text-white"
-                viewBox="0 0 50 50"
-                width="40px"
-                height="40px"
-              >
-                <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
-              </svg>
+            <button className="flex z-20 close-button" onClick={toggleNavbar}>
+              <X className="w-10 h-10" />
             </button>
           )}
         </div>
@@ -220,7 +217,7 @@ const Navbar = () => {
         {/* Call-to-action Button */}
         <div className="hidden items-center justify-center lg:flex w-[175px]">
           <Button
-            className="gap-2 group h-[50px] text-base border border-white/10"
+            className="gap-2 group h-[50px] text-base"
             variant="default"
             size="full-size"
             onClick={() => router.push("/contact")}
