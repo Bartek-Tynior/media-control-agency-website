@@ -21,13 +21,13 @@ const page = () => {
             The following Privacy Policy specifies
             <strong>
               {" "}
-              rules for saving and accessing data on Users' Devices{" "}
+              rules for saving and accessing data on Users&apos; Devices{" "}
             </strong>
             using the Website for the purpose of providing electronic services
             by the Administrator and
             <strong>
               {" "}
-              rules for collecting and processing Users' personal data{" "}
+              rules for collecting and processing Users&apos; personal data{" "}
             </strong>
             which were provided by them personally and voluntarily through the
             tools available on the Website.
@@ -41,8 +41,8 @@ const page = () => {
           <h2 className="text-2xl py-6 font-bold">§1 Definitions</h2>
           <ul role="list">
             <li>
-              <strong>Service</strong> - the website "Media Control Agency"
-              operating at{" "}
+              <strong>Service</strong> - the website &quot;Media Control
+              Agency&quot; operating at{" "}
               <a href="https://media-control-agency.com/">
                 https://media-control-agency.com/
               </a>
@@ -54,10 +54,10 @@ const page = () => {
             <li>
               <strong>Website / Data Administrator</strong> - The Website
               Administrator and the Data Administrator (hereinafter the
-              Administrator) is the company "Media Control Agency", operating at
-              the address: Narcis 7, 1619 BC Andijk, with the tax identification
-              number: NL004874490B47, providing services electronically via the
-              Website
+              Administrator) is the company &quot;Media Control Agency&quot;,
+              operating at the address: Narcis 7, 1619 BC Andijk, with the tax
+              identification number: NL004874490B47, providing services
+              electronically via the Website
             </li>
             <li>
               <strong>User</strong> - a natural person for whom the
@@ -69,7 +69,7 @@ const page = () => {
             </li>
             <li>
               <strong>Cookies (cookies)</strong> - text data collected in the
-              form of files placed on the User's Device
+              form of files placed on the User&apos;s Device
             </li>
             <li>
               <strong>GDPR</strong> - Regulation (EU) 2016/679 of the European
@@ -80,13 +80,13 @@ const page = () => {
             </li>
             <li>
               <strong>Personal data</strong> - means information relating to an
-              identified or identifiable natural person ("data subject"); an
-              identifiable natural person is a person who can be directly or
-              indirectly identified, in particular on the basis of an identifier
-              such as name and surname, identification number, location data,
-              internet identifier or one or more specific physical,
-              physiological, genetic, mental factors, the economic, cultural or
-              social identity of a natural person
+              identified or identifiable natural person (&quot;data
+              subject&quot;); an identifiable natural person is a person who can
+              be directly or indirectly identified, in particular on the basis
+              of an identifier such as name and surname, identification number,
+              location data, internet identifier or one or more specific
+              physical, physiological, genetic, mental factors, the economic,
+              cultural or social identity of a natural person
             </li>
             <li>
               <strong>Processing</strong> - means an operation or a set of
@@ -107,7 +107,7 @@ const page = () => {
               processing of personal data, which consists in the use of personal
               data to evaluate certain personal factors of a natural person, in
               particular to analyze or forecast aspects related to the effects
-              of that natural person's work, economic situation, health,
+              of that natural person&apos;s work, economic situation, health,
               personal preferences, interests, reliability, behavior, location
               or movement
             </li>
@@ -136,8 +136,8 @@ const page = () => {
             <li>
               <strong>Anonymization</strong> - Data anonymization is an
               irreversible process of data operations that destroys / overwrites
-              "personal data", making it impossible to identify or associate a
-              given record with a specific user or natural person.
+              &quot;personal data&quot;, making it impossible to identify or
+              associate a given record with a specific user or natural person.
             </li>
           </ul>
 
@@ -157,28 +157,29 @@ const page = () => {
           <ul role="list">
             <li>
               <strong>Internal cookies</strong> - files uploaded and read from
-              the User's Device by the Website's IT system
+              the User&apos;s Device by the Website&apos;s IT system
             </li>
             <li>
               <strong>External cookies</strong> - files uploaded and read from
-              the User's Device by ICT systems of external websites. The scripts
-              of external websites that may place cookies on the User's Devices
-              have been consciously placed on the Website through scripts and
-              services made available and installed on the Website
+              the User&apos;s Device by ICT systems of external websites. The
+              scripts of external websites that may place cookies on the
+              User&apos;s Devices have been consciously placed on the Website
+              through scripts and services made available and installed on the
+              Website
             </li>
             <li>
               <strong>Session cookies</strong> - files uploaded and read from
-              the User's Device by the Website during one session of a given
-              Device. After the session ends, the files are removed from the
-              User's Device.
+              the User&apos;s Device by the Website during one session of a
+              given Device. After the session ends, the files are removed from
+              the User&apos;s Device.
             </li>
             <li>
               <strong>Persistent cookies</strong> - files uploaded and read from
-              the User's Device by the Website until you delete them manually.
-              The files are not deleted automatically after the end of the
-              Device session, unless the configuration of the User's Device is
-              set to the Cookie deletion mode after the end of the Device
-              session.
+              the User&apos;s Device by the Website until you delete them
+              manually. The files are not deleted automatically after the end of
+              the Device session, unless the configuration of the User&apos;s
+              Device is set to the Cookie deletion mode after the end of the
+              Device session.
             </li>
           </ul>
 
@@ -187,31 +188,32 @@ const page = () => {
             <li>
               <strong>Cookie storage and reading mechanisms</strong> - The
               mechanisms for storing, reading and exchanging data between
-              Cookies saved on the User's Device and the Website are implemented
-              through the built-in mechanisms of web browsers and do not allow
-              the collection of other data from the User's Device or data of
-              other websites visited by the User, including personal data or
-              information confidential. It is also practically impossible to
-              transfer viruses, Trojans and other worms to the User's Device.
+              Cookies saved on the User&apos;s Device and the Website are
+              implemented through the built-in mechanisms of web browsers and do
+              not allow the collection of other data from the User&apos;s Device
+              or data of other websites visited by the User, including personal
+              data or information confidential. It is also practically
+              impossible to transfer viruses, Trojans and other worms to the
+              User&apos;s Device.
             </li>
             <li>
               <strong>Internal cookie</strong> - Cookie files used by the
-              Administrator are safe for Users' Devices and do not contain
+              Administrator are safe for Users&apos; Devices and do not contain
               scripts, content or information that may threaten the security of
               personal data or the security of the Device used by the User.
             </li>
             <li>
               <strong>External cookies</strong> - The Administrator takes all
               possible actions to verify and select website partners in the
-              context of Users' safety. The administrator selects well-known,
-              large partners with global social trust for cooperation. However,
-              it does not have full control over the content of Cookie files
-              from external partners. The Administrator is not responsible for
-              the security of Cookie files, their content and the use in
-              accordance with the license by the Scripts installed on the
-              website, coming from external websites, to the extent permitted by
-              law. The list of partners is provided further in the Privacy
-              Policy.
+              context of Users&apos; safety. The administrator selects
+              well-known, large partners with global social trust for
+              cooperation. However, it does not have full control over the
+              content of Cookie files from external partners. The Administrator
+              is not responsible for the security of Cookie files, their content
+              and the use in accordance with the license by the Scripts
+              installed on the website, coming from external websites, to the
+              extent permitted by law. The list of partners is provided further
+              in the Privacy Policy.
             </li>
             <li>
               <strong>Cookie control</strong>
@@ -289,21 +291,21 @@ const page = () => {
             </li>
             <li>
               The User may at any time delete any Cookie files saved so far
-              using the User's Device tools through which the User uses the
-              Website's services.
+              using the User&apos;s Device tools through which the User uses the
+              Website&apos;s services.
             </li>
             <li>
               <strong>The threats on the part of the User </strong>- The
               administrator uses all possible technical measures to ensure the
               security of data placed in cookie files. However, it should be
               noted that ensuring the security of this data depends on both
-              parties, including the User's activity. The Administrator is not
-              responsible for interception of this data, impersonation of the
-              User's session or their removal as a result of the User's
-              conscious or unconscious activity, viruses, Trojan horses and
-              other spyware, which may or may have been an infected User's
-              Device. In order to protect against these threats, users should
-              adhere to{" "}
+              parties, including the User&apos;s activity. The Administrator is
+              not responsible for interception of this data, impersonation of
+              the User&apos;s session or their removal as a result of the
+              User&apos;s conscious or unconscious activity, viruses, Trojan
+              horses and other spyware, which may or may have been an infected
+              User&apos;s Device. In order to protect against these threats,
+              users should adhere to{" "}
               <a href="https://nety.pl/cyberbezpieczenstwo/" target="_blank">
                 recommendations for using the network
               </a>
@@ -344,8 +346,8 @@ const page = () => {
           <ul role="list">
             <li>&bull; Implementation of electronic services:</li>
             <li>
-              &bull; Administrator's communication with Users on matters related
-              to the Website and data protection
+              &bull; Administrator&apos;s communication with Users on matters
+              related to the Website and data protection
             </li>
             <li>
               &bull; Ensuring the legitimate interest of the Administrator
@@ -358,7 +360,8 @@ const page = () => {
           <ul role="list">
             <li>&bull; Keeping statistics</li>
             <li>
-              &bull; Serving advertisements tailored to the Users' preferences
+              &bull; Serving advertisements tailored to the Users&apos;
+              preferences
             </li>
             <li>
               &bull; Ensuring the legitimate interest of the Administrator
@@ -370,11 +373,11 @@ const page = () => {
           </h2>
           <p>
             The Administrator on the Website uses javascript scripts and web
-            components of partners who may place their own cookies on the User's
-            Device. Remember that in your browser settings you can decide for
-            yourself about the allowed cookies that can be used by individual
-            websites. Below is a list of partners or their services implemented
-            on the Website that may place cookies:
+            components of partners who may place their own cookies on the
+            User&apos;s Device. Remember that in your browser settings you can
+            decide for yourself about the allowed cookies that can be used by
+            individual websites. Below is a list of partners or their services
+            implemented on the Website that may place cookies:
           </p>
           <ul role="list">
             <li>
@@ -409,7 +412,7 @@ const page = () => {
             </li>
           </ul>
           <p>
-            Services provided by third parties are beyond the Controller's
+            Services provided by third parties are beyond the Controller&apos;s
             control. These entities may at any time change their terms of
             service, privacy policy, the purpose of data processing and the
             methods of using cookies.
@@ -497,10 +500,11 @@ const page = () => {
             an external hosting provider, VPS or Dedicated Servers -{" "}
             <strong>https://atthost.pl/</strong>. All data collected and
             processed on the website is stored and processed in the service
-            provider's infrastructure located in Poland. It is possible to
+            provider&apos;s infrastructure located in Poland. It is possible to
             access data as a result of service work carried out by the service
-            provider's staff. Access to this data is governed by the contract
-            concluded between the Administrator and the Service Provider.
+            provider&apos;s staff. Access to this data is governed by the
+            contract concluded between the Administrator and the Service
+            Provider.
           </p>
 
           <h2 className="text-2xl py-6 font-bold">
@@ -548,7 +552,9 @@ const page = () => {
           <h2 className="text-2xl py-6 font-bold">
             §11 Legal basis for the processing of personal data
           </h2>
-          <p>The website collects and processes Users' data on the basis of:</p>
+          <p>
+            The website collects and processes Users&apos; data on the basis of:
+          </p>
           <ul role="list">
             <li>
               &bull; Regulation (EU) 2016/679 of the European Parliament and of
@@ -620,9 +626,11 @@ const page = () => {
           </p>
 
           <h2 className="text-2xl py-6 font-bold">
-            §13 Users' rights related to the processing of personal data
+            §13 Users&apos; rights related to the processing of personal data
           </h2>
-          <p>The website collects and processes Users' data on the basis of:</p>
+          <p>
+            The website collects and processes Users&apos; data on the basis of:
+          </p>
           <ul role="list">
             <li>
               &bull; <strong>The right to access personal data</strong> Users
@@ -706,7 +714,7 @@ const page = () => {
           <ul role="list">
             <li>
               &bull; Restricting the saving and access to Cookie files on the
-              User's Device may cause some functions of the Website to
+              User&apos;s Device may cause some functions of the Website to
               malfunction.
             </li>
             <li>
