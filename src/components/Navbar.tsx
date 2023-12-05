@@ -215,7 +215,7 @@ const Navbar = () => {
         </div>
 
         {/* Call-to-action Button */}
-        <div className="hidden items-center justify-center lg:flex w-[175px]">
+        <div className="hidden items-center justify-center lg:flex h-[50px] w-[175px]">
           <Button
             className="gap-2 group h-[50px] text-base"
             variant="default"

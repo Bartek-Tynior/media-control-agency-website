@@ -5,6 +5,7 @@ import websiteContent from "../../website-content";
 import ServiceCard from "./ServiceCard";
 import SectionLabel from "./ui/SectionLabel";
 import { useInView, animated, useChain } from "@react-spring/web";
+import BenefitsSection from "./BenefitsSection";
 
 const Services = () => {
   const animationConfig = () => ({
@@ -53,6 +54,7 @@ const Services = () => {
         >
           {renderServiceCards()}
         </animated.div>
+        <BenefitsSection />
       </section>
     </>
   );

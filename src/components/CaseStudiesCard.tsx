@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FC } from "react";
 
 interface CaseStudiesCardProps {
-  big?: boolean;
+  id: number;
   image: {
     type: string;
     src: string;
@@ -13,7 +13,7 @@ interface CaseStudiesCardProps {
 }
 
 const CaseStudiesCard: FC<CaseStudiesCardProps> = ({
-  big,
+  id,
   image,
   client,
   service,
@@ -21,10 +21,7 @@ const CaseStudiesCard: FC<CaseStudiesCardProps> = ({
   return (
     <Link
       href={`/projects/${client.replace(/\s+/g, "-").toLowerCase()}`}
-      // className={`case-studies-card border border-white/10 shadow-lg ${
-      //   big ? "md:col-span-2" : ""
-      // } h-64 relative`}
-      className={`case-studies-card border border-white/10 shadow-lg col-span-2 h-full relative`}
+      className={`case-studies-card border border-white/10 shadow-lg col-span-2 h-full relative ${'card' + id}`}
       id={`case-studies-card-${client.replace(/\s+/g, "-").toLowerCase()}}`}
     >
       {(image.type === "video" && (

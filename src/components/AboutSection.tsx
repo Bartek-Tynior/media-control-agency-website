@@ -1,41 +1,50 @@
 "use client";
 
-import { animated, useInView } from "@react-spring/web";
 import websiteContent from "../../website-content";
-import BenefitsSection from "./BenefitsSection";
-import { buildInteractionObserverThreshold } from "@/lib/utils";
+import { useLayoutEffect } from "react";
+import SplitType from "split-type";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const AboutSection = () => {
   const content = websiteContent.about;
 
-  const animationConfig = () => ({
-    from: {
-      opacity: 0,
-      y: 80,
-    },
-    to: {
-      opacity: 1,
-      y: 0,
-    },
-  });
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-  const additionalAnimationConfig = {
-    rootMargin: "0% 0px 0% 0px",
-    amount: buildInteractionObserverThreshold(),
-  };
+    const splitTypes = document.querySelectorAll(".reveal-type");
 
-  const [ref, springs] = useInView(animationConfig, additionalAnimationConfig);
+    let ctx = gsap.context(() => {
+      splitTypes.forEach((char, i) => {
+        // @ts-ignore
+        const text = new SplitType(char, { types: "chars" });
+
+        gsap.from(text.chars, {
+          scrollTrigger: {
+            trigger: char,
+            start: "top 50%",
+            end: "90% bottom",
+            scrub: true,
+            markers: false,
+          },
+          opacity: 0.2,
+          stagger: 0.1,
+        });
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <div className="pt-14">
-      <animated.div ref={ref} style={springs}>
-        <p className="text-lg md:text-2xl h-fit">
+    <section className="h-screen md:pt-28 sm:pb-14" id="vision">
+      <div className="h-full flex flex-col items-center justify-center reveal-type">
+        <p className="text-5xl md:text-7xl h-fit break-all">
           {content.header}
           {content.description}
         </p>
-        <BenefitsSection />
-      </animated.div>
-    </div>
+      </div>
+    </section>
   );
 };
 

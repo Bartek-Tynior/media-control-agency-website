@@ -28,26 +28,28 @@ const Hero = () => {
   const [ref, springs] = useInView(animationConfig, additionalAnimationConfig);
 
   return (
-    <section className="h-screen flex items-end justify-center">
+    <section className="h-screen flex">
+      {/* Content */}
       <animated.div
         ref={ref}
         style={springs}
-        className="z-40 pb-[5em] pt-20 h-full md:h-auto justify-center md:justify-between flex flex-col md:flex-row "
+        className="z-40 pb-20 h-full flex flex-col justify-end"
       >
-        <div className="w-full md:w-[70%] mb-10 flex flex-col gap-2">
-          <span className="text-zinc-200 text-center md:text-start justify-center font-semibold text-xl tracking-widest">
-            {content.subtitle}
-          </span>
-          <h1 className="text-5xl text-center md:text-start md:text-7xl lg:text-8xl font-semibold tracking-wide">
-            {content.title}
-          </h1>
-        </div>
+        <div className="h-[calc(100%/2)] w-full flex flex-col justify-between">
+          <div className="text-center md:text-start">
+            <span className="text-zinc-200 text-center md:text-start font-semibold text-xl tracking-widest">
+              {content.subtitle}
+            </span>
+            <h1 className="text-5xl text-center md:text-start md:text-7xl lg:text-8xl font-semibold tracking-wide">
+              {content.title}
+            </h1>
+          </div>
 
-        <div className="w-full md:w-1/4 flex items-end justify-end">
-          <p className="text-lg md:text-base lg:text-xl font-semibold h-[200px] text-end">
+          <p className="text-lg md:w-96">
             {content.description.paragaraph}
             <br />
             <TypeAnimation
+              className="font-semibold"
               sequence={content.description.typed}
               wrapper="span"
               speed={10}

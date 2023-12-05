@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export default {
   hero: {
-    title: "Elevate your brand's online presence with us!",
+    title: "Discover. Craft. Grow.",
     subtitle: "Result Focused Digital Agency",
     description: {
       paragaraph:
-        "WE HELP BUSINESSES IMPROVE THEIR CONVERSION RATE AND GENERATE LEADS BY",
+        "We Help Businesses Improve Their Conversion Rate and Generate Leads By",
       typed: [
-        "BUILDING OUTSTANDING WEBSITES.",
+        "Building Outstanding Websites.",
         1000,
-        "CREATING SUCCESSFUL MARKETING CAMPAIGNS.",
+        "Creating Successful Marketing Campaigns.",
         1000,
-        "IMPLEMENTING AI SOLUTIONS.",
+        "Implementing AI Solutions.",
         1000,
       ],
     },
@@ -120,6 +120,10 @@ export default {
         link: "#home",
       },
       {
+        name: "Vision",
+        link: "#vision",
+      },
+      {
         name: "Case Studies",
         link: "#case-studies",
       },
@@ -170,7 +174,7 @@ export default {
   about: {
     header: <span className="font-bold">We are Media Control Agency</span>,
     description:
-      ", a creative digital agency driven by a passion for design, strategy, and development. Specializing in distinctive websites, targeted ad campaigns, and practical custom software, we're committed to delivering outstanding results. Our dedication extends to both our work and the collaborative partnerships we value. Every day, we're geared up to craft exceptional projects together.",
+      ", a creative digital agency driven by a passion for design, development and marketing. We craft outstanding websites and software, as well as create and implement successful marketing campaigns.",
   },
   contact: {
     subtitle: "Ready to collaborate?",
@@ -228,7 +232,8 @@ export default {
   },
   FAQ: {
     title: "Still have questions?",
-    subtitle: "These are some frequently asked questions from our clients. Feel free to reach out to us directly.",
+    subtitle:
+      "These are some frequently asked questions from our clients. Feel free to reach out to us directly.",
     faq_sections: [
       {
         title: "What services do you offer?",
@@ -238,7 +243,8 @@ export default {
             <ul>
               <li>- Product Design</li>
               <li>
-                - Web/Software Development (using Webflow, Framer or Custom Code)
+                - Web/Software Development (using Webflow, Framer or Custom
+                Code)
               </li>
               <li>- Paid Advertising</li>
               <li>- Implementation of AI Solutions</li>
@@ -254,11 +260,10 @@ export default {
             Our process is simple yet effective. It divides into these steps:
             <ul>
               <li>- Discovery (getting to know the client and his needs)</li>
+              <li>- Designing (translating our joint vision into designs)</li>
               <li>
-                - Designing (translating our joint vision into designs)
-              </li>
-              <li>
-                - Development (crafting the website using tools fitting the client's needs and vision based on the designs)
+                - Development (crafting the website using tools fitting the
+                client's needs and vision based on the designs)
               </li>
               <li>- QA (review & testing) </li>
               <li>- Improvements (implementing fixes)</li>

@@ -17,7 +17,7 @@ const Toolstack = ({ toolstack }: ToolstackProps) => {
         return (
           <div
             key={id}
-            className="w-[2.5rem] h-[2.5rem] blured-bg p-[5px] shadow-lg rounded-md border border-solid border-[rgba(255,255,255,0.1)]"
+            className="w-[2.5rem] h-[2.5rem] blured-bg p-[5px] shadow-lg rounded-md border border-solid border-[rgba(255,255,255,0.1)] opacity-75 hover:opacity-100 transition-opacity duration-300 ease-in-out"
           >
             <Image
               className="w-full h-full object-fit pointer-events-none"
