@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
   title:
@@ -54,6 +55,7 @@ export default function RootLayout({
         )}
       >
         <Providers>
+          <GoogleAnalytics />
           <Navbar />
           <CookiesConsent />
           {children}
