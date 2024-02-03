@@ -3,21 +3,46 @@ import Image from "next/image";
 export default {
   hero: {
     title: "Discover. Craft. Grow.",
-    subtitle: "Result Focused Digital Agency",
-    description: {
-      paragaraph:
-        "We Help Businesses Improve Their Conversion Rate and Generate Leads By",
+    subtitle: {
+      paragaraph: "We're a result focused digital agency specializing in ",
       typed: [
-        "Building Outstanding Websites.",
+        "building outstanding websites.",
         1000,
-        "Creating Successful Marketing Campaigns.",
+        "creating successful marketing campaigns.",
         1000,
-        "Implementing AI Solutions.",
+        "building custom software.",
         1000,
       ],
     },
     imageLocation: "/img/mesh-gradient-background.png",
     altImage: "Mesh Gradient Background",
+    services: [
+      {
+        name: "Webflow",
+        imageLocation: "/img/icons/webflow-logo-toolstack.png",
+        imageAlt: "Webflow Icon",
+      },
+      {
+        name: "Framer",
+        imageLocation: "/img/icons/framer-logo-toolsatck.png",
+        imageAlt: "Framer Icon",
+      },
+      {
+        name: "Custom Code",
+        imageLocation: "/img/icons/code-logo-toolstack.png",
+        imageAlt: "Custom Code Icon",
+      },
+      {
+        name: "Adobe XD",
+        imageLocation: "/img/icons/adobe-xd-logo-toolstack.png",
+        imageAlt: "Adobe XD Icon",
+      },
+      {
+        name: "Blender",
+        imageLocation: "/img/icons/blender-logo-toolstack.png",
+        imageAlt: "Blender Icon",
+      },
+    ],
   },
   services: [
     {
