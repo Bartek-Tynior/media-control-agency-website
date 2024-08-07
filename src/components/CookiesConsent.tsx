@@ -24,7 +24,7 @@ const CookiesConsent = () => {
 
   return (
     <div className="w-screen flex justify-center fixed z-50 bottom-6">
-      <div className="blured-bg border-white/10 max-w-screen-xl mx-5 rounded-lg">
+      <div className="blured-bg border-white/10 max-w-screen-xl mx-5 rounded-md">
         <div className="max-w-screen-xl px-5 sm:px-10 md:px-15 h-full flex gap-5 py-3 items-center backdrop-blur-xl">
           <span className="text-base flex items-center">
             This website uses cookies to improve user experience. By using our

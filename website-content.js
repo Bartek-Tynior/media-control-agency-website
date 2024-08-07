@@ -4,6 +4,7 @@ export default {
   hero: {
     title: "Discover. Craft. Grow.",
     subtitle: "Result Focused Digital Agency",
+    shortDescription: "Where Vision Meets Technology – Exceptional Web and App Development for Your Business.",
     description: {
       paragaraph:
         "We Help Businesses Improve Their Conversion Rate and Generate Leads By",

@@ -13,7 +13,7 @@ export default function About() {
     })
 
     return (
-        <section className="h-screen md:pt-28 sm:pb-14">
+        <section className="h-screen md:pt-28 sm:pb-14" id="vision">
             <div className="h-full flex flex-col items-center justify-center">
                 <motion.p className="text-3xl h-fit text-center" ref={element} style={{ opacity: scrollYProgress }}>
                     {content.description}

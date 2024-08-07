@@ -3,30 +3,9 @@
 import { ExternalLink, Mail, Phone } from "lucide-react";
 import SectionLabel from "./ui/SectionLabel";
 import websiteContent from "../../website-content";
-import { animated, useChain, useInView } from "@react-spring/web";
 
 const ContactSection = () => {
   const content = websiteContent.contact;
-
-  const animationConfig = () => ({
-    threshold: 0.5,
-    rootMargin: "-100px 0px",
-    from: {
-      opacity: 0,
-      y: 100,
-    },
-    to: {
-      opacity: 1,
-      y: 0,
-    },
-  });
-
-  const [ref, springs] = useInView(animationConfig);
-  const [refMail, springsMail] = useInView(animationConfig);
-  const [refContacts, springsContacts] = useInView(animationConfig);
-
-  // @ts-ignore
-  useChain([ref, refMail, refContacts], [0, 0.5, 1], 5000);
 
   return (
     <section
@@ -34,21 +13,17 @@ const ContactSection = () => {
       id="contact"
     >
       {/* Label Section */}
-      <animated.div
-        ref={ref}
-        style={springs}
+      <div
         className="flex flex-col title gap-5"
       >
         <SectionLabel sectionName="Contact" />
         <h2 className="text-2xl sm:text-4xl lg:w-1/2 font-bold leading-tight">
           {content.subtitle}
         </h2>
-      </animated.div>
+      </div>
 
       {/* Mail Section */}
-      <animated.div
-        ref={refMail}
-        style={springsMail}
+      <div
         className="flex items-center justify-start w-full"
       >
         <span
@@ -58,12 +33,10 @@ const ContactSection = () => {
           {content.email}
           <ExternalLink className="h-8 w-8 sm:h-10 md:w-10" />
         </span>
-      </animated.div>
+      </div>
 
       {/* Contact Information Section */}
-      <animated.div
-        ref={refContacts}
-        style={springsContacts}
+      <div
         className="w-full"
       >
         <div className="flex flex-col gap-2 text-sm md:text-base">
@@ -94,7 +67,7 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-      </animated.div>
+      </div>
     </section>
   );
 };
