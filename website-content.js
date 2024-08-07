@@ -172,9 +172,8 @@ export default {
     ],
   },
   about: {
-    header: <span className="font-bold">We are Media Control Agency</span>,
     description:
-      ", a creative digital agency driven by a passion for design, development and marketing. We craft outstanding websites and software, as well as create and implement successful marketing campaigns.",
+      "Media Control Agency is a digital agency that makes a difference by developing outstanding websites, creating successful marketing campaigns, and implementing AI solutions.",
   },
   contact: {
     subtitle: "Ready to collaborate?",
