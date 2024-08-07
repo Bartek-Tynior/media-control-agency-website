@@ -108,7 +108,7 @@ const Navbar = () => {
               width="100"
               height="60"
               quality={100}
-              className="w-[88px] pointer-events-none"
+              className="w-[60px] pointer-events-none"
               alt={content.logo.altImage}
             />
           </Link>
@@ -178,13 +178,13 @@ const Navbar = () => {
         )}
 
         {/* Desktop Menu */}
-        <div className="blured-bg rounded-[80px] h-[50px] lg:flex border border-white/10 hidden shadow-lg">
+        <div className="blured-bg rounded-md h-[40px] lg:flex border border-white/10 hidden shadow-lg">
           <ul className="flex px-6 flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
             {content.links.map((link: any, i: number) => {
               return (
-                <li key={link.name} className="link-wrapper z-10 px-6">
+                <li key={link.name} className="link-wrapper z-10 px-2">
                   <Link
-                    className="text-base font-normal"
+                    className="text-xs font-normal"
                     href={isHomePage ? link.link : `/${link.link}`}
                     id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
                   >
@@ -215,9 +215,9 @@ const Navbar = () => {
         </div>
 
         {/* Call-to-action Button */}
-        <div className="hidden items-center justify-center lg:flex h-[50px] w-[175px]">
+        <div className="hidden items-center justify-center lg:flex h-[40px] w-[155px]">
           <Button
-            className="gap-2 group h-[50px] text-base"
+            className="gap-2 group h-[40px] text-xs"
             variant="default"
             size="full-size"
             onClick={() => router.push("/contact")}
