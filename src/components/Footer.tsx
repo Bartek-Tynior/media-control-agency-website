@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="text-white mb-20">
       <MaxWidthWrapper>
-        <div className="w-full h-[1px] bg-white/40 mb-20"></div>
+        {/* <div className="w-full h-[1px] bg-white/40 mb-20"></div> */}
         <div className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-0">
           <h2 className="text-[#f2f2f2] antialiased inline-flex items-center justify-center font-medium text-sm sm:text-md align-middle">
             {content.footer_credit}

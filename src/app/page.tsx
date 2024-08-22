@@ -9,6 +9,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Services from "@/components/Services";
 import { useEffect } from "react";
 import Lenis from 'lenis'
+import FooterCard from "@/components/FooterCard";
 
 export default function Home() {
 
@@ -32,6 +33,7 @@ export default function Home() {
         <Services />
         <ContactSection />
         <FAQ />
+        <FooterCard />
       </MaxWidthWrapper>
     </>
   );
