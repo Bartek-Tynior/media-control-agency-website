@@ -8,6 +8,8 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import GoogleAnalytics from "./GoogleAnalytics";
+import { Suspense } from "react";
+import LoadingPage from "@/components/LoadingPage";
 
 export const metadata: Metadata = {
   title:
@@ -57,10 +59,12 @@ export default function RootLayout({
         <Providers>
           <GoogleAnalytics />
           <Navbar />
-          <CookiesConsent />
-          {children}
+          <Suspense fallback={<LoadingPage />}>
+            <CookiesConsent />
+            {children}
+            <Toaster />
+          </Suspense>
           <Footer />
-          <Toaster />
         </Providers>
       </body>
     </html>

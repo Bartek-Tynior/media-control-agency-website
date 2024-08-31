@@ -10,6 +10,7 @@ import websiteContent from "../../website-content";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const content = websiteContent.navbar;
@@ -92,23 +93,26 @@ const Navbar = () => {
   });
 
   return (
-    <nav
+    <motion.nav
       className={`fixed h-20 w-screen inset-x-0 top-0 z-50 ${
-        isOpen
-          ? "max-lg:bg-[rgba(255,255,255,0.0)] max-lg:backdrop-blur-md max-lg:shadow-[7px_7px_12px_0_rgba(0,_0,_0,_0.1)]"
-          : ""
+        isOpen ? "" : "bg-[#0F0F0F] border-b border-white/10"
       }`}
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
     >
-      <MaxWidthWrapper className="flex justify-between max-lg:py-3 py-6">
+      <MaxWidthWrapper className="flex items-center justify-between max-lg:py-3 py-6">
         {/* Logo Section */}
-        <div className="navbar_logo flex z-20 w-[175px]">
+        <div
+          className={`navbar_logo flex z-50 w-fit h-fit bg-[#0F0F0F]/70 rounded-lg px-3 py-2`}
+        >
           <Link href={"/"}>
             <Image
               src={content.logo.imageLocation}
               width="100"
               height="60"
               quality={100}
-              className="w-[60px] pointer-events-none"
+              className="w-[60px] h-auto"
               alt={content.logo.altImage}
             />
           </Link>
@@ -116,15 +120,18 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {!isOpen && (
-          <div className="menu-mobile-wrap shadow-lg" id="menu_mobile_wrap">
+          <div
+            className="menu-mobile-wrap px-5 sm:px-10 md:px-16 pb-10 pt-20 shadow-lg"
+            id="menu_mobile_wrap"
+          >
             <div>
               {content.links.map((link) => {
                 return (
-                  <div key={link.name} className="py-[0.5rem]">
+                  <div key={link.name} className="py-[0.25rem]">
                     <Link
                       href={isHomePage ? link.link : `/${link.link}`}
                       id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
-                      className="text-3xl text-white font-bold hover:text-zinc-300 transform transition-all"
+                      className="text-sm text-white font-bold hover:text-zinc-300 transform transition-all"
                       onClick={toggleNavbar}
                     >
                       {link.name}
@@ -133,10 +140,10 @@ const Navbar = () => {
                 );
               })}
 
-              <div className="py-6 ">
+              <div className="py-2">
                 <Link href="/contact">
                   <Button
-                    className="gap-2 group h-14 text-base border border-white/10"
+                    className="gap-2 group text-xs h-10 border border-white/10"
                     variant="default"
                     size="full-size"
                     onClick={toggleNavbar}
@@ -149,24 +156,24 @@ const Navbar = () => {
             </div>
 
             <div className="flex flex-col">
-              <h2 className="text-2xl text-gray-400 py-2 font-medium">
+              <h2 className="text-sm text-gray-400 py-2 font-medium">
                 Social Media
               </h2>
 
               <div className="flex flex-col gap-3">
-                <span className="inline-flex items-center gap-3 text-xl">
+                <span className="inline-flex items-center gap-3 text-sm">
                   {contact.instagram}
                   <a href="https://www.instagram.com/mediacontrolag/">
                     Instagram
                   </a>
                 </span>
-                <span className="inline-flex items-center gap-3 text-xl">
+                <span className="inline-flex items-center gap-3 text-sm">
                   {contact.linkedin}
                   <a href="https://www.linkedin.com/company/media-control-agency">
                     LinkedIn
                   </a>
                 </span>
-                <span className="inline-flex items-center gap-3 text-xl">
+                <span className="inline-flex items-center gap-3 text-sm">
                   {contact.facebook}
                   <a href="https://www.facebook.com/people/Media-Control-Agency/61551901261084/">
                     Facebook
@@ -178,7 +185,7 @@ const Navbar = () => {
         )}
 
         {/* Desktop Menu */}
-        <div className="blured-bg rounded-md h-[40px] lg:flex border border-white/10 hidden shadow-lg">
+        <div className="blured-bg rounded-md h-[40px] items-center lg:flex border border-white/10 hidden shadow-lg">
           <ul className="flex px-6 flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
             {content.links.map((link: any, i: number) => {
               return (
@@ -204,7 +211,10 @@ const Navbar = () => {
         {/* Mobile Hamburger Component */}
         <div className="navigation_hamburger flex justify-center items-center lg:hidden">
           {isOpen ? (
-            <button className="flex z-20 hamburger-button" onClick={toggleNavbar}>
+            <button
+              className="flex z-20 hamburger-button"
+              onClick={toggleNavbar}
+            >
               <AlignJustify className="w-10 h-10" />
             </button>
           ) : (
@@ -227,7 +237,7 @@ const Navbar = () => {
           </Button>
         </div>
       </MaxWidthWrapper>
-    </nav>
+    </motion.nav>
   );
 };
 

@@ -4,21 +4,57 @@ export default {
   hero: {
     title: "Discover. Craft. Grow.",
     subtitle: "Result Focused Digital Agency",
-    shortDescription: "Where Vision Meets Technology – Exceptional Web and App Development for Your Business.",
-    description: {
-      paragaraph:
-        "We Help Businesses Improve Their Conversion Rate and Generate Leads By",
-      typed: [
-        "Building Outstanding Websites.",
-        1000,
-        "Creating Successful Marketing Campaigns.",
-        1000,
-        "Implementing AI Solutions.",
-        1000,
-      ],
-    },
+    shortDescription:
+      "Where Vision Meets Technology – Exceptional Web and App Development for Your Business.",
     imageLocation: "/img/mesh-gradient-background.png",
     altImage: "Mesh Gradient Background",
+  },
+  process: {
+    title: "Our simple 3-step process to skyrocket your business.",
+    subtitle:
+      "Traditional design is out the door and giving way to design that sets new standards.",
+    steps: [
+      {
+        i: 1,
+        title: "Discovery",
+        description:
+          "We start by getting to know you and your business. We'll discuss your goals, values, and vision to ensure we're on the same page.",
+        imageLocation: "/img/icons/discovery-icon.svg",
+        altImage: "Discovery Icon",
+      },
+      {
+        i: 2,
+        title: "Design",
+        description:
+          "Next, we'll translate our joint vision into designs that reflect your brand and values. We'll work with you to ensure you're happy with the results.",
+        imageLocation: "/img/icons/design-icon.svg",
+        altImage: "Design Icon",
+      },
+      {
+        i: 3,
+        title: "Development",
+        description:
+          "Once the designs are approved, we'll start crafting your website or app. We'll use the latest technologies and tools to ensure your product is cutting-edge.",
+        imageLocation: "/img/icons/development-icon.svg",
+        altImage: "Development Icon",
+      },
+      {
+        i: 4,
+        title: "QA",
+        description:
+          "Before we launch your product, we'll review and test it to ensure it meets our high standards. We'll make any necessary improvements to guarantee your satisfaction.",
+        imageLocation: "/img/icons/qa-icon.svg",
+        altImage: "QA Icon",
+      },
+      {
+        i: 5,
+        title: "Improvements",
+        description:
+          "Even after your product is live, we'll continue to support you. We'll implement any fixes or improvements you need to ensure your success.",
+        imageLocation: "/img/icons/improvements-icon.svg",
+        altImage: "Improvements Icon",
+      },
+    ],
   },
   services: [
     {
@@ -129,6 +165,10 @@ export default {
         link: "#case-studies",
       },
       {
+        name: "Process",
+        link: "#process",
+      },
+      {
         name: "Services",
         link: "#services",
       },
@@ -195,8 +235,8 @@ export default {
         <Image
           src="/img/icons/instagram-icon.png"
           alt="Instagram Icon"
-          width={30}
-          height={30}
+          width={20}
+          height={20}
         />
       </a>
     ),
@@ -205,8 +245,8 @@ export default {
         <Image
           src="/img/icons/linkedin-icon.png"
           alt="LinkedIn Icon"
-          width={30}
-          height={30}
+          width={20}
+          height={20}
         />
       </a>
     ),
@@ -215,8 +255,8 @@ export default {
         <Image
           src="/img/icons/facebook-icon.png"
           alt="Facebook Icon"
-          width={30}
-          height={30}
+          width={20}
+          height={20}
         />
       </a>
     ),

@@ -9,11 +9,11 @@ const Services = () => {
 
   return (
     <>
-      <section className="md:h-fit pt-28 sm:pb-14" id="services">
+      <section className="h-fit py-14" id="services">
         {/* Label Section */}
         <div className="flex flex-col gap-5">
           <SectionLabel sectionName="Services" />
-          <h2 className="text-2xl sm:text-4xl lg:w-1/2 font-bold leading-tight">
+          <h2 className="text-2xl lg:w-1/2 font-bold leading-tight">
             This is what we do.
           </h2>
         </div>

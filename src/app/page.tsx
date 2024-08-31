@@ -2,36 +2,44 @@
 
 import About from "@/components/About";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
-import ContactSection from "@/components/ContactSection";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Services from "@/components/Services";
 import { useEffect } from "react";
-import Lenis from 'lenis'
+import Lenis from "lenis";
 import FooterCard from "@/components/FooterCard";
+import ProcessSection from "@/components/ProcessSection";
+import PricingComponent from "@/components/PricingSection";
+import ComparisonSection from "@/components/ComparisonSection";
 
 export default function Home() {
+  useEffect(() => {
+    const lenis = new Lenis();
 
-  useEffect( () => {
-    const lenis = new Lenis()
-
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf)
-  }, [])
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <>
+      <Hero />
+
       <MaxWidthWrapper>
-        <Hero />
         <About />
         <CaseStudiesSection />
+        <ProcessSection />
         <Services />
-        <ContactSection />
+        <ComparisonSection />
+        <PricingComponent />
         <FAQ />
         <FooterCard />
       </MaxWidthWrapper>

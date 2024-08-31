@@ -65,7 +65,7 @@ const ContactPage = ({}) => {
       <div className="pt-28 mb-14">
         <div className="flex flex-col gap-5">
           <SectionLabel sectionName="Contact Form" />
-          <h1 className="text-4xl xl:text-5xl 2xl:text-6xl mb-8 font-bold antialiased">
+          <h1 className="text-2xl mb-8 font-bold antialiased">
             Reach out to us.
           </h1>
         </div>
@@ -82,7 +82,7 @@ const ContactPage = ({}) => {
           )}
 
           <div className="col-span-6">
-            <h2 className="text-lg sm:text-2xl font-normal mb-8 antialiased">
+            <h2 className="text-sm font-normal mb-8 antialiased">
               {content.subtitle_1}
             </h2>
 
@@ -91,7 +91,7 @@ const ContactPage = ({}) => {
                 className="flex flex-col gap-3 p-6"
                 onSubmit={handleSubmit((e) => sendMail(e))}
               >
-                <Label className="" htmlFor="fullName">
+                <Label className="text-xs" htmlFor="fullName">
                   Full Name
                 </Label>
 
@@ -108,7 +108,9 @@ const ContactPage = ({}) => {
                   </p>
                 )}
 
-                <Label htmlFor="email">Email</Label>
+                <Label className="text-xs" htmlFor="email">
+                  Email
+                </Label>
 
                 <Input
                   className="w-full border-white/40 pl-6"
@@ -123,7 +125,9 @@ const ContactPage = ({}) => {
                   </p>
                 )}
 
-                <Label htmlFor="phone">Phone Number</Label>
+                <Label className="text-xs" htmlFor="phone">
+                  Phone Number
+                </Label>
 
                 <Input
                   className="w-full border-white/40 pl-6"
@@ -138,7 +142,9 @@ const ContactPage = ({}) => {
                   </p>
                 )}
 
-                <Label htmlFor="company">Company</Label>
+                <Label className="text-xs" htmlFor="company">
+                  Company
+                </Label>
 
                 <Input
                   className="w-full border-white/40 pl-6"
@@ -153,7 +159,9 @@ const ContactPage = ({}) => {
                   </p>
                 )}
 
-                <Label htmlFor="message">Your Message</Label>
+                <Label className="text-xs" htmlFor="message">
+                  Your Message
+                </Label>
 
                 <Input
                   className="w-full border-white/40 pl-6"
@@ -180,7 +188,7 @@ const ContactPage = ({}) => {
           </div>
 
           <div className="col-span-6 mx-auto">
-            <h2 className="text-lg sm:text-2xl font-normal antialiased">
+            <h2 className="text-sm  font-normal antialiased">
               {content.subtitle_2}
             </h2>
             <Button
@@ -191,7 +199,9 @@ const ContactPage = ({}) => {
               <Calendar className="ml-2 w-4 h-4" />
             </Button>
 
-            <p className="text-lg font-normal">{content.meeting_description}</p>
+            <p className="text-sm  font-normal">
+              {content.meeting_description}
+            </p>
           </div>
         </div>
       </div>
