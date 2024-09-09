@@ -16,20 +16,20 @@ export default function NotFound() {
     <MaxWidthWrapper>
       <div className="min-h-screen pt-[10rem] mb-5">
         <div className="flex flex-col text-center justify-center items-center">
-          <h1 className="text-4xl mb-8 font-bold">{content.title}</h1>
-          <h2 className="text-xl font-semibold">{content.description}</h2>
+          <h1 className="text-2xl mb-6">{content.title}</h1>
+          <h2 className="text-sm max-w-md text-gray-300">{content.description}</h2>
           <Image
             src={content.imageLocation}
-            className="w-[300px] mt-10 pointer-events-none"
+            className="w-[100px] mt-10 pointer-events-none"
             alt=""
             width={600}
             height={600}
           />
           <Link className="mt-10" href="/">
             <Button
-              className="gap-2 group h-[50px] text-base border border-white/10"
-              variant="default"
-              size="full-size"
+              className="gap-2 group text-sm"
+              variant="primary"
+              size="lg"
             >
               {content.return_home}
               <ArrowRight className="group-hover:translate-x-2 transition-all" />

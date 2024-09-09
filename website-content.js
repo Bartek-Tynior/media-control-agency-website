@@ -2,12 +2,64 @@ import Image from "next/image";
 
 export default {
   hero: {
-    title: "Discover. Craft. Grow.",
+    title: "Launch Faster. Communicate better.",
     subtitle: "Result Focused Digital Agency",
     shortDescription:
-      "Where Vision Meets Technology – Exceptional Web and App Development for Your Business.",
+      "If you want to achieve ground-breaking growth with increased sales and profitability through high-quality design, then you're in the right place.",
     imageLocation: "/img/mesh-gradient-background.png",
     altImage: "Mesh Gradient Background",
+  },
+  pricing: {
+    title: "Let's make it happen.",
+    subtitle:
+      "Simple and straight-forward pricing. Pause or cancel anytime. No hidden fees.",
+    packages: [
+      {
+        title: "Basic",
+        description: "Perfect for small businesses and startups.",
+        price: "€1000",
+        features: [
+          "Custom Design",
+          "Responsive Design",
+          "Basic SEO",
+          "Basic Support",
+        ],
+        withGradient: false,
+      },
+      {
+        title: "Standard",
+        description: "Great for growing businesses.",
+        price: "€2000",
+        features: [
+          "Custom Design",
+          "Responsive Design",
+          "Advanced SEO",
+          "Advanced Support",
+        ],
+        withGradient: true,
+      },
+    ],
+  },
+  comparison: {
+    title: "Why choose us over the competition?",
+    subtitle:
+      "We're not just another digital agency. We're a team of experts dedicated to helping you achieve your goals",
+    competitors: [
+      "Overly expensive",
+      "Outdated designs",
+      "Long delivery times",
+      "Lack of industry research",
+      "Slow communication",
+      "No personal approach",
+    ],
+    mca: [
+      "Senior designs for junior prices",
+      "Tailored best-fit solutions",
+      "Avg. 24-48 hours delivery time",
+      "15+ Years of industry-specific expertise",
+      "24/7 Whatsapp support",
+      "Constant, proactive communication",
+    ],
   },
   process: {
     title: "Our simple 3-step process to skyrocket your business.",

@@ -4,12 +4,14 @@ import websiteContent from "../../website-content";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Button } from "./ui/Button";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Particles from "./ui/Particles";
 
 const Hero = () => {
   const content = websiteContent.hero;
 
   return (
     <section className="h-screen flex overflow-hidden relative">
+      <Particles />
       <MaxWidthWrapper className="h-full">
         <div className="z-40 h-full w-full flex flex-col justify-center relative">
           <GradientBall />
@@ -20,24 +22,28 @@ const Hero = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <div>
-                <span className="text-zinc-200 text-center font-semibold text-lg tracking-widest mb-5">
+              <div className="flex flex-col justify-center items-center">
+                <span className="text-gray-300 text-center text-lg tracking-widest mb-5">
                   {content.subtitle}
                 </span>
-                <h1 className="text-center text-6xl font-semibold tracking-wide mb-5">
+                <h1 className="text-center text-6xl max-w-3xl font-semibold tracking-wide mb-5">
                   {content.title}
                 </h1>
-                <h2 className="text-lg text-center tracking-wide mb-5">
+                <h2 className="text-sm max-w-sm text-center tracking-wide mb-5">
                   {content.shortDescription}
                 </h2>
               </div>
               <div className="w-full flex flex-row gap-4 justify-center items-center">
-                <Button className="text-xs" variant="default" size="lg">
-                  Contact us
-                </Button>
-                <Button className="text-xs" variant="default" size="lg">
-                  Learn more
-                </Button>
+                <a href="/contact" className="z-30">
+                  <Button className="text-xs" variant="primary" size="lg">
+                    Book a call
+                  </Button>
+                </a>
+                <a href="#services" className="z-30">
+                  <Button className="text-xs" variant="secondary" size="lg">
+                    Learn more
+                  </Button>
+                </a>
               </div>
             </motion.div>
           </div>

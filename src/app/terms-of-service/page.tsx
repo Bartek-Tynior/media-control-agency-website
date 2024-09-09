@@ -1,22 +1,42 @@
+"use client";
+
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SectionLabel from "@/components/ui/SectionLabel";
+import Lenis from "lenis";
+import { useEffect } from "react";
 
 export const metadata = {
   title: "Terms of Service | Media Control Agency",
 };
 
 const page = () => {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <MaxWidthWrapper>
       <div className="pt-28 mb-14">
         <div className="flex flex-col gap-5">
           <SectionLabel sectionName="Terms of Service" />
-          <h1 className="text-4xl xl:text-5xl 2xl:text-6xl mb-8 font-bold antialiased">
+          <h1 className="text-2xl mb-8 font-bold antialiased">
             General Terms and Conditions
           </h1>
         </div>
 
-        <div>
+        <div className="text-sm">
           <p>
             For the initiation of business relations, the processing of orders
             and the execution of contracts between Media Control Agency and

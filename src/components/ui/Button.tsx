@@ -8,10 +8,12 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "blured-bg text-white hover:bg-zinc-800 border border-white/10 shadow-lg",
-        default_white: "bg-white text-zinc-800 border-white/10 shadow-md",
-        link: "bg-transparent underline-offset-4 hover:underline text-slate-900 dark:text-slate-100 hover:bg-transparent dark:hover:bg-transparent",
+        primary:
+          "blured-bg z-30 text-white hover:bg-zinc-800 border border-white/10 shadow-lg",
+        secondary:
+          "bg-[#7F1C80] z-30 text-white outline outline-0 hover:outline-4 shadow-lg outline-[#7F1C80]/50 transition-all",
+        third: "bg-white z-30 text-zinc-800 border-white/10 shadow-md",
+        link: "bg-transparent z-30 underline-offset-4 hover:underline text-slate-900 dark:text-slate-100 hover:bg-transparent dark:hover:bg-transparent",
       },
       size: {
         default: "h-10 py-2 px-4",
@@ -23,7 +25,7 @@ const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "default",
+      variant: "primary",
       size: "default",
     },
   }

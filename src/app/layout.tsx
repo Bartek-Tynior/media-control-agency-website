@@ -12,15 +12,11 @@ import { Suspense } from "react";
 import LoadingPage from "@/components/LoadingPage";
 
 export const metadata: Metadata = {
-  title:
-    "Media Control Agency: Web Development, Digital Marketing & Software Solutions",
-  description:
-    "Media Control Agency: A dynamic digital agency delivering results through expert digital marketing, website development, and software solutions for businesses.",
+  title: "Media Control Agency - Design / development Partner ",
+  description: "Design / development partners for startup founders.",
   openGraph: {
-    title:
-      "Media Control Agency: Web Development, Digital Marketing & Software Solutions",
-    description:
-      "Media Control Agency is a dynamic digital agency delivering results through expert digital marketing, website development, and software solutions for businesses.",
+    title: "",
+    description: "Design / development partners for startup founders.",
     type: "website",
     locale: "nl_NL",
     url: "https://media-control-agency.nl",
@@ -58,13 +54,13 @@ export default function RootLayout({
       >
         <Providers>
           <GoogleAnalytics />
-          <Navbar />
           <Suspense fallback={<LoadingPage />}>
+            <Navbar />
             <CookiesConsent />
             {children}
             <Toaster />
+            <Footer />
           </Suspense>
-          <Footer />
         </Providers>
       </body>
     </html>

@@ -1,22 +1,42 @@
+"use client";
+
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SectionLabel from "@/components/ui/SectionLabel";
+import Lenis from "lenis";
+import { useEffect } from "react";
 
 export const metadata = {
   title: "Privacy Policy | Media Control Agency",
 };
 
 const page = () => {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <MaxWidthWrapper>
       <div className="pt-28 mb-14">
         <div className="flex flex-col gap-5">
           <SectionLabel sectionName="Privacy Policy" />
-          <h1 className="text-4xl xl:text-5xl 2xl:text-6xl mb-8 font-bold antialiased">
+          <h1 className="text-2xl mb-8 font-bold antialiased">
             Privacy Policy of Media Control Agency
           </h1>
         </div>
 
-        <div>
+        <div className="text-sm">
           <p>
             The following Privacy Policy specifies
             <strong>
@@ -38,7 +58,7 @@ const page = () => {
             rights and obligations of Users using the Website.
           </p>
 
-          <h2 className="text-2xl py-6 font-bold">§1 Definitions</h2>
+          <h2 className="text-xl py-6 font-bold">§1 Definitions</h2>
           <ul role="list">
             <li>
               <strong>Service</strong> - the website &quot;Media Control
@@ -141,7 +161,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §2 Data Protection Inspector
           </h2>
           <p>
@@ -153,7 +173,7 @@ const page = () => {
             data, please contact the Administrator directly.
           </p>
 
-          <h2 className="text-2xl py-6 font-bold">§3 Types of Cookies</h2>
+          <h2 className="text-xl py-6 font-bold">§3 Types of Cookies</h2>
           <ul role="list">
             <li>
               <strong>Internal cookies</strong> - files uploaded and read from
@@ -183,7 +203,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">§4 Data storage security</h2>
+          <h2 className="text-xl py-6 font-bold">§4 Data storage security</h2>
           <ul role="list">
             <li>
               <strong>Cookie storage and reading mechanisms</strong> - The
@@ -322,7 +342,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §5 Purposes for which Cookie files are used
           </h2>
           <ul role="list">
@@ -336,7 +356,7 @@ const page = () => {
             <li>Provision of multimedia services</li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §6 Purposes of personal data processing
           </h2>
           <p>
@@ -368,7 +388,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §7 Cookies of external websites
           </h2>
           <p>
@@ -418,9 +438,7 @@ const page = () => {
             methods of using cookies.
           </p>
 
-          <h2 className="text-2xl py-6 font-bold">
-            §8 Types of collected data
-          </h2>
+          <h2 className="text-xl py-6 font-bold">§8 Types of collected data</h2>
           <p>
             The website collects data about Users. Some data is collected
             automatically and anonymously, and some data is personal data
@@ -470,7 +488,7 @@ const page = () => {
             the statistical service provider.
           </p>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §9 Access to personal data by third parties
           </h2>
           <p>
@@ -507,7 +525,7 @@ const page = () => {
             Provider.
           </p>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §10 Method of processing personal data
           </h2>
           <p>
@@ -549,7 +567,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §11 Legal basis for the processing of personal data
           </h2>
           <p>
@@ -593,7 +611,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §12 The period of personal data processing
           </h2>
           <p>
@@ -625,7 +643,7 @@ const page = () => {
             an indefinite period
           </p>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §13 Users&apos; rights related to the processing of personal data
           </h2>
           <p>
@@ -688,7 +706,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §14 Contact to the Administrator
           </h2>
 
@@ -710,7 +728,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">§15 Website requirements</h2>
+          <h2 className="text-xl py-6 font-bold">§15 Website requirements</h2>
           <ul role="list">
             <li>
               &bull; Restricting the saving and access to Cookie files on the
@@ -725,7 +743,7 @@ const page = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl py-6 font-bold">§16 External links</h2>
+          <h2 className="text-xl py-6 font-bold">§16 External links</h2>
           <p>
             On the Website - articles, posts, entries or comments of Users,
             there may be links to external websites with which the Website Owner
@@ -735,7 +753,7 @@ const page = () => {
             content outside the Website.
           </p>
 
-          <h2 className="text-2xl py-6 font-bold">
+          <h2 className="text-xl py-6 font-bold">
             §17 Changes to the Privacy Policy
           </h2>
           <ul role="list">

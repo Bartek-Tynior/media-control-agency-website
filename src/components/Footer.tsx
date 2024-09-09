@@ -3,6 +3,7 @@ import websiteContent from "../../website-content";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 import Image from "next/image";
+import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const content = websiteContent;
@@ -10,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="text-white mb-20">
       <MaxWidthWrapper>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-col sm:flex-row justify-between gap-10 md:gap-0">
           <div className="flex flex-col gap-10">
             <div className="flex z-20 w-[175px]">
               <Link href={"/"}>
@@ -25,20 +26,34 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="max-w-sm flex flex-col gap-4">
+            <div className="sm:max-w-sm w-full  justify-center items-center sm:items-start flex flex-col gap-4">
               <h2 className="text-sm font-semibold">Join our newsletter</h2>
-              <p className="text-sm font-normal text-gray-300">
+              <p className="text-sm font-normal sm:text-start text-center text-gray-300">
                 Sign up to our mailing list below and be the first to know about
                 new updates. Don't worry, we hate spam too.
               </p>
+
+              <form className="flex flex-row gap-2">
+                <input
+                  type="email"
+                  placeholder="Your Email Address"
+                  className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                />
+                <Button
+                  type="submit"
+                  className="text-xs text-white rounded-lg focus:outline-none"
+                >
+                  Get Notified
+                </Button>
+              </form>
             </div>
           </div>
 
-          <div className="flex gap-2">
-            <div className="flex flex-col justify-start items-center gap-10">
-              <h2 className="text-sm font-semibold">Links</h2>
+          <div className="flex flex-row justify-around md:justify-start gap-10 md:gap-20">
+            <div className="flex flex-col justify-start md:items-start items-center gap-10">
+              <h2 className="text-sm font-semibold px-4">Links</h2>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center md:items-start">
                 {content.navbar.links.map(({ name, link, index }) => {
                   return (
                     <Button
@@ -53,10 +68,10 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-start items-center gap-10">
-              <h2 className="text-sm font-semibold">Information</h2>
+            <div className="flex flex-col justify-start md:items-start items-center gap-10">
+              <h2 className="text-sm font-semibold px-4">Information</h2>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center md:items-start">
                 {content.footer.links.map(({ name, link, index }) => {
                   return (
                     <Button
@@ -72,7 +87,30 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="pt-20">
+
+        <div className="flex flex-col gap-2 pt-10">
+          <div className="flex flex-col sm:flex-row gap-5 md:gap-4">
+            <div className="flex flex-col gap-[5px] sm:text-start text-center text-xs text-gray-300 w-full">
+              <p>{content.contact.phone}</p>
+              <p>{content.contact.email}</p>
+              <p>
+                KVK:{" "}
+                <span>{content.contact.kvk}</span>
+              </p>
+              <p>
+                TAX. NO.:{" "}
+                <span>{content.contact.tax}</span>
+              </p>
+            </div>
+            <div className="flex flex-row w-full sm:w-1/3 justify-center sm:justify-end gap-3 items-end">
+              {content.contact.instagram}
+              {content.contact.linkedin}
+              {content.contact.facebook}
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-20 text-center md:text-left">
           <span className="text-sm">
             © 2024 All rights reserved Made with 💜 by Media Control Agency
           </span>
