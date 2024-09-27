@@ -10,33 +10,51 @@ const CookiesConsent = () => {
   const [showConsent, setShowConsent] = useState(true);
 
   useEffect(() => {
-    setShowConsent(hasCookie("localConsent"));
+    // Check if the consent cookie is already set
+    setShowConsent(!hasCookie("localConsent"));
   }, []);
 
   const acceptCookie = () => {
-    setShowConsent(true);
-    setCookie("localConsent", "true", {});
+    setShowConsent(false);
+    setCookie("localConsent", "true", { path: "/" });
   };
 
-  if (showConsent) {
+  const denyCookie = () => {
+    setShowConsent(false);
+    setCookie("localConsent", "false", { path: "/" });
+  };
+
+  if (!showConsent) {
     return null;
   }
 
   return (
-    <div className="w-screen flex justify-center fixed z-50 bottom-6">
-      <div className="blured-bg border-white/10 max-w-screen-xl mx-5 rounded-md">
-        <div className="max-w-screen-xl px-5 sm:px-10 md:px-15 h-full flex gap-5 py-3 items-center backdrop-blur-xl">
-          <span className="text-base flex items-center">
-            This website uses cookies to improve user experience. By using our
-            website you consent to all cookies in accordance with our Privacy
-            Policy.
-          </span>
-          <Button
-            className={cn("flex items-center")}
-            onClick={() => acceptCookie()}
-          >
-            Accept
-          </Button>
+    <div className="fixed bottom-6 w-full flex justify-center z-50">
+      <div className="bg-white/10 border border-gray-200/10 rounded-lg p-5 shadow-lg backdrop-blur-xl max-w-screen-md mx-5">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="flex-1 text-sm text-white">
+            <p className="mb-2 font-medium">Cookie Consent</p>
+            <p className="leading-snug">
+              By clicking <span className="font-bold">"Accept"</span>, you agree
+              to the storing of cookies on your device to enhance site
+              navigation, analyze site usage, and assist in our marketing
+              efforts. View our Privacy Policy for more information.
+            </p>
+          </div>
+          <div className="flex gap-3">
+            <Button
+              className="border border-white/50 bg-transparent hover:bg-white/10 text-white px-4 py-2 rounded-md"
+              onClick={denyCookie}
+            >
+              Deny
+            </Button>
+            <Button
+              className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200"
+              onClick={acceptCookie}
+            >
+              Accept
+            </Button>
+          </div>
         </div>
       </div>
     </div>

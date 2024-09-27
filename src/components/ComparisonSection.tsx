@@ -33,7 +33,10 @@ const ComparisonSection = () => {
             <div className="border border-white/20 w-full rounded-lg p-8 shadow-lg">
               <ul className="space-y-4 text-gray-400">
                 {content.competitors.map((item, index) => (
-                  <li className="text-gray-500 flex w-fit justify-center">
+                  <li
+                    key={item.id || index}
+                    className="text-gray-500 flex w-fit justify-center"
+                  >
                     <X className="mx-2 w-[0.80rem] h-[0.80rem] pointer-events-none" />
                     <span className="text-sm font-medium antialiased leading-3">
                       {item}
@@ -55,7 +58,10 @@ const ComparisonSection = () => {
               <div className="relative z-10">
                 <ul className="space-y-4">
                   {content.mca.map((item, index) => (
-                    <li className="text-white flex w-fit justify-center">
+                    <li
+                      className="text-white flex w-fit justify-center"
+                      key={item.id || index}
+                    >
                       <Image
                         className="check-icon mx-2 w-[0.80rem] h-[0.80rem] pointer-events-none"
                         src="/img/icons/check-icon.svg"

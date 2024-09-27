@@ -8,7 +8,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Services from "@/components/Services";
 import { useEffect } from "react";
 import Lenis from "lenis";
-import FooterCard from "@/components/FooterCard";
+import FooterCard from "@/components/FooterCTA";
 import ProcessSection from "@/components/ProcessSection";
 import PricingComponent from "@/components/PricingSection";
 import ComparisonSection from "@/components/ComparisonSection";

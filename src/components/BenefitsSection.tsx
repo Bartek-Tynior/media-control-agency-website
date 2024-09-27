@@ -4,7 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import websiteContent from "../../website-content";
 import { Autoplay } from "swiper/modules";
-import BenefitsSectionCard from "./BenefitsSectionCard";
+import Image from "next/image";
+import { FC } from "react";
 
 const BenefitsSection = () => {
   const content = websiteContent.service_benefits;
@@ -49,6 +50,25 @@ const BenefitsSection = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+    </div>
+  );
+};
+
+interface BenefitsSectionCardProps {
+  description: string;
+}
+
+const BenefitsSectionCard: FC<BenefitsSectionCardProps> = ({ description }) => {
+  return (
+    <div className="text-white flex w-fit justify-center">
+      <Image
+        className="check-icon mx-2 w-[0.80rem] h-[0.80rem] pointer-events-none"
+        src="/img/icons/check-icon.svg"
+        width={20}
+        height={20}
+        alt="Check Icon"
+      />
+      <span className="text-xs font-medium antialiased">{description}</span>
     </div>
   );
 };

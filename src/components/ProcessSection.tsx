@@ -67,7 +67,14 @@ const cardVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const FeatureCard = ({ index, title, description, isLast }) => (
+interface FeatureCardProps {
+  index: number;
+  title: string;
+  description: string;
+  isLast: boolean;
+}
+
+const FeatureCard = ({ index, title, description, isLast }: FeatureCardProps) => (
   <motion.div
     className="relative p-6 border border-white/20 rounded-xl overflow-hidden shadow-lg"
     variants={cardVariants}

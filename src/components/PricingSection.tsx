@@ -68,6 +68,15 @@ const cardVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
+interface PricingCardProps {
+  index: number;
+  title: string;
+  description: string;
+  price: string;
+  features: string[];
+  withGradient: boolean;
+}
+
 const PricingCard = ({
   index,
   title,
@@ -75,7 +84,7 @@ const PricingCard = ({
   price,
   features,
   withGradient,
-}) => {
+}: PricingCardProps) => {
   return (
     <motion.div
       className="relative rounded-lg p-8 border border-white/20 shadow-lg max-w-md w-full overflow-hidden"
