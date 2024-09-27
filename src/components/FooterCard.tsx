@@ -1,6 +1,9 @@
 import { Button } from "./ui/Button";
+import websiteContent from "../../website-content";
 
 const FooterCard: React.FC = () => {
+  const content = websiteContent.footer_card;
+
   return (
     <div
       className="relative flex flex-col items-center justify-center py-20 text-white"
@@ -13,20 +16,10 @@ const FooterCard: React.FC = () => {
 
       {/* Content */}
       <div className="relative p-8 blured-bg text-white border border-white/10 shadow-lg rounded-lg max-w-xl text-center">
-        <h2 className="text-3xl font-bold mb-4">
-          Ready to scale your brand to{" "}
-          <span className="italic text-white/70">new heights?</span>
-        </h2>
-        <p className="text-gray-300 mb-6">
-          Book a free 15-minute discovery call to see if KLIK is the right fit
-          for you
-          <span className="italic text-sm">
-            {" "}
-            (spoiler alert: it totally is).
-          </span>
-        </p>
+        <h2 className="text-3xl font-bold mb-4">{content.title}</h2>
+        <p className="text-gray-300 mb-6">{content.subtitle}</p>
         <a href="/contact">
-          <Button variant="primary">Book a call</Button>
+          <Button variant="primary">{content.button.text}</Button>
         </a>
       </div>
     </div>

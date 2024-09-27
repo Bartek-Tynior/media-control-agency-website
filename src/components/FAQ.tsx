@@ -28,7 +28,7 @@ const FAQ = () => {
         </div>
 
         <div>
-          {content.faq_sections.map(({ title, description, index }) => (
+          {content.faq_tiles.map(({ title, description, index }) => (
             <div key={index} className="mb-4">
               <button
                 onClick={() => toggleFAQ(index)}

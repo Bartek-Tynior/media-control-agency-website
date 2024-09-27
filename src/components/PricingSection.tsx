@@ -3,6 +3,8 @@ import SectionLabel from "./ui/SectionLabel";
 import { Button } from "./ui/Button";
 import { useRef } from "react";
 import websiteContent from "../../website-content";
+import Image from "next/image";
+import { X } from "lucide-react";
 
 const PricingComponent = () => {
   const sectionRef = useRef(null);
@@ -91,12 +93,26 @@ const PricingCard = ({
         <p className="mb-8">{description}</p>
         <ul className="space-y-2 mb-8">
           {features.map((feature, index) => (
-            <li key={index}>{feature}</li>
+            <li className="flex gap-4 items-center" key={index}>
+              { withGradient ? (
+                <Image
+                className="w-[16px] h-full leading-4"
+                src="/img/icons/check-icon.svg"
+                alt="Check Icon"
+                width={32}
+                height={32}
+              />
+              )
+              : (
+                <X className="w-[16px] h-full pointer-events-none text-gray-600 leading-4" />
+              )}
+              {feature}
+            </li>
           ))}
         </ul>
         {withGradient ? (
           <Button size="full-size" className="text-white py-3 rounded-lg">
-            Get started
+            Book a call
           </Button>
         ) : (
           <Button
@@ -104,7 +120,7 @@ const PricingCard = ({
             variant="secondary"
             className="text-white py-3 rounded-lg"
           >
-            Get started
+            Book a call
           </Button>
         )}
       </div>

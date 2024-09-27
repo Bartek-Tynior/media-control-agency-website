@@ -20,7 +20,7 @@ import Lenis from "lenis";
 
 const ContactPage = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
-  const content = websiteContent.contact_page;
+  const content = websiteContent.other_pages.contact_page;
   const router = useRouter();
 
   useEffect(() => {
@@ -210,7 +210,9 @@ const ContactPage = ({}) => {
                 {content.subtitle_2}
               </h2>
               <Button
-                className="gap-2 h-14 w-full sm:w-auto text-xs text-white rounded-lg bg-white/10 focus:outline-none my-6"
+                className="gap-2 text-xs text-white rounded-lg bg-white/10 my-6"
+                variant={"primary"}
+                size="default"
                 onClick={() => setIsOpen(true)}
               >
                 Schedule Meeting

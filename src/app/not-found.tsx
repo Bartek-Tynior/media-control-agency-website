@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 export default function NotFound() {
-  const content = websiteContent.not_found;
+  const content = websiteContent.other_pages.not_found;
 
   return (
     <MaxWidthWrapper>

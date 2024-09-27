@@ -54,8 +54,8 @@ const Hero = () => {
 };
 
 const GradientBall = () => {
-  const { scrollYProgress } = useScroll(); // Track vertical scroll progress
-  const y = useTransform(scrollYProgress, [0, 1], ["50%", "-100%"]); // Adjust the range here as needed
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], ["50%", "-100%"]);
 
   return (
     <motion.div

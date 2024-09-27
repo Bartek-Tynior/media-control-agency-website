@@ -11,8 +11,8 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const content = websiteContent.navbar;
-  const contact = websiteContent.contact;
+  const content = websiteContent.essential_elements.navbar;
+  const contact = websiteContent.essential_elements.contact;
   const [isOpen, setOpen] = useState(true);
   const router = useRouter();
   const pathname = usePathname();
@@ -151,24 +151,9 @@ const Navbar = () => {
             </h2>
 
             <div className="flex flex-col gap-3">
-              <span className="inline-flex items-center gap-3 text-sm">
                 {contact.instagram}
-                <a href="https://www.instagram.com/mediacontrolag/">
-                  Instagram
-                </a>
-              </span>
-              <span className="inline-flex items-center gap-3 text-sm">
                 {contact.linkedin}
-                <a href="https://www.linkedin.com/company/media-control-agency">
-                  LinkedIn
-                </a>
-              </span>
-              <span className="inline-flex items-center gap-3 text-sm">
                 {contact.facebook}
-                <a href="https://www.facebook.com/people/Media-Control-Agency/61551901261084/">
-                  Facebook
-                </a>
-              </span>
             </div>
           </div>
         </div>

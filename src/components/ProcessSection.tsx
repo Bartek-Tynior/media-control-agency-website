@@ -38,7 +38,7 @@ const renderProcessCards = () => {
   const content = websiteContent.process;
 
   return content.steps.map(({ title, description }, index) => {
-    const isLast = index === 4;
+    const isLast = index === 2;
 
     return (
       <FeatureCard

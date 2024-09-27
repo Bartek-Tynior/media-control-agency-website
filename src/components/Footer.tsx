@@ -16,12 +16,12 @@ const Footer = () => {
             <div className="flex z-20 w-[175px]">
               <Link href={"/"}>
                 <Image
-                  src={content.navbar.logo.imageLocation}
+                  src={content.essential_elements.navbar.logo.imageLocation}
                   width="100"
                   height="60"
                   quality={100}
                   className="w-[60px] pointer-events-none"
-                  alt={content.navbar.logo.altImage}
+                  alt={content.essential_elements.navbar.logo.altImage}
                 />
               </Link>
             </div>
@@ -54,17 +54,19 @@ const Footer = () => {
               <h2 className="text-sm font-semibold px-4">Links</h2>
 
               <div className="flex flex-col items-center md:items-start">
-                {content.navbar.links.map(({ name, link, index }) => {
-                  return (
-                    <Button
-                      key={index}
-                      className="text-gray-300 text-xs py-0 h-6"
-                      variant="link"
-                    >
-                      <a href={link}>{name}</a>
-                    </Button>
-                  );
-                })}
+                {content.essential_elements.navbar.links.map(
+                  ({ name, link, index }) => {
+                    return (
+                      <Button
+                        key={index}
+                        className="text-gray-300 text-xs py-0 h-6"
+                        variant="link"
+                      >
+                        <a href={link}>{name}</a>
+                      </Button>
+                    );
+                  }
+                )}
               </div>
             </div>
 
@@ -72,17 +74,19 @@ const Footer = () => {
               <h2 className="text-sm font-semibold px-4">Information</h2>
 
               <div className="flex flex-col items-center md:items-start">
-                {content.footer.links.map(({ name, link, index }) => {
-                  return (
-                    <Button
-                      key={index}
-                      className="text-gray-300 text-xs py-0 h-6"
-                      variant="link"
-                    >
-                      <a href={link}>{name}</a>
-                    </Button>
-                  );
-                })}
+                {content.essential_elements.footer.links.map(
+                  ({ name, link, index }) => {
+                    return (
+                      <Button
+                        key={index}
+                        className="text-gray-300 text-xs py-0 h-6"
+                        variant="link"
+                      >
+                        <a href={link}>{name}</a>
+                      </Button>
+                    );
+                  }
+                )}
               </div>
             </div>
           </div>
@@ -91,28 +95,26 @@ const Footer = () => {
         <div className="flex flex-col gap-2 pt-10">
           <div className="flex flex-col sm:flex-row gap-5 md:gap-4">
             <div className="flex flex-col gap-[5px] sm:text-start text-center text-xs text-gray-300 w-full">
-              <p>{content.contact.phone}</p>
-              <p>{content.contact.email}</p>
+              <p>{content.essential_elements.contact.phone}</p>
+              <p>{content.essential_elements.contact.email}</p>
               <p>
-                KVK:{" "}
-                <span>{content.contact.kvk}</span>
+                KVK: <span>{content.essential_elements.contact.kvk}</span>
               </p>
               <p>
-                TAX. NO.:{" "}
-                <span>{content.contact.tax}</span>
+                TAX. NO.: <span>{content.essential_elements.contact.tax}</span>
               </p>
             </div>
-            <div className="flex flex-row w-full sm:w-1/3 justify-center sm:justify-end gap-3 items-end">
-              {content.contact.instagram}
-              {content.contact.linkedin}
-              {content.contact.facebook}
+            <div className="flex flex-row w-full sm:w-1/2 justify-center sm:justify-end gap-3 items-end">
+              {content.essential_elements.contact.instagram}
+              {content.essential_elements.contact.linkedin}
+              {content.essential_elements.contact.facebook}
             </div>
           </div>
         </div>
 
         <div className="pt-20 text-center md:text-left">
           <span className="text-sm">
-            © 2024 All rights reserved Made with 💜 by Media Control Agency
+            {content.essential_elements.footer.footer_credit}
           </span>
         </div>
       </MaxWidthWrapper>
