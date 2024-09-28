@@ -6,13 +6,13 @@ export default {
     title: "Build Faster. Connect Better.",
     subtitle: "Design-Driven Digital Agency",
     shortDescription:
-      "Ready to boost your business with standout design and a website that truly speaks to your audience? You’re in the right spot.",
+      "We exist to show you how to stand out from the crowd and make a lasting impression online.",
     imageLocation: "/img/mesh-gradient-background.png",
     altImage: "Mesh Gradient Background",
   },
   about: {
     description:
-      "At Media Control Agency, we’re all about helping you stand out online. From building sleek websites to crafting smart marketing strategies, we're here to help your brand shine.",
+      "Media Control Agency is a design-driven digital agency that was born out of a love for design and a passion for creating. We specialize in crafting unique, user-centric digital experiences that captivate audiences and elevate brands. Our mission is to help businesses like yours build faster, connect better, and stand out in the digital world.",
   },
   case_studies: [
     {
@@ -114,7 +114,7 @@ export default {
   process: {
     title: "Our simple 3-step process to skyrocket your business.",
     subtitle:
-      "Traditional design is out the door and giving way to design that sets new standards.",
+      "We believe in a design and development process that is not only efficient but also effective. Time is money, and we make sure to deliver high-quality results in a timely manner.",
     steps: [
       {
         i: 1,
@@ -236,7 +236,7 @@ export default {
   comparison: {
     title: "Why Choose Us Over the Competition?",
     subtitle:
-      "We're more than a web/app development agency – we're your creative partner, committed to delivering outstanding results that resonate with your brand.",
+      "We're not just another digital agency. We're your design partner, your growth engine, and your secret weapon in the digital world.",
     competitors: [
       "Generic, templated designs",
       "Overpriced services with hidden fees",
@@ -246,24 +246,23 @@ export default {
       "One-size-fits-all solutions",
     ],
     mca: [
-      "Unique, design-driven solutions tailored to your brand",
+      "Tailored best-fit solutions",
       "Transparent pricing with no hidden costs",
-      "Rapid delivery without compromising quality",
-      "Deep expertise in UX/UI with a focus on modern trends",
-      "Dedicated project managers & 24/7 support",
+      "Avg. 24-48 hours delivery time",
+      "6+ years of industry specific expertise",
+      "24/7 Whatsapp support",
       "Fully customized strategies aligned with your goals",
     ],
   },
   pricing: {
-    title: "Invest in Your Digital Future",
-    subtitle:
-      "Simple, flexible pricing with no hidden fees. Cancel or pause anytime.",
+    title: "Ready to invest in your business?",
+    subtitle: "Clear monthly pricing, no lock-in, cancel anytime.",
     packages: [
       {
         title: "Design Partnership",
         description:
           "Ideal for businesses looking for a consistent design experience to elevate their brand across all digital touchpoints.",
-        price: "€4,097/mo",
+        price: "€1,799/mo",
         additionalInfo: "Pause or cancel anytime",
         features: [
           "Complete design for your website, product, or app",
@@ -276,24 +275,18 @@ export default {
           "Direct access to a dedicated designer",
         ],
         withGradient: true,
-        buttonText: "Join Partnership (unavailable)",
+        buttonText: "Book a call",
         secondaryButtonText: "Schedule a call",
       },
       {
         title: "Single Project",
         description:
           "Best for one-off website, design, or app development projects with comprehensive support.",
-        price: "€8,000+",
+        price: "€4,000+",
         additionalInfo: "Starting at",
-        features: [
-          "Tailored project approach",
-          "Dedicated design & development team",
-          "Flexible timelines",
-          "Full support during the project",
-          "Custom branding and design solutions",
-        ],
+        features: [],
         withGradient: false,
-        buttonText: "Request a quote (unavailable)",
+        buttonText: "Request a quote",
         secondaryButtonText: "Schedule a call",
       },
     ],
@@ -306,7 +299,7 @@ export default {
       {
         title: "Who is behind Media Control Agency?",
         description:
-          "Media Control Agency is led by a passionate designer and developer duo with over 5 years of experience in the industry.",
+          "Media Control Agency is led by a passionate designer and developer duo with over 6+ years of experience in the industry.",
         index: 1,
       },
       {
@@ -330,7 +323,7 @@ export default {
       {
         title: "How quickly will I receive my project?",
         description:
-          "We pride ourselves on efficient delivery times. Typically, we provide an average turnaround of 2-3 business days per request, with larger projects having tailored timelines. We’ll keep you informed at every stage to ensure timely completion.",
+          "We pride ourselves on efficient delivery times. Typically, we provide an average turnaround of 24-48 hours per request, with larger projects having tailored timelines. We’ll keep you informed at every stage to ensure timely completion.",
         index: 5,
       },
       {
@@ -438,43 +431,46 @@ export default {
       kvk: "91179947",
       tax: "NL004874490B47",
       instagram: (
-        <span className="inline-flex items-center gap-3 text-sm">
-          <a href="https://www.instagram.com/mediacontrolag/">
-            <Image
-              src="/img/icons/instagram-icon.png"
-              alt="Instagram Icon"
-              width={20}
-              height={20}
-            />
-          </a>
+        <a
+          className="inline-flex items-center gap-3 text-sm"
+          href="https://www.instagram.com/mediacontrolag/"
+        >
+          <Image
+            src="/img/icons/instagram-icon.png"
+            alt="Instagram Icon"
+            width={20}
+            height={20}
+          />
           Instagram
-        </span>
+        </a>
       ),
       linkedin: (
-        <span className="inline-flex items-center gap-3 text-sm">
-          <a href="https://www.linkedin.com/company/media-control-agency">
-            <Image
-              src="/img/icons/linkedin-icon.png"
-              alt="LinkedIn Icon"
-              width={20}
-              height={20}
-            />
-          </a>
+        <a
+          className="inline-flex items-center gap-3 text-sm"
+          href="https://www.linkedin.com/company/media-control-agency"
+        >
+          <Image
+            src="/img/icons/linkedin-icon.png"
+            alt="LinkedIn Icon"
+            width={20}
+            height={20}
+          />
           LinkedIn
-        </span>
+        </a>
       ),
       facebook: (
-        <span className="inline-flex items-center gap-3 text-sm">
-          <a href="https://www.facebook.com/people/Media-Control-Agency/61551901261084/">
-            <Image
-              src="/img/icons/facebook-icon.png"
-              alt="Facebook Icon"
-              width={20}
-              height={20}
-            />
-          </a>
+        <a
+          className="inline-flex items-center gap-3 text-sm"
+          href="https://www.facebook.com/people/Media-Control-Agency/61551901261084/"
+        >
+          <Image
+            src="/img/icons/facebook-icon.png"
+            alt="Facebook Icon"
+            width={20}
+            height={20}
+          />
           Facebook
-        </span>
+        </a>
       ),
     },
   },

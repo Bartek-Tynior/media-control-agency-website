@@ -26,10 +26,10 @@ const Hero = () => {
                 <span className="text-gray-300 text-center text-lg tracking-widest mb-5">
                   {content.subtitle}
                 </span>
-                <h1 className="text-center text-6xl max-w-3xl font-semibold tracking-wide mb-5">
+                <h1 className="text-center text-7xl max-w-3xl font-semibold tracking-wide mb-5">
                   {content.title}
                 </h1>
-                <h2 className="text-sm max-w-sm text-center tracking-wide mb-5">
+                <h2 className="text-base max-w-md text-center tracking-wide mb-5">
                   {content.shortDescription}
                 </h2>
               </div>

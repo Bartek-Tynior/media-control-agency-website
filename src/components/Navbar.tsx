@@ -69,7 +69,7 @@ const Navbar = () => {
               return (
                 <li key={link.name} className="link-wrapper z-10 px-2">
                   <Link
-                    className="text-xs font-normal"
+                    className="text-sm font-normal"
                     href={isHomePage ? link.link : `/${link.link}`}
                     id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
                   >
@@ -133,7 +133,7 @@ const Navbar = () => {
             <div className="py-2">
               <Link href="/contact">
                 <Button
-                  className="gap-2 group text-xs h-10 border border-white/10"
+                  className="gap-2 group text-sm h-10 border border-white/10"
                   variant="primary"
                   size="default"
                   onClick={toggleNavbar}

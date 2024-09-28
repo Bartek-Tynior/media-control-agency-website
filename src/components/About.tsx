@@ -15,7 +15,7 @@ export default function About() {
   const blur = useTransform(scrollYProgress, [0, 1], ["20px", "0px"]);
 
   return (
-    <section className="h-fit py-14" id="vision">
+    <section className="h-fit py-20" id="vision">
       <div className="h-full flex flex-col items-center justify-center">
         <motion.p
           className="text-3xl h-fit font-semibold text-center"

@@ -16,7 +16,7 @@ const ComparisonSection = () => {
         <div className="flex flex-col items-center justify-center gap-5">
           <SectionLabel sectionName="Comparison" />
           <h2 className="text-2xl font-bold leading-tight">{content.title}</h2>
-          <p className="text-sm text-gray-300">{content.subtitle}</p>
+          <p className="text-base text-gray-300">{content.subtitle}</p>
         </div>
 
         <motion.div

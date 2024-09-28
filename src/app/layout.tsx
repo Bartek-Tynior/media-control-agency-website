@@ -8,7 +8,6 @@ import "@/styles/globals.css";
 import localFont from "next/font/local";
 import GoogleAnalytics from "./GoogleAnalytics";
 import { Suspense } from "react";
-import LoadingPage from "@/components/LoadingPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -96,7 +95,7 @@ export default function RootLayout({
           <GoogleAnalytics />
           <Navbar />
           <CookiesConsent />
-          <Suspense fallback={<LoadingPage />}>{children}</Suspense>
+          {children}
           <Toaster />
           <Footer />
         </Providers>
