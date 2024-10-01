@@ -94,7 +94,7 @@ const PricingCard = ({
       variants={cardVariants}
     >
       {withGradient && (
-        <div className="absolute -bottom-14 -right-10 w-72 h-72 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-full opacity-70 blur-3xl" />
+        <div className="absolute -bottom-14 -right-10 w-72 h-72 bg-custom-gradient rounded-full opacity-70 blur-3xl" />
       )}
 
       <div className="relative z-10">
@@ -106,16 +106,15 @@ const PricingCard = ({
         <ul className="space-y-2 mb-8">
           {features.map((feature, index) => (
             <li className="flex gap-4 items-center" key={index}>
-              { withGradient ? (
+              {withGradient ? (
                 <Image
-                className="w-[16px] h-full leading-4"
-                src="/img/icons/check-icon.svg"
-                alt="Check Icon"
-                width={32}
-                height={32}
-              />
-              )
-              : (
+                  className="w-[16px] h-full leading-4"
+                  src="/img/icons/check-icon.svg"
+                  alt="Check Icon"
+                  width={32}
+                  height={32}
+                />
+              ) : (
                 <X className="w-[16px] h-full pointer-events-none text-gray-600 leading-4" />
               )}
               {feature}

@@ -110,6 +110,43 @@ export default {
       },
       coverImageAlt: "Client's Project Image",
     },
+    {
+      id: 3,
+      client: "Allersnelste Nanie",
+      service: "SEO & Web Development",
+      website: "https://nanie.nl/",
+      project: {
+        scopeOfWork: ["SEO", "Web Development"],
+        description:
+          "We've optimized the website of Allersnelste Nanie, a Dutch electra company, for search engines. We've also redesigned and developed their website to improve user experience and increase conversions.",
+        industry: "Clothing",
+        techStack: [
+          {
+            name: "Custom Code",
+            imageLocation: "/img/icons/code-logo-toolstack.png",
+            imageAlt: "Custom Code Icon",
+          },
+        ],
+        challenges: {
+          title:
+            "Plus 44 needed a website that would represent their brand, values and overall image. They also needed a digital marketing to increase their brand awareness and accessibility.",
+          description: [
+            "Creative solutions using 3D modeling",
+            "Implementing smart solutions like IDeal payment",
+            "Clear identity representation",
+          ],
+        },
+        solution:
+          "Media Control Agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
+        result:
+          "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
+      },
+      coverImageLocation: {
+        type: "video",
+        src: "/img/PLUS_44_WEBSITE_CASESTUDY.mp4",
+      },
+      coverImageAlt: "Client's Project Image",
+    },
   ],
   process: {
     title: "Our simple 3-step process to skyrocket your business.",
@@ -270,8 +307,8 @@ export default {
           "Average 2-3 business day delivery",
           "Fully async collaboration",
           "Optional weekly strategy meetings",
-          "Unlimited requests & revisions",
-          "Easy credit card payments",
+          "Unlimited requests",
+          "Easy credit-card payments",
           "Direct access to a dedicated designer",
         ],
         withGradient: true,
@@ -282,7 +319,7 @@ export default {
         title: "Single Project",
         description:
           "Best for one-off website, design, or app development projects with comprehensive support.",
-        price: "€4,000+",
+        price: "€2,500+",
         additionalInfo: "Starting at",
         features: [],
         withGradient: false,

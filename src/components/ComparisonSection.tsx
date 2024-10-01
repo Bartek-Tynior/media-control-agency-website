@@ -53,7 +53,7 @@ const ComparisonSection = () => {
           >
             <h2 className="text-lg">What we do.</h2>
             <div className="relative border border-white/20 w-full rounded-lg p-8 shadow-lg overflow-hidden">
-              <div className="absolute -top-32 -right-10 w-72 h-72 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-full opacity-70 blur-3xl" />
+              <div className="absolute -top-32 -right-10 w-72 h-72 bg-custom-gradient rounded-full opacity-70 blur-3xl" />
 
               <div className="relative z-10">
                 <ul className="space-y-4">

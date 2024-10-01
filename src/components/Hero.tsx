@@ -64,7 +64,7 @@ const GradientBall = () => {
         y,
       }}
     >
-      <div className="w-96 h-96 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-full opacity-70 blur-2xl" />
+      <div className="w-96 h-96 bg-custom-gradient rounded-full opacity-70 blur-2xl" />
     </motion.div>
   );
 };

@@ -10,7 +10,7 @@ const FooterCard: React.FC = () => {
       id="contact"
     >
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[200px] h-[500px] bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 rounded-full filter blur-3xl opacity-70"></div>
+        <div className="w-[200px] h-[500px] bg-custom-gradient rounded-full filter blur-3xl opacity-70"></div>
       </div>
 
       <div className="relative p-8 blured-bg text-white border border-white/10 shadow-lg rounded-lg max-w-xl text-center">
