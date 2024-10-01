@@ -67,6 +67,11 @@ const ContactPage = ({}) => {
     },
     onSuccess: () => {
       router.refresh();
+      toast({
+        variant: "default",
+        title: "Email sent!",
+        description: "We will get back to you shortly.",
+      });
     },
     onError: () => {
       toast({
@@ -79,20 +84,28 @@ const ContactPage = ({}) => {
 
   return (
     <>
+      {/* SEO Optimization */}
       <Head>
         <title>Contact | Media Control Agency</title>
-        <meta name="description" content="A brief description of your page" />
-        <meta name="title" content="A brief description of your page" />
-        <meta name="og:title" content="A brief description of your page" />
-        <meta name="title" content="A brief description of your page" />
         <meta
-          name="og:description"
-          content="A brief description of your page"
+          name="description"
+          content="Get in touch with us for collaboration, inquiries, or any questions. We are here to assist you."
+        />
+        <meta property="og:title" content="Contact | Media Control Agency" />
+        <meta
+          property="og:description"
+          content="Reach out to Media Control Agency for any queries or business inquiries."
         />
         <meta
-          content="width=device-width, initial-scale=1"
-          name="viewport"
-        ></meta>
+          property="og:url"
+          content="https://media-control-agency.com/contact"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact | Media Control Agency" />
+        <meta
+          name="twitter:description"
+          content="Get in touch with Media Control Agency for any queries or business inquiries."
+        />
       </Head>
       <MaxWidthWrapper>
         <div className="pt-28 mb-14">

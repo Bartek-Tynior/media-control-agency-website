@@ -7,69 +7,64 @@ import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import localFont from "next/font/local";
 import GoogleAnalytics from "./GoogleAnalytics";
-import { Suspense } from "react";
 import type { Metadata } from "next";
+import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Home | Your Company",
+  metadataBase: new URL("https://media-control-agency.com"),
+  title: "Media Control Agency - Design Focused Digital Agency",
+  openGraph: {
+    title: "Media Control Agency - Design Focused Digital Agency",
+    description:
+      "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
+    url: "https://media-control-agency.com",
+    siteName: "Media Control Agency",
+    type: "website",
+    images: [
+      {
+        url: "https://yourcompany.com/og-image.jpg",
+        alt: "Media Control Agency Banner",
+      },
+    ],
+  },
   description:
-    "Welcome to Your Company. We provide top-notch services, case studies, and answers to your frequently asked questions.",
-  applicationName: "Your Company",
+    "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
+  applicationName: "Media Control Agency",
   generator: "Next.js",
-  keywords: [],
+  keywords: [
+    "Product design",
+    "web development",
+    "no code",
+    "digital agency",
+    "app development",
+    "UI/UX",
+    "branding",
+    "e-commerce",
+    "SEO",
+  ],
   referrer: "origin",
-  themeColor: "#ffffff",
-  colorScheme: "light",
   viewport: "width=device-width, initial-scale=1",
-  creator: "Your Company Team",
-  publisher: "Your Company",
+  creator: "Bart Tynior",
+  publisher: "Media Control Agency",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://yourcompany.com",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-  openGraph: {
-    title: "Your Company - Home",
-    description:
-      "Explore our services, case studies, and frequently asked questions to learn more about what we do.",
-    url: "https://yourcompany.com",
-    siteName: "Your Company",
-    type: "website",
-    images: [
-      {
-        url: "https://yourcompany.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Your Company Banner",
-      },
-    ],
+    canonical: "https://media-control-agency.com/",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@yourcompany",
-    creator: "@yourcompany",
-    title: "Your Company - Home",
+    site: "@your_twitter_handle",
+    title: "Media Control Agency - Design Focused Digital Agency",
     description:
-      "Welcome to Your Company. We offer the best services and insights for your business.",
-    images: ["https://yourcompany.com/twitter-image.jpg"],
-  },
-  verification: {
-    google: "your-google-site-verification-token",
-    yandex: "your-yandex-verification-token",
-  },
-  appleWebApp: {
-    capable: true,
-    title: "Your Company",
-    statusBarStyle: "black-translucent",
-  },
-  formatDetection: {
-    telephone: false,
+      "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
+    images: [
+      {
+        url: "https://yourcompany.com/og-image.jpg",
+        alt: "Media Control Agency Banner",
+      },
+    ],
   },
 };
 
@@ -85,6 +80,40 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              name: "Media Control Agency",
+              url: "https://media-control-agency.com",
+              logo: "https://yourcompany.com/logo.jpg",
+              sameAs: [
+                "https://www.facebook.com/yourcompany",
+                "https://www.linkedin.com/company/yourcompany",
+                "https://twitter.com/yourcompany",
+              ],
+              description:
+                "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Narcis 7",
+                addressLocality: "Andijk",
+                addressRegion: "Noord-Holland",
+                postalCode: "1619BC",
+                addressCountry: "The Netherlands",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+31 619628588",
+                contactType: "customer service",
+              },
+            }),
+          }}
+        />
+      </Head>
       <body
         className={cn(
           "min-h-screen bg-[#0F0F0F] text-white font-sans antialiased",
