@@ -26,5 +26,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.media-control-agency.com/projects/media-control-agency",
       lastModified: new Date(),
     },
+    {
+      url: "https://www.media-control-agency.com/projects/allersnelste-nanie",
+      lastModified: new Date(),
+    },
   ];
 }

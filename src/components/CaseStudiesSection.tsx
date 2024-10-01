@@ -94,7 +94,7 @@ const CaseStudiesSection = () => {
                       style={{
                         backgroundImage: `url(${coverImageLocation.src})`,
                       }}
-                      className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+                      className="absolute border border-white/30 shadow-lg antialiased top-0 left-0 w-full h-full rounded-lg bg-cover bg-center"
                     >
                       <div className="hidden">
                         <div className="text-size-small">

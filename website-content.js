@@ -142,8 +142,8 @@ export default {
           "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
       },
       coverImageLocation: {
-        type: "video",
-        src: "/img/PLUS_44_WEBSITE_CASESTUDY.mp4",
+        type: "image",
+        src: "/img/ALLERSNELSTE_NANIE_CASE_STUDY_COVER.png",
       },
       coverImageAlt: "Client's Project Image",
     },
