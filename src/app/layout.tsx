@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://yourcompany.com/og-image.jpg",
+        url: "https://media-control-agency.com/img/og_image.png",
         alt: "Media Control Agency Banner",
       },
     ],
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
       "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
     images: [
       {
-        url: "https://yourcompany.com/og-image.jpg",
+        url: "https://media-control-agency.com/img/og_image.png",
         alt: "Media Control Agency Banner",
       },
     ],
@@ -89,11 +89,11 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Media Control Agency",
               url: "https://media-control-agency.com",
-              logo: "https://yourcompany.com/logo.jpg",
+              logo: "https://media-control-agency.com/img/logo.png",
               sameAs: [
-                "https://www.facebook.com/yourcompany",
-                "https://www.linkedin.com/company/yourcompany",
-                "https://twitter.com/yourcompany",
+                "https://www.facebook.com/people/Media-Control-Agency/61551901261084",
+                "https://www.linkedin.com/company/media-control-agency",
+                "https://www.instagram.com/mediacontrolag",
               ],
               description:
                 "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
@@ -116,7 +116,7 @@ export default function RootLayout({
       </Head>
       <body
         className={cn(
-          "min-h-screen bg-[#0F0F0F] text-white font-sans antialiased",
+          "min-h-screen bg-[#0F0F0F] text-white font-sans antialiased select-none",
           satoshi.variable
         )}
       >

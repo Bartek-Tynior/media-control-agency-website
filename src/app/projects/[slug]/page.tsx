@@ -14,7 +14,7 @@ import Head from "next/head";
 // Dynamic imports for performance optimization
 const Toolstack = dynamic(() => import("@/components/Toolstack"));
 
-const page = () => {
+const Page = () => {
   const params = useParams();
 
   // Find the content based on the slug parameter
@@ -56,7 +56,7 @@ const page = () => {
         <meta property="og:description" content={content.project.description} />
         <meta
           property="og:image"
-          content={content.project.ogImageUrl || "/images/default-og-image.jpg"} // Fallback image
+          content={content.project.ogImageUrl || "/img/og_image.png"} // Fallback image
         />
         <meta
           property="og:url"
@@ -70,7 +70,7 @@ const page = () => {
         />
         <meta
           name="twitter:image"
-          content={content.project.ogImageUrl || "/images/default-og-image.jpg"}
+          content={content.project.ogImageUrl || "/img/og_image.png"}
         />
 
         {/* Schema Markup for Rich Snippets */}
@@ -197,4 +197,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

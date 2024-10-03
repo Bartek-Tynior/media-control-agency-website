@@ -119,7 +119,7 @@ export default {
         scopeOfWork: ["SEO", "Web Development"],
         description:
           "We've optimized the website of Allersnelste Nanie, a Dutch electra company, for search engines. We've also redesigned and developed their website to improve user experience and increase conversions.",
-        industry: "Clothing",
+        industry: "Electrician",
         techStack: [
           {
             name: "Custom Code",
@@ -129,17 +129,17 @@ export default {
         ],
         challenges: {
           title:
-            "Plus 44 needed a website that would represent their brand, values and overall image. They also needed a digital marketing to increase their brand awareness and accessibility.",
+            "Allersnelste Nanie needed a update for their website to improve user experience and increase conversions. It was our task to optimize the website for search engines and improve the overall performance.",
           description: [
-            "Creative solutions using 3D modeling",
-            "Implementing smart solutions like IDeal payment",
-            "Clear identity representation",
+            "On-page and Off-page SEO optimization",
+            "Performance optimization",
+            "User experience improvements",
           ],
         },
         solution:
-          "Media Control Agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
+          "Media Control Agency reviewed the already exisitng website, came up with a tailored strategy and implemented it. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
         result:
-          "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
+          "A fully optimized website for multiple different location with improved user experience and increased conversions.",
       },
       coverImageLocation: {
         type: "image",
@@ -299,7 +299,7 @@ export default {
         title: "Design Partnership",
         description:
           "Ideal for businesses looking for a consistent design experience to elevate their brand across all digital touchpoints.",
-        price: "€1,799/mo",
+        price: "€1,999/mo",
         additionalInfo: "Pause or cancel anytime",
         features: [
           "Complete design for your website, product, or app",
@@ -469,7 +469,7 @@ export default {
       tax: "NL004874490B47",
       instagram: (
         <a
-          className="inline-flex items-center gap-3 text-sm"
+          className="inline-flex items-center gap-3 md:text-sm text-lg"
           href="https://www.instagram.com/mediacontrolag/"
         >
           <Image
@@ -483,7 +483,7 @@ export default {
       ),
       linkedin: (
         <a
-          className="inline-flex items-center gap-3 text-sm"
+          className="inline-flex items-center gap-3 md:text-sm text-lg"
           href="https://www.linkedin.com/company/media-control-agency"
         >
           <Image
@@ -497,7 +497,7 @@ export default {
       ),
       facebook: (
         <a
-          className="inline-flex items-center gap-3 text-sm"
+          className="inline-flex items-center gap-3 md:text-sm text-lg"
           href="https://www.facebook.com/people/Media-Control-Agency/61551901261084/"
         >
           <Image

@@ -27,8 +27,8 @@ const Footer = () => {
             </div>
 
             <div className="sm:max-w-sm w-full  justify-center items-center sm:items-start flex flex-col gap-4">
-              <h2 className="text-sm font-semibold">Join our newsletter</h2>
-              <p className="text-sm font-normal sm:text-start text-center text-gray-300">
+              <h2 className="text-base font-semibold">Join our newsletter</h2>
+              <p className="text-base font-normal sm:text-start text-center text-gray-300">
                 Sign up to our mailing list below and be the first to know about
                 new updates. Don't worry, we hate spam too.
               </p>
@@ -51,7 +51,7 @@ const Footer = () => {
 
           <div className="flex flex-row justify-around md:justify-start gap-10 md:gap-20">
             <div className="flex flex-col justify-start md:items-start items-center gap-10">
-              <h2 className="text-sm font-semibold px-4">Links</h2>
+              <h2 className="text-base font-semibold px-4">Links</h2>
 
               <div className="flex flex-col items-center md:items-start">
                 {content.essential_elements.navbar.links.map(
@@ -59,7 +59,7 @@ const Footer = () => {
                     return (
                       <Button
                         key={index}
-                        className="text-gray-300 text-xs py-0 h-6"
+                        className="text-gray-300 text-base py-0 h-6"
                         variant="link"
                       >
                         <a href={link}>{name}</a>
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col justify-start md:items-start items-center gap-10">
-              <h2 className="text-sm font-semibold px-4">Information</h2>
+              <h2 className="text-base font-semibold px-4">Information</h2>
 
               <div className="flex flex-col items-center md:items-start">
                 {content.essential_elements.footer.links.map(
@@ -79,7 +79,7 @@ const Footer = () => {
                     return (
                       <Button
                         key={index}
-                        className="text-gray-300 text-xs py-0 h-6"
+                        className="text-gray-300 text-base py-0 h-6"
                         variant="link"
                       >
                         <a href={link}>{name}</a>
@@ -94,7 +94,7 @@ const Footer = () => {
 
         <div className="flex flex-col gap-2 pt-10">
           <div className="flex flex-col sm:flex-row gap-5 md:gap-4">
-            <div className="flex flex-col gap-[5px] sm:text-start text-center text-xs text-gray-300 w-full">
+            <div className="flex flex-col gap-[5px] sm:text-start text-center text-sm text-gray-300 w-full">
               <p>{content.essential_elements.contact.phone}</p>
               <p>{content.essential_elements.contact.email}</p>
               <p>

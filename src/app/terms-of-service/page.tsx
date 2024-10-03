@@ -4,9 +4,10 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SectionLabel from "@/components/ui/SectionLabel";
 import Lenis from "lenis";
 import Head from "next/head";
+import React from "react";
 import { useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -222,4 +223,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

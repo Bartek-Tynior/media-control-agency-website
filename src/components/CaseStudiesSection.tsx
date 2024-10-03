@@ -1,13 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import websiteContent from "../../website-content";
 import SectionLabel from "./ui/SectionLabel";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
 
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: {
+  show: {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
@@ -17,50 +17,71 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 const CaseStudiesSection = () => {
   const cards = websiteContent.case_studies;
 
-  // Parallax effect settings
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, amount: 0.3 }); // Animation triggered when in view
+
+  // State to check if we are on a desktop view
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  // Parallax effect settings for desktop only
   const { scrollYProgress } = useScroll();
   const y1 = useTransform(scrollYProgress, [0, 1], [0, 100]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, 50]);
   const y4 = useTransform(scrollYProgress, [0, 1], [0, -150]);
 
-  // Adjust Grid Item Specifications for Mobile
   const gridStyles = [
     { span: "col-span-2 md:col-span-1", yTransform: y1 },
     { span: "col-span-2 md:col-span-1", yTransform: y2 },
-    { span: "col-span-2 md:col-span-1", yTransform: y3 },
+    {
+      span: "col-span-2 md:col-span-1 w-full md:w-[calc(100%-3rem)] md:col-start-2",
+      yTransform: y3,
+    },
     { span: "col-span-2 md:col-span-1", yTransform: y4 },
   ];
 
+  // Check for desktop size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768); // Check if it's a desktop view
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize); // Add resize listener
+
+    return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
+  }, []);
+
   return (
-    <section className="text-white h-fit py-14" id="case-studies">
+    <section
+      className="text-white h-fit py-14"
+      id="case-studies"
+      ref={sectionRef}
+    >
       <motion.div
         className="flex flex-col gap-5"
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        animate={isInView ? "show" : "hidden"} // Trigger animation when in view
         variants={containerVariants}
       >
         <SectionLabel sectionName="Case Studies" />
-        <motion.h2
-          className="text-2xl lg:w-1/2 font-bold leading-tight"
-        >
+        <motion.h2 className="text-2xl lg:w-1/2 font-bold leading-tight">
           Our recent cases
         </motion.h2>
       </motion.div>
 
       <div className="h-full pt-10 case-studies-section flex flex-col justify-start md:justify-center">
+        {/* Reduce spacing in the grid on larger screens */}
         <motion.div
-          className="grid grid-cols-1 gap-12 md:grid-cols-[1fr,.65fr] auto-rows-[1fr] grid-flow-dense"
+          className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-[1fr,.65fr] md:grid-rows-[auto,1.5fr] auto-rows-[1fr] grid-flow-dense"
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.4 }}
+          animate={isInView ? "show" : "hidden"} // Animate when section is in view
           variants={containerVariants}
         >
           {cards.map(({ client, coverImageLocation, service, id }, index) => {
@@ -72,7 +93,9 @@ const CaseStudiesSection = () => {
               <motion.a
                 href={`/projects/${projectName}`}
                 key={id}
-                style={{ y: yTransform }}
+                style={{
+                  y: isDesktop ? yTransform : 0, // Parallax only for desktop
+                }}
                 className={`casestudy-item overflow-hidden ${span}`}
                 variants={itemVariants}
               >
@@ -84,7 +107,6 @@ const CaseStudiesSection = () => {
                       muted
                       loop
                       playsInline
-                      poster={coverImageLocation.src.replace(".mp4", ".jpg")}
                     >
                       <source src={coverImageLocation.src} type="video/mp4" />
                       Your browser does not support the video tag.
@@ -106,8 +128,8 @@ const CaseStudiesSection = () => {
                 </div>
 
                 <div className="text-container py-4">
-                  <h6 className="text-lg font-bold">{client}</h6>
-                  <p className="text-sm">{service}</p>
+                  <span className="text-lg font-bold">{client}</span>
+                  <span className="text-sm">{service}</span>
                 </div>
               </motion.a>
             );

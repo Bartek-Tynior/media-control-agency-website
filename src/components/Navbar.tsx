@@ -85,6 +85,8 @@ const Navbar = () => {
         <div className="navigation_hamburger flex justify-center items-center lg:hidden">
           {isOpen ? (
             <button
+              name="hamburger-button"
+              aria-label="open-menu"
               className="flex z-20 hamburger-button"
               onClick={toggleNavbar}
             >
@@ -121,7 +123,7 @@ const Navbar = () => {
                   <Link
                     href={isHomePage ? link.link : `/${link.link}`}
                     id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
-                    className="text-sm text-white font-bold hover:text-zinc-300 transform transition-all"
+                    className="text-lg text-white font-bold hover:text-zinc-300 transform transition-all"
                     onClick={toggleNavbar}
                   >
                     {link.name}
@@ -133,7 +135,7 @@ const Navbar = () => {
             <div className="py-2">
               <Link href="/contact">
                 <Button
-                  className="gap-2 group text-sm h-10 border border-white/10"
+                  className="gap-2 group text-base h-10 border border-white/10"
                   variant="primary"
                   size="default"
                   onClick={toggleNavbar}
@@ -146,7 +148,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex flex-col">
-            <h2 className="text-sm text-gray-400 py-2 font-medium">
+            <h2 className="text-lg text-gray-400 py-2 font-medium">
               Social Media
             </h2>
 
