@@ -1,11 +1,11 @@
 "use client";
 
-import About from "@/components/About";
+import About from "@/components/AboutSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Services from "@/components/Services";
+import Services from "@/components/ServicesSection";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import FooterCard from "@/components/FooterCTA";
