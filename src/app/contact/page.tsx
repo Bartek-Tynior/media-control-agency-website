@@ -17,6 +17,7 @@ import { toast } from "@/components/ui/use-toast";
 import { Calendar } from "lucide-react";
 import Head from "next/head";
 import Lenis from "lenis";
+import React from "react";
 
 const ContactPage = ({}) => {
   const [isOpen, setIsOpen] = useState(false);

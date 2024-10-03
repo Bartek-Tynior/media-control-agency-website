@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     "branding",
     "e-commerce",
     "SEO",
+    "Clothing brand",
   ],
   referrer: "origin",
   viewport: "width=device-width, initial-scale=1",
