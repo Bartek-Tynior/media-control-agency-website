@@ -17,30 +17,38 @@ const Hero = () => {
           <GradientBall />
           <div className="h-full w-full flex flex-col justify-center items-center">
             <motion.div
-              className="text-center flex flex-col gap-6"
+              className="text-center flex flex-col gap-6 px-4 sm:px-8" // Added padding for better mobile view
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <div className="flex flex-col justify-center items-center">
-                <span className="text-gray-300 text-center text-lg tracking-widest mb-5">
+              <div className="flex flex-col gap-4 md:gap-0 justify-center items-center">
+                <span className="text-gray-300 text-center text-base sm:text-lg tracking-widest mb-3 sm:mb-5">
                   {content.subtitle}
                 </span>
-                <h1 className="text-center text-7xl max-w-3xl font-semibold tracking-wide mb-5">
+                <h1 className="text-center text-5xl sm:text-7xl max-w-xs sm:max-w-3xl font-semibold tracking-wide mb-3 sm:mb-5">
                   {content.title}
                 </h1>
-                <h2 className="text-base max-w-md text-center tracking-wide mb-5">
+                <h2 className="text-base max-w-sm sm:max-w-md text-center tracking-wide mb-3 sm:mb-5">
                   {content.shortDescription}
                 </h2>
               </div>
-              <div className="w-full flex flex-row gap-4 justify-center items-center">
+              <div className="w-full flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="/contact" className="z-30">
-                  <Button className="text-xs" variant="primary" size="lg">
+                  <Button
+                    className="text-base"
+                    variant="primary"
+                    size="lg"
+                  >
                     Book a call
                   </Button>
                 </a>
                 <a href="#services" className="z-30">
-                  <Button className="text-xs" variant="secondary" size="lg">
+                  <Button
+                    className="text-base"
+                    variant="secondary"
+                    size="lg"
+                  >
                     Learn more
                   </Button>
                 </a>
@@ -64,7 +72,7 @@ const GradientBall = () => {
         y,
       }}
     >
-      <div className="w-96 h-96 bg-custom-gradient rounded-full opacity-70 blur-2xl" />
+      <div className="w-64 h-64 sm:w-96 sm:h-96 bg-custom-gradient rounded-full opacity-70 blur-2xl" />
     </motion.div>
   );
 };

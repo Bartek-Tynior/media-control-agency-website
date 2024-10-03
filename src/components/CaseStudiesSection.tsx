@@ -127,7 +127,7 @@ const CaseStudiesSection = () => {
                   )}
                 </div>
 
-                <div className="text-container py-4">
+                <div className="py-4 flex flex-col">
                   <span className="text-lg font-bold">{client}</span>
                   <span className="text-sm">{service}</span>
                 </div>

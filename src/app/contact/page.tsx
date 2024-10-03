@@ -18,6 +18,7 @@ import { Calendar } from "lucide-react";
 import Head from "next/head";
 import Lenis from "lenis";
 import React from "react";
+import { motion } from "framer-motion"; // Import Framer Motion
 
 const ContactPage = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,6 +84,21 @@ const ContactPage = ({}) => {
     },
   });
 
+  // Framer motion variants for animations
+  const containerVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, staggerChildren: 0.2 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <>
       {/* SEO Optimization */}
@@ -109,13 +125,24 @@ const ContactPage = ({}) => {
         />
       </Head>
       <MaxWidthWrapper>
-        <div className="pt-28 mb-14">
+        <motion.div
+          className="pt-28 mb-14"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="flex flex-col gap-5">
-            <SectionLabel sectionName="Contact Form" />
-            <h1 className="text-2xl mb-8 font-bold antialiased">
+            <motion.div variants={itemVariants}>
+              <SectionLabel sectionName="Contact Form" />
+            </motion.div>
+            <motion.h1
+              className="text-2xl mb-8 font-bold antialiased"
+              variants={itemVariants}
+            >
               Reach out to us.
-            </h1>
+            </motion.h1>
           </div>
+
           <div className="gap-10 md:gap-20 grid grid-cols-1 md:grid-cols-12">
             {typeof window !== "undefined" ? (
               <PopupModal
@@ -128,103 +155,111 @@ const ContactPage = ({}) => {
               ""
             )}
 
-            <div className="col-span-6">
-              <h2 className="text-sm font-normal mb-8 antialiased">
+            <motion.div className="col-span-6" variants={itemVariants}>
+              <h2 className="text-base font-normal mb-8 antialiased">
                 {content.subtitle_1}
               </h2>
 
               <div className="border border-white/10 rounded-lg shadow-lg p-6">
-                <form
+                <motion.form
                   className="flex flex-col gap-4"
                   onSubmit={handleSubmit((e) => sendMail(e))}
+                  variants={containerVariants}
                 >
-                  <Input
-                    className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
-                    size={32}
-                    id="fullName"
-                    placeholder="Full Name"
-                    {...register("fullName")}
-                  />
+                  <motion.div variants={itemVariants}>
+                    <Input
+                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      size={32}
+                      id="fullName"
+                      placeholder="Full Name"
+                      {...register("fullName")}
+                    />
+                    {errors?.fullName && (
+                      <p className="text-sm font-semibold text-red-700">
+                        {errors.fullName?.message}
+                      </p>
+                    )}
+                  </motion.div>
 
-                  {errors?.fullName && (
-                    <p className="text-sm font-semibold text-red-700">
-                      {errors.fullName?.message}
-                    </p>
-                  )}
+                  <motion.div variants={itemVariants}>
+                    <Input
+                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      size={32}
+                      id="email"
+                      placeholder="Email"
+                      {...register("email")}
+                    />
+                    {errors?.email && (
+                      <p className="text-sm font-semibold text-red-700">
+                        {errors.email?.message}
+                      </p>
+                    )}
+                  </motion.div>
 
-                  <Input
-                    className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
-                    size={32}
-                    id="email"
-                    placeholder="Email"
-                    {...register("email")}
-                  />
+                  <motion.div variants={itemVariants}>
+                    <Input
+                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      size={32}
+                      id="phone"
+                      placeholder="Phone Number"
+                      {...register("phone")}
+                    />
+                    {errors?.phone && (
+                      <p className="text-sm font-semibold text-red-700">
+                        {errors.phone?.message}
+                      </p>
+                    )}
+                  </motion.div>
 
-                  {errors?.email && (
-                    <p className="text-sm font-semibold text-red-700">
-                      {errors.email?.message}
-                    </p>
-                  )}
+                  <motion.div variants={itemVariants}>
+                    <Input
+                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      size={32}
+                      id="company"
+                      placeholder="Company"
+                      {...register("company")}
+                    />
+                    {errors?.company && (
+                      <p className="text-sm font-semibold text-red-700">
+                        {errors.company?.message}
+                      </p>
+                    )}
+                  </motion.div>
 
-                  <Input
-                    className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
-                    size={32}
-                    id="phone"
-                    placeholder="Phone Number"
-                    {...register("phone")}
-                  />
+                  <motion.div variants={itemVariants}>
+                    <Input
+                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      size={32}
+                      id="message"
+                      placeholder="Your Message"
+                      {...register("message")}
+                    />
+                    {errors?.message && (
+                      <p className="text-sm font-semibold text-red-700">
+                        {errors.message?.message}
+                      </p>
+                    )}
+                  </motion.div>
 
-                  {errors?.phone && (
-                    <p className="text-sm font-semibold text-red-700">
-                      {errors.phone?.message}
-                    </p>
-                  )}
-
-                  <Input
-                    className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
-                    size={32}
-                    id="company"
-                    placeholder="Company"
-                    {...register("company")}
-                  />
-
-                  {errors?.company && (
-                    <p className="text-sm font-semibold text-red-700">
-                      {errors.company?.message}
-                    </p>
-                  )}
-
-                  <Input
-                    className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
-                    size={32}
-                    id="message"
-                    placeholder="Your Message"
-                    {...register("message")}
-                  />
-
-                  {errors?.message && (
-                    <p className="text-sm font-semibold text-red-700">
-                      {errors.message?.message}
-                    </p>
-                  )}
-
-                  <Button
-                    className="text-xs text-white rounded-lg bg-white/10 focus:outline-none"
-                    type="submit"
-                    isLoading={isLoadingEmail}
-                  >
-                    Submit Form
-                  </Button>
-                </form>
+                  <motion.div variants={itemVariants}>
+                    <Button
+                      className="text-sm text-white rounded-lg bg-white/10 focus:outline-none"
+                      type="submit"
+                      isLoading={isLoadingEmail}
+                    >
+                      Submit Form
+                    </Button>
+                  </motion.div>
+                </motion.form>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="col-span-6 mx-auto">
-              <h2 className="text-sm font-normal antialiased">
+            <motion.div className="col-span-6 mx-auto" variants={itemVariants}>
+              <h2 className="text-base font-normal antialiased">
                 {content.subtitle_2}
               </h2>
               <Button
-                className="gap-2 text-xs text-white rounded-lg bg-white/10 my-6"
+                className="gap-2 text-base text-white rounded-lg bg-white/10 my-6"
                 variant={"primary"}
                 size="default"
                 onClick={() => setIsOpen(true)}
@@ -233,12 +268,12 @@ const ContactPage = ({}) => {
                 <Calendar className="ml-2 w-4 h-4" />
               </Button>
 
-              <p className="text-sm font-normal">
+              <p className="text-base font-normal">
                 {content.meeting_description}
               </p>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </MaxWidthWrapper>
     </>
   );

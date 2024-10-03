@@ -7,10 +7,6 @@ import Head from "next/head";
 import React from "react";
 import { useEffect } from "react";
 
-export const metadata = {
-  title: "Privacy Policy | Media Control Agency",
-};
-
 const Page = () => {
   useEffect(() => {
     const lenis = new Lenis();

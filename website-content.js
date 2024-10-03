@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default {
   hero: {
-    title: "Build Faster. Connect Better.",
+    title: "Ready to outhustle the competition?",
     subtitle: "Design-Driven Digital Agency",
     shortDescription:
       "We exist to show you how to stand out from the crowd and make a lasting impression online.",
@@ -360,7 +360,7 @@ export default {
       {
         title: "How quickly will I receive my project?",
         description:
-          "We pride ourselves on efficient delivery times. Typically, we provide an average turnaround of 24-48 hours per request, with larger projects having tailored timelines. We’ll keep you informed at every stage to ensure timely completion.",
+          "We pride ourselves on efficient delivery times. Typically, we provide an average turnaround of 2-3 business days per request, with larger projects having tailored timelines. We’ll keep you informed at every stage to ensure timely completion.",
         index: 5,
       },
       {
