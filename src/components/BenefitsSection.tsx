@@ -4,14 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import websiteContent from "../../website-content";
 import { Autoplay } from "swiper/modules";
-import BenefitsSectionCard from "./BenefitsSectionCard";
+import Image from "next/image";
+import { FC } from "react";
 
 const BenefitsSection = () => {
   const content = websiteContent.service_benefits;
 
   return (
     <div className="w-full flex flex-col sm:grid grid-cols-4 my-6 overflow-hidden">
-      <span className="mb-4 sm:mb-0 text-base sm:text-lg font-bold">
+      <span className="mb-4 sm:mb-0 text-base font-bold">
         What sets us apart:
       </span>
       <Swiper
@@ -49,6 +50,27 @@ const BenefitsSection = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+    </div>
+  );
+};
+
+interface BenefitsSectionCardProps {
+  description: string;
+}
+
+const BenefitsSectionCard: FC<BenefitsSectionCardProps> = ({ description }) => {
+  return (
+    <div className="text-white flex w-fit justify-center">
+      <Image
+        className="check-icon mx-2 w-6 h-6 pointer-events-none "
+        src="/img/icons/check-icon.svg"
+        width={20}
+        height={20}
+        alt="Check Icon"
+      />
+      <span className="text-base font-medium antialiased">
+        {description}
+      </span>
     </div>
   );
 };

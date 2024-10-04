@@ -1,51 +1,30 @@
-"use client";
-
+import { useRef } from "react";
 import websiteContent from "../../website-content";
-import { useLayoutEffect } from "react";
-import SplitType from "split-type";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useScroll, useTransform, motion } from "framer-motion";
 
-const AboutSection = () => {
+export default function About() {
+  const element = useRef(null);
   const content = websiteContent.about;
 
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  const { scrollYProgress } = useScroll({
+    target: element,
+    offset: ["start 0.9", "start 0.25"],
+  });
 
-    const splitTypes = document.querySelectorAll(".reveal-type");
-
-    let ctx = gsap.context(() => {
-      splitTypes.forEach((char, i) => {
-        // @ts-ignore
-        const text = new SplitType(char, { types: "chars" });
-
-        gsap.from(text.chars, {
-          scrollTrigger: {
-            trigger: char,
-            start: "top 50%",
-            end: "90% bottom",
-            scrub: true,
-            markers: false,
-          },
-          opacity: 0.2,
-          stagger: 0.1,
-        });
-      });
-    });
-
-    return () => ctx.revert();
-  }, []);
+  const opacity = scrollYProgress;
+  const blur = useTransform(scrollYProgress, [0, 1], ["20px", "0px"]);
 
   return (
-    <section className="h-screen md:pt-28 sm:pb-14" id="vision">
-      <div className="h-full flex flex-col items-center justify-center reveal-type">
-        <p className="text-5xl md:text-7xl h-fit break-all">
-          {content.header}
+    <section className="h-fit py-20" id="vision">
+      <div className="h-full flex flex-col items-center justify-center">
+        <motion.p
+          className="text-3xl h-fit font-semibold text-center"
+          ref={element}
+          style={{ opacity: opacity, filter: `blur(${blur})` }}
+        >
           {content.description}
-        </p>
+        </motion.p>
       </div>
     </section>
   );
-};
-
-export default AboutSection;
+}
