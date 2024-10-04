@@ -418,26 +418,32 @@ export default {
       },
       links: [
         {
+          index: 1,
           name: "Home",
           link: "#home",
         },
         {
+          index: 2,
           name: "Vision",
           link: "#vision",
         },
         {
+          index: 3,
           name: "Case Studies",
           link: "#case-studies",
         },
         {
+          index: 4,
           name: "Process",
           link: "#process",
         },
         {
+          index: 5,
           name: "Services",
           link: "#services",
         },
         {
+          index: 6,
           name: "Contact",
           link: "#contact",
         },
@@ -448,14 +454,14 @@ export default {
         "© 2024 All rights reserved Made with 💜 by Media Control Agency",
       links: [
         {
+          index: 1,
           name: "Privacy Policy",
           link: "/privacy-policy",
-          index: 1,
         },
         {
+          index: 2,
           name: "Terms of Service",
           link: "/terms-of-service",
-          index: 2,
         },
       ],
     },

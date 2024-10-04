@@ -56,7 +56,7 @@ const Footer = () => {
 
               <div className="flex flex-col items-center md:items-start">
                 {content.essential_elements.navbar.links.map(
-                  ({ name, link, index }) => {
+                  ({ index, name, link }) => {
                     return (
                       <Button
                         key={index}
@@ -76,7 +76,7 @@ const Footer = () => {
 
               <div className="flex flex-col items-center md:items-start">
                 {content.essential_elements.footer.links.map(
-                  ({ name, link, index }) => {
+                  ({ index, name, link }) => {
                     return (
                       <Button
                         key={index}
