@@ -60,6 +60,8 @@ export default {
           "Media Control Agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
         result:
           "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
+        publishDate: "2023-09-01",
+        ogImageUrl: "img/og_image.png",
       },
       coverImageLocation: {
         type: "video",
@@ -103,6 +105,8 @@ export default {
           "Unleashing the power of custom code, we were able to create a website that is not only visually appealing but also highly functional. The website is fully responsive and optimized for all devices. It is also integrated with Google Analytics and Google Tag Manager.",
         result:
           "Achieved a top-notch website, with a clear identity representation and easy information accessibility.",
+        publishDate: "2023-09-01",
+        ogImageUrl: "img/og_image.png",
       },
       coverImageLocation: {
         type: "video",
@@ -140,6 +144,8 @@ export default {
           "Media Control Agency reviewed the already exisitng website, came up with a tailored strategy and implemented it. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
         result:
           "A fully optimized website for multiple different location with improved user experience and increased conversions.",
+        publishDate: "2024-09-01",
+        ogImageUrl: "img/og_image.png",
       },
       coverImageLocation: {
         type: "image",
@@ -380,7 +386,7 @@ export default {
   footer_card: {
     title: "Let's bring your brand to new heights.",
     subtitle:
-      "Book a free 15-minute discovery call to see if Media Control Agency is the right fit for you (spoiler alert: it totally is).",
+      "Book a free 15-minute discovery call with Media Control Agency and find out if we’re the perfect match (spoiler: we definitely are)!",
     button: {
       text: "Book a call",
       link: "/contact",

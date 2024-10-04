@@ -129,7 +129,7 @@ const CaseStudiesSection = () => {
 
                 <div className="py-4 flex flex-col">
                   <span className="text-lg font-bold">{client}</span>
-                  <span className="text-sm">{service}</span>
+                  <span className="text-sm text-gray-300">{service}</span>
                 </div>
               </motion.a>
             );

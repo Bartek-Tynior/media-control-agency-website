@@ -168,7 +168,7 @@ const ContactPage = ({}) => {
                 >
                   <motion.div variants={itemVariants}>
                     <Input
-                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="fullName"
                       placeholder="Full Name"
@@ -183,7 +183,7 @@ const ContactPage = ({}) => {
 
                   <motion.div variants={itemVariants}>
                     <Input
-                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="email"
                       placeholder="Email"
@@ -198,7 +198,7 @@ const ContactPage = ({}) => {
 
                   <motion.div variants={itemVariants}>
                     <Input
-                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="phone"
                       placeholder="Phone Number"
@@ -213,7 +213,7 @@ const ContactPage = ({}) => {
 
                   <motion.div variants={itemVariants}>
                     <Input
-                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="company"
                       placeholder="Company"
@@ -228,7 +228,7 @@ const ContactPage = ({}) => {
 
                   <motion.div variants={itemVariants}>
                     <Input
-                      className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                      className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="message"
                       placeholder="Your Message"

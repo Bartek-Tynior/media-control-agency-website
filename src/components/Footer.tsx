@@ -40,6 +40,7 @@ const Footer = () => {
                   className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
                 />
                 <Button
+                  disabled
                   type="submit"
                   className="text-xs text-white rounded-lg focus:outline-none"
                 >

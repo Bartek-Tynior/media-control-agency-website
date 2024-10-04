@@ -9,6 +9,23 @@ import Particles from "./ui/Particles";
 const Hero = () => {
   const content = websiteContent.hero;
 
+  // Animation variants for staggering the text elements
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Stagger delay between children animations
+        delayChildren: 0.5, // Delay before children animations start
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
     <section className="h-screen flex overflow-hidden relative">
       <Particles />
@@ -16,43 +33,53 @@ const Hero = () => {
         <div className="z-40 h-full w-full flex flex-col justify-center relative">
           <GradientBall />
           <div className="h-full w-full flex flex-col justify-center items-center">
+            {/* Wrap the text elements with a motion.div to stagger their animations */}
             <motion.div
-              className="text-center flex flex-col gap-6 px-4 sm:px-8" // Added padding for better mobile view
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
+              className="text-center flex flex-col gap-6 px-4 sm:px-8 justify-center items-center" // Added padding for better mobile view
+              initial="hidden"
+              animate="visible"
+              variants={containerVariants} // Container variant to stagger children
             >
-              <div className="flex flex-col gap-4 md:gap-0 justify-center items-center">
-                <span className="text-gray-300 text-center text-base sm:text-lg tracking-widest mb-3 sm:mb-5">
-                  {content.subtitle}
-                </span>
-                <h1 className="text-center text-5xl sm:text-7xl max-w-xs sm:max-w-3xl font-semibold tracking-wide mb-3 sm:mb-5">
-                  {content.title}
-                </h1>
-                <h2 className="text-base max-w-sm sm:max-w-md text-center tracking-wide mb-3 sm:mb-5">
-                  {content.shortDescription}
-                </h2>
-              </div>
-              <div className="w-full flex flex-col sm:flex-row gap-4 justify-center items-center">
+              {/* Subtitle with stagger animation */}
+              <motion.span
+                className="text-gray-300 text-center text-base sm:text-lg tracking-widest mb-3 sm:mb-5"
+                variants={itemVariants}
+              >
+                {content.subtitle}
+              </motion.span>
+
+              {/* Title with stagger animation */}
+              <motion.h1
+                className="text-center text-5xl sm:text-7xl max-w-xs sm:max-w-3xl font-semibold tracking-wide mb-3 sm:mb-5"
+                variants={itemVariants}
+              >
+                {content.title}
+              </motion.h1>
+
+              {/* Short description with stagger animation */}
+              <motion.h2
+                className="text-base max-w-sm sm:max-w-md text-center tracking-wide mb-3 sm:mb-5"
+                variants={itemVariants}
+              >
+                {content.shortDescription}
+              </motion.h2>
+
+              {/* Buttons with stagger animation */}
+              <motion.div
+                className="w-full flex flex-col sm:flex-row gap-4 justify-center items-center"
+                variants={itemVariants} // Apply animation to the buttons
+              >
                 <a href="/contact" className="z-30">
-                  <Button
-                    className="text-base"
-                    variant="primary"
-                    size="lg"
-                  >
+                  <Button className="text-base" variant="primary" size="lg">
                     Book a call
                   </Button>
                 </a>
                 <a href="#services" className="z-30">
-                  <Button
-                    className="text-base"
-                    variant="secondary"
-                    size="lg"
-                  >
+                  <Button className="text-base" variant="secondary" size="lg">
                     Learn more
                   </Button>
                 </a>
-              </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>

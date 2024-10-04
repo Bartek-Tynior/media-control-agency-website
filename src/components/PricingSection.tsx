@@ -37,7 +37,10 @@ const renderPricingCards = () => {
   const content = websiteContent.pricing;
 
   return content.packages.map(
-    ({ title, description, price, features, withGradient, buttonText}, index) => {
+    (
+      { title, description, price, features, withGradient, buttonText },
+      index
+    ) => {
       return (
         <PricingCard
           key={index}
@@ -86,7 +89,7 @@ const PricingCard = ({
   price,
   features,
   withGradient,
-  buttonText
+  buttonText,
 }: PricingCardProps) => {
   return (
     <motion.div
@@ -122,17 +125,21 @@ const PricingCard = ({
           ))}
         </ul>
         {withGradient ? (
-          <Button size="full-size" className="text-white py-3 rounded-lg">
-            {buttonText}
-          </Button>
+          <a href="/contact">
+            <Button size="full-size" className="text-white py-3 rounded-lg">
+              {buttonText}
+            </Button>
+          </a>
         ) : (
-          <Button
-            size="full-size"
-            variant="secondary"
-            className="text-white py-3 rounded-lg"
-          >
-            {buttonText}
-          </Button>
+          <a href="/contact">
+            <Button
+              size="full-size"
+              variant="secondary"
+              className="text-white py-3 rounded-lg"
+            >
+              {buttonText}
+            </Button>
+          </a>
         )}
       </div>
     </motion.div>
