@@ -40,7 +40,7 @@ const CaseStudiesSection = () => {
     { span: "col-span-2 md:col-span-1", yTransform: y1 },
     { span: "col-span-2 md:col-span-1", yTransform: y2 },
     {
-      span: "col-span-2 md:col-span-1 w-full md:w-[calc(100%-3rem)] md:col-start-2",
+      span: "col-span-2 md:col-span-1 w-full md:w-[calc(100%-3rem)] md:col-start-1",
       yTransform: y3,
     },
     { span: "col-span-2 md:col-span-1", yTransform: y4 },

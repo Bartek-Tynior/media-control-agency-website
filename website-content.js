@@ -71,51 +71,6 @@ export default {
     },
     {
       id: 2,
-      client: "Media Control Agency",
-      service: "Web Development",
-      website: "https://media-control-agency.com/",
-      project: {
-        scopeOfWork: ["Product Design", "Web Development"],
-        description:
-          "Design and development of our own website using custom code. We've used modern technologies and pure code to create a unique and modern website that represents our brand and values.",
-        industry: "Digital Marketing",
-        techStack: [
-          {
-            name: "Adobe XD",
-            imageLocation: "/img/icons/adobe-xd-logo-toolstack.png",
-            imageAlt: "Adobe XD Icon",
-          },
-          {
-            name: "Custom Code",
-            imageLocation: "/img/icons/code-logo-toolstack.png",
-            imageAlt: "Custom Code Icon",
-          },
-        ],
-        challenges: {
-          title:
-            "Creating a website that represents the Media Control Agency's brand, values and services.",
-          description: [
-            "Professional and modern design with clear identity representation",
-            "Easy access to critical information",
-            "Waking up the user's interest in the services",
-            "Providing a trustworthy and reliable image of the company",
-          ],
-        },
-        solution:
-          "Unleashing the power of custom code, we were able to create a website that is not only visually appealing but also highly functional. The website is fully responsive and optimized for all devices. It is also integrated with Google Analytics and Google Tag Manager.",
-        result:
-          "Achieved a top-notch website, with a clear identity representation and easy information accessibility.",
-        publishDate: "2023-09-01",
-        ogImageUrl: "img/og_image.png",
-      },
-      coverImageLocation: {
-        type: "video",
-        src: "/img/MCA_WEBSITE_CASESTUDY.mp4",
-      },
-      coverImageAlt: "Client's Project Image",
-    },
-    {
-      id: 3,
       client: "Allersnelste Nanie",
       service: "SEO & Web Development",
       website: "https://nanie.nl/",
@@ -150,6 +105,108 @@ export default {
       coverImageLocation: {
         type: "image",
         src: "/img/ALLERSNELSTE_NANIE_CASE_STUDY_COVER.png",
+      },
+      coverImageAlt: "Client's Project Image",
+    },
+    {
+      id: 3,
+      client: "A1 Maatwerk",
+      service: "SEO & Web Development",
+      website: "https://www.a1maatwerk.nl/",
+      project: {
+        scopeOfWork: ["SEO", "Web Development", "Design"],
+        description:
+          "We've fully redesigned and developed the website of A1 Maatwerk, a Dutch contractor. We've also optimized the website for search engines to improve user experience and increase conversions.",
+        industry: "Contractor",
+        techStack: [
+          {
+            name: "Custom Code",
+            imageLocation: "/img/icons/code-logo-toolstack.png",
+            imageAlt: "Custom Code Icon",
+          },
+          {
+            name: "Framer",
+            imageLocation: "/img/icons/framer-logo-toolsatck.png",
+            imageAlt: "Framer Icon",
+          },
+          {
+            name: "Adobe XD",
+            imageLocation: "/img/icons/adobe-xd-logo-toolstack.png",
+            imageAlt: "Adobe XD Icon",
+          },
+        ],
+        challenges: {
+          title:
+            "A1 Maatwerk needed a update for their website to improve user experience, increase conversions and improve the general outdated design. It was our task to design a new website based on the already exisitng brand identity, develop it and optimize it for search engines.",
+          description: [
+            "Redesigning the website based on existing brand identity",
+            "Implementing a new design and user experience",
+            "Developing the website using modern technologies",
+            "Integrating the website with a content management system",
+            "On-page and Off-page SEO optimization",
+            "Performance optimization",
+            "User experience improvements",
+          ],
+        },
+        solution:
+          "Media Control Agency reviewed the already exisitng website, came up with a custom design and development plan. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
+        result:
+          "A fully optimized website with modern design and user experience, improved performance, increased conversions and integrated content management system.",
+        publishDate: "2024-09-01",
+        ogImageUrl: "img/og_image.png",
+      },
+      coverImageLocation: {
+        type: "image",
+        src: "/img/A1_MAATWERK_COVER.png",
+      },
+      coverImageAlt: "Client's Project Image",
+    },
+    {
+      id: 4,
+      client: "Pod Skrzydlami",
+      service: "Branding & Web Development",
+      website: "https://podskrzydlami.nl/",
+      project: {
+        scopeOfWork: ["SEO", "Web Development", "Branding", "Design"],
+        description:
+          "We've optimized the website of Pod Skrzydlami, a Dutch electra company, for search engines. We've also redesigned and developed their website to improve user experience and increase conversions.",
+        industry: "Electrician",
+        techStack: [
+          {
+            name: "Custom Code",
+            imageLocation: "/img/icons/code-logo-toolstack.png",
+            imageAlt: "Custom Code Icon",
+          },
+          {
+            name: "Adobe XD",
+            imageLocation: "/img/icons/adobe-xd-logo-toolstack.png",
+            imageAlt: "Adobe XD Icon",
+          },
+          {
+            name: "ChatGPT",
+            imageLocation: "/img/icons/chatgpt-logo-toolstack.webp",
+            imageAlt: "ChatGPT Icon",
+          },
+        ],
+        challenges: {
+          title:
+            "Pod Skrzydlami needed a update for their website to improve user experience and increase conversions. It was our task to optimize the website for search engines and improve the overall performance.",
+          description: [
+            "On-page and Off-page SEO optimization",
+            "Performance optimization",
+            "User experience improvements",
+          ],
+        },
+        solution:
+          "Media Control Agency reviewed the already exisitng website, came up with a tailored strategy and implemented it. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
+        result:
+          "A fully optimized website for multiple different location with improved user experience and increased conversions.",
+        publishDate: "2024-09-01",
+        ogImageUrl: "img/og_image.png",
+      },
+      coverImageLocation: {
+        type: "image",
+        src: "/img/POD_SKRZYDLAMI_COVER.png",
       },
       coverImageAlt: "Client's Project Image",
     },
