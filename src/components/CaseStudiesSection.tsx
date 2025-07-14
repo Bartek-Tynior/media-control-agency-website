@@ -20,8 +20,8 @@ const itemVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const CaseStudiesSection = () => {
-  const cards = websiteContent.case_studies;
+const CaseStudiesSection = ({ dict }: { dict: any }) => {
+  const cards = dict;
 
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 }); // Animation triggered when in view

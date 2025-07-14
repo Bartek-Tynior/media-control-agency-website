@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
-import websiteContent from "../../website-content";
+import websiteContent from "../../../website-content";
 import { ArrowRight } from "lucide-react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 

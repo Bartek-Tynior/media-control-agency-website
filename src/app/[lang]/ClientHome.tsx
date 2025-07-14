@@ -1,19 +1,19 @@
 "use client";
 
+import { useEffect } from "react";
+import Lenis from "lenis";
 import About from "@/components/AboutSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Services from "@/components/ServicesSection";
-import { useEffect } from "react";
-import Lenis from "lenis";
 import FooterCard from "@/components/FooterCTA";
 import ProcessSection from "@/components/ProcessSection";
 import PricingComponent from "@/components/PricingSection";
 import ComparisonSection from "@/components/ComparisonSection";
 
-export default function Home() {
+export default function ClientHome({ dict }: { dict: any }) {
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -31,17 +31,17 @@ export default function Home() {
 
   return (
     <>
-      <Hero />
+      <Hero dict={dict.hero} />
 
       <MaxWidthWrapper>
-        <About />
-        <CaseStudiesSection />
-        <ProcessSection />
-        <Services />
-        <ComparisonSection />
-        <PricingComponent />
-        <FAQ />
-        <FooterCard />
+        <About dict={dict.about} />
+        <CaseStudiesSection dict={dict.case_studies} />
+        <ProcessSection dict={dict.process} />
+        <Services dict={dict.services} />
+        <ComparisonSection dict={dict.comparison} />
+        <PricingComponent dict={dict.pricing} />
+        <FAQ dict={dict.FAQ} />
+        <FooterCard dict={dict.footer_card} />
       </MaxWidthWrapper>
     </>
   );

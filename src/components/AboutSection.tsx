@@ -2,9 +2,9 @@ import { useRef } from "react";
 import websiteContent from "../../website-content";
 import { useScroll, useTransform, motion } from "framer-motion";
 
-export default function About() {
+export default function About({ dict }: { dict: any }) {
   const element = useRef(null);
-  const content = websiteContent.about;
+  const content = dict;
 
   const { scrollYProgress } = useScroll({
     target: element,

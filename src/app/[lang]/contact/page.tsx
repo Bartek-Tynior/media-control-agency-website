@@ -10,7 +10,7 @@ import { EmailValidator, EmailValidatorType } from "@/lib/validators/email";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import SectionLabel from "@/components/ui/SectionLabel";
-import websiteContent from "../../../website-content";
+import websiteContent from "../../../../website-content";
 import { useRouter } from "next/navigation";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { toast } from "@/components/ui/use-toast";

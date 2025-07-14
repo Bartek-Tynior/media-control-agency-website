@@ -6,10 +6,10 @@ import websiteContent from "../../website-content";
 import Image from "next/image";
 import { X } from "lucide-react";
 
-const PricingComponent = () => {
+const PricingComponent = ({ dict }: { dict: any }) => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
-  const content = websiteContent.pricing;
+  const content = dict;
 
   return (
     <section className="h-fit w-full max-w-3xl mx-auto py-14" ref={sectionRef}>
@@ -25,7 +25,7 @@ const PricingComponent = () => {
             animate={isInView ? "show" : "hidden"}
             variants={containerVariants}
           >
-            {renderPricingCards()}
+            {renderPricingCards(dict)}
           </motion.div>
         </div>
       </div>
@@ -33,8 +33,8 @@ const PricingComponent = () => {
   );
 };
 
-const renderPricingCards = () => {
-  const content = websiteContent.pricing;
+const renderPricingCards = (dict) => {
+  const content = dict;
 
   return content.packages.map(
     (

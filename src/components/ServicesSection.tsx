@@ -8,7 +8,7 @@ import BenefitsSection from "./BenefitsSection";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const Services = () => {
+const Services = ({ dict }: { dict: any }) => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
@@ -30,7 +30,7 @@ const Services = () => {
           animate={isInView ? "show" : "hidden"}
           variants={containerVariants}
         >
-          {renderServiceCards()}
+          {renderServiceCards({ dict })}
         </motion.div>
         <BenefitsSection />
       </section>
@@ -53,8 +53,8 @@ const cardVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const renderServiceCards = () => {
-  const content = websiteContent.services;
+const renderServiceCards = ({ dict }: { dict: any }) => {
+  const content = dict;
 
   return content.map((service, index) => (
     <ServiceCard key={index} service={service} />

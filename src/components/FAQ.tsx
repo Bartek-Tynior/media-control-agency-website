@@ -3,14 +3,14 @@ import websiteContent from "../../website-content";
 import { motion, useInView } from "framer-motion";
 import SectionLabel from "./ui/SectionLabel";
 
-const FAQ = () => {
+const FAQ = ({ dict }: { dict: any }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   // Create a ref for the section and track if it's in view
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); // Trigger only once when the section is in view
 
-  const content = websiteContent.FAQ;
+  const content = dict;
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);

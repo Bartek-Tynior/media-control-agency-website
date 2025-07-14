@@ -3,8 +3,8 @@ import websiteContent from "../../website-content";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const FooterCard: React.FC = () => {
-  const content = websiteContent.footer_card;
+const FooterCard: React.FC<{ dict: any }> = ({ dict }) => {
+  const content = dict;
 
   // Create a reference to track the section's position
   const ref = useRef(null);

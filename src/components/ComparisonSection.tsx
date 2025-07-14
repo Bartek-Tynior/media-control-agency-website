@@ -5,8 +5,8 @@ import { X } from "lucide-react";
 import websiteContent from "../../website-content";
 import { useRef } from "react";
 
-const ComparisonSection = () => {
-  const content = websiteContent.comparison;
+const ComparisonSection = ({ dict }: { dict: any }) => {
+  const content = dict;
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 

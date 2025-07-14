@@ -6,8 +6,11 @@ import { Button } from "./ui/Button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Particles from "./ui/Particles";
 
-const Hero = () => {
-  const content = websiteContent.hero;
+const Hero = ({ dict }: { dict: any }) => {
+
+  console.log("Hero component rendered with dict:", dict);
+
+  const content = dict;
 
   // Animation variants for staggering the text elements
   const containerVariants = {

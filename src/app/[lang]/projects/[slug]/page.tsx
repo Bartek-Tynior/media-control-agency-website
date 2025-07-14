@@ -2,7 +2,7 @@
 
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { useParams } from "next/navigation";
-import websiteContent from "../../../../website-content";
+import websiteContent from "../../../../../website-content";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { ArrowRight } from "lucide-react";
 import dynamic from "next/dynamic";

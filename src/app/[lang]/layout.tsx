@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import localFont from "next/font/local";
-import GoogleAnalytics from "./GoogleAnalytics";
+import GoogleAnalytics from "../GoogleAnalytics";
 import type { Metadata } from "next";
 import Head from "next/head";
 
@@ -69,15 +69,21 @@ export const metadata: Metadata = {
   },
 };
 
+export async function generateStaticParams() {
+  return [{ lang: "en" }, { lang: "nl" }];
+}
+
 const satoshi = localFont({
-  src: "./fonts/Satoshi/Satoshi-Regular.woff2",
+  src: "../fonts/Satoshi/Satoshi-Regular.woff2",
   variable: "--font-satoshi",
 });
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { lang: "en" | "nl" };
 }) {
   return (
     <html lang="en">

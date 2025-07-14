@@ -4,8 +4,8 @@ import SectionLabel from "./ui/SectionLabel";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const ProcessSection = () => {
-  const content = websiteContent.process;
+const ProcessSection = ({ dict }: { dict: any }) => {
+  const content = dict;
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
@@ -27,15 +27,15 @@ const ProcessSection = () => {
           animate={isInView ? "show" : "hidden"}
           variants={containerVariants}
         >
-          {renderProcessCards()}
+          {renderProcessCards({ dict })}
         </motion.div>
       </div>
     </section>
   );
 };
 
-const renderProcessCards = () => {
-  const content = websiteContent.process;
+const renderProcessCards = ({ dict }) => {
+  const content = dict;
 
   return content.steps.map(({ title, description }, index) => {
     const isLast = index === 2;
@@ -74,7 +74,12 @@ interface FeatureCardProps {
   isLast: boolean;
 }
 
-const FeatureCard = ({ index, title, description, isLast }: FeatureCardProps) => (
+const FeatureCard = ({
+  index,
+  title,
+  description,
+  isLast,
+}: FeatureCardProps) => (
   <motion.div
     className="relative p-6 border border-white/20 rounded-xl overflow-hidden shadow-lg"
     variants={cardVariants}
