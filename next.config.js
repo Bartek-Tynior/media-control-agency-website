@@ -6,6 +6,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  i18n: {
+    locales: ["en", "nl"],
+    defaultLocale: "nl",
+  },
 };
 
 module.exports = nextConfig;

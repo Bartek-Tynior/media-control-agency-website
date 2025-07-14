@@ -1,0 +1,511 @@
+{
+    "hero": {
+        "title": "Klaar om de concurrentie te overtreffen?",
+        "subtitle": "Design-gedreven Digitale Agency",
+        "shortDescription": "Wij bestaan om jou te laten zien hoe je opvalt in de massa en een blijvende indruk online maakt.",
+        "imageLocation": "/img/mesh-gradient-background.png",
+        "altImage": "Mesh Gradient Achtergrond"
+    },
+    "about": {
+        "description": "Media Control Agency is een design-gedreven digitale agency ontstaan uit liefde voor design en passie voor creatie. Wij zijn gespecialiseerd in het creëren van unieke, gebruikersgerichte digitale ervaringen die het publiek boeien en merken versterken. Onze missie is om bedrijven zoals die van jou te helpen sneller te bouwen, beter te verbinden en op te vallen in de digitale wereld."
+    },
+    "case_studies": [
+        {
+            "id": 1,
+            "client": "Plus 44",
+            "service": "Webontwikkeling & Advertenties",
+            "website": "https://www.plus44-clo.com/",
+            "project": {
+                "scopeOfWork": ["Product Design", "Webontwikkeling", "Betaalde Advertenties"],
+                "description": "We hebben een op maat gemaakte e-commerce website ontworpen en ontwikkeld voor Plus 44, een streetwear merk uit Nederland. Ook hebben we een strategie voor betaalde advertenties opgezet om de naamsbekendheid en verkoop te vergroten.",
+                "industry": "Kleding",
+                "techStack": [
+                    {
+                        "name": "Shopify",
+                        "imageLocation": "/img/icons/shopify-logo-toolstack.png",
+                        "imageAlt": "Shopify Icoon"
+                    },
+                    {
+                        "name": "Adobe XD",
+                        "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+                        "imageAlt": "Adobe XD Icoon"
+                    },
+                    {
+                        "name": "Custom Code",
+                        "imageLocation": "/img/icons/code-logo-toolstack.png",
+                        "imageAlt": "Custom Code Icoon"
+                    },
+                    {
+                        "name": "Blender",
+                        "imageLocation": "/img/icons/blender-logo-toolstack.png",
+                        "imageAlt": "Blender Icoon"
+                    }
+                ],
+                "challenges": {
+                    "title": "Plus 44 had een website nodig die hun merk, waarden en imago vertegenwoordigt. Ook hadden ze digitale marketing nodig om hun naamsbekendheid en toegankelijkheid te vergroten.",
+                    "description": [
+                        "Creatieve oplossingen met 3D-modellering",
+                        "Slimme oplossingen zoals iDeal-betaling implementeren",
+                        "Duidelijke merkidentiteit"
+                    ]
+                },
+                "solution": "Media Control Agency bood een op maat gemaakte oplossing met Shopify, custom code en 3D-modellering, waarmee de visie en gewenste functies van de klant succesvol zijn geïmplementeerd.",
+                "result": "Een unieke en moderne website die de identiteit en waarden van het merk vertegenwoordigt, en een succesvolle advertentiecampagne die de naamsbekendheid en toegankelijkheid heeft vergroot.",
+                "publishDate": "2023-09-01",
+                "ogImageUrl": "img/og_image.png"
+            },
+            "coverImageLocation": {
+                "type": "video",
+                "src": "/img/PLUS_44_WEBSITE_CASESTUDY.mp4"
+            },
+            "coverImageAlt": "Projectafbeelding van klant"
+        },
+        {
+            "id": 2,
+            "client": "Allersnelste Nanie",
+            "service": "SEO & Webontwikkeling",
+            "website": "https://nanie.nl/",
+            "project": {
+                "scopeOfWork": ["SEO", "Webontwikkeling"],
+                "description": "We hebben de website van Allersnelste Nanie, een Nederlands elektrabedrijf, geoptimaliseerd voor zoekmachines. Ook hebben we hun website opnieuw ontworpen en ontwikkeld om de gebruikerservaring en conversies te verbeteren.",
+                "industry": "Elektricien",
+                "techStack": [
+                    {
+                        "name": "Custom Code",
+                        "imageLocation": "/img/icons/code-logo-toolstack.png",
+                        "imageAlt": "Custom Code Icoon"
+                    }
+                ],
+                "challenges": {
+                    "title": "Allersnelste Nanie had een update nodig voor hun website om de gebruikerservaring en conversies te verbeteren. Het was onze taak om de website te optimaliseren voor zoekmachines en de prestaties te verbeteren.",
+                    "description": [
+                        "On-page en Off-page SEO optimalisatie",
+                        "Prestatieoptimalisatie",
+                        "Verbeteringen in gebruikerservaring"
+                    ]
+                },
+                "solution": "Media Control Agency heeft de bestaande website beoordeeld, een strategie opgesteld en geïmplementeerd. We hebben de website geoptimaliseerd voor zoekmachines, de gebruikerservaring verbeterd en de prestaties verhoogd.",
+                "result": "Een volledig geoptimaliseerde website voor meerdere locaties met verbeterde gebruikerservaring en verhoogde conversies.",
+                "publishDate": "2024-09-01",
+                "ogImageUrl": "img/og_image.png"
+            },
+            "coverImageLocation": {
+                "type": "image",
+                "src": "/img/ALLERSNELSTE_NANIE_CASE_STUDY_COVER.png"
+            },
+            "coverImageAlt": "Projectafbeelding van klant"
+        },
+        {
+            "id": 3,
+            "client": "A1 Maatwerk",
+            "service": "SEO & Webontwikkeling",
+            "website": "https://www.a1maatwerk.nl/",
+            "project": {
+                "scopeOfWork": ["SEO", "Webontwikkeling", "Design"],
+                "description": "We hebben de website van A1 Maatwerk, een Nederlandse aannemer, volledig opnieuw ontworpen en ontwikkeld. Ook hebben we de website geoptimaliseerd voor zoekmachines om de gebruikerservaring en conversies te verbeteren.",
+                "industry": "Aannemer",
+                "techStack": [
+                    {
+                        "name": "Custom Code",
+                        "imageLocation": "/img/icons/code-logo-toolstack.png",
+                        "imageAlt": "Custom Code Icoon"
+                    },
+                    {
+                        "name": "Framer",
+                        "imageLocation": "/img/icons/framer-logo-toolsatck.png",
+                        "imageAlt": "Framer Icoon"
+                    },
+                    {
+                        "name": "Adobe XD",
+                        "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+                        "imageAlt": "Adobe XD Icoon"
+                    }
+                ],
+                "challenges": {
+                    "title": "A1 Maatwerk had een update nodig voor hun website om de gebruikerservaring, conversies en het verouderde design te verbeteren. Het was onze taak om een nieuwe website te ontwerpen op basis van de bestaande merkidentiteit, deze te ontwikkelen en te optimaliseren voor zoekmachines.",
+                    "description": [
+                        "Website opnieuw ontwerpen op basis van bestaande merkidentiteit",
+                        "Implementatie van nieuw design en gebruikerservaring",
+                        "Ontwikkeling met moderne technologieën",
+                        "Integratie met content management systeem",
+                        "On-page en Off-page SEO optimalisatie",
+                        "Prestatieoptimalisatie",
+                        "Verbeteringen in gebruikerservaring"
+                    ]
+                },
+                "solution": "Media Control Agency heeft de bestaande website beoordeeld, een ontwerp- en ontwikkelplan opgesteld. We hebben de website geoptimaliseerd voor zoekmachines, de gebruikerservaring verbeterd en de prestaties verhoogd.",
+                "result": "Een volledig geoptimaliseerde website met modern design en gebruikerservaring, verbeterde prestaties, verhoogde conversies en geïntegreerd content management systeem.",
+                "publishDate": "2024-09-01",
+                "ogImageUrl": "img/og_image.png"
+            },
+            "coverImageLocation": {
+                "type": "image",
+                "src": "/img/A1_MAATWERK_COVER.png"
+            },
+            "coverImageAlt": "Projectafbeelding van klant"
+        },
+        {
+            "id": 4,
+            "client": "Pod Skrzydlami",
+            "service": "Branding & Webontwikkeling",
+            "website": "https://podskrzydlami.nl/",
+            "project": {
+                "scopeOfWork": ["SEO", "Webontwikkeling", "Branding", "Design"],
+                "description": "Een nieuw bedrijf, Pod Skrzydlami, had een volledige branding en webontwikkeling oplossing nodig. We hebben een nieuwe merkidentiteit gecreëerd, een op maat gemaakte website ontworpen en ontwikkeld, en deze geoptimaliseerd voor zoekmachines.",
+                "industry": "Boekhouding",
+                "techStack": [
+                    {
+                        "name": "Custom Code",
+                        "imageLocation": "/img/icons/code-logo-toolstack.png",
+                        "imageAlt": "Custom Code Icoon"
+                    },
+                    {
+                        "name": "Adobe XD",
+                        "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+                        "imageAlt": "Adobe XD Icoon"
+                    },
+                    {
+                        "name": "ChatGPT",
+                        "imageLocation": "/img/icons/chatgpt-logo-toolstack.webp",
+                        "imageAlt": "ChatGPT Icoon"
+                    }
+                ],
+                "challenges": {
+                    "title": "Pod Skrzydlami is een Nederlands boekhoudbedrijf dat een volledige branding en webontwikkeling oplossing nodig had. Het was onze taak om een nieuwe merkidentiteit te creëren, een op maat gemaakte website te ontwerpen en te ontwikkelen, en deze te optimaliseren voor zoekmachines. We zijn begonnen met het maken van een nieuw logo, kleurenpalet, typografie en algemene merkidentiteit. Daarna hebben we een website ontworpen en ontwikkeld die de waarden en identiteit van het merk vertegenwoordigt.",
+                    "description": [
+                        "Nieuwe merkidentiteit creëren",
+                        "Op maat gemaakte website ontwerpen",
+                        "Website ontwikkelen met moderne technologieën",
+                        "Integratie met content management systeem",
+                        "On-page en Off-page SEO optimalisatie",
+                        "Prestatieoptimalisatie",
+                        "Verbeteringen in gebruikerservaring"
+                    ]
+                },
+                "solution": "Media Control Agency bood een op maat gemaakte oplossing met custom code, Adobe XD en ChatGPT. We hebben een nieuwe merkidentiteit gecreëerd, een op maat gemaakte website ontworpen en ontwikkeld, en deze geoptimaliseerd voor zoekmachines.",
+                "result": "Een volledige branding en webontwikkeling oplossing met een nieuwe merkidentiteit, op maat gemaakte website en geoptimaliseerd voor zoekmachines. De website is gebruiksvriendelijk, modern en vertegenwoordigt de waarden en identiteit van het merk.",
+                "publishDate": "2024-09-01",
+                "ogImageUrl": "img/og_image.png"
+            },
+            "coverImageLocation": {
+                "type": "image",
+                "src": "/img/POD_SKRZYDLAMI_COVER.png"
+            },
+            "coverImageAlt": "Projectafbeelding van klant"
+        }
+    ],
+    "process": {
+        "title": "Ons eenvoudige 3-stappenproces om jouw bedrijf te laten groeien.",
+        "subtitle": "Wij geloven in een design- en ontwikkelproces dat niet alleen efficiënt maar ook effectief is. Tijd is geld, en wij zorgen voor hoogwaardige resultaten binnen korte tijd.",
+        "steps": [
+            {
+                "i": 1,
+                "title": "Concept & Strategie",
+                "description": "We verdiepen ons in jouw merk, doelen en doelgroep. Samen stellen we een duidelijke strategie op die de basis legt voor een krachtige digitale aanwezigheid."
+            },
+            {
+                "i": 2,
+                "title": "Design & Ontwikkeling",
+                "description": "Ons team vertaalt de strategie naar prachtige, gebruikersgerichte ontwerpen en brengt deze naadloos tot leven. Elk pixel en elke regel code weerspiegelt de uniciteit van jouw merk."
+            },
+            {
+                "i": 3,
+                "title": "Lancering & Groei",
+                "description": "Na grondige tests lanceren we jouw project met vertrouwen. Onze samenwerking stopt daar niet – we bieden doorlopende ondersteuning en verbeteringen om jouw digitale aanwezigheid te laten groeien."
+            }
+        ]
+    },
+    "services": [
+        {
+            "i": 1,
+            "title": "Product Design",
+            "description": "Ontwerp strakke, gebruikersgerichte designs die jouw ideeën tot leven brengen. Wij combineren creativiteit met strategisch denken om producten te creëren die opvallen en jouw publiek boeien.",
+            "imageLocation": "/img/product-design.gif",
+            "altImage": "Product Design Afbeelding",
+            "detailPage": "/services/product-design",
+            "toolstack": [
+                {
+                    "name": "Adobe XD",
+                    "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+                    "imageAlt": "Adobe XD Icoon"
+                },
+                {
+                    "name": "Blender",
+                    "imageLocation": "/img/icons/blender-logo-toolstack.png",
+                    "imageAlt": "Blender Icoon"
+                }
+            ]
+        },
+        {
+            "i": 2,
+            "title": "Webontwikkeling",
+            "description": "Bouw moderne, responsieve websites die zorgen voor een naadloze gebruikerservaring. Van concept tot lancering creëren wij hoogwaardige websites op maat van jouw merk.",
+            "imageLocation": "/img/web-development.gif",
+            "altImage": "Webontwikkeling Afbeelding",
+            "detailPage": "/services/web-development",
+            "toolstack": [
+                {
+                    "name": "Webflow",
+                    "imageLocation": "/img/icons/webflow-logo-toolstack.png",
+                    "imageAlt": "Webflow Icoon"
+                },
+                {
+                    "name": "Framer",
+                    "imageLocation": "/img/icons/framer-logo-toolsatck.png",
+                    "imageAlt": "Framer Icoon"
+                },
+                {
+                    "name": "Custom Code",
+                    "imageLocation": "/img/icons/code-logo-toolstack.png",
+                    "imageAlt": "Custom Code Icoon"
+                }
+            ]
+        },
+        {
+            "i": 3,
+            "title": "App Ontwikkeling",
+            "description": "Transformeer jouw visie in dynamische, gebruiksvriendelijke mobiele apps. Wij ontwerpen en ontwikkelen apps die intuïtief, boeiend en geoptimaliseerd zijn voor prestaties op alle apparaten.",
+            "imageLocation": "/img/app-development.gif",
+            "altImage": "App Ontwikkeling Afbeelding",
+            "detailPage": "/services/app-development",
+            "toolstack": [
+                {
+                    "name": "Swift",
+                    "imageLocation": "/img/icons/swift-logo-toolstack.png",
+                    "imageAlt": "Swift Icoon"
+                }
+            ]
+        },
+        {
+            "i": 4,
+            "title": "MVP Bouwen",
+            "description": "Start snel met een Minimum Viable Product dat jouw kernidee vastlegt. Wij helpen je testen, valideren en verfijnen met flexibiliteit en snelheid.",
+            "imageLocation": "/img/mvp-building.gif",
+            "altImage": "MVP Bouwen Afbeelding",
+            "detailPage": "/services/mvp-building",
+            "toolstack": [
+                {
+                    "name": "Custom Code",
+                    "imageLocation": "/img/icons/code-logo-toolstack.png",
+                    "imageAlt": "Custom Code Icoon"
+                }
+            ]
+        },
+        {
+            "i": 5,
+            "title": "E-commerce",
+            "description": "Vergroot je omzet met een op maat gemaakt e-commerce platform dat is ontworpen voor groei. Wij creëren naadloze winkelervaringen die bezoekers omzetten in loyale klanten.",
+            "imageLocation": "/img/e-commerce.gif",
+            "altImage": "E-commerce Afbeelding",
+            "detailPage": "/services/e-commerce",
+            "toolstack": [
+                {
+                    "name": "Shopify",
+                    "imageLocation": "/img/icons/shopify-logo-toolstack.png",
+                    "imageAlt": "Shopify Icoon"
+                }
+            ]
+        }
+    ],
+    "comparison": {
+        "title": "Waarom voor ons kiezen boven de concurrentie?",
+        "subtitle": "Wij zijn niet zomaar een digitale agency. Wij zijn jouw designpartner, groeimotor en geheime wapen in de digitale wereld.",
+        "competitors": [
+            "Generieke, standaard ontwerpen",
+            "Overprijsde diensten met verborgen kosten",
+            "Langzame, uitgerekte projecttijdlijnen",
+            "Beperkt begrip van gebruikerservaring",
+            "Inconsistente communicatie en opvolging",
+            "One-size-fits-all oplossingen"
+        ],
+        "mca": [
+            "Op maat gemaakte best-fit oplossingen",
+            "Transparante prijzen zonder verborgen kosten",
+            "Gemiddeld 24-48 uur levertijd",
+            "6+ jaar branche-specifieke expertise",
+            "24/7 Whatsapp ondersteuning",
+            "Volledig aangepaste strategieën afgestemd op jouw doelen"
+        ]
+    },
+    "pricing": {
+        "title": "Klaar om te investeren in jouw bedrijf?",
+        "subtitle": "Duidelijke maandelijkse prijzen, geen contract, op elk moment opzegbaar.",
+        "packages": [
+            {
+                "title": "Design Partnerschap",
+                "description": "Ideaal voor bedrijven die een consistente designervaring willen om hun merk te versterken op alle digitale touchpoints.",
+                "price": "€1.999/maand",
+                "additionalInfo": "Pauzeer of annuleer op elk moment",
+                "features": [
+                    "Volledig ontwerp voor jouw website, product of app",
+                    "Eén verzoek tegelijk",
+                    "Gemiddeld 2-3 werkdagen levertijd",
+                    "Volledig asynchrone samenwerking",
+                    "Optionele wekelijkse strategiemeetings",
+                    "Onbeperkt aantal verzoeken",
+                    "Gemakkelijke creditcardbetalingen",
+                    "Direct contact met een toegewijde designer"
+                ],
+                "withGradient": true,
+                "buttonText": "Boek een gesprek",
+                "secondaryButtonText": "Plan een gesprek"
+            },
+            {
+                "title": "Single Project",
+                "description": "Beste keuze voor eenmalige website-, design- of app-ontwikkelingsprojecten met uitgebreide ondersteuning.",
+                "price": "€2.500+",
+                "additionalInfo": "Vanaf",
+                "features": [],
+                "withGradient": false,
+                "buttonText": "Vraag een offerte aan",
+                "secondaryButtonText": "Plan een gesprek"
+            }
+        ]
+    },
+    "FAQ": {
+        "title": "Nog vragen?",
+        "subtitle": "We hebben de meest gestelde vragen van onze klanten verzameld. Neem gerust contact met ons op als je meer informatie wilt.",
+        "faq_tiles": [
+            {
+                "title": "Wie zit er achter Media Control Agency?",
+                "description": "Media Control Agency wordt geleid door een gepassioneerd designer- en developerduo met meer dan 6+ jaar ervaring in de branche.",
+                "index": 1
+            },
+            {
+                "title": "Wat is inbegrepen in jullie plannen?",
+                "description": "Onze plannen zijn compleet en omvatten alles van het eerste conceptontwerp, website/app-ontwikkeling, revisies tot de uiteindelijke livegang. We zorgen voor een naadloze ervaring met onbeperkte verzoeken, revisies en doorlopende ondersteuning om jouw ideeën tot leven te brengen.",
+                "index": 2
+            },
+            {
+                "title": "Waarom kiezen voor jullie in plaats van een fulltime designer en developer?",
+                "description": "Ons inhuren biedt flexibiliteit, expertise en kostenefficiëntie. Je krijgt toegang tot een team van ervaren professionals tegen een fractie van de kosten van fulltime personeel, zonder langdurige verplichtingen. Bovendien krijg je design, ontwikkeling en strategie in één pakket.",
+                "index": 3
+            },
+            {
+                "title": "Wat als ik niet tevreden ben met het ontwerp of resultaat?",
+                "description": "Jouw tevredenheid is onze prioriteit. We bieden onbeperkte revisies om ervoor te zorgen dat het eindresultaat aan jouw verwachtingen voldoet. We werken nauw met je samen om te garanderen dat je tevreden bent met het resultaat.",
+                "index": 4
+            },
+            {
+                "title": "Hoe snel ontvang ik mijn project?",
+                "description": "We zijn trots op onze snelle levertijden. Meestal leveren we binnen 2-3 werkdagen per verzoek, grotere projecten krijgen een aangepaste planning. We houden je op de hoogte in elke fase voor een tijdige oplevering.",
+                "index": 5
+            },
+            {
+                "title": "Wat als ik maar één verzoek heb?",
+                "description": "Geen probleem! We bieden een 'Single Project'-plan speciaal voor klanten met eenmalige design- of ontwikkelingsbehoeften. Zo profiteer je van onze expertise zonder een langdurige samenwerking.",
+                "index": 6
+            },
+            {
+                "title": "Bieden jullie refunds als ik niet tevreden ben?",
+                "description": "We streven naar hoogwaardige resultaten, en hoewel refunds niet standaard zijn, doen we er alles aan om jou tevreden te stellen met het eindproduct. Jouw geluk en succes zijn onze topprioriteit.",
+                "index": 7
+            }
+        ]
+    },
+    "footer_card": {
+        "title": "Laten we jouw merk naar nieuwe hoogten brengen.",
+        "subtitle": "Boek een gratis 15-minuten kennismakingsgesprek met Media Control Agency en ontdek of we de perfecte match zijn (spoiler: dat zijn we zeker)!",
+        "button": {
+            "text": "Boek een gesprek",
+            "link": "/contact"
+        }
+    },
+    "service_benefits": [
+        {
+            "id": 1,
+            "description": "Snelle levertijd"
+        },
+        {
+            "id": 2,
+            "description": "Klantgerichte aanpak"
+        },
+        {
+            "id": 3,
+            "description": "Uitstekende kwaliteit"
+        },
+        {
+            "id": 4,
+            "description": "Best practices in ontwikkeling & marketing"
+        }
+    ],
+    "essential_elements": {
+        "navbar": {
+            "logo": {
+                "imageLocation": "/img/logo.png",
+                "altImage": "Media Control Agency Logo"
+            },
+            "links": [
+                {
+                    "index": 1,
+                    "name": "Home",
+                    "link": "#home"
+                },
+                {
+                    "index": 2,
+                    "name": "Visie",
+                    "link": "#vision"
+                },
+                {
+                    "index": 3,
+                    "name": "Cases",
+                    "link": "#case-studies"
+                },
+                {
+                    "index": 4,
+                    "name": "Proces",
+                    "link": "#process"
+                },
+                {
+                    "index": 5,
+                    "name": "Diensten",
+                    "link": "#services"
+                },
+                {
+                    "index": 6,
+                    "name": "Contact",
+                    "link": "#contact"
+                }
+            ]
+        },
+        "footer": {
+            "footer_credit": "© 2024 Alle rechten voorbehouden Gemaakt met 💜 door Media Control Agency",
+            "links": [
+                {
+                    "index": 1,
+                    "name": "Privacybeleid",
+                    "link": "/privacy-policy"
+                },
+                {
+                    "index": 2,
+                    "name": "Algemene voorwaarden",
+                    "link": "/terms-of-service"
+                }
+            ]
+        },
+        "contact": {
+            "subtitle": "Klaar om samen te werken?",
+            "phone": "+31 629 628 588",
+            "email": "info@media-control-agency.com",
+            "kvk": "91179947",
+            "tax": "NL004874490B47",
+            "instagram": "Instagram",
+            "linkedin": "LinkedIn",
+            "facebook": "Facebook"
+        }
+    },
+    "other_pages": {
+        "not_found": {
+            "title": "404: Pagina Niet Gevonden",
+            "description": "We konden de gevraagde bron niet vinden. Controleer of het pad van de bron correct is of ga terug naar de homepage.",
+            "return_home": "Terug naar Homepage",
+            "imageLocation": "/img/icons/404-error.svg"
+        },
+        "contact_page": {
+            "subtitle_1": "Ons team groeit. We zouden het geweldig vinden als jij erbij komt. Neem contact op door dit formulier in te vullen...",
+            "subtitle_2": "...of boek een afspraak met de oprichter en bespreek jouw project en mogelijke aanpak!",
+            "meeting_description": "Na deze afspraak weet je precies welke stappen je kunt nemen om jouw bedrijf online consistente en betrouwbare resultaten te laten genereren met uitstekende websites & betaalde advertenties.",
+            "meeting_link": "https://calendly.com/media-control-agency/consultation"
+        }
+    }
+}
