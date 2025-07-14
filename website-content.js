@@ -169,8 +169,8 @@ export default {
       project: {
         scopeOfWork: ["SEO", "Web Development", "Branding", "Design"],
         description:
-          "We've optimized the website of Pod Skrzydlami, a Dutch electra company, for search engines. We've also redesigned and developed their website to improve user experience and increase conversions.",
-        industry: "Electrician",
+          "A new business, Pod Skrzydlami, needed a full branding and web development solution. We created a new brand identity, designed and developed a custom website, and optimized it for search engines.",
+        industry: "Accounting",
         techStack: [
           {
             name: "Custom Code",
@@ -190,17 +190,21 @@ export default {
         ],
         challenges: {
           title:
-            "Pod Skrzydlami needed a update for their website to improve user experience and increase conversions. It was our task to optimize the website for search engines and improve the overall performance.",
+            "Pod Skrzydlami is a Dutch accounting company that needed a full branding and web development solution. It was our task to create a new brand identity, design and develop a custom website, and optimize it for search engines. We started by creating a new logo, color palette, typography and overall brand identity. Then we designed and developed a custom website that represents the brand's values and identity.",
           description: [
+            "Creating a new brand identity",
+            "Designing a custom website",
+            "Developing the website using modern technologies",
+            "Integrating the website with a content management system",
             "On-page and Off-page SEO optimization",
             "Performance optimization",
             "User experience improvements",
           ],
         },
         solution:
-          "Media Control Agency reviewed the already exisitng website, came up with a tailored strategy and implemented it. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
+          "Media Control Agency provided a tailored solution using custom code, Adobe XD and ChatGPT. We created a new brand identity, designed and developed a custom website, and optimized it for search engines.",
         result:
-          "A fully optimized website for multiple different location with improved user experience and increased conversions.",
+          "A fully branding and web development solution that includes a new brand identity, custom website and optimized for search engines. The website is user-friendly, modern and represents the brand's values and identity.",
         publishDate: "2024-09-01",
         ogImageUrl: "img/og_image.png",
       },
