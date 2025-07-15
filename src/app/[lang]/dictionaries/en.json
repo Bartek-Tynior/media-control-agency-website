@@ -510,6 +510,145 @@
       "subtitle_2": "...or book a meeting with the founder and discuss yoor project and possible approaches!",
       "meeting_description": "By the end of this meeting, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with outstanding websites & paid advertising.",
       "meeting_link": "https://calendly.com/media-control-agency/consultation"
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "headline": "General Terms and Conditions",
+      "paragraphs": [
+        "For the initiation of business relations, the processing of orders and the execution of contracts between Media Control Agency and customers as well as potential customers (both hereinafter referred to as \"Business Partners\"), the following applies in addition to our privacy policy with regard to the exchange of information and data (hereinafter referred to as \"Confidential Information\"):",
+        "1. Media Control Agency and “Business Partners” (the \"Parties\") will at any time take all possible and reasonable measures to ensure information security and protection of sensitive information. The parties are obliged to secrecy in respect of the following terms (hereinafter referred to as “Terms”).",
+        "2. Media Control Agency and its “Business Partner” have an interest in sharing information, checking data and facilitating discussions. Both parties will attach great importance to the mutual protection of information and will treat it confidentially at all times.",
+        "3. “Confidential Information” includes, but is not limited to:"
+      ],
+      "confidentialList": [
+        "(a) business plans, methods and practices;",
+        "(b) information regarding personnel, customers and suppliers;",
+        "(c) inventions, processes, methods, products, patent applications and other intellectual property rights;",
+        "(d) specifications, drawings, sketches, models, samples, tools, computer programs, technical information, software codes and other corresponding or related information."
+      ],
+      "moreParagraphs": [
+        "4. Each party will mark “Confidential Information” as protected and confidential in case of doubt. In the case of information disclosed orally or in written materials that are not marked as confidential, secrecy shall only apply in cases where it is obviously a matter of secrets or insofar as the necessity for confidentiality is pointed out subsequently. Notification of the protected and confidential nature of the information may be given orally, by e-mail, in written correspondence or, if necessary, by other means of communication.",
+        "5. As soon as the receiving party (\"Recipient\") is informed of the proprietary and confidential nature of the “Confidential Information” disclosed by the other party, the “Recipient” shall refrain from disclosing such “Confidential Information” to other third parties without the prior written consent of the disclosing Party. The “Recipient” shall protect such “Confidential Information” from inadvertent disclosure to a third party, using the same care and diligence as it uses to protect its own proprietary and confidential information, but in no event less than reasonable care. “Recipient” shall ensure that any of its employees, officers, directors or agents who have access to the “Confidential Information” disclosed under these “Terms” are informed of its proprietary and confidential nature and are required to comply with these “Terms”. The “Recipient” of “Confidential Information” disclosed under these “Terms” shall promptly notify the disclosing party of any further disclosure of such “Confidential Information” in violation of this Agreement or of any subpoena or other legal process requiring the submission or disclosure of such “Confidential Information”. Media Control Agency is entitled to pass on “Confidential Information” to particularly trustworthy subcontractors for the processing of orders from the “Business Partner” and/or implementation/execution of the contract with the “Business Partner”. These subcontractors are bound to secrecy comparable to the conditions set out in these “Terms”.",
+        "6. All “Confidential Information” disclosed under these “Terms” shall be and remain the property of the disclosing Party, and nothing in this Agreement shall be construed to grant or transfer any rights in such “Confidential Information” to the other Party. The “Recipient” shall comply with any request by the disclosing Party to promptly return or destroy all copies of the “Confidential Information” disclosed under these “Terms” and any notes relating to “Confidential Information”.",
+        "7. Nothing in these “Terms” shall be construed to limit the right of either Party to independently develop or acquire products without using the other Party's “Confidential Information”. The disclosing Party acknowledges that the recipient may currently or in the future be developing information internally or may receive from other parties information similar to the “Confidential Information”. Nothing in these “Terms” prohibits “Recipient” from developing or having developed products, concepts, systems or techniques similar to or competing with the products, concepts, systems or techniques considered or contained in the “Confidential Information”, provided that “Recipient” does not breach any of its obligations under these “Terms” in connection with such development.",
+        "8. Notwithstanding the foregoing, the parties agree that information shall not be considered “Confidential Information” and the recipient shall not be required to keep such information confidential if such information:"
+      ],
+      "exceptionsList": [
+        "(a) is already known to the recipient because it has been disclosed to him by a third party, without that third party being under any obligation of confidentiality to the disclosing party;",
+        "(b) is or becomes publicly known without the recipient, its employees, officers, directors or agents having acted unlawfully;",
+        "(c) is developed independently by the recipient and without reference to the confidential information disclosed herein;",
+        "(d) is authorized for release (and only to the extent authorized by the disclosing party);",
+        "(e) if disclosure is required by the law, court or governmental authority."
+      ],
+      "finalParagraphs": [
+        "9. Nothing in these “Terms” shall be construed to constitute an agency, partnership, joint venture or similar relationship between the “Parties”.",
+        "10. These “Terms” contain the entire agreement between the parties regarding secrecy and in no way creates an obligation for either party to disclose any information to the other party or otherwise."
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "headline": "Our Commitment to Your Privacy",
+      "paragraphs": [
+        "The following Privacy Policy specifies rules for saving and accessing data on Users' Devices using the Website...",
+        "The following Privacy Policy is an integral part of the Website Regulations..."
+      ],
+      "definitionsList": [
+        "<strong>Service</strong> – the website \"Media Control Agency\" operating at https://media-control-agency.com/",
+        "<strong>External service</strong> – websites of partners, service providers or recipients cooperating with the Administrator",
+        "<strong>Website / Data Administrator</strong> – The company \"Media Control Agency\", located at Narcis 7...",
+        "<strong>User</strong> – a natural person for whom the Administrator provides services electronically...",
+        "<strong>Cookies (cookies)</strong> – text data collected in files on the User's Device",
+        "...etc"
+      ],
+      "moreParagraphs": [
+        "Pursuant to Art. 37 of the GDPR, the Controller has not appointed a Data Protection Officer.",
+        "In matters relating to data processing, please contact the Administrator directly."
+      ],
+      "cookieTypes": [
+        "<strong>Internal cookies</strong> – files saved and read by the Website",
+        "<strong>External cookies</strong> – files saved and read by third-party scripts",
+        "...etc"
+      ],
+      "securityParagraphs": [
+        "The Administrator uses every effort to protect data stored in cookies...",
+        "...etc"
+      ],
+      "purposesOfCookies": [
+        "Improving and facilitating access to the Website",
+        "Personalization of the Website for Users",
+        "Ad serving",
+        "Statistics",
+        "Multimedia services"
+      ],
+      "personalDataPurposes": [
+        "Providing electronic services",
+        "Administrator's communication with Users",
+        "Legitimate interest of the Administrator"
+      ],
+      "externalCookies": [
+        "Google Adsense",
+        "Google Analytics",
+        "WordPress Stats (Automattic Inc.)"
+      ],
+      "collectedData": {
+        "anonymous": [
+          "IP address",
+          "Browser type",
+          "Screen resolution",
+          "...etc"
+        ],
+        "personal": [
+          "Name / nickname",
+          "Email address",
+          "Website URL",
+          "Phone number"
+        ]
+      },
+      "thirdPartyAccess": [
+        "Hosting companies providing services to the Administrator",
+        "VPS and dedicated server providers"
+      ],
+      "dataProcessingRules": [
+        "Personal data will not be transferred outside the EU...",
+        "Anonymous data may be used for profiling...",
+        "...etc"
+      ],
+      "legalBasis": [
+        "GDPR - Regulation (EU) 2016/679",
+        "Art. 6(1)(a) - Consent",
+        "Art. 6(1)(b) - Contract",
+        "Art. 6(1)(f) - Legitimate interest",
+        "...etc"
+      ],
+      "retentionPeriods": [
+        "Data is stored for the duration of service provision and deleted within 30 days thereafter.",
+        "Anonymous data may be retained indefinitely for statistics."
+      ],
+      "userRights": [
+        "Right to access personal data",
+        "Right to rectify personal data",
+        "Right to delete personal data",
+        "Right to restrict processing",
+        "Right to data portability",
+        "Right to object",
+        "Right to lodge a complaint"
+      ],
+      "contactInfo": [
+        "Postal: Media Control Agency, Narcis 7, 1619 BC Andijk, Netherlands",
+        "Email: info@media-control-agency.com",
+        "Phone: +31 619 628 588",
+        "Contact form: /contact"
+      ],
+      "requirements": [
+        "Restricting cookies may cause Website features to malfunction.",
+        "The Administrator is not responsible for such malfunctions."
+      ],
+      "externalLinksWarning": "External links may pose risks. The Administrator is not responsible for their content.",
+      "policyChanges": [
+        "The Administrator may change the Privacy Policy without notice for anonymous data.",
+        "Users will be notified via email if changes affect personal data.",
+        "Changes are effective upon publication."
+      ]
     }
   }
 }

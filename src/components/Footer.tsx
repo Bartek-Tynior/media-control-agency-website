@@ -3,7 +3,6 @@ import websiteContent from "../../website-content";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const content = websiteContent;

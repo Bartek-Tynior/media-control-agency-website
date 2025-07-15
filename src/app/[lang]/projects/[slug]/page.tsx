@@ -10,18 +10,21 @@ import { Button } from "@/components/ui/Button";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import Head from "next/head";
+import { useLang } from "@/lib/lang-context";
 
 // Dynamic imports for performance optimization
 const Toolstack = dynamic(() => import("@/components/Toolstack"));
 
 const Page = () => {
+  const { lang, dict } = useLang();
   const params = useParams();
+  const slug = params.slug;
 
   // Find the content based on the slug parameter
-  const content = websiteContent.case_studies.find(
+  const content = dict.case_studies.find(
     (item) =>
       item.client.replace(/\s+/g, "-").toLowerCase() ===
-      params.slug.toString().toLowerCase()
+      slug.toString().toLowerCase()
   );
 
   // Smooth scrolling with Lenis setup

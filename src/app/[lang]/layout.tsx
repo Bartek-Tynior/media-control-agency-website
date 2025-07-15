@@ -9,6 +9,8 @@ import localFont from "next/font/local";
 import GoogleAnalytics from "../GoogleAnalytics";
 import type { Metadata } from "next";
 import Head from "next/head";
+import { getDictionary } from "./dictionaries";
+import { LangContextProvider } from "@/lib/lang-context";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://media-control-agency.com"),
@@ -78,13 +80,15 @@ const satoshi = localFont({
   variable: "--font-satoshi",
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { lang: "en" | "nl" };
 }) {
+  const dict = await getDictionary(params.lang);
+
   return (
     <html lang="en">
       <Head>
@@ -123,7 +127,7 @@ export default function RootLayout({
       </Head>
       <body
         className={cn(
-          "min-h-screen bg-[#0F0F0F] text-white font-sans antialiased select-none",
+          "min-h-screen bg-[#0F0F0F] text-white font-sans antialiased",
           satoshi.variable
         )}
       >
@@ -131,7 +135,9 @@ export default function RootLayout({
           <GoogleAnalytics />
           <Navbar />
           <CookiesConsent />
-          {children}
+          <LangContextProvider lang={params.lang} dict={dict}>
+            {children}
+          </LangContextProvider>
           <Toaster />
           <Footer />
         </Providers>

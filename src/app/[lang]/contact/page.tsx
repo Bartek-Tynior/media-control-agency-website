@@ -10,7 +10,6 @@ import { EmailValidator, EmailValidatorType } from "@/lib/validators/email";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import SectionLabel from "@/components/ui/SectionLabel";
-import websiteContent from "../../../../website-content";
 import { useRouter } from "next/navigation";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { toast } from "@/components/ui/use-toast";
@@ -18,12 +17,13 @@ import { Calendar } from "lucide-react";
 import Head from "next/head";
 import Lenis from "lenis";
 import React from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
+import { useLang } from "@/lib/lang-context";
 
 const ContactPage = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
-  const content = websiteContent.other_pages.contact_page;
   const router = useRouter();
+  const { lang, dict } = useLang();
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -146,7 +146,7 @@ const ContactPage = ({}) => {
           <div className="gap-10 md:gap-20 grid grid-cols-1 md:grid-cols-12">
             {typeof window !== "undefined" ? (
               <PopupModal
-                url={content.meeting_link}
+                url={dict.other_pages.contact_page.meeting_link}
                 onModalClose={() => setIsOpen(false)}
                 open={isOpen}
                 rootElement={document.getElementsByTagName("body")[0]}
@@ -157,7 +157,7 @@ const ContactPage = ({}) => {
 
             <motion.div className="col-span-6" variants={itemVariants}>
               <h2 className="text-base font-normal mb-8 antialiased">
-                {content.subtitle_1}
+                {dict.other_pages.contact_page.subtitle_1}
               </h2>
 
               <div className="border border-white/10 rounded-lg shadow-lg p-6">
@@ -256,7 +256,7 @@ const ContactPage = ({}) => {
 
             <motion.div className="col-span-6 mx-auto" variants={itemVariants}>
               <h2 className="text-base font-normal antialiased">
-                {content.subtitle_2}
+                {dict.other_pages.contact_page.subtitle_2}
               </h2>
               <Button
                 className="gap-2 text-base text-white rounded-lg bg-white/10 my-6"
@@ -269,7 +269,7 @@ const ContactPage = ({}) => {
               </Button>
 
               <p className="text-base font-normal">
-                {content.meeting_description}
+                {dict.other_pages.contact_page.meeting_description}
               </p>
             </motion.div>
           </div>

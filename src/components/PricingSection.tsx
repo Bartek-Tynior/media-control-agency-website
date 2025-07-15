@@ -27,6 +27,30 @@ const PricingComponent = ({ dict }: { dict: any }) => {
           >
             {renderPricingCards(dict)}
           </motion.div>
+
+          <motion.div
+            className="relative rounded-lg p-8 border border-white/20 shadow-lg w-full"
+            variants={cardVariants}
+          >
+            <div className="relative z-10">
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-semibold">Startpakket</h2>
+              </div>
+              <p className="mb-8">
+                Voor startende ondernemers of kleine bedrijven die professionele
+                designs nodig hebben, zonder grote investering.
+              </p>
+              <a href="/contact">
+                <Button
+                  size="full-size"
+                  variant="secondary"
+                  className="text-white py-3 rounded-lg"
+                >
+                  Vraag een offerte aan
+                </Button>
+              </a>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
