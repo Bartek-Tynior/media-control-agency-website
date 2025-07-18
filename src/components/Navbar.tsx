@@ -9,10 +9,11 @@ import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { motion } from "framer-motion";
+import { useLang } from "@/lib/lang-context";
 
-const Navbar = () => {
-  const content = websiteContent.essential_elements.navbar;
-  const contact = websiteContent.essential_elements.contact;
+const Navbar = ({ lang, dict }) => {
+  const content = dict.essential_elements.navbar;
+  const contact = dict.essential_elements.contact;
   const [isOpen, setOpen] = useState(true);
   const router = useRouter();
   const pathname = usePathname();
@@ -105,9 +106,9 @@ const Navbar = () => {
             className="gap-2 group h-[40px] text-xs"
             variant="primary"
             size="full-size"
-            onClick={() => router.push("/contact")}
+            onClick={() => router.push(contact.CTA.link)}
           >
-            Get in touch
+            {contact.CTA.text}
             <ArrowRight className="group-hover:translate-x-2 transition-all" />
           </Button>
         </div>
@@ -133,14 +134,14 @@ const Navbar = () => {
             })}
 
             <div className="py-2">
-              <Link href="/contact">
+              <Link href={contact.CTA.link}>
                 <Button
                   className="gap-2 group text-base h-10 border border-white/10"
                   variant="primary"
                   size="default"
                   onClick={toggleNavbar}
                 >
-                  Get in touch
+                  {contact.CTA.text}
                   <ArrowRight className="group-hover:translate-x-2 transition-all" />
                 </Button>
               </Link>
@@ -153,9 +154,27 @@ const Navbar = () => {
             </h2>
 
             <div className="flex flex-col gap-3">
-              {contact.instagram}
-              {contact.linkedin}
-              {contact.facebook}
+              {["instagram", "linkedin", "facebook"].map((platform) => {
+                const social = contact[platform];
+                return (
+                  <a
+                    key={platform}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                  >
+                    <Image
+                      src={social.icon}
+                      alt={social.iconAlt}
+                      width={24}
+                      height={24}
+                      className="w-6 h-6"
+                    />
+                    <span className="text-base text-gray-300 font-semibold">{social.name}</span>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>

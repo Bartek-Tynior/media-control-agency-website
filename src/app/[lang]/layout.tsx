@@ -133,13 +133,13 @@ export default async function RootLayout({
       >
         <Providers>
           <GoogleAnalytics />
-          <Navbar />
+          <Navbar lang={params.lang} dict={dict} />
           <CookiesConsent />
           <LangContextProvider lang={params.lang} dict={dict}>
             {children}
           </LangContextProvider>
           <Toaster />
-          <Footer />
+          <Footer lang={params.lang} dict={dict} />
         </Providers>
       </body>
     </html>

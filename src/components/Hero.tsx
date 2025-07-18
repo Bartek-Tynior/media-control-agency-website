@@ -7,9 +7,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Particles from "./ui/Particles";
 
 const Hero = ({ dict }: { dict: any }) => {
-
-  console.log("Hero component rendered with dict:", dict);
-
   const content = dict;
 
   // Animation variants for staggering the text elements
@@ -72,16 +69,17 @@ const Hero = ({ dict }: { dict: any }) => {
                 className="w-full flex flex-col sm:flex-row gap-4 justify-center items-center"
                 variants={itemVariants} // Apply animation to the buttons
               >
-                <a href="/contact" className="z-30">
-                  <Button className="text-base" variant="primary" size="lg">
-                    Book a call
-                  </Button>
-                </a>
-                <a href="#services" className="z-30">
-                  <Button className="text-base" variant="secondary" size="lg">
-                    Learn more
-                  </Button>
-                </a>
+                {content.buttons.map((button: any, index: number) => (
+                  <a key={index} href={button.link} className="z-30">
+                    <Button
+                      className="text-base"
+                      variant={button.variant}
+                      size="lg"
+                    >
+                      {button.text}
+                    </Button>
+                  </a>
+                ))}
               </motion.div>
             </motion.div>
           </div>

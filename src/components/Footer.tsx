@@ -4,8 +4,8 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 import Image from "next/image";
 
-const Footer = () => {
-  const content = websiteContent;
+const Footer = ({ lang, dict }) => {
+  const content = dict;
 
   return (
     <footer className="text-white mb-20">
@@ -26,16 +26,20 @@ const Footer = () => {
             </div>
 
             <div className="sm:max-w-sm w-full  justify-center items-center sm:items-start flex flex-col gap-4">
-              <h2 className="text-base font-semibold">Join our newsletter</h2>
+              <h2 className="text-base font-semibold">
+                {content.essential_elements.footer.newsletter.title}
+              </h2>
               <p className="text-base font-normal sm:text-start text-center text-gray-300">
-                Sign up to our mailing list below and be the first to know about
-                new updates. Don't worry, we hate spam too.
+                {content.essential_elements.footer.newsletter.description}
               </p>
 
               <form className="flex flex-row gap-2">
                 <input
                   type="email"
-                  placeholder="Your Email Address"
+                  placeholder={
+                    content.essential_elements.footer.newsletter.input
+                      .placeholder
+                  }
                   className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
                 />
                 <Button
@@ -43,7 +47,7 @@ const Footer = () => {
                   type="submit"
                   className="text-xs text-white rounded-lg focus:outline-none"
                 >
-                  Get Notified
+                  {content.essential_elements.footer.newsletter.button.text}
                 </Button>
               </form>
             </div>
@@ -105,9 +109,27 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-row w-full sm:w-1/2 justify-center sm:justify-end gap-3 items-end">
-              {content.essential_elements.contact.instagram}
-              {content.essential_elements.contact.linkedin}
-              {content.essential_elements.contact.facebook}
+              {["instagram", "linkedin", "facebook"].map((platform) => {
+                const social = content.essential_elements.contact[platform];
+                return (
+                  <a
+                    key={platform}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                  >
+                    <Image
+                      src={social.icon}
+                      alt={social.iconAlt}
+                      width={24}
+                      height={24}
+                      className="w-6 h-6"
+                    />
+                    <span className="text-sm text-gray-300">{social.name}</span>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>

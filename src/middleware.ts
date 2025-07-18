@@ -14,7 +14,7 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Skip static and API paths
+  // Skip static, API, and already-localized paths
   if (
     pathname.startsWith("/_next") ||
     pathname.includes(".") ||

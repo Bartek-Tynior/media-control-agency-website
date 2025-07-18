@@ -4,7 +4,17 @@
     "subtitle": "Design-Driven Digital Agency",
     "shortDescription": "We exist to show you how to stand out from the crowd and make a lasting impression online.",
     "imageLocation": "/img/mesh-gradient-background.png",
-    "altImage": "Mesh Gradient Background"
+    "altImage": "Mesh Gradient Background",
+    "buttons": [
+      {
+        "text": "Book a call",
+        "link": "/contact"
+      },
+      {
+        "text": "Learn more",
+        "link": "#services"
+      }
+    ]
   },
   "about": {
     "description": "Media Control Agency is a design-driven digital agency that was born out of a love for design and a passion for creating. We specialize in crafting unique, user-centric digital experiences that captivate audiences and elevate brands. Our mission is to help businesses like yours build faster, connect better, and stand out in the digital world."
@@ -474,6 +484,17 @@
     },
     "footer": {
       "footer_credit": "© 2024 All rights reserved Made with 💜 by Media Control Agency",
+      "newsletter": {
+        "title": "Join our newsletter",
+        "description": "Sign up to our mailing list below and be the first to know about new updates. Don't worry, we hate spam too.",
+        "button": {
+          "text": "Get notified",
+          "link": "/subscribe"
+        },
+        "input": {
+          "placeholder": "Your email address"
+        }
+      },
       "links": [
         {
           "index": 1,
@@ -493,9 +514,28 @@
       "email": "info@media-control-agency.com",
       "kvk": "91179947",
       "tax": "NL004874490B47",
-      "instagram": "https://www.instagram.com/mediacontrolag/",
-      "linkedin": "https://www.linkedin.com/company/media-control-agency",
-      "facebook": "https://www.facebook.com/people/Media-Control-Agency/61551901261084/"
+      "instagram": {
+        "text": "Instagram",
+        "link": "https://www.instagram.com/mediacontrolagency/",
+        "imageLocation": "/img/icons/instagram-logo.png",
+        "imageAlt": "Instagram Icoon"
+      },
+      "linkedin": {
+        "text": "LinkedIn",
+        "link": "https://www.linkedin.com/company/media-control-agency/",
+        "imageLocation": "/img/icons/linkedin-logo.png",
+        "imageAlt": "LinkedIn Icoon"
+      },
+      "facebook": {
+        "text": "Facebook",
+        "link": "https://www.facebook.com/mediacontrolagency/",
+        "imageLocation": "/img/icons/facebook-logo.png",
+        "imageAlt": "Facebook Icoon"
+      },
+      "CTA": {
+        "text": "Get in touch",
+        "link": "/contact"
+      }
     }
   },
   "other_pages": {
@@ -506,8 +546,10 @@
       "imageLocation": "/img/icons/404-error.svg"
     },
     "contact_page": {
+      "title": "Reach out to us.",
       "subtitle_1": "Our team is growing. We’d love for you to join us. Reach us by filling up this form...",
-      "subtitle_2": "...or book a meeting with the founder and discuss yoor project and possible approaches!",
+      "subtitle_2": "...or book a meeting with the founder and discuss your project and possible approaches!",
+      "meeting_button_title": "Plan een afspraak",
       "meeting_description": "By the end of this meeting, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with outstanding websites & paid advertising.",
       "meeting_link": "https://calendly.com/media-control-agency/consultation"
     },

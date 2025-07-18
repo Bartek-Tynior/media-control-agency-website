@@ -4,7 +4,19 @@
     "subtitle": "Design-gedreven Digitale Agency",
     "shortDescription": "Wij bestaan om jou te laten zien hoe je opvalt in de massa en een blijvende indruk online maakt.",
     "imageLocation": "/img/mesh-gradient-background.png",
-    "altImage": "Mesh Gradient Achtergrond"
+    "altImage": "Mesh Gradient Achtergrond",
+    "buttons": [
+      {
+        "text": "Boek een gesprek",
+        "link": "/contact",
+        "variant": "primary"
+      },
+      {
+        "text": "Bekijk onze diensten",
+        "link": "#services",
+        "variant": "secondary"
+      }
+    ]
   },
   "about": {
     "description": "Media Control Agency is een design-gedreven digitale agency ontstaan uit liefde voor design en passie voor creatie. Wij zijn gespecialiseerd in het creëren van unieke, gebruikersgerichte digitale ervaringen die het publiek boeien en merken versterken. Onze missie is om bedrijven zoals die van jou te helpen sneller te bouwen, beter te verbinden en op te vallen in de digitale wereld."
@@ -474,6 +486,17 @@
     },
     "footer": {
       "footer_credit": "© 2024 Alle rechten voorbehouden Gemaakt met 💜 door Media Control Agency",
+      "newsletter": {
+        "title": "Blijf op de hoogte van onze laatste projecten en updates.",
+        "description": "Schrijf je in voor onze nieuwsbrief en ontvang exclusieve content, tips en meer. Maak maar geen zorgen, we haten spam ook!",
+        "button": {
+          "text": "Schrijf je in",
+          "link": "/subscribe"
+        },
+        "input": {
+          "placeholder": "Je e-mailadres"
+        }
+      },
       "links": [
         {
           "index": 1,
@@ -493,9 +516,28 @@
       "email": "info@media-control-agency.com",
       "kvk": "91179947",
       "tax": "NL004874490B47",
-      "instagram": "Instagram",
-      "linkedin": "LinkedIn",
-      "facebook": "Facebook"
+      "instagram": {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/mediacontrolag/",
+        "icon": "/img/icons/instagram-icon.png",
+        "iconAlt": "Instagram Icon"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/media-control-agency",
+        "icon": "/img/icons/linkedin-icon.png",
+        "iconAlt": "LinkedIn Icon"
+      },
+      "facebook": {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/people/Media-Control-Agency/61551901261084/",
+        "icon": "/img/icons/facebook-icon.png",
+        "iconAlt": "Facebook Icon"
+      },
+      "CTA": {
+        "text": "Contact ons",
+        "link": "/contact"
+      }
     }
   },
   "other_pages": {
@@ -506,8 +548,10 @@
       "imageLocation": "/img/icons/404-error.svg"
     },
     "contact_page": {
+      "title": "Neem contact met ons op.",
       "subtitle_1": "Ons team groeit. We zouden het geweldig vinden als jij erbij komt. Neem contact op door dit formulier in te vullen...",
       "subtitle_2": "...of boek een afspraak met de oprichter en bespreek jouw project en mogelijke aanpak!",
+      "meeting_button_title": "Plan een afspraak",
       "meeting_description": "Na deze afspraak weet je precies welke stappen je kunt nemen om jouw bedrijf online consistente en betrouwbare resultaten te laten genereren met uitstekende websites & betaalde advertenties.",
       "meeting_link": "https://calendly.com/media-control-agency/consultation"
     },

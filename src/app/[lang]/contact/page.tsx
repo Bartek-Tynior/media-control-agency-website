@@ -139,7 +139,7 @@ const ContactPage = ({}) => {
               className="text-2xl mb-8 font-bold antialiased"
               variants={itemVariants}
             >
-              Reach out to us.
+              {dict.other_pages.contact_page.title}
             </motion.h1>
           </div>
 
@@ -264,7 +264,7 @@ const ContactPage = ({}) => {
                 size="default"
                 onClick={() => setIsOpen(true)}
               >
-                Schedule Meeting
+                {dict.other_pages.contact_page.meeting_button_title}
                 <Calendar className="ml-2 w-4 h-4" />
               </Button>
 
