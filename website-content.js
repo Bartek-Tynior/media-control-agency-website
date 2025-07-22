@@ -512,7 +512,7 @@ export default {
     },
     footer: {
       footer_credit:
-        "© 2024 All rights reserved Made with 💜 by Media Control Agency",
+        "© 2024 All rights reserved. Made with 💜 by Media Control Agency",
       links: [
         {
           index: 1,

@@ -11,65 +11,88 @@ import type { Metadata } from "next";
 import Head from "next/head";
 import { getDictionary } from "./dictionaries";
 import { LangContextProvider } from "@/lib/lang-context";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://media-control-agency.com"),
-  title: "Media Control Agency - Design Focused Digital Agency",
-  openGraph: {
-    title: "Media Control Agency - Design Focused Digital Agency",
-    description:
-      "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
-    url: "https://media-control-agency.com",
-    siteName: "Media Control Agency",
-    type: "website",
-    images: [
-      {
-        url: "https://media-control-agency.com/img/og_image.png",
-        alt: "Media Control Agency Banner",
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: "en" | "nl" };
+}): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
+  const isDutch = params.lang === "nl";
+
+  return {
+    metadataBase: new URL("https://media-control-agency.com"),
+    title: isDutch
+      ? "Media Control Agency | Digitale Studio voor Design & Ontwikkeling"
+      : "Media Control Agency | Digital Studio for Design & Development",
+    themeColor: "#0F0F0F",
+    description: isDutch
+      ? "Bereik meer digitaal. Wij helpen bedrijven hun doelgroep te bereiken via productdesign en [no] code ontwikkeling."
+      : "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
+    keywords: isDutch
+      ? [
+          "productontwerp",
+          "webontwikkeling",
+          "no code",
+          "digitale studio",
+          "e-commerce",
+          "branding",
+          "SEO",
+        ]
+      : [
+          "Product design",
+          "web development",
+          "no code",
+          "digital agency",
+          "branding",
+          "SEO",
+        ],
+    openGraph: {
+      siteName: "Media Control Agency",
+      title: isDutch
+        ? "Media Control Agency | Digitale Studio voor Design & Ontwikkeling"
+        : "Media Control Agency | Digital Studio for Design & Development",
+      locale: isDutch ? "nl_NL" : "en_US",
+      type: "website",
+      description: isDutch
+        ? "Bereik meer digitaal. Wij helpen bedrijven hun doelgroep te bereiken via productdesign en [no] code ontwikkeling."
+        : "Achieve more digitally. We empower companies to effectively reach their target audience.",
+      images: [
+        {
+          url: "https://media-control-agency.com/img/og_image.png",
+          alt: "Media Control Agency Banner",
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://media-control-agency.com/${params.lang}`,
+      languages: {
+        en: "https://media-control-agency.com/en",
+        nl: "https://media-control-agency.com/nl",
       },
-    ],
-  },
-  description:
-    "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
-  applicationName: "Media Control Agency",
-  generator: "Next.js",
-  keywords: [
-    "Product design",
-    "web development",
-    "no code",
-    "digital agency",
-    "app development",
-    "UI/UX",
-    "branding",
-    "e-commerce",
-    "SEO",
-    "Clothing brand",
-  ],
-  referrer: "origin",
-  viewport: "width=device-width, initial-scale=1",
-  creator: "Bart Tynior",
-  publisher: "Media Control Agency",
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: "https://media-control-agency.com/",
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@your_twitter_handle",
-    title: "Media Control Agency - Design Focused Digital Agency",
-    description:
-      "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
-    images: [
-      {
-        url: "https://media-control-agency.com/img/og_image.png",
-        alt: "Media Control Agency Banner",
-      },
-    ],
-  },
-};
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: isDutch
+        ? "Media Control Agency - Designgedreven Digitale Agency"
+        : "Media Control Agency - Design Focused Digital Agency",
+      description: isDutch
+        ? "Bereik meer digitaal met onze creatieve digitale oplossingen."
+        : "Achieve more digitally with our creative digital solutions.",
+      images: [
+        {
+          url: "https://media-control-agency.com/img/og_image.png",
+          alt: "Media Control Agency Banner",
+        },
+      ],
+    },
+  };
+}
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "nl" }];
@@ -90,7 +113,7 @@ export default async function RootLayout({
   const dict = await getDictionary(params.lang);
 
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <Head>
         <script
           type="application/ld+json"
@@ -124,6 +147,21 @@ export default async function RootLayout({
             }),
           }}
         />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href="https://media-control-agency.com/en"
+        />
+        <link
+          rel="alternate"
+          hrefLang="nl"
+          href="https://media-control-agency.com/nl"
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://media-control-agency.com/en"
+        />
       </Head>
       <body
         className={cn(
@@ -137,6 +175,7 @@ export default async function RootLayout({
           <CookiesConsent />
           <LangContextProvider lang={params.lang} dict={dict}>
             {children}
+            <LanguageSwitcher />
           </LangContextProvider>
           <Toaster />
           <Footer lang={params.lang} dict={dict} />

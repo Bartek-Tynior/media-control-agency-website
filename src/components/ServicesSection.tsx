@@ -19,7 +19,7 @@ const Services = ({ dict }: { dict: any }) => {
         <div className="flex flex-col gap-5">
           <SectionLabel sectionName="Services" />
           <h2 className="text-2xl lg:w-1/2 font-bold leading-tight">
-            This is what we do.
+            {dict.title}
           </h2>
         </div>
 
@@ -32,7 +32,7 @@ const Services = ({ dict }: { dict: any }) => {
         >
           {renderServiceCards({ dict })}
         </motion.div>
-        <BenefitsSection />
+        <BenefitsSection dict={dict} />
       </section>
     </>
   );
@@ -56,7 +56,7 @@ const cardVariants = {
 const renderServiceCards = ({ dict }: { dict: any }) => {
   const content = dict;
 
-  return content.map((service, index) => (
+  return content.list.map((service, index) => (
     <ServiceCard key={index} service={service} />
   ));
 };

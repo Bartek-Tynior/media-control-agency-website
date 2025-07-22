@@ -2,7 +2,6 @@ import { motion, useInView } from "framer-motion";
 import SectionLabel from "./ui/SectionLabel";
 import Image from "next/image";
 import { X } from "lucide-react";
-import websiteContent from "../../website-content";
 import { useRef } from "react";
 
 const ComparisonSection = ({ dict }: { dict: any }) => {
@@ -29,10 +28,10 @@ const ComparisonSection = ({ dict }: { dict: any }) => {
             className="flex flex-col justify-center gap-4 items-center w-full"
             variants={cardVariants}
           >
-            <h2 className="text-lg">What others do.</h2>
+            <h2 className="text-lg">{content.competitors.title}</h2>
             <div className="border border-white/20 w-full rounded-lg p-8 shadow-lg">
               <ul className="space-y-4 text-gray-400">
-                {content.competitors.map((item, index) => (
+                {content.competitors.list.map((item, index) => (
                   <li
                     key={index}
                     className="text-gray-500 flex w-fit justify-center"
@@ -51,13 +50,13 @@ const ComparisonSection = ({ dict }: { dict: any }) => {
             className="flex flex-col justify-center gap-4 items-center w-full"
             variants={cardVariants}
           >
-            <h2 className="text-lg">What we do.</h2>
+            <h2 className="text-lg">{content.mca.title}</h2>
             <div className="relative border border-white/20 w-full rounded-lg p-8 shadow-lg overflow-hidden">
               <div className="absolute -top-32 -right-10 w-72 h-72 bg-custom-gradient rounded-full opacity-70 blur-3xl" />
 
               <div className="relative z-10">
                 <ul className="space-y-4">
-                  {content.mca.map((item, index) => (
+                  {content.mca.list.map((item, index) => (
                     <li
                       className="text-white flex w-fit justify-center"
                       key={index}

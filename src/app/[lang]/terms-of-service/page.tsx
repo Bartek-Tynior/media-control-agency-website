@@ -8,6 +8,61 @@ import Head from "next/head";
 import React from "react";
 import { useEffect } from "react";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: "en" | "nl" };
+}) {
+  const dict = await getDictionary(params.lang);
+  const isDutch = params.lang === "nl";
+
+  return {
+    title: isDutch
+      ? "Algemene Voorwaarden | Media Control Agency"
+      : "Terms of Service | Media Control Agency",
+    description: isDutch
+      ? "Lees onze algemene voorwaarden om te begrijpen wat de regels zijn voor het gebruik van Media Control Agency's diensten."
+      : "Read our Terms of Service to understand the rules and regulations for using Media Control Agency's services.",
+    alternates: {
+      canonical: `https://media-control-agency.com/${params.lang}/terms-of-service`,
+      languages: {
+        en: "https://media-control-agency.com/en/terms-of-service",
+        nl: "https://media-control-agency.com/nl/terms-of-service",
+      },
+    },
+    openGraph: {
+      title: isDutch
+        ? "Algemene Voorwaarden | Media Control Agency"
+        : "Terms of Service | Media Control Agency",
+      description: isDutch
+        ? "Bekijk de voorwaarden voor het gebruik van onze diensten bij Media Control Agency."
+        : "Find out about the rules, regulations, and terms for using our services at Media Control Agency.",
+      url: `https://media-control-agency.com/${params.lang}/terms-of-service`,
+      images: [
+        {
+          url: "https://media-control-agency.com/img/og_image.png",
+          alt: "Media Control Agency Banner",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: isDutch
+        ? "Algemene Voorwaarden | Media Control Agency"
+        : "Terms of Service | Media Control Agency",
+      description: isDutch
+        ? "Lees hier de regels voor het gebruik van onze diensten."
+        : "Understand the rules and regulations for using Media Control Agency's services.",
+      images: [
+        {
+          url: "https://media-control-agency.com/img/og_image.png",
+          alt: "Media Control Agency Banner",
+        },
+      ],
+    },
+  };
+}
+
 const Page = () => {
   const { lang, dict } = useLang();
 
@@ -28,35 +83,6 @@ const Page = () => {
 
   return (
     <>
-      {/* SEO Optimization */}
-      <Head>
-        <title>Terms of Service | Media Control Agency</title>
-        <meta
-          name="description"
-          content="Read our Terms of Service to understand the rules and regulations for using Media Control Agency's services."
-        />
-        <meta
-          property="og:title"
-          content="Terms of Service | Media Control Agency"
-        />
-        <meta
-          property="og:description"
-          content="Find out about the rules, regulations, and terms for using our services at Media Control Agency."
-        />
-        <meta
-          property="og:url"
-          content="https://media-control-agency.com/terms-of-service"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Terms of Service | Media Control Agency"
-        />
-        <meta
-          name="twitter:description"
-          content="Understand the rules and regulations for using Media Control Agency's services."
-        />
-      </Head>
       <MaxWidthWrapper>
         <div className="pt-28 mb-14">
           <div className="flex flex-col gap-5">
@@ -72,30 +98,38 @@ const Page = () => {
             ))}
 
             <ul className="list-disc pl-4">
-              {dict.other_pages.terms.confidentialList.map((item: string, idx: number) => (
-                <li
-                  key={`conf-${idx}`}
-                  dangerouslySetInnerHTML={{ __html: item }}
-                />
-              ))}
+              {dict.other_pages.terms.confidentialList.map(
+                (item: string, idx: number) => (
+                  <li
+                    key={`conf-${idx}`}
+                    dangerouslySetInnerHTML={{ __html: item }}
+                  />
+                )
+              )}
             </ul>
 
-            {dict.other_pages.terms.moreParagraphs.map((p: string, idx: number) => (
-              <p key={`more-${idx}`}>{p}</p>
-            ))}
+            {dict.other_pages.terms.moreParagraphs.map(
+              (p: string, idx: number) => (
+                <p key={`more-${idx}`}>{p}</p>
+              )
+            )}
 
             <ul className="list-disc pl-4">
-              {dict.other_pages.terms.exceptionsList.map((item: string, idx: number) => (
-                <li
-                  key={`except-${idx}`}
-                  dangerouslySetInnerHTML={{ __html: item }}
-                />
-              ))}
+              {dict.other_pages.terms.exceptionsList.map(
+                (item: string, idx: number) => (
+                  <li
+                    key={`except-${idx}`}
+                    dangerouslySetInnerHTML={{ __html: item }}
+                  />
+                )
+              )}
             </ul>
 
-            {dict.other_pages.terms.finalParagraphs.map((p: string, idx: number) => (
-              <p key={`final-${idx}`}>{p}</p>
-            ))}
+            {dict.other_pages.terms.finalParagraphs.map(
+              (p: string, idx: number) => (
+                <p key={`final-${idx}`}>{p}</p>
+              )
+            )}
           </div>
         </div>
       </MaxWidthWrapper>

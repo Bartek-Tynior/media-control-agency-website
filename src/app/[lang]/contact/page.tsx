@@ -19,6 +19,62 @@ import Lenis from "lenis";
 import React from "react";
 import { motion } from "framer-motion";
 import { useLang } from "@/lib/lang-context";
+import { getDictionary } from "../dictionaries";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: "en" | "nl" };
+}) {
+  const dict = await getDictionary(params.lang);
+  const isDutch = params.lang === "nl";
+
+  return {
+    title: isDutch
+      ? "Contact | Media Control Agency - Digitale Studio"
+      : "Contact | Media Control Agency - Digital Studio",
+    description: isDutch
+      ? "Neem contact met ons op voor samenwerking of vragen. We helpen je graag verder."
+      : "Get in touch with us for collaboration, inquiries, or any questions. We are here to assist you.",
+    alternates: {
+      canonical: `https://media-control-agency.com/${params.lang}/contact`,
+      languages: {
+        en: "https://media-control-agency.com/en/contact",
+        nl: "https://media-control-agency.com/nl/contact",
+      },
+    },
+    openGraph: {
+      title: isDutch
+        ? "Contact | Media Control Agency"
+        : "Contact | Media Control Agency",
+      description: isDutch
+        ? "Neem contact op met Media Control Agency voor samenwerkingen en vragen."
+        : "Reach out to Media Control Agency for any queries or business inquiries.",
+      url: `https://media-control-agency.com/${params.lang}/contact`,
+      images: [
+        {
+          url: "https://media-control-agency.com/img/og_image.png",
+          alt: "Media Control Agency Banner",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: isDutch
+        ? "Contact | Media Control Agency"
+        : "Contact | Media Control Agency",
+      description: isDutch
+        ? "Neem contact met ons op voor samenwerking of vragen."
+        : "Get in touch with us for any inquiries or collaborations.",
+      images: [
+        {
+          url: "https://media-control-agency.com/img/og_image.png",
+          alt: "Media Control Agency Banner",
+        },
+      ],
+    },
+  };
+}
 
 const ContactPage = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,15 +127,15 @@ const ContactPage = ({}) => {
       router.refresh();
       toast({
         variant: "default",
-        title: "Email sent!",
-        description: "We will get back to you shortly.",
+        title: dict.other_pages.contact_page.form.success.title,
+        description: dict.other_pages.contact_page.form.success.description,
       });
     },
     onError: () => {
       toast({
         variant: "destructive",
-        title: "Something went wrong!",
-        description: "Please try again later.",
+        title: dict.other_pages.contact_page.form.error.title,
+        description: dict.other_pages.contact_page.form.error.description,
       });
     },
   });
@@ -101,29 +157,6 @@ const ContactPage = ({}) => {
 
   return (
     <>
-      {/* SEO Optimization */}
-      <Head>
-        <title>Contact | Media Control Agency</title>
-        <meta
-          name="description"
-          content="Get in touch with us for collaboration, inquiries, or any questions. We are here to assist you."
-        />
-        <meta property="og:title" content="Contact | Media Control Agency" />
-        <meta
-          property="og:description"
-          content="Reach out to Media Control Agency for any queries or business inquiries."
-        />
-        <meta
-          property="og:url"
-          content="https://media-control-agency.com/contact"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact | Media Control Agency" />
-        <meta
-          name="twitter:description"
-          content="Get in touch with Media Control Agency for any queries or business inquiries."
-        />
-      </Head>
       <MaxWidthWrapper>
         <motion.div
           className="pt-28 mb-14"
@@ -171,12 +204,14 @@ const ContactPage = ({}) => {
                       className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="fullName"
-                      placeholder="Full Name"
+                      placeholder={
+                        dict.other_pages.contact_page.form.fields.fullName
+                      }
                       {...register("fullName")}
                     />
                     {errors?.fullName && (
                       <p className="text-sm font-semibold text-red-700">
-                        {errors.fullName?.message}
+                        {dict.other_pages.contact_page.form.errors.fullName}
                       </p>
                     )}
                   </motion.div>
@@ -186,12 +221,14 @@ const ContactPage = ({}) => {
                       className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="email"
-                      placeholder="Email"
+                      placeholder={
+                        dict.other_pages.contact_page.form.fields.email
+                      }
                       {...register("email")}
                     />
                     {errors?.email && (
                       <p className="text-sm font-semibold text-red-700">
-                        {errors.email?.message}
+                        {dict.other_pages.contact_page.form.errors.email}
                       </p>
                     )}
                   </motion.div>
@@ -201,12 +238,14 @@ const ContactPage = ({}) => {
                       className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="phone"
-                      placeholder="Phone Number"
+                      placeholder={
+                        dict.other_pages.contact_page.form.fields.phone
+                      }
                       {...register("phone")}
                     />
                     {errors?.phone && (
                       <p className="text-sm font-semibold text-red-700">
-                        {errors.phone?.message}
+                        {dict.other_pages.contact_page.form.errors.phone}
                       </p>
                     )}
                   </motion.div>
@@ -216,12 +255,14 @@ const ContactPage = ({}) => {
                       className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="company"
-                      placeholder="Company"
+                      placeholder={
+                        dict.other_pages.contact_page.form.fields.company
+                      }
                       {...register("company")}
                     />
                     {errors?.company && (
                       <p className="text-sm font-semibold text-red-700">
-                        {errors.company?.message}
+                        {dict.other_pages.contact_page.form.errors.company}
                       </p>
                     )}
                   </motion.div>
@@ -231,12 +272,14 @@ const ContactPage = ({}) => {
                       className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
                       size={32}
                       id="message"
-                      placeholder="Your Message"
+                      placeholder={
+                        dict.other_pages.contact_page.form.fields.message
+                      }
                       {...register("message")}
                     />
                     {errors?.message && (
                       <p className="text-sm font-semibold text-red-700">
-                        {errors.message?.message}
+                        {dict.other_pages.contact_page.form.errors.message}
                       </p>
                     )}
                   </motion.div>
@@ -247,7 +290,7 @@ const ContactPage = ({}) => {
                       type="submit"
                       isLoading={isLoadingEmail}
                     >
-                      Submit Form
+                      {dict.other_pages.contact_page.form.submit}
                     </Button>
                   </motion.div>
                 </motion.form>

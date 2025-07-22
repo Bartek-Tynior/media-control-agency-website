@@ -19,195 +19,199 @@
   "about": {
     "description": "Media Control Agency is a design-driven digital agency that was born out of a love for design and a passion for creating. We specialize in crafting unique, user-centric digital experiences that captivate audiences and elevate brands. Our mission is to help businesses like yours build faster, connect better, and stand out in the digital world."
   },
-  "case_studies": [
-    {
-      "id": 1,
-      "client": "Plus 44",
-      "service": "Web Development & Advertising",
-      "website": "https://www.plus44-clo.com/",
-      "project": {
-        "scopeOfWork": [
-          "Product Design",
-          "Web Development",
-          "Paid Advertising"
-        ],
-        "description": "We've designed and developed a custom e-commerce website for Plus 44, a streetwear fashion brand based in the Netherlands. We've also created and implemented a paid advertising strategy to increase the brand's awareness and sales.",
-        "industry": "Clothing",
-        "techStack": [
-          {
-            "name": "Shopify",
-            "imageLocation": "/img/icons/shopify-logo-toolstack.png",
-            "imageAlt": "Shopify Icon"
+  "case_studies": {
+    "title": "Our recent projects.",
+    "subtitle": "See how we've helped businesses transform and grow their digital presence.",
+    "cases": [
+      {
+        "id": 1,
+        "client": "Plus 44",
+        "service": "Web Development & Advertising",
+        "website": "https://www.plus44-clo.com/",
+        "project": {
+          "scopeOfWork": [
+            "Product Design",
+            "Web Development",
+            "Paid Advertising"
+          ],
+          "description": "We've designed and developed a custom e-commerce website for Plus 44, a streetwear fashion brand based in the Netherlands. We've also created and implemented a paid advertising strategy to increase the brand's awareness and sales.",
+          "industry": "Clothing",
+          "techStack": [
+            {
+              "name": "Shopify",
+              "imageLocation": "/img/icons/shopify-logo-toolstack.png",
+              "imageAlt": "Shopify Icon"
+            },
+            {
+              "name": "Adobe XD",
+              "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+              "imageAlt": "Adobe XD Icon"
+            },
+            {
+              "name": "Custom Code",
+              "imageLocation": "/img/icons/code-logo-toolstack.png",
+              "imageAlt": "Custom Code Icon"
+            },
+            {
+              "name": "Blender",
+              "imageLocation": "/img/icons/blender-logo-toolstack.png",
+              "imageAlt": "Blender Icon"
+            }
+          ],
+          "challenges": {
+            "title": "Plus 44 needed a website that would represent their brand, values and overall image. They also needed a digital marketing to increase their brand awareness and accessibility.",
+            "description": [
+              "Creative solutions using 3D modeling",
+              "Implementing smart solutions like IDeal payment",
+              "Clear identity representation"
+            ]
           },
-          {
-            "name": "Adobe XD",
-            "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
-            "imageAlt": "Adobe XD Icon"
-          },
-          {
-            "name": "Custom Code",
-            "imageLocation": "/img/icons/code-logo-toolstack.png",
-            "imageAlt": "Custom Code Icon"
-          },
-          {
-            "name": "Blender",
-            "imageLocation": "/img/icons/blender-logo-toolstack.png",
-            "imageAlt": "Blender Icon"
-          }
-        ],
-        "challenges": {
-          "title": "Plus 44 needed a website that would represent their brand, values and overall image. They also needed a digital marketing to increase their brand awareness and accessibility.",
-          "description": [
-            "Creative solutions using 3D modeling",
-            "Implementing smart solutions like IDeal payment",
-            "Clear identity representation"
-          ]
+          "solution": "Media Control Agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
+          "result": "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
+          "publishDate": "2023-09-01",
+          "ogImageUrl": "img/og_image.png"
         },
-        "solution": "Media Control Agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
-        "result": "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
-        "publishDate": "2023-09-01",
-        "ogImageUrl": "img/og_image.png"
-      },
-      "coverImageLocation": {
-        "type": "video",
-        "src": "/img/PLUS_44_WEBSITE_CASESTUDY.mp4"
-      },
-      "coverImageAlt": "Client's Project Image"
-    },
-    {
-      "id": 2,
-      "client": "Allersnelste Nanie",
-      "service": "SEO & Web Development",
-      "website": "https://nanie.nl/",
-      "project": {
-        "scopeOfWork": ["SEO", "Web Development"],
-        "description": "We've optimized the website of Allersnelste Nanie, a Dutch electra company, for search engines. We've also redesigned and developed their website to improve user experience and increase conversions.",
-        "industry": "Electrician",
-        "techStack": [
-          {
-            "name": "Custom Code",
-            "imageLocation": "/img/icons/code-logo-toolstack.png",
-            "imageAlt": "Custom Code Icon"
-          }
-        ],
-        "challenges": {
-          "title": "Allersnelste Nanie needed a update for their website to improve user experience and increase conversions. It was our task to optimize the website for search engines and improve the overall performance.",
-          "description": [
-            "On-page and Off-page SEO optimization",
-            "Performance optimization",
-            "User experience improvements"
-          ]
+        "coverImageLocation": {
+          "type": "video",
+          "src": "/img/PLUS_44_WEBSITE_CASESTUDY.mp4"
         },
-        "solution": "Media Control Agency reviewed the already exisitng website, came up with a tailored strategy and implemented it. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
-        "result": "A fully optimized website for multiple different location with improved user experience and increased conversions.",
-        "publishDate": "2024-09-01",
-        "ogImageUrl": "img/og_image.png"
+        "coverImageAlt": "Client's Project Image"
       },
-      "coverImageLocation": {
-        "type": "image",
-        "src": "/img/ALLERSNELSTE_NANIE_CASE_STUDY_COVER.png"
-      },
-      "coverImageAlt": "Client's Project Image"
-    },
-    {
-      "id": 3,
-      "client": "A1 Maatwerk",
-      "service": "SEO & Web Development",
-      "website": "https://www.a1maatwerk.nl/",
-      "project": {
-        "scopeOfWork": ["SEO", "Web Development", "Design"],
-        "description": "We've fully redesigned and developed the website of A1 Maatwerk, a Dutch contractor. We've also optimized the website for search engines to improve user experience and increase conversions.",
-        "industry": "Contractor",
-        "techStack": [
-          {
-            "name": "Custom Code",
-            "imageLocation": "/img/icons/code-logo-toolstack.png",
-            "imageAlt": "Custom Code Icon"
+      {
+        "id": 2,
+        "client": "Allersnelste Nanie",
+        "service": "SEO & Web Development",
+        "website": "https://nanie.nl/",
+        "project": {
+          "scopeOfWork": ["SEO", "Web Development"],
+          "description": "We've optimized the website of Allersnelste Nanie, a Dutch electra company, for search engines. We've also redesigned and developed their website to improve user experience and increase conversions.",
+          "industry": "Electrician",
+          "techStack": [
+            {
+              "name": "Custom Code",
+              "imageLocation": "/img/icons/code-logo-toolstack.png",
+              "imageAlt": "Custom Code Icon"
+            }
+          ],
+          "challenges": {
+            "title": "Allersnelste Nanie needed a update for their website to improve user experience and increase conversions. It was our task to optimize the website for search engines and improve the overall performance.",
+            "description": [
+              "On-page and Off-page SEO optimization",
+              "Performance optimization",
+              "User experience improvements"
+            ]
           },
-          {
-            "name": "Framer",
-            "imageLocation": "/img/icons/framer-logo-toolsatck.png",
-            "imageAlt": "Framer Icon"
-          },
-          {
-            "name": "Adobe XD",
-            "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
-            "imageAlt": "Adobe XD Icon"
-          }
-        ],
-        "challenges": {
-          "title": "A1 Maatwerk needed a update for their website to improve user experience, increase conversions and improve the general outdated design. It was our task to design a new website based on the already exisitng brand identity, develop it and optimize it for search engines.",
-          "description": [
-            "Redesigning the website based on existing brand identity",
-            "Implementing a new design and user experience",
-            "Developing the website using modern technologies",
-            "Integrating the website with a content management system",
-            "On-page and Off-page SEO optimization",
-            "Performance optimization",
-            "User experience improvements"
-          ]
+          "solution": "Media Control Agency reviewed the already exisitng website, came up with a tailored strategy and implemented it. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
+          "result": "A fully optimized website for multiple different location with improved user experience and increased conversions.",
+          "publishDate": "2024-09-01",
+          "ogImageUrl": "img/og_image.png"
         },
-        "solution": "Media Control Agency reviewed the already exisitng website, came up with a custom design and development plan. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
-        "result": "A fully optimized website with modern design and user experience, improved performance, increased conversions and integrated content management system.",
-        "publishDate": "2024-09-01",
-        "ogImageUrl": "img/og_image.png"
-      },
-      "coverImageLocation": {
-        "type": "image",
-        "src": "/img/A1_MAATWERK_COVER.png"
-      },
-      "coverImageAlt": "Client's Project Image"
-    },
-    {
-      "id": 4,
-      "client": "Pod Skrzydlami",
-      "service": "Branding & Web Development",
-      "website": "https://podskrzydlami.nl/",
-      "project": {
-        "scopeOfWork": ["SEO", "Web Development", "Branding", "Design"],
-        "description": "A new business, Pod Skrzydlami, needed a full branding and web development solution. We created a new brand identity, designed and developed a custom website, and optimized it for search engines.",
-        "industry": "Accounting",
-        "techStack": [
-          {
-            "name": "Custom Code",
-            "imageLocation": "/img/icons/code-logo-toolstack.png",
-            "imageAlt": "Custom Code Icon"
-          },
-          {
-            "name": "Adobe XD",
-            "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
-            "imageAlt": "Adobe XD Icon"
-          },
-          {
-            "name": "ChatGPT",
-            "imageLocation": "/img/icons/chatgpt-logo-toolstack.webp",
-            "imageAlt": "ChatGPT Icon"
-          }
-        ],
-        "challenges": {
-          "title": "Pod Skrzydlami is a Dutch accounting company that needed a full branding and web development solution. It was our task to create a new brand identity, design and develop a custom website, and optimize it for search engines. We started by creating a new logo, color palette, typography and overall brand identity. Then we designed and developed a custom website that represents the brand's values and identity.",
-          "description": [
-            "Creating a new brand identity",
-            "Designing a custom website",
-            "Developing the website using modern technologies",
-            "Integrating the website with a content management system",
-            "On-page and Off-page SEO optimization",
-            "Performance optimization",
-            "User experience improvements"
-          ]
+        "coverImageLocation": {
+          "type": "image",
+          "src": "/img/ALLERSNELSTE_NANIE_CASE_STUDY_COVER.png"
         },
-        "solution": "Media Control Agency provided a tailored solution using custom code, Adobe XD and ChatGPT. We created a new brand identity, designed and developed a custom website, and optimized it for search engines.",
-        "result": "A fully branding and web development solution that includes a new brand identity, custom website and optimized for search engines. The website is user-friendly, modern and represents the brand's values and identity.",
-        "publishDate": "2024-09-01",
-        "ogImageUrl": "img/og_image.png"
+        "coverImageAlt": "Client's Project Image"
       },
-      "coverImageLocation": {
-        "type": "image",
-        "src": "/img/POD_SKRZYDLAMI_COVER.png"
+      {
+        "id": 3,
+        "client": "A1 Maatwerk",
+        "service": "SEO & Web Development",
+        "website": "https://www.a1maatwerk.nl/",
+        "project": {
+          "scopeOfWork": ["SEO", "Web Development", "Design"],
+          "description": "We've fully redesigned and developed the website of A1 Maatwerk, a Dutch contractor. We've also optimized the website for search engines to improve user experience and increase conversions.",
+          "industry": "Contractor",
+          "techStack": [
+            {
+              "name": "Custom Code",
+              "imageLocation": "/img/icons/code-logo-toolstack.png",
+              "imageAlt": "Custom Code Icon"
+            },
+            {
+              "name": "Framer",
+              "imageLocation": "/img/icons/framer-logo-toolsatck.png",
+              "imageAlt": "Framer Icon"
+            },
+            {
+              "name": "Adobe XD",
+              "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+              "imageAlt": "Adobe XD Icon"
+            }
+          ],
+          "challenges": {
+            "title": "A1 Maatwerk needed a update for their website to improve user experience, increase conversions and improve the general outdated design. It was our task to design a new website based on the already exisitng brand identity, develop it and optimize it for search engines.",
+            "description": [
+              "Redesigning the website based on existing brand identity",
+              "Implementing a new design and user experience",
+              "Developing the website using modern technologies",
+              "Integrating the website with a content management system",
+              "On-page and Off-page SEO optimization",
+              "Performance optimization",
+              "User experience improvements"
+            ]
+          },
+          "solution": "Media Control Agency reviewed the already exisitng website, came up with a custom design and development plan. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
+          "result": "A fully optimized website with modern design and user experience, improved performance, increased conversions and integrated content management system.",
+          "publishDate": "2024-09-01",
+          "ogImageUrl": "img/og_image.png"
+        },
+        "coverImageLocation": {
+          "type": "image",
+          "src": "/img/A1_MAATWERK_COVER.png"
+        },
+        "coverImageAlt": "Client's Project Image"
       },
-      "coverImageAlt": "Client's Project Image"
-    }
-  ],
+      {
+        "id": 4,
+        "client": "Pod Skrzydlami",
+        "service": "Branding & Web Development",
+        "website": "https://podskrzydlami.nl/",
+        "project": {
+          "scopeOfWork": ["SEO", "Web Development", "Branding", "Design"],
+          "description": "A new business, Pod Skrzydlami, needed a full branding and web development solution. We created a new brand identity, designed and developed a custom website, and optimized it for search engines.",
+          "industry": "Accounting",
+          "techStack": [
+            {
+              "name": "Custom Code",
+              "imageLocation": "/img/icons/code-logo-toolstack.png",
+              "imageAlt": "Custom Code Icon"
+            },
+            {
+              "name": "Adobe XD",
+              "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+              "imageAlt": "Adobe XD Icon"
+            },
+            {
+              "name": "ChatGPT",
+              "imageLocation": "/img/icons/chatgpt-logo-toolstack.webp",
+              "imageAlt": "ChatGPT Icon"
+            }
+          ],
+          "challenges": {
+            "title": "Pod Skrzydlami is a Dutch accounting company that needed a full branding and web development solution. It was our task to create a new brand identity, design and develop a custom website, and optimize it for search engines. We started by creating a new logo, color palette, typography and overall brand identity. Then we designed and developed a custom website that represents the brand's values and identity.",
+            "description": [
+              "Creating a new brand identity",
+              "Designing a custom website",
+              "Developing the website using modern technologies",
+              "Integrating the website with a content management system",
+              "On-page and Off-page SEO optimization",
+              "Performance optimization",
+              "User experience improvements"
+            ]
+          },
+          "solution": "Media Control Agency provided a tailored solution using custom code, Adobe XD and ChatGPT. We created a new brand identity, designed and developed a custom website, and optimized it for search engines.",
+          "result": "A fully branding and web development solution that includes a new brand identity, custom website and optimized for search engines. The website is user-friendly, modern and represents the brand's values and identity.",
+          "publishDate": "2024-09-01",
+          "ogImageUrl": "img/og_image.png"
+        },
+        "coverImageLocation": {
+          "type": "image",
+          "src": "/img/POD_SKRZYDLAMI_COVER.png"
+        },
+        "coverImageAlt": "Client's Project Image"
+      }
+    ]
+  },
   "process": {
     "title": "Our simple 3-step process to skyrocket your business.",
     "subtitle": "We believe in a design and development process that is not only efficient but also effective. Time is money, and we make sure to deliver high-quality results in a timely manner.",
@@ -229,117 +233,147 @@
       }
     ]
   },
-  "services": [
-    {
-      "i": 1,
-      "title": "Product Design",
-      "description": "Craft sleek, user-focused designs that bring your ideas to life. We combine creativity with strategic thinking to create products that stand out and captivate your audience.",
-      "imageLocation": "/img/product-design.gif",
-      "altImage": "Product Design Image",
-      "detailPage": "/services/product-design",
-      "toolstack": [
+  "services": {
+    "title": "What we do best.",
+    "list": [
+      {
+        "i": 1,
+        "title": "Product Design",
+        "description": "Craft sleek, user-focused designs that bring your ideas to life. We combine creativity with strategic thinking to create products that stand out and captivate your audience.",
+        "imageLocation": "/img/product-design.gif",
+        "altImage": "Product Design Image",
+        "detailPage": "/services/product-design",
+        "toolstack": [
+          {
+            "name": "Adobe XD",
+            "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+            "imageAlt": "Adobe XD Icon"
+          },
+          {
+            "name": "Blender",
+            "imageLocation": "/img/icons/blender-logo-toolstack.png",
+            "imageAlt": "Blender Icon"
+          }
+        ]
+      },
+      {
+        "i": 2,
+        "title": "Web Development",
+        "description": "Build modern, responsive websites that deliver seamless user experiences. From concept to launch, we create high-performing websites tailored to your brand.",
+        "imageLocation": "/img/web-development.gif",
+        "altImage": "Web Development Image",
+        "detailPage": "/services/web-development",
+        "toolstack": [
+          {
+            "name": "Webflow",
+            "imageLocation": "/img/icons/webflow-logo-toolstack.png",
+            "imageAlt": "Webflow Icon"
+          },
+          {
+            "name": "Framer",
+            "imageLocation": "/img/icons/framer-logo-toolsatck.png",
+            "imageAlt": "Framer Icon"
+          },
+          {
+            "name": "Custom Code",
+            "imageLocation": "/img/icons/code-logo-toolstack.png",
+            "imageAlt": "Custom Code Icon"
+          }
+        ]
+      },
+      {
+        "i": 3,
+        "title": "App Development",
+        "description": "Transform your vision into dynamic, user-friendly mobile apps. We design and develop apps that are intuitive, engaging, and optimized for performance across all devices.",
+        "imageLocation": "/img/app-development.gif",
+        "altImage": "App Development Image",
+        "detailPage": "/services/app-development",
+        "toolstack": [
+          {
+            "name": "Swift",
+            "imageLocation": "/img/icons/swift-logo-toolstack.png",
+            "imageAlt": "Switt Icon"
+          }
+        ]
+      },
+      {
+        "i": 4,
+        "title": "MVP Building",
+        "description": "Launch quickly with a Minimum Viable Product that captures your core idea. We help you test, validate, and refine your product with agility and speed.",
+        "imageLocation": "/img/mvp-building.gif",
+        "altImage": "MVP Building Image",
+        "detailPage": "/services/mvp-building",
+        "toolstack": [
+          {
+            "name": "Custom Code",
+            "imageLocation": "/img/icons/code-logo-toolstack.png",
+            "imageAlt": "Custom Code Icon"
+          }
+        ]
+      },
+      {
+        "i": 5,
+        "title": "E-commerce",
+        "description": "Boost your sales with a custom-built e-commerce platform that’s tailored for growth. We create seamless shopping experiences that convert visitors into loyal customers.",
+        "imageLocation": "/img/e-commerce.gif",
+        "altImage": "E-commerce Image",
+        "detailPage": "/services/e-commerce",
+        "toolstack": [
+          {
+            "name": "Shopify",
+            "imageLocation": "/img/icons/shopify-logo-toolstack.png",
+            "imageAlt": "Shopify Icon"
+          }
+        ]
+      }
+    ],
+    "service_benefits": {
+      "title": "What sets us apart:",
+      "list": [
         {
-          "name": "Adobe XD",
-          "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
-          "imageAlt": "Adobe XD Icon"
+          "id": 1,
+          "description": "Fast delivery time"
         },
         {
-          "name": "Blender",
-          "imageLocation": "/img/icons/blender-logo-toolstack.png",
-          "imageAlt": "Blender Icon"
-        }
-      ]
-    },
-    {
-      "i": 2,
-      "title": "Web Development",
-      "description": "Build modern, responsive websites that deliver seamless user experiences. From concept to launch, we create high-performing websites tailored to your brand.",
-      "imageLocation": "/img/web-development.gif",
-      "altImage": "Web Development Image",
-      "detailPage": "/services/web-development",
-      "toolstack": [
-        {
-          "name": "Webflow",
-          "imageLocation": "/img/icons/webflow-logo-toolstack.png",
-          "imageAlt": "Webflow Icon"
+          "id": 2,
+          "description": "Client-centric approach"
         },
         {
-          "name": "Framer",
-          "imageLocation": "/img/icons/framer-logo-toolsatck.png",
-          "imageAlt": "Framer Icon"
+          "id": 3,
+          "description": "Excellent quality and attention to detail"
         },
         {
-          "name": "Custom Code",
-          "imageLocation": "/img/icons/code-logo-toolstack.png",
-          "imageAlt": "Custom Code Icon"
-        }
-      ]
-    },
-    {
-      "i": 3,
-      "title": "App Development",
-      "description": "Transform your vision into dynamic, user-friendly mobile apps. We design and develop apps that are intuitive, engaging, and optimized for performance across all devices.",
-      "imageLocation": "/img/app-development.gif",
-      "altImage": "App Development Image",
-      "detailPage": "/services/app-development",
-      "toolstack": [
-        {
-          "name": "Swift",
-          "imageLocation": "/img/icons/swift-logo-toolstack.png",
-          "imageAlt": "Switt Icon"
-        }
-      ]
-    },
-    {
-      "i": 4,
-      "title": "MVP Building",
-      "description": "Launch quickly with a Minimum Viable Product that captures your core idea. We help you test, validate, and refine your product with agility and speed.",
-      "imageLocation": "/img/mvp-building.gif",
-      "altImage": "MVP Building Image",
-      "detailPage": "/services/mvp-building",
-      "toolstack": [
-        {
-          "name": "Custom Code",
-          "imageLocation": "/img/icons/code-logo-toolstack.png",
-          "imageAlt": "Custom Code Icon"
-        }
-      ]
-    },
-    {
-      "i": 5,
-      "title": "E-commerce",
-      "description": "Boost your sales with a custom-built e-commerce platform that’s tailored for growth. We create seamless shopping experiences that convert visitors into loyal customers.",
-      "imageLocation": "/img/e-commerce.gif",
-      "altImage": "E-commerce Image",
-      "detailPage": "/services/e-commerce",
-      "toolstack": [
-        {
-          "name": "Shopify",
-          "imageLocation": "/img/icons/shopify-logo-toolstack.png",
-          "imageAlt": "Shopify Icon"
+          "id": 4,
+          "description": "Best practices in development & marketing"
         }
       ]
     }
-  ],
+  },
   "comparison": {
     "title": "Why Choose Us Over the Competition?",
     "subtitle": "We're not just another digital agency. We're your design partner, your growth engine, and your secret weapon in the digital world.",
-    "competitors": [
-      "Generic, templated designs",
-      "Overpriced services with hidden fees",
-      "Slow, drawn-out project timelines",
-      "Limited understanding of user experience",
-      "Inconsistent communication and follow-ups",
-      "One-size-fits-all solutions"
-    ],
-    "mca": [
-      "Tailored best-fit solutions",
-      "Transparent pricing with no hidden costs",
-      "Avg. 24-48 hours delivery time",
-      "6+ years of industry specific expertise",
-      "24/7 Whatsapp support",
-      "Fully customized strategies aligned with your goals"
-    ]
+    "competitors": {
+      "title": "What others do.",
+      "list": [
+        "Generic, templated designs",
+        "Overpriced services with hidden fees",
+        "Slow, drawn-out project timelines",
+        "Limited understanding of user experience",
+        "Inconsistent communication and follow-ups",
+        "One-size-fits-all solutions"
+      ]
+    },
+    "mca": {
+      "title": "What Media Control Agency do.",
+      "list": [
+        "Tailored best-fit solutions",
+        "Transparent pricing with no hidden costs",
+        "Avg. 24-48 hours delivery time",
+        "6+ years of industry specific expertise",
+        "24/7 Whatsapp support",
+        "Fully customized strategies aligned with your goals"
+      ]
+    }
   },
   "pricing": {
     "title": "Ready to invest in your business?",
@@ -372,6 +406,13 @@
         "features": [],
         "withGradient": false,
         "buttonText": "Request a quote",
+        "secondaryButtonText": "Schedule a call"
+      },
+      {
+        "title": "Starter Package",
+        "description": "For startups or small businesses that need professional designs or development without a large investment.",
+        "withGradient": false,
+        "buttonText": "Book a call",
         "secondaryButtonText": "Schedule a call"
       }
     ]
@@ -425,24 +466,6 @@
       "link": "/contact"
     }
   },
-  "service_benefits": [
-    {
-      "id": 1,
-      "description": "Fast delivery time"
-    },
-    {
-      "id": 2,
-      "description": "Client-centric approach"
-    },
-    {
-      "id": 3,
-      "description": "Excellent quality"
-    },
-    {
-      "id": 4,
-      "description": "Best practices in development & marketing"
-    }
-  ],
   "essential_elements": {
     "navbar": {
       "logo": {
@@ -483,7 +506,7 @@
       ]
     },
     "footer": {
-      "footer_credit": "© 2024 All rights reserved Made with 💜 by Media Control Agency",
+      "footer_credit": "© 2024 All rights reserved. Made with 💜 by Media Control Agency",
       "newsletter": {
         "title": "Join our newsletter",
         "description": "Sign up to our mailing list below and be the first to know about new updates. Don't worry, we hate spam too.",
@@ -515,22 +538,22 @@
       "kvk": "91179947",
       "tax": "NL004874490B47",
       "instagram": {
-        "text": "Instagram",
-        "link": "https://www.instagram.com/mediacontrolagency/",
-        "imageLocation": "/img/icons/instagram-logo.png",
-        "imageAlt": "Instagram Icoon"
+        "name": "Instagram",
+        "url": "https://www.instagram.com/mediacontrolag/",
+        "icon": "/img/icons/instagram-icon.png",
+        "iconAlt": "Instagram Icon"
       },
       "linkedin": {
-        "text": "LinkedIn",
-        "link": "https://www.linkedin.com/company/media-control-agency/",
-        "imageLocation": "/img/icons/linkedin-logo.png",
-        "imageAlt": "LinkedIn Icoon"
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/media-control-agency",
+        "icon": "/img/icons/linkedin-icon.png",
+        "iconAlt": "LinkedIn Icon"
       },
       "facebook": {
-        "text": "Facebook",
-        "link": "https://www.facebook.com/mediacontrolagency/",
-        "imageLocation": "/img/icons/facebook-logo.png",
-        "imageAlt": "Facebook Icoon"
+        "name": "Facebook",
+        "url": "https://www.facebook.com/people/Media-Control-Agency/61551901261084/",
+        "icon": "/img/icons/facebook-icon.png",
+        "iconAlt": "Facebook Icon"
       },
       "CTA": {
         "text": "Get in touch",
@@ -551,7 +574,32 @@
       "subtitle_2": "...or book a meeting with the founder and discuss your project and possible approaches!",
       "meeting_button_title": "Plan een afspraak",
       "meeting_description": "By the end of this meeting, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with outstanding websites & paid advertising.",
-      "meeting_link": "https://calendly.com/media-control-agency/consultation"
+      "meeting_link": "https://calendly.com/media-control-agency/consultation",
+      "form": {
+        "fields": {
+          "fullName": "Full name",
+          "email": "Email address",
+          "phone": "Phone number",
+          "company": "Company",
+          "message": "Your message"
+        },
+        "submit": "Send form",
+        "errors": {
+          "fullName": "Please enter a valid name.",
+          "email": "Please enter a valid email address.",
+          "phone": "Please enter a valid phone number.",
+          "company": "Please enter a company name.",
+          "message": "Message cannot be empty."
+        },
+        "success": {
+          "title": "Email sent!",
+          "description": "We will contact you as soon as possible."
+        },
+        "error": {
+          "title": "Something went wrong!",
+          "description": "Please try again later."
+        }
+      }
     },
     "terms": {
       "title": "Terms of Service",

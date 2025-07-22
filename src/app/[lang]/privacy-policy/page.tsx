@@ -7,6 +7,62 @@ import Lenis from "lenis";
 import Head from "next/head";
 import React from "react";
 import { useEffect } from "react";
+import { getDictionary } from "../dictionaries";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { lang: "en" | "nl" };
+}) {
+  const dict = await getDictionary(params.lang);
+  const isDutch = params.lang === "nl";
+
+  return {
+    title: isDutch
+      ? "Privacybeleid | Media Control Agency"
+      : "Privacy Policy | Media Control Agency",
+    description: isDutch
+      ? "Lees ons privacybeleid en ontdek hoe wij jouw gegevens verzamelen, gebruiken en beveiligen."
+      : "Learn about our Privacy Policy, how we collect, use, and protect your personal information at Media Control Agency.",
+    alternates: {
+      canonical: `https://media-control-agency.com/${params.lang}/privacy-policy`,
+      languages: {
+        en: "https://media-control-agency.com/en/privacy-policy",
+        nl: "https://media-control-agency.com/nl/privacy-policy",
+      },
+    },
+    openGraph: {
+      title: isDutch
+        ? "Privacybeleid | Media Control Agency"
+        : "Privacy Policy | Media Control Agency",
+      description: isDutch
+        ? "Ontdek hoe Media Control Agency jouw gegevens verwerkt en beveiligt."
+        : "Learn about our Privacy Policy and how we handle your data at Media Control Agency.",
+      url: `https://media-control-agency.com/${params.lang}/privacy-policy`,
+      images: [
+        {
+          url: "https://media-control-agency.com/img/og_image.png",
+          alt: "Media Control Agency Banner",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: isDutch
+        ? "Privacybeleid | Media Control Agency"
+        : "Privacy Policy | Media Control Agency",
+      description: isDutch
+        ? "Lees hoe wij omgaan met jouw persoonlijke informatie."
+        : "Learn about how we collect, use, and protect your personal information at Media Control Agency.",
+      images: [
+        {
+          url: "https://media-control-agency.com/img/og_image.png",
+          alt: "Media Control Agency Banner",
+        },
+      ],
+    },
+  };
+}
 
 const Page = () => {
   const { lang, dict } = useLang();
@@ -28,34 +84,6 @@ const Page = () => {
 
   return (
     <>
-      <Head>
-        <title>Privacy Policy | Media Control Agency</title>
-        <meta
-          name="description"
-          content="Learn about our Privacy Policy, how we collect, use, and protect your personal information at Media Control Agency."
-        />
-        <meta
-          property="og:title"
-          content="Privacy Policy | Media Control Agency"
-        />
-        <meta
-          property="og:description"
-          content="Learn about our Privacy Policy and how we handle your data at Media Control Agency."
-        />
-        <meta
-          property="og:url"
-          content="https://media-control-agency.com/privacy-policy"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Privacy Policy | Media Control Agency"
-        />
-        <meta
-          name="twitter:description"
-          content="Learn about how we collect, use, and protect your personal information at Media Control Agency."
-        />
-      </Head>
       <MaxWidthWrapper>
         <div className="pt-28 mb-14">
           <div className="flex flex-col gap-5">

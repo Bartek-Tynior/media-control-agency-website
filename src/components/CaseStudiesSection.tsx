@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-import websiteContent from "../../website-content";
 import SectionLabel from "./ui/SectionLabel";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 
@@ -21,7 +20,7 @@ const itemVariants = {
 };
 
 const CaseStudiesSection = ({ dict }: { dict: any }) => {
-  const cards = dict;
+  const content = dict;
 
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 }); // Animation triggered when in view
@@ -72,7 +71,7 @@ const CaseStudiesSection = ({ dict }: { dict: any }) => {
       >
         <SectionLabel sectionName="Case Studies" />
         <motion.h2 className="text-2xl lg:w-1/2 font-bold leading-tight">
-          Our recent cases
+          {content.title}
         </motion.h2>
       </motion.div>
 
@@ -84,56 +83,59 @@ const CaseStudiesSection = ({ dict }: { dict: any }) => {
           animate={isInView ? "show" : "hidden"} // Animate when section is in view
           variants={containerVariants}
         >
-          {cards.map(({ client, coverImageLocation, service, id }, index) => {
-            const { span, yTransform } = gridStyles[index % gridStyles.length];
+          {content.cases.map(
+            ({ client, coverImageLocation, service, id }, index) => {
+              const { span, yTransform } =
+                gridStyles[index % gridStyles.length];
 
-            const projectName = client.toLowerCase().replace(/\s/g, "-");
+              const projectName = client.toLowerCase().replace(/\s/g, "-");
 
-            return (
-              <motion.a
-                href={`/projects/${projectName}`}
-                key={id}
-                style={{
-                  y: isDesktop ? yTransform : 0, // Parallax only for desktop
-                }}
-                className={`casestudy-item overflow-hidden ${span}`}
-                variants={itemVariants}
-              >
-                <div className="media-container relative w-full pb-[56.25%]">
-                  {coverImageLocation.type === "video" ? (
-                    <video
-                      className="absolute border border-white/30 shadow-lg antialiased top-0 left-0 w-full h-full rounded-lg object-cover"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                    >
-                      <source src={coverImageLocation.src} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  ) : (
-                    <div
-                      style={{
-                        backgroundImage: `url(${coverImageLocation.src})`,
-                      }}
-                      className="absolute border border-white/30 shadow-lg antialiased top-0 left-0 w-full h-full rounded-lg bg-cover bg-center"
-                    >
-                      <div className="hidden">
-                        <div className="text-size-small">
-                          Case study coming soon
+              return (
+                <motion.a
+                  href={`/projects/${projectName}`}
+                  key={id}
+                  style={{
+                    y: isDesktop ? yTransform : 0, // Parallax only for desktop
+                  }}
+                  className={`casestudy-item overflow-hidden ${span}`}
+                  variants={itemVariants}
+                >
+                  <div className="media-container relative w-full pb-[56.25%]">
+                    {coverImageLocation.type === "video" ? (
+                      <video
+                        className="absolute border border-white/30 shadow-lg antialiased top-0 left-0 w-full h-full rounded-lg object-cover"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                      >
+                        <source src={coverImageLocation.src} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    ) : (
+                      <div
+                        style={{
+                          backgroundImage: `url(${coverImageLocation.src})`,
+                        }}
+                        className="absolute border border-white/30 shadow-lg antialiased top-0 left-0 w-full h-full rounded-lg bg-cover bg-center"
+                      >
+                        <div className="hidden">
+                          <div className="text-size-small">
+                            Case study coming soon
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  )}
-                </div>
+                    )}
+                  </div>
 
-                <div className="py-4 flex flex-col">
-                  <span className="text-lg font-bold">{client}</span>
-                  <span className="text-sm text-gray-300">{service}</span>
-                </div>
-              </motion.a>
-            );
-          })}
+                  <div className="py-4 flex flex-col">
+                    <span className="text-lg font-bold">{client}</span>
+                    <span className="text-sm text-gray-300">{service}</span>
+                  </div>
+                </motion.a>
+              );
+            }
+          )}
         </motion.div>
       </div>
     </section>

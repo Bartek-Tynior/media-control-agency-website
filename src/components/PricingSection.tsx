@@ -20,36 +20,12 @@ const PricingComponent = ({ dict }: { dict: any }) => {
           <p className="text-gray-300">{content.subtitle}</p>
 
           <motion.div
-            className="flex flex-col md:flex-row gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full"
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
             variants={containerVariants}
           >
             {renderPricingCards(dict)}
-          </motion.div>
-
-          <motion.div
-            className="relative rounded-lg p-8 border border-white/20 shadow-lg w-full"
-            variants={cardVariants}
-          >
-            <div className="relative z-10">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-semibold">Startpakket</h2>
-              </div>
-              <p className="mb-8">
-                Voor startende ondernemers of kleine bedrijven die professionele
-                designs nodig hebben, zonder grote investering.
-              </p>
-              <a href="/contact">
-                <Button
-                  size="full-size"
-                  variant="secondary"
-                  className="text-white py-3 rounded-lg"
-                >
-                  Vraag een offerte aan
-                </Button>
-              </a>
-            </div>
           </motion.div>
         </div>
       </div>
@@ -131,7 +107,7 @@ const PricingCard = ({
         <h3 className="text-4xl font-bold mb-4">{price}</h3>
         <p className="mb-8">{description}</p>
         <ul className="space-y-2 mb-8">
-          {features.map((feature, index) => (
+          {features?.map((feature, index) => (
             <li className="flex gap-4 items-center" key={index}>
               {withGradient ? (
                 <Image

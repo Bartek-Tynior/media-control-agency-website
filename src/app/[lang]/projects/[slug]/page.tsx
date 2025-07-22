@@ -21,7 +21,7 @@ const Page = () => {
   const slug = params.slug;
 
   // Find the content based on the slug parameter
-  const content = dict.case_studies.find(
+  const content = dict.case_studies.cases.find(
     (item) =>
       item.client.replace(/\s+/g, "-").toLowerCase() ===
       slug.toString().toLowerCase()

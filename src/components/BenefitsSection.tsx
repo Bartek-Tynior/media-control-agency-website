@@ -2,19 +2,16 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import websiteContent from "../../website-content";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import { FC } from "react";
 
-const BenefitsSection = () => {
-  const content = websiteContent.service_benefits;
+const BenefitsSection = ({ dict }) => {
+  const content = dict.service_benefits;
 
   return (
     <div className="w-full flex flex-col sm:grid grid-cols-4 my-6 overflow-hidden">
-      <span className="mb-4 sm:mb-0 text-base font-bold">
-        What sets us apart:
-      </span>
+      <span className="mb-4 sm:mb-0 text-base font-bold">{content.title}</span>
       <Swiper
         className="col-span-3 swiper-benefits w-full"
         speed={6000}
@@ -44,7 +41,7 @@ const BenefitsSection = () => {
         }}
       >
         <div className="swiper-benefits-background"></div>
-        {content.map(({ description, id }) => (
+        {content.list.map(({ description, id }) => (
           <SwiperSlide className="!flex !justify-center" key={id}>
             <BenefitsSectionCard description={description} />
           </SwiperSlide>
@@ -68,9 +65,7 @@ const BenefitsSectionCard: FC<BenefitsSectionCardProps> = ({ description }) => {
         height={20}
         alt="Check Icon"
       />
-      <span className="text-base font-medium antialiased">
-        {description}
-      </span>
+      <span className="text-base font-medium antialiased">{description}</span>
     </div>
   );
 };

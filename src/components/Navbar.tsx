@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { motion } from "framer-motion";
-import { useLang } from "@/lib/lang-context";
 
 const Navbar = ({ lang, dict }) => {
   const content = dict.essential_elements.navbar;
@@ -32,8 +31,8 @@ const Navbar = ({ lang, dict }) => {
   };
 
   useEffect(() => {
-    setIsHomePage(pathname === "/");
-  }, [pathname]);
+    setIsHomePage(pathname === `/${lang}` || pathname === `/${lang}/`);
+  }, [pathname, lang]);
 
   return (
     <motion.nav
@@ -71,7 +70,7 @@ const Navbar = ({ lang, dict }) => {
                 <li key={link.name} className="link-wrapper z-10 px-2">
                   <Link
                     className="text-sm font-normal"
-                    href={isHomePage ? link.link : `/${link.link}`}
+                    href={`/${lang}${link.link}`}
                     id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
                   >
                     {link.name}
@@ -106,7 +105,7 @@ const Navbar = ({ lang, dict }) => {
             className="gap-2 group h-[40px] text-xs"
             variant="primary"
             size="full-size"
-            onClick={() => router.push(contact.CTA.link)}
+            onClick={() => router.push(`/${lang}${contact.CTA.link}`)}
           >
             {contact.CTA.text}
             <ArrowRight className="group-hover:translate-x-2 transition-all" />
@@ -122,7 +121,7 @@ const Navbar = ({ lang, dict }) => {
               return (
                 <div key={link.name} className="py-[0.25rem]">
                   <Link
-                    href={isHomePage ? link.link : `/${link.link}`}
+                    href={`/${lang}${link.link}`}
                     id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
                     className="text-lg text-white font-bold hover:text-zinc-300 transform transition-all"
                     onClick={toggleNavbar}
@@ -134,7 +133,7 @@ const Navbar = ({ lang, dict }) => {
             })}
 
             <div className="py-2">
-              <Link href={contact.CTA.link}>
+              <Link href={`/${lang}${contact.CTA.link}`}>
                 <Button
                   className="gap-2 group text-base h-10 border border-white/10"
                   variant="primary"
@@ -171,7 +170,9 @@ const Navbar = ({ lang, dict }) => {
                       height={24}
                       className="w-6 h-6"
                     />
-                    <span className="text-base text-gray-300 font-semibold">{social.name}</span>
+                    <span className="text-base text-gray-300 font-semibold">
+                      {social.name}
+                    </span>
                   </a>
                 );
               })}
