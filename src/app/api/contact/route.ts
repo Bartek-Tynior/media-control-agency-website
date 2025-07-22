@@ -12,15 +12,25 @@ export async function POST(req: Request) {
 
     console.log("Receiver:", process.env.SMTP_EMAIL);
 
+    let htmlContent;
+
+    try {
+      htmlContent = await render(FormMail(body));
+      console.log("Email template rendered successfully.", htmlContent);
+    } catch (error) {
+      console.error("Error rendering email template:", error.message || error);
+      return new Response("Internal Server Error!", { status: 500 });
+    }
+
     await sendEmail({
       to: process.env.SMTP_EMAIL || "",
       subject: "New Contact Form Submission!",
-      html: render(FormMail(body)),
+      html: htmlContent,
     });
   } catch (error: any) {
     console.error("Error sending email:", error.message || error);
     return new Response("Internal Server Error!", { status: 500 });
   }
 
-  return new Response("Succesfully Performed the Action!", { status: 200 });
+  return new Response("Successfully Performed the Action!", { status: 200 });
 }
