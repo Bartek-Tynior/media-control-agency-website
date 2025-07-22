@@ -382,12 +382,12 @@
     "subtitle": "Duidelijke maandelijkse prijzen, geen contract, op elk moment opzegbaar.",
     "packages": [
       {
-        "title": "Design Partnerschap",
+        "title": "Design Abonnement",
         "description": "Ideaal voor bedrijven die een consistente designervaring willen om hun merk te versterken op alle digitale touchpoints.",
         "price": "€1.999/maand",
         "additionalInfo": "Pauzeer of annuleer op elk moment",
         "features": [
-          "Volledig ontwerp voor jouw website, product of app",
+          "Volledig ontwerp voor jouw website, product of app (inclusief ontwerp, ontwikkeling en lancering)",
           "Eén verzoek tegelijk",
           "Gemiddeld 2-3 werkdagen levertijd",
           "Volledig asynchrone samenwerking",
@@ -401,7 +401,7 @@
         "secondaryButtonText": "Plan een gesprek"
       },
       {
-        "title": "Single Project",
+        "title": "Eenmalig Project",
         "description": "Beste keuze voor eenmalige website-, design- of app-ontwikkelingsprojecten met uitgebreide ondersteuning.",
         "price": "€2.500+",
         "additionalInfo": "Vanaf",

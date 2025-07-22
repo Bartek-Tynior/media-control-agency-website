@@ -385,7 +385,7 @@
         "price": "€1,999/mo",
         "additionalInfo": "Pause or cancel anytime",
         "features": [
-          "Complete design for your website, product, or app",
+          "Complete design for your website, product, or app (including design, development, and launch)",
           "One request at a time",
           "Average 2-3 business day delivery",
           "Fully async collaboration",
@@ -637,107 +637,184 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "headline": "Our Commitment to Your Privacy",
+      "headline": "Privacy Policy of Media Control Agency",
       "paragraphs": [
-        "The following Privacy Policy specifies rules for saving and accessing data on Users' Devices using the Website...",
-        "The following Privacy Policy is an integral part of the Website Regulations..."
+        "The following privacy policy specifies the rules for storing and accessing data on users' devices via the website, for the purpose of providing electronic services by the administrator, and the rules for collecting and processing personal data voluntarily provided by users through the tools available on the website.",
+        "This privacy policy is an integral part of the website's terms, which describe the rules, rights, and obligations of users using the website."
       ],
-      "definitionsList": [
-        "<strong>Service</strong> – the website \"Media Control Agency\" operating at https://media-control-agency.com/",
-        "<strong>External service</strong> – websites of partners, service providers or recipients cooperating with the Administrator",
-        "<strong>Website / Data Administrator</strong> – The company \"Media Control Agency\", located at Narcis 7...",
-        "<strong>User</strong> – a natural person for whom the Administrator provides services electronically...",
-        "<strong>Cookies (cookies)</strong> – text data collected in files on the User's Device",
-        "...etc"
-      ],
-      "moreParagraphs": [
-        "Pursuant to Art. 37 of the GDPR, the Controller has not appointed a Data Protection Officer.",
-        "In matters relating to data processing, please contact the Administrator directly."
-      ],
-      "cookieTypes": [
-        "<strong>Internal cookies</strong> – files saved and read by the Website",
-        "<strong>External cookies</strong> – files saved and read by third-party scripts",
-        "...etc"
-      ],
-      "securityParagraphs": [
-        "The Administrator uses every effort to protect data stored in cookies...",
-        "...etc"
-      ],
-      "purposesOfCookies": [
-        "Improving and facilitating access to the Website",
-        "Personalization of the Website for Users",
-        "Ad serving",
-        "Statistics",
-        "Multimedia services"
-      ],
-      "personalDataPurposes": [
-        "Providing electronic services",
-        "Administrator's communication with Users",
-        "Legitimate interest of the Administrator"
-      ],
-      "externalCookies": [
-        "Google Adsense",
-        "Google Analytics",
-        "WordPress Stats (Automattic Inc.)"
-      ],
-      "collectedData": {
-        "anonymous": [
-          "IP address",
-          "Browser type",
-          "Screen resolution",
-          "...etc"
-        ],
-        "personal": [
-          "Name / nickname",
-          "Email address",
-          "Website URL",
-          "Phone number"
+      "definitions": {
+        "title": "§1 Definitions",
+        "items": [
+          "<strong>Service</strong> - the \"Media Control Agency\" website operating at https://media-control-agency.com/",
+          "<strong>External service</strong> - websites of partners, service providers, or recipients cooperating with the administrator",
+          "<strong>Website / Data Controller</strong> - The website administrator and data controller (hereinafter the administrator) is the company \"Media Control Agency\", located at Narcis 7, 1619 BC Andijk, with VAT number: NL004874490B47",
+          "<strong>User</strong> - a natural person to whom the administrator provides electronic services via the website.",
+          "<strong>Device</strong> - an electronic device with software that allows the user to access the website",
+          "<strong>Cookies</strong> - text data collected in the form of files placed on the user's device",
+          "<strong>GDPR</strong> - Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016",
+          "<strong>Personal data</strong> - information relating to an identified or identifiable natural person",
+          "<strong>Processing</strong> - an operation or set of operations performed on personal data",
+          "<strong>Restriction of processing</strong> - marking stored personal data to limit its processing",
+          "<strong>Profiling</strong> - automated processing of personal data to evaluate certain personal factors",
+          "<strong>Consent</strong> - voluntary, specific, informed, and unambiguous expression of will to process data",
+          "<strong>Personal data breach</strong> - a breach of security leading to destruction, loss, alteration, or unauthorized access",
+          "<strong>Pseudonymization</strong> - processing of personal data in a way that prevents identification without additional information",
+          "<strong>Anonymization</strong> - irreversible process that destroys or overwrites personal data, making identification impossible"
         ]
       },
-      "thirdPartyAccess": [
-        "Hosting companies providing services to the Administrator",
-        "VPS and dedicated server providers"
-      ],
-      "dataProcessingRules": [
-        "Personal data will not be transferred outside the EU...",
-        "Anonymous data may be used for profiling...",
-        "...etc"
-      ],
-      "legalBasis": [
-        "GDPR - Regulation (EU) 2016/679",
-        "Art. 6(1)(a) - Consent",
-        "Art. 6(1)(b) - Contract",
-        "Art. 6(1)(f) - Legitimate interest",
-        "...etc"
-      ],
-      "retentionPeriods": [
-        "Data is stored for the duration of service provision and deleted within 30 days thereafter.",
-        "Anonymous data may be retained indefinitely for statistics."
-      ],
-      "userRights": [
-        "Right to access personal data",
-        "Right to rectify personal data",
-        "Right to delete personal data",
-        "Right to restrict processing",
-        "Right to data portability",
-        "Right to object",
-        "Right to lodge a complaint"
-      ],
-      "contactInfo": [
-        "Postal: Media Control Agency, Narcis 7, 1619 BC Andijk, Netherlands",
-        "Email: info@media-control-agency.com",
-        "Phone: +31 619 628 588",
-        "Contact form: /contact"
-      ],
-      "requirements": [
-        "Restricting cookies may cause Website features to malfunction.",
-        "The Administrator is not responsible for such malfunctions."
-      ],
-      "externalLinksWarning": "External links may pose risks. The Administrator is not responsible for their content.",
-      "policyChanges": [
-        "The Administrator may change the Privacy Policy without notice for anonymous data.",
-        "Users will be notified via email if changes affect personal data.",
-        "Changes are effective upon publication."
+      "sections": [
+        {
+          "title": "§2 Data Protection Officer",
+          "paragraphs": [
+            "In accordance with Art. 37 of the GDPR, the administrator has not appointed a data protection officer.",
+            "For matters related to data processing, including personal data, contact the administrator directly."
+          ]
+        },
+        {
+          "title": "§3 Types of cookies",
+          "list": [
+            "Internal cookies - files placed and read by the website's IT system on the user's device",
+            "External cookies - files placed and read by IT systems of external websites on the user's device",
+            "Session cookies - files placed and read by the website during one session on the user's device",
+            "Persistent cookies - files placed and read by the website on the user's device until manually deleted"
+          ]
+        },
+        {
+          "title": "§4 Data Storage Security",
+          "paragraphs": [
+            "The mechanisms for storing, reading, and exchanging data between cookies stored on the user's device and the website are implemented via browser mechanisms and do not collect other data from the user's device.",
+            "Internal cookie files used by the administrator are safe and do not contain scripts or malicious content.",
+            "The administrator monitors external services but does not have full control over their cookies and is not responsible for their security.",
+            "Users can manage cookie settings in their browser. Guides are available for Chrome, Firefox, Opera, Edge, Safari, and Internet Explorer.",
+            "The administrator takes measures to secure cookie data, but the user is also responsible for the security of their device.",
+            "The administrator ensures that personal data is processed securely and that access is limited and in accordance with the purpose of processing."
+          ]
+        },
+        {
+          "title": "§5 Purposes for which cookies are used",
+          "list": [
+            "Improving and facilitating access to the website",
+            "Personalizing the website for users",
+            "Advertising services",
+            "Tracking statistics",
+            "Providing multimedia services"
+          ]
+        },
+        {
+          "title": "§6 Purposes of personal data processing",
+          "paragraphs": [
+            "Personal data voluntarily provided by users is processed for:",
+            "- Provision of electronic services",
+            "- Communication between the administrator and users",
+            "- Ensuring the legitimate interest of the administrator",
+            "Anonymous data is processed for:",
+            "- Tracking statistics",
+            "- Offering personalized advertisements",
+            "- Ensuring the legitimate interest of the administrator"
+          ]
+        },
+        {
+          "title": "§7 Cookies from external websites",
+          "paragraphs": [
+            "The administrator uses scripts from partners who may place cookies. Users can manage these cookies via browser settings.",
+            "Partners include:",
+            "- Google Adsense (advertising)",
+            "- Google Analytics, WordPress Stats (statistics)",
+            "These services are beyond the administrator's control and may change their privacy policy or cookie behavior."
+          ]
+        },
+        {
+          "title": "§8 Types of data collected",
+          "paragraphs": [
+            "The website automatically collects anonymous data and personal data voluntarily provided by users.",
+            "Anonymous data includes:",
+            "- IP address, browser type, screen resolution, location, visited subpages, operating system, previous page, referrer, language, internet speed, internet provider",
+            "Personal data includes:",
+            "- Name, email, website address, phone number, IP (collected automatically)",
+            "Newsletter data includes:",
+            "- Name, email, IP address",
+            "Some data may be stored in cookies or shared with statistics providers (without identifying users)."
+          ]
+        },
+        {
+          "title": "§9 Access to personal data by third parties",
+          "paragraphs": [
+            "In principle, only the administrator has access to personal data.",
+            "Access may be granted to service providers such as hosting companies, under a data processing agreement.",
+            "Hosting is provided by https://atthost.pl/ in Poland, with possible access for service maintenance."
+          ]
+        },
+        {
+          "title": "§10 Method of personal data processing",
+          "paragraphs": [
+            "Personal data is not transferred outside the EU unless published by the user.",
+            "There is no profiling or sale of personal data.",
+            "Anonymous data may be transferred outside the EU and used for profiling, but is not linked to a person or sold."
+          ]
+        },
+        {
+          "title": "§11 Legal basis for personal data processing",
+          "list": [
+            "Regulation (EU) 2016/679 (GDPR)",
+            "Art. 6(1)(a) – consent",
+            "Art. 6(1)(b) – performance of a contract",
+            "Art. 6(1)(f) – legitimate interests",
+            "Personal Data Protection Act (2018)",
+            "Telecommunications Act (2004)",
+            "Copyright Act (1994)"
+          ]
+        },
+        {
+          "title": "§12 Retention period of personal data",
+          "paragraphs": [
+            "Personal data is retained only as long as the service is active, after which it is deleted or anonymized within 30 days.",
+            "If necessary to protect legitimate interests, data may be retained for up to 3 years.",
+            "Anonymous data may be retained indefinitely for statistical purposes."
+          ]
+        },
+        {
+          "title": "§13 Users' rights regarding personal data processing",
+          "list": [
+            "Right of access",
+            "Right to rectification",
+            "Right to erasure",
+            "Right to restriction of processing",
+            "Right to data portability",
+            "Right to object",
+            "Right to lodge a complaint with the supervisory authority"
+          ]
+        },
+        {
+          "title": "§14 Contact with the administrator",
+          "list": [
+            "Postal address - Media Control Agency, Narcis 7, 1619 BC Andijk, Netherlands",
+            "Email address - info@media-control-agency.com",
+            "Phone - +31 619 628 588",
+            "Contact form - available at: /contact"
+          ]
+        },
+        {
+          "title": "§15 Website requirements",
+          "paragraphs": [
+            "Restricting cookies may cause the website to malfunction.",
+            "The administrator is not responsible for problems caused by restricting cookies."
+          ]
+        },
+        {
+          "title": "§16 External links",
+          "paragraphs": [
+            "The website may contain links to external sites not affiliated with the administrator. These may carry risks and are not the responsibility of the administrator."
+          ]
+        },
+        {
+          "title": "§17 Changes to the privacy policy",
+          "paragraphs": [
+            "The administrator may change this privacy policy without notifying users regarding anonymous data or cookies.",
+            "Changes regarding personal data will be notified to users by email within 7 days.",
+            "Continued use implies acceptance of the changes.",
+            "Changes take effect upon publication."
+          ]
+        }
       ]
     }
   }
