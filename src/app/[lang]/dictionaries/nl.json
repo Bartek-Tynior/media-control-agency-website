@@ -211,6 +211,86 @@
           "src": "/img/POD_SKRZYDLAMI_COVER.png"
         },
         "coverImageAlt": "Projectafbeelding van klant"
+      },
+      {
+        "id": 5,
+        "client": "The Gaming Monster",
+        "service": "Branding & Content Design",
+        "website": "#",
+        "project": {
+          "scopeOfWork": ["Branding", "Design", "Content Direction"],
+          "description": "We hebben een uitgesproken visuele richting voor The Gaming Monster ontwikkeld, met sterke beelden, duidelijke positionering en een herkenbare digitale identiteit.",
+          "industry": "Gaming",
+          "techStack": [
+            {
+              "name": "Custom Code",
+              "imageLocation": "/img/icons/code-logo-toolstack.png",
+              "imageAlt": "Custom Code Icoon"
+            },
+            {
+              "name": "Adobe XD",
+              "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+              "imageAlt": "Adobe XD Icoon"
+            }
+          ],
+          "challenges": {
+            "title": "The Gaming Monster had een visueel systeem nodig dat energiek en onderscheidend voelt, maar tegelijk helder genoeg blijft voor toekomstige digitale toepassingen.",
+            "description": [
+              "Een opvallende visuele richting maken",
+              "Flexibele projectassets ontwerpen",
+              "De identiteit scherp houden in digitale formats"
+            ]
+          },
+          "solution": "Media Control Agency ontwikkelde een compact creatief systeem rond de projectcover, de berichtstructuur en herbruikbare digitale presentatiepatronen.",
+          "result": "Een contrastrijke projectidentiteit met een sterke visuele basis en ruimte voor toekomstig brand- en contentwerk.",
+          "publishDate": "2024-09-01",
+          "ogImageUrl": "img/og_image.png"
+        },
+        "coverImageLocation": {
+          "type": "image",
+          "src": "/img/THE_GAMING_MONSTER_COVER.png"
+        },
+        "coverImageAlt": "The Gaming Monster coverafbeelding"
+      },
+      {
+        "id": 6,
+        "client": "Two Sleepy People",
+        "service": "Product Design & Webontwikkeling",
+        "website": "#",
+        "project": {
+          "scopeOfWork": ["Product Design", "Webontwikkeling", "Design"],
+          "description": "We hebben een warme en karaktervolle digitale richting voor Two Sleepy People gemaakt, waarin expressieve visuals samenkomen met een verzorgde projectpresentatie.",
+          "industry": "Lifestyle",
+          "techStack": [
+            {
+              "name": "Custom Code",
+              "imageLocation": "/img/icons/code-logo-toolstack.png",
+              "imageAlt": "Custom Code Icoon"
+            },
+            {
+              "name": "Adobe XD",
+              "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+              "imageAlt": "Adobe XD Icoon"
+            }
+          ],
+          "challenges": {
+            "title": "Two Sleepy People had een projectpresentatie nodig die onderscheidend en rustig voelt zonder helderheid of conversiegerichte structuur te verliezen.",
+            "description": [
+              "Persoonlijkheid en gebruiksgemak balanceren",
+              "Een flexibele, beeldgedreven layout maken",
+              "Een duidelijke basis voor toekomstige webcontent bouwen"
+            ]
+          },
+          "solution": "Media Control Agency vertaalde het projectconcept naar een schoon visueel systeem met sterke beeldbehandeling, gerichte copystructuur en responsieve layoutkeuzes.",
+          "result": "Een memorabele projectentry die het merk een verfijnd digitaal startpunt en een sterkere visuele aanwezigheid geeft.",
+          "publishDate": "2024-09-01",
+          "ogImageUrl": "img/og_image.png"
+        },
+        "coverImageLocation": {
+          "type": "image",
+          "src": "/img/TWO_SLEEPY_PEOPLE_COVER.png"
+        },
+        "coverImageAlt": "Two Sleepy People coverafbeelding"
       }
     ]
   },

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1200">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 247.77px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fff;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        font-size: 244.4px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-352.41" y1="1138.31" x2="-353.78" y2="1136.3" gradientTransform="translate(19820.5225 61126.183) scale(53 -53)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#62cbef"/>
+      <stop offset="1" stop-color="#7d2880"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1" data-name="Group 1">
+    <g id="Media" class="cls-2">
+      <text class="cls-3" transform="translate(58.39 443.37)"><tspan x="0" y="0">Media</tspan></text>
+    </g>
+    <g id="Control" class="cls-2">
+      <text class="cls-3" transform="translate(58.39 669.22)"><tspan class="cls-5" x="0" y="0">C</tspan><tspan x="174.5" y="0">ont</tspan><tspan class="cls-7" x="609.76" y="0">r</tspan><tspan x="712.9" y="0">ol</tspan></text>
+    </g>
+    <g id="Agency" class="cls-2">
+      <text class="cls-1" transform="translate(60.07 898.45)"><tspan class="cls-6" x="0" y="0">A</tspan><tspan x="188.55" y="0">ge</tspan><tspan class="cls-9" x="518.33" y="0">n</tspan><tspan class="cls-8" x="691.02" y="0">c</tspan><tspan x="835.46" y="0">y</tspan></text>
+    </g>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-4" cx="1097.49" cy="862.22" r="44.67"/>
+  </g>
+</svg>

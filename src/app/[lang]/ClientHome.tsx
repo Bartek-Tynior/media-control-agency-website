@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import About from "@/components/AboutSection";
-import CaseStudiesSection from "@/components/CaseStudiesSection";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
@@ -31,11 +30,10 @@ export default function ClientHome({ dict }: { dict: any }) {
 
   return (
     <>
-      <Hero dict={dict.hero} />
+      <Hero dict={dict.hero} projects={dict.case_studies} />
 
       <MaxWidthWrapper>
         <About dict={dict.about} />
-        <CaseStudiesSection dict={dict.case_studies} />
         <ProcessSection dict={dict.process} />
         <Services dict={dict.services} />
         <ComparisonSection dict={dict.comparison} />
