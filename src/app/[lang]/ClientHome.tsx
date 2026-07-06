@@ -30,10 +30,13 @@ export default function ClientHome({ dict }: { dict: any }) {
 
   return (
     <>
-      <Hero dict={dict.hero} projects={dict.case_studies} />
+      <Hero
+        dict={{ ...dict.hero, cornerNote: dict.about.description }}
+        projects={dict.case_studies}
+      />
 
       <MaxWidthWrapper>
-        <About dict={dict.about} />
+        {/* <About dict={dict.about} /> */}
         <ProcessSection dict={dict.process} />
         <Services dict={dict.services} />
         <ComparisonSection dict={dict.comparison} />

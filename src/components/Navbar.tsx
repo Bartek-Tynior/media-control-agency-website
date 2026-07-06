@@ -37,7 +37,7 @@ const Navbar = ({ lang, dict }) => {
   return (
     <motion.nav
       className={`fixed h-20 w-screen inset-x-0 top-0 z-50 ${
-        isOpen ? "" : "blured-bg h-screen"
+        isOpen ? "" : "bg-[#0F0F0F]/90 backdrop-blur-2xl h-screen"
       }`}
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -63,13 +63,13 @@ const Navbar = ({ lang, dict }) => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="blured-bg rounded-md h-[40px] items-center lg:flex border border-white/10 hidden shadow-lg">
+        <div className="hidden h-[40px] items-center rounded-md border border-white/25 bg-[#0F0F0F]/95 text-white shadow-[0_16px_45px_rgba(0,0,0,.34)] backdrop-blur-2xl lg:flex">
           <ul className="flex px-6 flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
             {content.links.map((link: any, i: number) => {
               return (
                 <li key={link.name} className="link-wrapper z-10 px-2">
                   <Link
-                    className="text-sm font-normal"
+                    className="text-sm font-medium text-white"
                     href={`/${lang}${link.link}`}
                     id={"link_" + link.name.replace(/\s/g, "_").toLowerCase()}
                   >
@@ -87,14 +87,17 @@ const Navbar = ({ lang, dict }) => {
             <button
               name="hamburger-button"
               aria-label="open-menu"
-              className="flex z-20 hamburger-button"
+              className="hamburger-button z-20 flex rounded-md border border-white/25 bg-[#0F0F0F]/95 p-2 text-white shadow-[0_16px_45px_rgba(0,0,0,.34)] backdrop-blur-2xl"
               onClick={toggleNavbar}
             >
-              <AlignJustify className="w-10 h-10" />
+              <AlignJustify className="h-6 w-6" />
             </button>
           ) : (
-            <button className="flex z-20 close-button" onClick={toggleNavbar}>
-              <X className="w-10 h-10" />
+            <button
+              className="close-button z-20 flex rounded-md border border-white/25 bg-[#0F0F0F]/95 p-2 text-white shadow-[0_16px_45px_rgba(0,0,0,.34)] backdrop-blur-2xl"
+              onClick={toggleNavbar}
+            >
+              <X className="h-6 w-6" />
             </button>
           )}
         </div>
@@ -102,7 +105,7 @@ const Navbar = ({ lang, dict }) => {
         {/* Call-to-action Button */}
         <div className="hidden items-center justify-center lg:flex h-[40px] w-[155px]">
           <Button
-            className="gap-2 group h-[40px] text-xs"
+            className="group h-[40px] gap-2 border-white/25 bg-[#0F0F0F]/95 text-xs shadow-[0_16px_45px_rgba(0,0,0,.34)] backdrop-blur-2xl hover:bg-black"
             variant="primary"
             size="full-size"
             onClick={() => router.push(`/${lang}${contact.CTA.link}`)}

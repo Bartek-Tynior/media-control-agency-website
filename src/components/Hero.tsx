@@ -1,9 +1,14 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
-import Particles from "./ui/Particles";
+import { ArrowRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 type Media = {
   type: "image" | "video";
@@ -18,6 +23,13 @@ type Project = {
   coverImageAlt?: string;
 };
 
+type ProjectCollection = {
+  title: string;
+  subtitle?: string;
+  eyebrow?: string;
+  cases: Project[];
+};
+
 const getProjectHref = (client: string) =>
   `/projects/${client.toLowerCase().replace(/\s+/g, "-")}`;
 
@@ -29,252 +41,467 @@ const Hero = ({
   projects,
 }: {
   dict: any;
-  projects: { title: string; subtitle?: string; cases: Project[] };
+  projects: ProjectCollection;
 }) => {
-  const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end end"],
-  });
-
-  const logoScale = useTransform(
-    scrollYProgress,
-    [0, 0.12, 0.38, 0.68],
-    [1, 1.08, 6.4, 23]
-  );
-  const logoY = useTransform(
-    scrollYProgress,
-    [0, 0.38, 0.68],
-    ["0%", "-3%", "-21.9%"]
-  );
-  const logoX = useTransform(
-    scrollYProgress,
-    [0, 0.3, 0.68],
-    ["0%", "0%", "-41.5%"]
-  );
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.18, 0.32], [1, 1, 0]);
-  const textY = useTransform(scrollYProgress, [0, 0.32], [0, -24]);
-  const logoOpacity = useTransform(scrollYProgress, [0, 0.52, 0.62], [1, 1, 0]);
-  const veilOpacity = useTransform(
-    scrollYProgress,
-    [0, 0.44, 0.68],
-    [1, 0.76, 0]
-  );
-  const haloOpacity = useTransform(
-    scrollYProgress,
-    [0, 0.28, 0.64],
-    [0.18, 0.32, 0]
-  );
-  const portalDotScale = useTransform(
-    scrollYProgress,
-    [0, 0.54, 0.84],
-    [1, 1, 10]
-  );
-  const portalDotOpacity = useTransform(
-    scrollYProgress,
-    [0.48, 0.58, 0.94],
-    [0, 1, 1]
-  );
-  const portalShadeOpacity = useTransform(scrollYProgress, [0.7, 0.9], [0, 0.44]);
-  const projectsRevealOpacity = useTransform(
-    scrollYProgress,
-    [0.72, 0.86, 1],
-    [0, 0.58, 1]
-  );
-  const projectsRevealY = useTransform(scrollYProgress, [0.72, 1], [48, 0]);
-  const background = useTransform(
-    scrollYProgress,
-    [0, 0.72],
-    ["#0f0f0f", "#0f0f0f"]
-  );
+  const solidColor = "#f2ede6";
 
   return (
     <>
       <section
-        ref={sectionRef}
-        className="relative h-[126vh] overflow-visible bg-[#0f0f0f]"
+        className="relative isolate h-screen min-h-[720px] overflow-hidden bg-[#0F0F0F] px-2 py-2 text-[#111111] sm:min-h-[640px] sm:px-3 sm:pb-3"
         id="hero"
       >
-        <motion.div
-          className="sticky top-0 h-screen overflow-hidden"
-          style={{ backgroundColor: background }}
+        <div
+          className="relative h-full w-full overflow-hidden rounded-[1.35rem]"
+          style={{ backgroundColor: solidColor }}
         >
           <motion.div
-            className="pointer-events-none absolute inset-0 z-0"
-            style={{ opacity: heroOpacity }}
+            className="absolute left-5 top-24 z-50 w-[calc(100%-2.5rem)] max-h-14 sm:left-8 sm:top-20 sm:w-full lg:left-12 lg:top-12"
+            initial={{ opacity: 0, y: 12, filter: "blur(6px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.9, delay: 0.45, ease: "easeOut" }}
           >
-            <Particles />
-          </motion.div>
-
-          <motion.div
-            className="pointer-events-none absolute inset-0 z-10 bg-[#0f0f0f]"
-            style={{ opacity: veilOpacity }}
-          />
-
-          <motion.div
-            className="pointer-events-none absolute left-1/2 top-1/2 z-20 h-[min(34rem,72vw,58vh)] w-[min(34rem,72vw,58vh)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/[0.06] blur-3xl"
-            style={{ opacity: haloOpacity, scale: logoScale }}
-          />
-
-          <div className="pointer-events-none absolute left-1/2 top-1/2 z-30 aspect-square w-[min(42vw,44vh,420px)] min-w-[clamp(132px,24vw,190px)] -translate-x-1/2 -translate-y-1/2">
-            <motion.div
-              className="relative h-full w-full"
+            <p
+              className="max-w-[17.5rem] text-[0.63rem] leading-[1.45] tracking-wide text-[#111111]/50 sm:max-w-[28rem] sm:text-[0.78rem] sm:leading-[1.55] lg:max-w-[36rem] lg:text-[clamp(0.54rem,1.3vw,0.95rem)] lg:leading-[1.6]"
               style={{
-                scale: logoScale,
-                x: logoX,
-                y: logoY,
-                opacity: logoOpacity,
-                transformOrigin: "91.5% 71.9%",
+                fontFamily: "var(--font-comico), cursive",
               }}
             >
-              <Image
-                src="/img/logo.svg"
-                alt="Media Control Agency logo"
-                fill
-                priority
-                className="object-contain drop-shadow-[0_24px_60px_rgba(255,255,255,.2)]"
-              />
-              <div className="absolute left-[91.5%] top-[71.9%] aspect-square w-[7.45%] -translate-x-1/2 -translate-y-1/2">
-                <motion.div
-                  className="h-full w-full rounded-full bg-[linear-gradient(135deg,#62cbef_0%,#7d2880_100%)]"
-                  style={{
-                    opacity: portalDotOpacity,
-                    scale: portalDotScale,
-                  }}
-                />
-              </div>
-            </motion.div>
-          </div>
+              {dict.cornerNote}
+            </p>
+          </motion.div>
 
-          <motion.div
-            className="pointer-events-none absolute inset-0 z-[35] bg-[#0f0f0f]"
-            style={{ opacity: portalShadeOpacity }}
+          <div
+            className="absolute inset-y-0 left-0 z-0 w-full lg:w-1/2"
+            style={{ backgroundColor: solidColor }}
           />
 
-          <motion.div
-            className="absolute inset-x-0 top-0 z-40 flex h-screen min-h-[520px] items-center px-5 py-[clamp(1.5rem,5vh,3rem)] sm:px-8 lg:px-14"
-            style={{ opacity: heroOpacity, y: textY }}
-          >
-            <div className="mx-auto grid h-full w-full max-w-5xl grid-rows-[minmax(0,0.85fr)_auto_minmax(0,1fr)] items-center text-center">
-              <div className="self-end pb-[clamp(0.85rem,5.5vh,4rem)]">
-                <span className="text-[clamp(0.62rem,1.4vw,0.75rem)] uppercase tracking-[0.28em] text-white/50">
-                  {dict.subtitle}
-                </span>
-              </div>
-              <div
-                aria-hidden="true"
-                className="h-[min(42vw,44vh,420px)] min-h-[clamp(132px,24vw,190px)]"
+          <div className="absolute inset-x-0 bottom-0 z-0 h-[38%] overflow-hidden sm:h-[42%] lg:inset-y-0 lg:left-1/2 lg:h-full lg:w-1/2">
+            <video
+              src="/img/fluid-gradient-loop-1920x1080.mp4"
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              poster="/img/fluid_gradient_loop_logo_dot_style_preview.png"
+            >
+              <source
+                src="/img/fluid-gradient-loop-1920x1080.mp4"
+                type="video/mp4"
               />
-              <div className="self-start pt-[clamp(0.85rem,5.5vh,4rem)]">
-                <h1 className="mx-auto max-w-3xl text-[clamp(2rem,5vw,3.75rem)] font-semibold leading-[0.98] tracking-normal text-white">
-                  {dict.title}
-                </h1>
-                <p className="mx-auto mt-3 max-w-md text-[clamp(0.78rem,1.7vw,0.875rem)] leading-6 text-white/66">
-                  {dict.shortDescription}
-                </p>
-              </div>
+            </video>
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#f2ede6] to-transparent lg:hidden" />
+          </div>
+
+          <div className="relative z-10 flex h-full flex-col px-5 py-5 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
+            <div className="flex flex-1 items-start justify-center text-center lg:items-center">
+              <motion.div
+                className="mx-auto w-full max-w-none pt-[21rem] sm:pt-[19rem] lg:pt-0"
+                initial={{ opacity: 0, y: 22 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.12 }}
+              >
+                <SplitHeroCopy
+                  title={dict.title}
+                  description={dict.shortDescription}
+                  solidColor={solidColor}
+                />
+              </motion.div>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </section>
 
-      <motion.div
-        className="relative z-20 -mt-[80vh] bg-transparent pb-20 pt-0 text-white lg:pb-32"
-        style={{ opacity: projectsRevealOpacity, y: projectsRevealY }}
-      >
-        <div className="mx-auto w-full max-w-screen-xl px-5 sm:px-10 md:px-16">
-          <div className="mb-12 grid gap-6 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-6">
-              <span className="text-xs uppercase tracking-[0.28em] text-white/45">
-                Projects
-              </span>
-              <h2 className="mt-4 text-3xl font-semibold leading-tight text-white sm:text-5xl">
-                {projects.title}
-              </h2>
-            </div>
-            {projects.subtitle && (
-              <p className="max-w-md text-sm leading-6 text-white/58 lg:col-span-4 lg:col-start-9">
-                {projects.subtitle}
-              </p>
-            )}
-          </div>
-          <ProjectGrid projects={projects.cases} />
-        </div>
-      </motion.div>
+      <PortfolioWall projects={projects} />
     </>
   );
 };
 
-const ProjectGrid = ({
-  projects,
-  isBackdrop = false,
+const SplitHeroCopy = ({
+  title,
+  description,
+  solidColor,
 }: {
-  projects: Project[];
-  isBackdrop?: boolean;
+  title: string;
+  description: string;
+  solidColor: string;
 }) => {
-  const layouts = [
-    "lg:absolute lg:left-[2%] lg:top-[9%] lg:w-[52%] lg:rotate-[-3deg] lg:z-20",
-    "lg:absolute lg:right-[10%] lg:top-[4%] lg:w-[43%] lg:rotate-[2.2deg] lg:z-30",
-    "lg:absolute lg:left-[25%] lg:top-[37%] lg:w-[39%] lg:rotate-[4deg] lg:z-10",
-    "lg:absolute lg:right-[7%] lg:top-[45%] lg:w-[45%] lg:rotate-[-2.4deg] lg:z-20",
-    "lg:absolute lg:left-[10%] lg:top-[67%] lg:w-[44%] lg:rotate-[1.8deg] lg:z-30",
-    "lg:absolute lg:right-[10%] lg:top-[76%] lg:w-[37%] lg:rotate-[-3.4deg] lg:z-10",
-  ];
+  const headlineClass =
+    "text-[clamp(2.35rem,10.5vw,4.2rem)] font-semibold leading-[0.9] tracking-normal lg:text-[clamp(2.8rem,7.6vw,7.1rem)]";
+  const descriptionClass =
+    "mx-auto mt-4 max-w-[30rem] text-[11px] leading-5 sm:text-xs";
 
   return (
-    <div
-      className={`relative grid grid-cols-1 gap-6 md:grid-cols-2 lg:block lg:h-[980px] xl:h-[1080px] ${
-        isBackdrop ? "pointer-events-none opacity-80" : ""
-      }`}
-    >
-      {projects.map((project, index) => (
-        <motion.a
-          href={getProjectHref(project.client)}
-          key={project.id}
-          className={`group relative block transition-transform duration-500 hover:!rotate-0 hover:scale-[1.035] hover:z-40 ${layouts[index % layouts.length]}`}
-          initial={isBackdrop ? false : { opacity: 0, y: 42 }}
-          whileInView={isBackdrop ? undefined : { opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.18 }}
-          transition={{ duration: 0.7, delay: (index % 4) * 0.08 }}
+    <div className="relative mx-auto w-[min(92vw,78rem)]">
+      <div className="lg:hidden">
+        <h1 className={`${headlineClass} text-[#111111]`}>{title}</h1>
+        <p className={`${descriptionClass} text-[#111111]/68`}>
+          {description}
+        </p>
+      </div>
+
+      <div className="relative hidden lg:block">
+        <h1 className="sr-only">{title}</h1>
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 overflow-hidden"
+          style={{ clipPath: "inset(0 50% 0 0)" }}
         >
-          <div
-            className="relative aspect-video overflow-hidden rounded-md border border-white/15 bg-[#151515] shadow-[0_22px_70px_rgba(0,0,0,.42)] ring-1 ring-white/[0.04]"
-          >
-            {project.coverImageLocation.type === "video" ? (
-              <video
-                className={mediaClassName}
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src={project.coverImageLocation.src} type="video/mp4" />
-              </video>
-            ) : (
-              <Image
-                src={project.coverImageLocation.src}
-                alt={project.coverImageAlt ?? project.client}
-                fill
-                sizes="(min-width: 1024px) 42vw, (min-width: 768px) 50vw, 100vw"
-                className={mediaClassName}
-              />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/88 via-black/32 to-black/5 opacity-90 transition-opacity duration-500 group-hover:opacity-78" />
-            <div className="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-inset ring-white/40 transition-opacity duration-500 group-hover:opacity-100" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 drop-shadow-[0_2px_10px_rgba(0,0,0,.85)] sm:p-5">
-              <span className="text-[11px] uppercase tracking-[0.22em] text-white/70">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <h3 className="mt-2 text-lg font-semibold leading-tight text-white sm:text-xl">
-                {project.client}
-              </h3>
-              <p className="mt-1 text-xs text-white/78 sm:text-sm">
-                {project.service}
-              </p>
-            </div>
-          </div>
-        </motion.a>
+          <FluidVideoTitle title={title} description={description} />
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 overflow-hidden"
+          style={{ clipPath: "inset(0 0 0 50%)" }}
+        >
+          <SolidColorTitle
+            title={title}
+            description={description}
+            color={solidColor}
+          />
+        </div>
+        <div className="invisible">
+          <SolidColorTitle
+            title={title}
+            description={description}
+            color={solidColor}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const splitTitleIntoLines = (title: string) => {
+  const words = title.split(" ");
+
+  if (words.length <= 4) {
+    return [title];
+  }
+
+  const midpoint = Math.ceil(words.length / 2);
+
+  return [words.slice(0, midpoint).join(" "), words.slice(midpoint).join(" ")];
+};
+
+const splitDescriptionIntoLines = (description: string) => {
+  const words = description.split(" ");
+  const midpoint = Math.ceil(words.length / 2);
+
+  return [words.slice(0, midpoint).join(" "), words.slice(midpoint).join(" ")];
+};
+
+const FluidVideoTitle = ({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) => {
+  const lines = splitTitleIntoLines(title);
+  const descriptionLines = splitDescriptionIntoLines(description);
+
+  return (
+    <svg
+      className="h-[clamp(12rem,18vw,17rem)] w-full overflow-visible"
+      viewBox="0 0 1400 330"
+      role="presentation"
+      aria-hidden="true"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <defs>
+        <clipPath id="hero-fluid-title-clip">
+          {lines.map((line, index) => (
+            <text
+              key={line}
+              x="700"
+              y={lines.length === 1 ? 150 : index === 0 ? 105 : 218}
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fontFamily="var(--font-satoshi), Arial, sans-serif"
+              fontSize={lines.length === 1 ? "108" : "104"}
+              fontWeight="700"
+              letterSpacing="0"
+            >
+              {line}
+            </text>
+          ))}
+          {descriptionLines.map((line, index) => (
+            <text
+              key={line}
+              x="700"
+              y={lines.length === 1 ? 230 + index * 20 : 286 + index * 20}
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fontFamily="var(--font-satoshi), Arial, sans-serif"
+              fontSize="18"
+              fontWeight="500"
+              letterSpacing="0"
+            >
+              {line}
+            </text>
+          ))}
+        </clipPath>
+      </defs>
+      <foreignObject
+        x="0"
+        y="0"
+        width="1400"
+        height="330"
+        clipPath="url(#hero-fluid-title-clip)"
+      >
+        <video
+          xmlns="http://www.w3.org/1999/xhtml"
+          src="/img/fluid_gradient_loop_logo_dot_style_h264.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+        />
+      </foreignObject>
+    </svg>
+  );
+};
+
+const SolidColorTitle = ({
+  title,
+  description,
+  color,
+}: {
+  title: string;
+  description: string;
+  color: string;
+}) => {
+  const lines = splitTitleIntoLines(title);
+  const descriptionLines = splitDescriptionIntoLines(description);
+
+  return (
+    <svg
+      className="h-[clamp(12rem,18vw,17rem)] w-full overflow-visible"
+      viewBox="0 0 1400 330"
+      role="presentation"
+      aria-hidden="true"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      {lines.map((line, index) => (
+        <text
+          key={line}
+          x="700"
+          y={lines.length === 1 ? 150 : index === 0 ? 105 : 218}
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fontFamily="var(--font-satoshi), Arial, sans-serif"
+          fontSize={lines.length === 1 ? "108" : "104"}
+          fontWeight="700"
+          letterSpacing="0"
+          fill={color}
+        >
+          {line}
+        </text>
       ))}
+      {descriptionLines.map((line, index) => (
+        <text
+          key={line}
+          x="700"
+          y={lines.length === 1 ? 230 + index * 20 : 286 + index * 20}
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fontFamily="var(--font-satoshi), Arial, sans-serif"
+          fontSize="18"
+          fontWeight="500"
+          letterSpacing="0"
+          fill={color}
+          opacity="0.78"
+        >
+          {line}
+        </text>
+      ))}
+    </svg>
+  );
+};
+
+const PortfolioWall = ({ projects }: { projects: ProjectCollection }) => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [maxTranslate, setMaxTranslate] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end end"],
+  });
+  const trackX = useTransform(scrollYProgress, [0, 1], [0, -maxTranslate]);
+
+  useEffect(() => {
+    const measureTrack = () => {
+      const viewport = viewportRef.current;
+      const track = trackRef.current;
+
+      if (!viewport || !track) {
+        return;
+      }
+
+      setMaxTranslate(Math.max(0, track.scrollWidth - viewport.clientWidth));
+    };
+
+    measureTrack();
+    window.addEventListener("resize", measureTrack);
+
+    return () => window.removeEventListener("resize", measureTrack);
+  }, []);
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    const nextIndex = Math.round(latest * (projects.cases.length - 1));
+    const clampedIndex = Math.min(
+      projects.cases.length - 1,
+      Math.max(0, nextIndex)
+    );
+
+    setActiveIndex(clampedIndex);
+  });
+
+  return (
+    <section id="case-studies" className="relative bg-[#0F0F0F] text-white">
+      <div className="px-5 py-16 sm:px-8 lg:hidden">
+        <div className="mx-auto max-w-md text-center">
+          <h2 className="text-[clamp(2.35rem,12vw,4.4rem)] font-semibold leading-[0.9] tracking-normal">
+            {projects.title}
+          </h2>
+          {projects.subtitle && (
+            <p className="mx-auto mt-5 max-w-sm text-sm leading-6 text-gray-300">
+              {projects.subtitle}
+            </p>
+          )}
+        </div>
+
+        <div className="mx-auto mt-10 flex max-w-md flex-col gap-5">
+          {projects.cases.map((project, index) => (
+            <motion.a
+              href={getProjectHref(project.client)}
+              key={project.id}
+              className="group relative block overflow-hidden rounded-xl text-white outline-none"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.24 }}
+              transition={{ duration: 0.5, delay: Math.min(index * 0.06, 0.24) }}
+              aria-label={`View ${project.client} case study`}
+            >
+              <ProjectCardMedia project={project} sizes="100vw" isActive />
+            </motion.a>
+          ))}
+        </div>
+      </div>
+
+      <div
+        ref={sectionRef}
+        className="relative hidden bg-[#0F0F0F] text-white lg:block"
+        style={{ height: `${Math.max(projects.cases.length, 2) * 100}vh` }}
+      >
+        <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden py-12">
+          <div className="mx-auto mb-8 max-w-screen-2xl px-14 text-center">
+            <h2 className="mx-auto max-w-4xl text-[clamp(2.25rem,5vw,5rem)] font-semibold leading-[0.9] tracking-normal">
+              {projects.title}
+            </h2>
+            {projects.subtitle && (
+              <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-gray-300 sm:text-base">
+                {projects.subtitle}
+              </p>
+            )}
+          </div>
+
+        <div
+          ref={viewportRef}
+          className="overflow-hidden"
+        >
+          <motion.div
+            ref={trackRef}
+            className="flex w-max gap-6 px-[max(1.25rem,calc((100vw-82rem)/2))] pb-8 will-change-transform"
+            style={{ x: trackX }}
+          >
+            {projects.cases.map((project, index) => {
+              const isActive = activeIndex === index;
+
+              return (
+                <motion.a
+                  href={getProjectHref(project.client)}
+                  key={project.id}
+                  className="group relative block w-[84vw] max-w-[22rem] shrink-0 overflow-hidden rounded-xl text-white outline-none sm:w-[64vw] sm:max-w-[45rem] lg:w-[34rem] xl:w-[38rem]"
+                  initial={{ opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.55, delay: (index % 4) * 0.06 }}
+                  aria-label={`View ${project.client} case study`}
+                >
+                  <ProjectCardMedia
+                    project={project}
+                    sizes="(min-width: 1280px) 38rem, (min-width: 1024px) 34rem, 100vw"
+                    isActive={isActive}
+                  />
+                </motion.a>
+              );
+            })}
+          </motion.div>
+        </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const ProjectCardMedia = ({
+  project,
+  sizes,
+  isActive,
+}: {
+  project: Project;
+  sizes: string;
+  isActive: boolean;
+}) => {
+  return (
+    <div className="relative aspect-[1.28/1] overflow-hidden bg-[#151515] shadow-[0_26px_90px_rgba(0,0,0,.45)] transition duration-500">
+      {project.coverImageLocation.type === "video" ? (
+        <video
+          className={mediaClassName}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        >
+          <source src={project.coverImageLocation.src} type="video/mp4" />
+        </video>
+      ) : (
+        <Image
+          src={project.coverImageLocation.src}
+          alt={project.coverImageAlt ?? project.client}
+          fill
+          sizes={sizes}
+          className={mediaClassName}
+        />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-80" />
+      <div
+        className={`absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-4 transition-opacity duration-500 sm:p-5 ${
+          isActive ? "opacity-100" : "opacity-70"
+        }`}
+      >
+        <div className="min-w-0">
+          <h3 className="text-sm font-semibold leading-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,.65)] sm:text-base">
+            {project.client}
+          </h3>
+          <p className="mt-1 truncate text-xs leading-tight text-white/72 drop-shadow-[0_2px_10px_rgba(0,0,0,.65)] sm:text-sm">
+            {project.service}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

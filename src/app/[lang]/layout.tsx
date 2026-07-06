@@ -103,6 +103,11 @@ const satoshi = localFont({
   variable: "--font-satoshi",
 });
 
+const comico = localFont({
+  src: "../fonts/Comico/Comico-Regular.otf",
+  variable: "--font-comico",
+});
+
 export default async function RootLayout({
   children,
   params,
@@ -166,7 +171,8 @@ export default async function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-[#0F0F0F] text-white font-sans antialiased",
-          satoshi.variable
+          satoshi.variable,
+          comico.variable
         )}
       >
         <Providers>

@@ -22,6 +22,7 @@
     "description": "Media Control Agency is een design-gedreven digitale agency ontstaan uit liefde voor design en passie voor creatie. Wij zijn gespecialiseerd in het creëren van unieke, gebruikersgerichte digitale ervaringen die het publiek boeien en merken versterken. Onze missie is om bedrijven zoals die van jou te helpen sneller te bouwen, beter te verbinden en op te vallen in de digitale wereld."
   },
   "case_studies": {
+    "eyebrow": "Geselecteerd werk",
     "title": "Onze recente projecten.",
     "subtitle": "Bekijk hoe we bedrijven hebben geholpen hun digitale aanwezigheid te transformeren en te groeien.",
     "cases": [
@@ -74,8 +75,8 @@
           "ogImageUrl": "img/og_image.png"
         },
         "coverImageLocation": {
-          "type": "video",
-          "src": "/img/PLUS_44_WEBSITE_CASESTUDY.mp4"
+          "type": "image",
+          "src": "/img/PLUS_44_CASE_STUDY.png"
         },
         "coverImageAlt": "Projectafbeelding van klant"
       },
@@ -561,11 +562,6 @@
           "link": "#home"
         },
         {
-          "index": 2,
-          "name": "Visie",
-          "link": "#vision"
-        },
-        {
           "index": 3,
           "name": "Cases",
           "link": "#case-studies"
@@ -588,7 +584,7 @@
       ]
     },
     "footer": {
-      "footer_credit": "© 2024 Alle rechten voorbehouden. Gemaakt met 💜 door Media Control Agency",
+      "footer_credit": "© {year} Alle rechten voorbehouden. Gemaakt met 💜 door Media Control Agency",
       "newsletter": {
         "title": "Blijf op de hoogte van onze laatste projecten en updates.",
         "description": "Schrijf je in voor onze nieuwsbrief en ontvang exclusieve content, tips en meer. Maak maar geen zorgen, we haten spam ook!",

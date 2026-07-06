@@ -64,8 +64,8 @@ export default {
         ogImageUrl: "img/og_image.png",
       },
       coverImageLocation: {
-        type: "video",
-        src: "/img/PLUS_44_WEBSITE_CASESTUDY.mp4",
+        type: "image",
+        src: "/img/PLUS_44_CASE_STUDY.png",
       },
       coverImageAlt: "Client's Project Image",
     },
@@ -484,11 +484,6 @@ export default {
           link: "#home",
         },
         {
-          index: 2,
-          name: "Vision",
-          link: "#vision",
-        },
-        {
           index: 3,
           name: "Case Studies",
           link: "#case-studies",
@@ -512,7 +507,7 @@ export default {
     },
     footer: {
       footer_credit:
-        "© 2024 All rights reserved. Made with 💜 by Media Control Agency",
+        "© {year} All rights reserved. Made with 💜 by Media Control Agency",
       links: [
         {
           index: 1,

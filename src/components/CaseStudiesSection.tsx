@@ -100,7 +100,7 @@ const CaseStudiesSection = ({ dict }: { dict: any }) => {
                   className={`casestudy-item overflow-hidden ${span}`}
                   variants={itemVariants}
                 >
-                  <div className="media-container relative w-full pb-[56.25%]">
+                  <div className="media-container relative w-full pb-[56.25%] rounded-lg overflow-hidden">
                     {coverImageLocation.type === "video" ? (
                       <video
                         className="absolute border border-white/30 shadow-lg antialiased top-0 left-0 w-full h-full rounded-lg object-cover"

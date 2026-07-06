@@ -20,6 +20,7 @@
     "description": "Media Control Agency is a design-driven digital agency that was born out of a love for design and a passion for creating. We specialize in crafting unique, user-centric digital experiences that captivate audiences and elevate brands. Our mission is to help businesses like yours build faster, connect better, and stand out in the digital world."
   },
   "case_studies": {
+    "eyebrow": "Selected work",
     "title": "Our recent projects.",
     "subtitle": "See how we've helped businesses transform and grow their digital presence.",
     "cases": [
@@ -72,8 +73,8 @@
           "ogImageUrl": "img/og_image.png"
         },
         "coverImageLocation": {
-          "type": "video",
-          "src": "/img/PLUS_44_WEBSITE_CASESTUDY.mp4"
+          "type": "image",
+          "src": "/img/PLUS_44_CASE_STUDY.png"
         },
         "coverImageAlt": "Client's Project Image"
       },
@@ -559,11 +560,6 @@
           "link": "#home"
         },
         {
-          "index": 2,
-          "name": "Vision",
-          "link": "#vision"
-        },
-        {
           "index": 3,
           "name": "Case Studies",
           "link": "#case-studies"
@@ -586,7 +582,7 @@
       ]
     },
     "footer": {
-      "footer_credit": "© 2024 All rights reserved. Made with 💜 by Media Control Agency",
+      "footer_credit": "© {year} All rights reserved. Made with 💜 by Media Control Agency",
       "newsletter": {
         "title": "Join our newsletter",
         "description": "Sign up to our mailing list below and be the first to know about new updates. Don't worry, we hate spam too.",

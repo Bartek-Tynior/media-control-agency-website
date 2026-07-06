@@ -6,6 +6,12 @@ import Image from "next/image";
 
 const Footer = ({ lang, dict }) => {
   const content = dict;
+  const currentYear = new Date().getFullYear();
+  const footerCredit =
+    content.essential_elements.footer.footer_credit.replace(
+      "{year}",
+      String(currentYear)
+    );
 
   return (
     <footer className="text-white mb-20">
@@ -33,19 +39,19 @@ const Footer = ({ lang, dict }) => {
                 {content.essential_elements.footer.newsletter.description}
               </p>
 
-              <form className="flex flex-row gap-2">
+              <form className="flex w-full flex-col gap-2 min-[420px]:flex-row">
                 <input
                   type="email"
                   placeholder={
                     content.essential_elements.footer.newsletter.input
                       .placeholder
                   }
-                  className="px-4 py-2 text-xs rounded-lg bg-white/10 text-white border-none focus:outline-none"
+                  className="min-w-0 flex-1 rounded-lg border-none bg-white/10 px-4 py-2 text-xs text-white focus:outline-none"
                 />
                 <Button
                   disabled
                   type="submit"
-                  className="text-xs text-white rounded-lg focus:outline-none"
+                  className="rounded-lg text-xs text-white focus:outline-none"
                 >
                   {content.essential_elements.footer.newsletter.button.text}
                 </Button>
@@ -108,7 +114,7 @@ const Footer = ({ lang, dict }) => {
                 TAX. NO.: <span>{content.essential_elements.contact.tax}</span>
               </p>
             </div>
-            <div className="flex flex-row w-full sm:w-1/2 justify-center sm:justify-end gap-3 items-end">
+            <div className="flex w-full flex-wrap items-end justify-center gap-3 sm:w-1/2 sm:justify-end">
               {["instagram", "linkedin", "facebook"].map((platform) => {
                 const social = content.essential_elements.contact[platform];
                 return (
@@ -135,9 +141,7 @@ const Footer = ({ lang, dict }) => {
         </div>
 
         <div className="pt-20 text-center md:text-left">
-          <span className="text-sm">
-            {content.essential_elements.footer.footer_credit}
-          </span>
+          <span className="text-sm">{footerCredit}</span>
         </div>
       </MaxWidthWrapper>
     </footer>
