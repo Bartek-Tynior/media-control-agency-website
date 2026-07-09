@@ -43,26 +43,26 @@ const Hero = ({
   dict: any;
   projects: ProjectCollection;
 }) => {
-  const solidColor = "#f2ede6";
+  const solidColor = "#F3EEE7";
 
   return (
     <>
       <section
-        className="relative isolate h-screen min-h-[720px] overflow-hidden bg-[#0F0F0F] px-2 py-2 text-[#111111] sm:min-h-[640px] sm:px-3 sm:pb-3"
+        className="relative isolate min-h-[100svh] overflow-hidden bg-[#0F0F0F] px-2 py-2 text-[#111111] sm:min-h-[640px] sm:px-3 sm:pb-3 lg:h-screen"
         id="hero"
       >
         <div
-          className="relative h-full w-full overflow-hidden rounded-[1.35rem]"
+          className="relative h-[calc(100svh-1rem)] min-h-[640px] w-full overflow-hidden rounded-[1.35rem] sm:min-h-[620px] lg:h-full lg:min-h-0"
           style={{ backgroundColor: solidColor }}
         >
           <motion.div
-            className="absolute left-5 top-24 z-50 w-[calc(100%-2.5rem)] max-h-14 sm:left-8 sm:top-20 sm:w-full lg:left-12 lg:top-12"
+            className="absolute left-5 top-28 z-50 w-[calc(100%-2.5rem)] max-h-14 sm:left-8 sm:top-20 sm:w-full lg:left-12 lg:top-12"
             initial={{ opacity: 0, y: 12, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.9, delay: 0.45, ease: "easeOut" }}
           >
             <p
-              className="max-w-[17.5rem] text-[0.63rem] leading-[1.45] tracking-wide text-[#111111]/50 sm:max-w-[28rem] sm:text-[0.78rem] sm:leading-[1.55] lg:max-w-[36rem] lg:text-[clamp(0.54rem,1.3vw,0.95rem)] lg:leading-[1.6]"
+              className="max-w-[19.5rem] text-[0.66rem] leading-[1.42] tracking-wide text-[#111111]/55 sm:max-w-[30rem] sm:text-[0.86rem] sm:leading-[1.55] lg:max-w-[39rem] lg:text-[clamp(0.9rem,1.1vw,1.08rem)] lg:leading-[1.65]"
               style={{
                 fontFamily: "var(--font-comico), cursive",
               }}
@@ -71,12 +71,7 @@ const Hero = ({
             </p>
           </motion.div>
 
-          <div
-            className="absolute inset-y-0 left-0 z-0 w-full lg:w-1/2"
-            style={{ backgroundColor: solidColor }}
-          />
-
-          <div className="absolute inset-x-0 bottom-0 z-0 h-[38%] overflow-hidden sm:h-[42%] lg:inset-y-0 lg:left-1/2 lg:h-full lg:w-1/2">
+          <div className="absolute inset-x-0 bottom-0 z-0 h-[38%] overflow-hidden sm:h-[42%] lg:inset-0 lg:h-full lg:w-full">
             <video
               src="/img/fluid-gradient-loop-1920x1080.mp4"
               className="h-full w-full object-cover"
@@ -92,13 +87,22 @@ const Hero = ({
                 type="video/mp4"
               />
             </video>
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#f2ede6] to-transparent lg:hidden" />
+            <div
+              className="pointer-events-none absolute inset-x-0 -top-16 h-40 bg-[#F3EEE7] blur-2xl lg:hidden"
+              aria-hidden="true"
+            />
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-[#F3EEE7] via-[#F3EEE7]/90 to-transparent sm:h-44 lg:hidden" />
           </div>
+
+          <div
+            className="absolute inset-y-0 left-0 z-[1] hidden w-1/2 lg:block"
+            style={{ backgroundColor: solidColor }}
+          />
 
           <div className="relative z-10 flex h-full flex-col px-5 py-5 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
             <div className="flex flex-1 items-start justify-center text-center lg:items-center">
               <motion.div
-                className="mx-auto w-full max-w-none pt-[21rem] sm:pt-[19rem] lg:pt-0"
+                className="mx-auto w-full max-w-none pt-[24rem] min-[390px]:pt-[25.5rem] sm:pt-[19rem] lg:pt-0"
                 initial={{ opacity: 0, y: 22 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.12 }}
@@ -129,12 +133,12 @@ const SplitHeroCopy = ({
   solidColor: string;
 }) => {
   const headlineClass =
-    "text-[clamp(2.35rem,10.5vw,4.2rem)] font-semibold leading-[0.9] tracking-normal lg:text-[clamp(2.8rem,7.6vw,7.1rem)]";
+    "text-[clamp(2.45rem,9.2vw,4.2rem)] font-semibold leading-[0.9] tracking-normal lg:text-[clamp(2.8rem,7.6vw,7.1rem)]";
   const descriptionClass =
-    "mx-auto mt-4 max-w-[30rem] text-[11px] leading-5 sm:text-xs";
+    "mx-auto mt-5 max-w-[31rem] text-[13px] font-medium leading-6 sm:text-[1.05rem] sm:leading-7";
 
   return (
-    <div className="relative mx-auto w-[min(92vw,78rem)]">
+    <div className="relative mx-auto w-full lg:w-[min(92vw,78rem)]">
       <div className="lg:hidden">
         <h1 className={`${headlineClass} text-[#111111]`}>{title}</h1>
         <p className={`${descriptionClass} text-[#111111]/68`}>
@@ -232,12 +236,12 @@ const FluidVideoTitle = ({
             <text
               key={line}
               x="700"
-              y={lines.length === 1 ? 230 + index * 20 : 286 + index * 20}
+              y={lines.length === 1 ? 238 + index * 30 : 284 + index * 30}
               textAnchor="middle"
               dominantBaseline="middle"
               fontFamily="var(--font-satoshi), Arial, sans-serif"
-              fontSize="18"
-              fontWeight="500"
+              fontSize="24"
+              fontWeight="600"
               letterSpacing="0"
             >
               {line}
@@ -254,7 +258,7 @@ const FluidVideoTitle = ({
       >
         <video
           xmlns="http://www.w3.org/1999/xhtml"
-          src="/img/fluid_gradient_loop_logo_dot_style_h264.mp4"
+          src="/img/fluid-gradient-loop-1920x1080.mp4"
           autoPlay
           muted
           loop
@@ -311,12 +315,12 @@ const SolidColorTitle = ({
         <text
           key={line}
           x="700"
-          y={lines.length === 1 ? 230 + index * 20 : 286 + index * 20}
+          y={lines.length === 1 ? 238 + index * 30 : 284 + index * 30}
           textAnchor="middle"
           dominantBaseline="middle"
           fontFamily="var(--font-satoshi), Arial, sans-serif"
-          fontSize="18"
-          fontWeight="500"
+          fontSize="24"
+          fontWeight="600"
           letterSpacing="0"
           fill={color}
           opacity="0.78"
@@ -403,7 +407,9 @@ const PortfolioWall = ({ projects }: { projects: ProjectCollection }) => {
       <div
         ref={sectionRef}
         className="relative hidden bg-[#0F0F0F] text-white lg:block"
-        style={{ height: `${Math.max(projects.cases.length, 2) * 100}vh` }}
+        style={{
+          height: `${Math.max(projects.cases.length * 78, 220)}vh`,
+        }}
       >
         <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden py-12">
           <div className="mx-auto mb-8 max-w-screen-2xl px-14 text-center">

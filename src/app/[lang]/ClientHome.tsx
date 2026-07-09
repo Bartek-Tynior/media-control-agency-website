@@ -7,7 +7,6 @@ import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Services from "@/components/ServicesSection";
-import FooterCard from "@/components/FooterCTA";
 import ProcessSection from "@/components/ProcessSection";
 import PricingComponent from "@/components/PricingSection";
 import ComparisonSection from "@/components/ComparisonSection";
@@ -40,9 +39,8 @@ export default function ClientHome({ dict }: { dict: any }) {
         <ProcessSection dict={dict.process} />
         <Services dict={dict.services} />
         <ComparisonSection dict={dict.comparison} />
-        <PricingComponent dict={dict.pricing} />
+        {/* <PricingComponent dict={dict.pricing} /> */}
         <FAQ dict={dict.FAQ} />
-        <FooterCard dict={dict.footer_card} />
       </MaxWidthWrapper>
     </>
   );

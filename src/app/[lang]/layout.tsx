@@ -7,8 +7,7 @@ import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import localFont from "next/font/local";
 import GoogleAnalytics from "../GoogleAnalytics";
-import type { Metadata } from "next";
-import Head from "next/head";
+import type { Metadata, Viewport } from "next";
 import { getDictionary } from "./dictionaries";
 import { LangContextProvider } from "@/lib/lang-context";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -26,7 +25,6 @@ export async function generateMetadata({
     title: isDutch
       ? "Media Control Agency | Digitale Studio voor Design & Ontwikkeling"
       : "Media Control Agency | Digital Studio for Design & Development",
-    themeColor: "#0F0F0F",
     description: isDutch
       ? "Bereik meer digitaal. Wij helpen bedrijven hun doelgroep te bereiken via productdesign en [no] code ontwikkeling."
       : "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
@@ -94,6 +92,10 @@ export async function generateMetadata({
   };
 }
 
+export const viewport: Viewport = {
+  themeColor: "#0F0F0F",
+};
+
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "nl" }];
 }
@@ -119,7 +121,7 @@ export default async function RootLayout({
 
   return (
     <html lang={params.lang}>
-      <Head>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -167,7 +169,7 @@ export default async function RootLayout({
           hrefLang="x-default"
           href="https://media-control-agency.com/en"
         />
-      </Head>
+      </head>
       <body
         className={cn(
           "min-h-screen bg-[#0F0F0F] text-white font-sans antialiased",

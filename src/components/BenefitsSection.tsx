@@ -10,10 +10,12 @@ const BenefitsSection = ({ dict }) => {
   const content = dict.service_benefits;
 
   return (
-    <div className="w-full flex flex-col sm:grid grid-cols-4 my-6 overflow-hidden">
-      <span className="mb-4 sm:mb-0 text-base font-bold">{content.title}</span>
+    <div className="my-8 flex w-full flex-col overflow-hidden sm:grid sm:grid-cols-4">
+      <span className="mb-4 text-sm font-bold text-white/80 sm:mb-0 sm:text-base">
+        {content.title}
+      </span>
       <Swiper
-        className="col-span-3 swiper-benefits w-full"
+        className="swiper-benefits col-span-3 w-full"
         speed={6000}
         freeMode={true}
         grabCursor={true}
@@ -57,15 +59,17 @@ interface BenefitsSectionCardProps {
 
 const BenefitsSectionCard: FC<BenefitsSectionCardProps> = ({ description }) => {
   return (
-    <div className="text-white flex w-fit justify-center">
+    <div className="flex w-full max-w-[14rem] items-start justify-center text-white">
       <Image
-        className="check-icon mx-2 w-6 h-6 pointer-events-none "
+        className="check-icon mr-2 mt-0.5 h-5 w-5 shrink-0 pointer-events-none"
         src="/img/icons/check-icon.svg"
         width={20}
         height={20}
         alt="Check Icon"
       />
-      <span className="text-base font-medium antialiased">{description}</span>
+      <span className="text-sm font-medium leading-snug antialiased sm:text-base">
+        {description}
+      </span>
     </div>
   );
 };

@@ -2,7 +2,6 @@
 
 import { FC } from "react";
 import Toolstack from "./Toolstack";
-import websiteContent from "../../website-content";
 import SectionLabel from "./ui/SectionLabel";
 import BenefitsSection from "./BenefitsSection";
 import { useRef } from "react";
@@ -23,14 +22,14 @@ const Services = ({ dict }: { dict: any }) => {
           </h2>
         </div>
 
-        {/* Cards Section */}
+        {/* Services Table */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 rounded"
+          className="mt-10 flex flex-col gap-6"
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
           variants={containerVariants}
         >
-          {renderServiceCards({ dict })}
+          {renderServiceRows({ dict })}
         </motion.div>
         <BenefitsSection dict={dict} />
       </section>
@@ -49,19 +48,19 @@ const containerVariants = {
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 28 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const renderServiceCards = ({ dict }: { dict: any }) => {
+const renderServiceRows = ({ dict }: { dict: any }) => {
   const content = dict;
 
   return content.list.map((service, index) => (
-    <ServiceCard key={index} service={service} />
+    <ServiceRow key={index} service={service} />
   ));
 };
 
-interface ServiceCardProps {
+interface ServiceRowProps {
   service: {
     title: string;
     description: string;
@@ -69,18 +68,25 @@ interface ServiceCardProps {
   };
 }
 
-const ServiceCard: FC<ServiceCardProps> = ({ service }) => {
+const ServiceRow: FC<ServiceRowProps> = ({ service }) => {
   return (
     <motion.div
       variants={cardVariants}
-      className="service-card text-start flex z-40 flex-col border border-solid border-white/20 mx-auto px-4 py-8 rounded-lg shadow-lg"
+      className="grid grid-cols-1 gap-6 border-t border-white/15 pt-6 first:border-t-0 first:pt-0 sm:pt-8 lg:grid-cols-[minmax(280px,0.9fr)_minmax(0,1.1fr)] lg:gap-10"
     >
-      <h2 className="text-base font-bold mb-5">{service.title}</h2>
-      <p className="font-medium text-sm text-white/70">{service.description}</p>
+      <div className="flex items-start">
+        <h3 className="text-3xl font-bold leading-none text-white sm:text-4xl lg:text-5xl">
+          {service.title}
+        </h3>
+      </div>
 
-      <div className="h-full mt-5 flex items-end">
+      <div className="flex flex-col gap-6">
+        <p className="max-w-2xl text-sm font-medium leading-relaxed text-white/70 sm:text-base">
+          {service.description}
+        </p>
+
         <div>
-          <h3 className="font-bold text-xs text-white/30 mb-3">Toolstack</h3>
+          <h4 className="mb-3 text-xs font-bold text-white/30">Toolstack</h4>
           <Toolstack toolstack={service.toolstack} />
         </div>
       </div>

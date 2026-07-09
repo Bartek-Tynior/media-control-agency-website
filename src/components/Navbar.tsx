@@ -45,11 +45,7 @@ const Navbar = ({ lang, dict }) => {
     >
       <MaxWidthWrapper className="flex items-center justify-between max-lg:py-3 py-6">
         {/* Logo Section */}
-        <div
-          className={`navbar_logo flex z-50 w-fit h-fit ${
-            !isOpen ? "" : "bg-[#0F0F0F]/70"
-          } rounded-lg px-3 py-2`}
-        >
+        <div className="navbar_logo z-50 flex h-fit w-fit rounded-md border border-white/10 bg-[rgba(15,15,15,0.84)] px-2.5 py-2 shadow-[0_16px_45px_rgba(0,0,0,.24)] backdrop-blur-xl lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:backdrop-blur-0">
           <Link href={"/"}>
             <Image
               src={content.logo.imageLocation}
@@ -104,15 +100,14 @@ const Navbar = ({ lang, dict }) => {
 
         {/* Call-to-action Button */}
         <div className="hidden items-center justify-center lg:flex h-[40px] w-[155px]">
-          <Button
-            className="group h-[40px] gap-2 border-white/25 bg-[#0F0F0F]/95 text-xs shadow-[0_16px_45px_rgba(0,0,0,.34)] backdrop-blur-2xl hover:bg-black"
-            variant="primary"
-            size="full-size"
+          <button
+            className="group inline-flex h-[40px] w-full items-center justify-center gap-2 rounded-md border border-white/25 bg-[#0F0F0F]/95 px-6 text-xs font-medium text-white shadow-[0_16px_45px_rgba(0,0,0,.34)] backdrop-blur-2xl transition hover:bg-black"
             onClick={() => router.push(`/${lang}${contact.CTA.link}`)}
+            type="button"
           >
             {contact.CTA.text}
             <ArrowRight className="group-hover:translate-x-2 transition-all" />
-          </Button>
+          </button>
         </div>
       </MaxWidthWrapper>
 

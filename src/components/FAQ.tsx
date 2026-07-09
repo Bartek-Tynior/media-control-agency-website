@@ -35,13 +35,13 @@ const FAQ = ({ dict }: { dict: any }) => {
   return (
     <section
       ref={ref}
-      className="h-fit w-full max-w-3xl mx-auto py-14"
+      className="mx-auto h-fit w-full max-w-3xl pt-14 pb-20 lg:pb-28"
       id="FAQ"
     >
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-5">
           <SectionLabel sectionName="FAQ" />
-          <h2 className="text-2xl lg:w-1/2 font-bold leading-tight">
+          <h2 className="text-2xl font-bold leading-tight sm:text-3xl lg:w-1/2">
             {content.title}
           </h2>
         </div>
@@ -55,15 +55,19 @@ const FAQ = ({ dict }: { dict: any }) => {
           {content.faq_tiles.map(({ title, description, index }) => (
             <motion.div
               key={index}
-              className="mb-4"
+              className="mb-3"
               variants={faqItemVariants} // Apply animation to each FAQ item
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left px-4 py-2 border border-white/20 text-white rounded-md focus:outline-none flex justify-between items-center"
+                className="flex min-h-[3.25rem] w-full items-center justify-between gap-4 rounded-md border border-white/20 px-4 py-3 text-left text-white transition hover:border-white/35 hover:bg-white/[0.03] focus:outline-none"
               >
-                <span>{title}</span>
-                <span>{openIndex === index ? "-" : "+"}</span>
+                <span className="text-sm font-medium leading-snug sm:text-base">
+                  {title}
+                </span>
+                <span className="shrink-0 text-lg leading-none text-white/70">
+                  {openIndex === index ? "-" : "+"}
+                </span>
               </button>
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
@@ -74,7 +78,9 @@ const FAQ = ({ dict }: { dict: any }) => {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <p className="px-4 py-2 text-gray-300">{description}</p>
+                <p className="px-4 pb-4 pt-2 text-sm leading-relaxed text-gray-300 sm:text-base">
+                  {description}
+                </p>
               </motion.div>
             </motion.div>
           ))}

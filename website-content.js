@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default {
   hero: {
-    title: "Ready to outhustle the competition?",
+    title: "Ready to make your competition nervous?",
     subtitle: "Design-Driven Digital Agency",
     shortDescription:
-      "We exist to show you how to stand out from the crowd and make a lasting impression online.",
+      "We build sharp digital experiences for brands that would rather lead the room than blend into it.",
     imageLocation: "/img/mesh-gradient-background.png",
     altImage: "Mesh Gradient Background",
   },
@@ -216,27 +216,33 @@ export default {
     },
   ],
   process: {
-    title: "Our simple 3-step process to skyrocket your business.",
+    title: "Our simple 4-step process to skyrocket your business.",
     subtitle:
       "We believe in a design and development process that is not only efficient but also effective. Time is money, and we make sure to deliver high-quality results in a timely manner.",
     steps: [
       {
         i: 1,
-        title: "Concept & Strategy",
+        title: "Discover",
         description:
-          "We dive deep into understanding your brand, goals, and target audience. Together, we outline a clear strategy that lays the foundation for an impactful digital presence.",
+          "We get close to your brand, goals, audience, and market. The result is a clear brief that turns scattered ideas into a focused direction.",
       },
       {
         i: 2,
-        title: "Design & Development",
+        title: "Strategy",
         description:
-          "Our team translates the strategy into stunning, user-centric designs and seamlessly brings them to life. We ensure every pixel and line of code reflects your brand's uniqueness.",
+          "We map the offer, content, user journeys, and conversion flow before design begins. This becomes the roadmap for everything that follows.",
       },
       {
         i: 3,
+        title: "Design & Build",
+        description:
+          "Identity, interface, and development come together in one tight loop. Every page is designed to feel sharp, load fast, and support your business goals.",
+      },
+      {
+        i: 4,
         title: "Launch & Grow",
         description:
-          "After thorough testing, we launch your project with confidence. Our partnership doesn’t end there – we provide ongoing support and enhancements to help your digital presence thrive.",
+          "After testing and refinement, we launch with confidence. From there, we keep improving the experience so your digital presence keeps gaining momentum.",
       },
     ],
   },
@@ -445,9 +451,8 @@ export default {
     ],
   },
   footer_card: {
-    title: "Let's bring your brand to new heights.",
-    subtitle:
-      "Book a free 15-minute discovery call with Media Control Agency and find out if we’re the perfect match (spoiler: we definitely are)!",
+    title: "Get in touch",
+    subtitle: "Got a project? Let's make it sharper.",
     button: {
       text: "Book a call",
       link: "/contact",

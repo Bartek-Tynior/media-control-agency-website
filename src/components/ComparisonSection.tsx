@@ -10,34 +10,38 @@ const ComparisonSection = ({ dict }: { dict: any }) => {
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
   return (
-    <section className="h-fit py-14" ref={sectionRef}>
-      <div className="flex flex-col gap-12 items-center justify-center text-white">
-        <div className="flex flex-col items-center justify-center gap-5">
+    <section className="h-fit py-14 sm:py-16" ref={sectionRef}>
+      <div className="flex flex-col items-center justify-center gap-10 text-white sm:gap-12">
+        <div className="flex max-w-2xl flex-col items-center justify-center gap-5 text-center">
           <SectionLabel sectionName="Comparison" />
-          <h2 className="text-2xl font-bold leading-tight">{content.title}</h2>
-          <p className="text-base text-gray-300">{content.subtitle}</p>
+          <h2 className="text-2xl font-bold leading-tight sm:text-3xl">
+            {content.title}
+          </h2>
+          <p className="text-sm leading-relaxed text-gray-300 sm:text-base">
+            {content.subtitle}
+          </p>
         </div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl w-full"
+          className="grid w-full max-w-5xl grid-cols-1 gap-6 md:grid-cols-2"
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
           variants={containerVariants}
         >
           <motion.div
-            className="flex flex-col justify-center gap-4 items-center w-full"
+            className="flex w-full flex-col items-center justify-center gap-4"
             variants={cardVariants}
           >
-            <h2 className="text-lg">{content.competitors.title}</h2>
-            <div className="border border-white/20 w-full rounded-lg p-8 shadow-lg">
+            <h2 className="text-lg font-medium">{content.competitors.title}</h2>
+            <div className="w-full rounded-lg border border-white/20 p-5 shadow-lg sm:p-8">
               <ul className="space-y-4 text-gray-400">
                 {content.competitors.list.map((item, index) => (
                   <li
                     key={index}
-                    className="text-gray-500 flex w-fit justify-center"
+                    className="flex w-full items-start gap-3 text-gray-500"
                   >
-                    <X className="mx-2 w-[0.80rem] h-[0.80rem] pointer-events-none" />
-                    <span className="text-sm font-medium antialiased leading-3">
+                    <X className="mt-0.5 h-4 w-4 shrink-0 pointer-events-none" />
+                    <span className="text-sm font-medium leading-snug antialiased sm:text-base">
                       {item}
                     </span>
                   </li>
@@ -47,34 +51,27 @@ const ComparisonSection = ({ dict }: { dict: any }) => {
           </motion.div>
 
           <motion.div
-            className="flex flex-col justify-center gap-4 items-center w-full"
+            className="flex w-full flex-col items-center justify-center gap-4"
             variants={cardVariants}
           >
-            <h2 className="text-lg">{content.mca.title}</h2>
-            <div className="relative border border-white/20 w-full rounded-lg p-8 shadow-lg overflow-hidden">
-              <div className="absolute -top-32 -right-10 w-72 h-72 bg-custom-gradient rounded-full opacity-70 blur-3xl" />
-
-              <div className="relative z-10">
-                <ul className="space-y-4">
-                  {content.mca.list.map((item, index) => (
-                    <li
-                      className="text-white flex w-fit justify-center"
-                      key={index}
-                    >
-                      <Image
-                        className="check-icon mx-2 w-[0.80rem] h-[0.80rem] pointer-events-none"
-                        src="/img/icons/check-icon.svg"
-                        width={20}
-                        height={20}
-                        alt="Check Icon"
-                      />
-                      <span className="text-sm font-medium antialiased leading-3">
-                        {item}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <h2 className="text-lg font-medium">{content.mca.title}</h2>
+            <div className="relative w-full overflow-hidden rounded-lg border border-white/20 bg-white/[0.03] p-5 shadow-lg sm:p-8">
+              <ul className="space-y-4">
+                {content.mca.list.map((item, index) => (
+                  <li className="flex w-full items-start gap-3 text-white" key={index}>
+                    <Image
+                      className="check-icon mt-0.5 h-4 w-4 shrink-0 pointer-events-none"
+                      src="/img/icons/check-icon.svg"
+                      width={20}
+                      height={20}
+                      alt="Check Icon"
+                    />
+                    <span className="text-sm font-medium leading-snug antialiased sm:text-base">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </motion.div>
         </motion.div>

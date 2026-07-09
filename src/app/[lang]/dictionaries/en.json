@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "Ready to outhustle the competition?",
+    "title": "Ready to make your competition nervous?",
     "subtitle": "Design-Driven Digital Agency",
-    "shortDescription": "We exist to show you how to stand out from the crowd and make a lasting impression online.",
+    "shortDescription": "We build sharp digital experiences for brands that would rather lead the room than blend into it.",
     "imageLocation": "/img/mesh-gradient-background.png",
     "altImage": "Mesh Gradient Background",
     "buttons": [
@@ -21,8 +21,8 @@
   },
   "case_studies": {
     "eyebrow": "Selected work",
-    "title": "Our recent projects.",
-    "subtitle": "See how we've helped businesses transform and grow their digital presence.",
+    "title": "Recent work with bite.",
+    "subtitle": "A few digital upgrades, brand glow-ups, and conversion machines we have pushed into the world.",
     "cases": [
       {
         "id": 1,
@@ -35,7 +35,7 @@
             "Web Development",
             "Paid Advertising"
           ],
-          "description": "We've designed and developed a custom e-commerce website for Plus 44, a streetwear fashion brand based in the Netherlands. We've also created and implemented a paid advertising strategy to increase the brand's awareness and sales.",
+          "description": "We designed and developed a custom e-commerce home for Plus 44, a Dutch streetwear brand with attitude. Then we backed it up with paid ads built to turn attention into sales.",
           "industry": "Clothing",
           "techStack": [
             {
@@ -60,15 +60,15 @@
             }
           ],
           "challenges": {
-            "title": "Plus 44 needed a website that would represent their brand, values and overall image. They also needed a digital marketing to increase their brand awareness and accessibility.",
+            "title": "Plus 44 needed a store that looked as sharp as the clothes, plus a marketing engine that could get the brand in front of the right crowd.",
             "description": [
               "Creative solutions using 3D modeling",
               "Implementing smart solutions like IDeal payment",
               "Clear identity representation"
             ]
           },
-          "solution": "Media Control Agency provided a tailored solution using Shopify, custom code and 3D modeling, succesfully implementing the client's vision and desired features.",
-          "result": "A unique and modern website that represents the brand's identity and values, and a successful paid advertising campaign that increased the brand's awareness and accessibility.",
+          "solution": "We combined Shopify, custom code, and 3D visuals to create a richer shopping experience without making the buying journey complicated.",
+          "result": "A modern e-commerce presence with stronger brand character, clearer product storytelling, and advertising support built for growth.",
           "publishDate": "2023-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -85,7 +85,7 @@
         "website": "https://nanie.nl/",
         "project": {
           "scopeOfWork": ["SEO", "Web Development"],
-          "description": "We've optimized the website of Allersnelste Nanie, a Dutch electra company, for search engines. We've also redesigned and developed their website to improve user experience and increase conversions.",
+          "description": "We tuned up Allersnelste Nanie's website for search, speed, and trust, giving a practical Dutch electrical company a digital presence that works harder.",
           "industry": "Electrician",
           "techStack": [
             {
@@ -95,15 +95,15 @@
             }
           ],
           "challenges": {
-            "title": "Allersnelste Nanie needed a update for their website to improve user experience and increase conversions. It was our task to optimize the website for search engines and improve the overall performance.",
+            "title": "Allersnelste Nanie needed a website refresh that could be found faster, feel clearer, and convert visitors before they wandered off.",
             "description": [
               "On-page and Off-page SEO optimization",
               "Performance optimization",
               "User experience improvements"
             ]
           },
-          "solution": "Media Control Agency reviewed the already exisitng website, came up with a tailored strategy and implemented it. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
-          "result": "A fully optimized website for multiple different location with improved user experience and increased conversions.",
+          "solution": "We audited the existing site, rebuilt the weak spots, tightened the content structure, and improved the technical SEO foundation.",
+          "result": "A faster, clearer website optimized for multiple locations, with a smoother path from search result to customer inquiry.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -120,7 +120,7 @@
         "website": "https://www.a1maatwerk.nl/",
         "project": {
           "scopeOfWork": ["SEO", "Web Development", "Design"],
-          "description": "We've fully redesigned and developed the website of A1 Maatwerk, a Dutch contractor. We've also optimized the website for search engines to improve user experience and increase conversions.",
+          "description": "We redesigned and rebuilt A1 Maatwerk's website so a skilled contractor no longer had to rely on an outdated digital first impression.",
           "industry": "Contractor",
           "techStack": [
             {
@@ -140,7 +140,7 @@
             }
           ],
           "challenges": {
-            "title": "A1 Maatwerk needed a update for their website to improve user experience, increase conversions and improve the general outdated design. It was our task to design a new website based on the already exisitng brand identity, develop it and optimize it for search engines.",
+            "title": "A1 Maatwerk needed a site that matched the quality of the work: cleaner design, easier navigation, better SEO, and more reasons to get in touch.",
             "description": [
               "Redesigning the website based on existing brand identity",
               "Implementing a new design and user experience",
@@ -151,8 +151,8 @@
               "User experience improvements"
             ]
           },
-          "solution": "Media Control Agency reviewed the already exisitng website, came up with a custom design and development plan. We've optimized the website for search engines, improved the user experience and increased the overall performance.",
-          "result": "A fully optimized website with modern design and user experience, improved performance, increased conversions and integrated content management system.",
+          "solution": "We shaped a custom design and development plan around the existing brand, then rebuilt the experience with stronger structure and performance.",
+          "result": "A modern, optimized website with cleaner UX, improved performance, stronger conversion paths, and an easier content setup.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -169,7 +169,7 @@
         "website": "https://podskrzydlami.nl/",
         "project": {
           "scopeOfWork": ["SEO", "Web Development", "Branding", "Design"],
-          "description": "A new business, Pod Skrzydlami, needed a full branding and web development solution. We created a new brand identity, designed and developed a custom website, and optimized it for search engines.",
+          "description": "Pod Skrzydlami came to us as a new business needing the whole digital starter kit: identity, website, SEO, and enough polish to look established from day one.",
           "industry": "Accounting",
           "techStack": [
             {
@@ -189,7 +189,7 @@
             }
           ],
           "challenges": {
-            "title": "Pod Skrzydlami is a Dutch accounting company that needed a full branding and web development solution. It was our task to create a new brand identity, design and develop a custom website, and optimize it for search engines. We started by creating a new logo, color palette, typography and overall brand identity. Then we designed and developed a custom website that represents the brand's values and identity.",
+            "title": "Pod Skrzydlami needed a full identity and website that could make accounting feel approachable, credible, and far less beige than people expect.",
             "description": [
               "Creating a new brand identity",
               "Designing a custom website",
@@ -200,8 +200,8 @@
               "User experience improvements"
             ]
           },
-          "solution": "Media Control Agency provided a tailored solution using custom code, Adobe XD and ChatGPT. We created a new brand identity, designed and developed a custom website, and optimized it for search engines.",
-          "result": "A fully branding and web development solution that includes a new brand identity, custom website and optimized for search engines. The website is user-friendly, modern and represents the brand's values and identity.",
+          "solution": "We created the logo, color system, typography, website structure, and SEO-ready pages around a calm but distinctive brand direction.",
+          "result": "A complete brand and web presence that feels professional, friendly, easy to use, and ready to be discovered.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -218,7 +218,7 @@
         "website": "#",
         "project": {
           "scopeOfWork": ["Branding", "Design", "Content Direction"],
-          "description": "We shaped a bold visual direction for The Gaming Monster, creating a project presence built around high-impact imagery, clear positioning, and a memorable digital identity.",
+          "description": "We shaped a louder visual direction for The Gaming Monster, built for instant recognition, high-impact imagery, and a digital identity with teeth.",
           "industry": "Gaming",
           "techStack": [
             {
@@ -233,15 +233,15 @@
             }
           ],
           "challenges": {
-            "title": "The Gaming Monster needed a visual system that could feel energetic and distinctive while staying clear enough to support future digital touchpoints.",
+            "title": "The Gaming Monster needed a visual system with energy, edge, and enough discipline to survive beyond one flashy asset.",
             "description": [
               "Creating a standout visual direction",
               "Designing flexible project assets",
               "Keeping the identity sharp across digital formats"
             ]
           },
-          "solution": "Media Control Agency developed a compact creative system around the project cover, messaging hierarchy, and repeatable digital presentation patterns.",
-          "result": "A high-contrast project identity with a strong visual anchor and a flexible foundation for future brand and content work.",
+          "solution": "We built a compact creative system around the cover art, messaging hierarchy, and reusable presentation patterns.",
+          "result": "A punchy project identity with a strong visual hook and a flexible foundation for future brand and content work.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -258,7 +258,7 @@
         "website": "#",
         "project": {
           "scopeOfWork": ["Product Design", "Web Development", "Design"],
-          "description": "We created a warm, characterful digital direction for Two Sleepy People, combining expressive visuals with a polished project presentation.",
+          "description": "We gave Two Sleepy People a warm, characterful digital direction: soft where it should be, polished where it counts.",
           "industry": "Lifestyle",
           "techStack": [
             {
@@ -273,15 +273,15 @@
             }
           ],
           "challenges": {
-            "title": "Two Sleepy People needed a project presentation that felt distinctive and calm without losing clarity or conversion-focused structure.",
+            "title": "Two Sleepy People needed a presentation that could feel calm and memorable without putting the user to sleep.",
             "description": [
               "Balancing personality with usability",
               "Creating a flexible image-led layout",
               "Building a clear foundation for future web content"
             ]
           },
-          "solution": "Media Control Agency translated the project concept into a clean visual system with strong image treatment, focused copy structure, and responsive layout thinking.",
-          "result": "A memorable project entry that gives the brand a refined digital starting point and a more polished visual presence.",
+          "solution": "We translated the concept into a clean visual system with stronger image treatment, focused copy structure, and responsive layout thinking.",
+          "result": "A memorable project entry with a refined digital starting point and a more polished visual presence.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -294,23 +294,28 @@
     ]
   },
   "process": {
-    "title": "Our simple 3-step process to skyrocket your business.",
+    "title": "Our simple 4-step process to skyrocket your business.",
     "subtitle": "We believe in a design and development process that is not only efficient but also effective. Time is money, and we make sure to deliver high-quality results in a timely manner.",
     "steps": [
       {
         "i": 1,
-        "title": "Concept & Strategy",
-        "description": "We dive deep into understanding your brand, goals, and target audience. Together, we outline a clear strategy that lays the foundation for an impactful digital presence."
+        "title": "Discover",
+        "description": "We get close to your brand, goals, audience, and market. The result is a clear brief that turns scattered ideas into a focused direction."
       },
       {
         "i": 2,
-        "title": "Design & Development",
-        "description": "Our team translates the strategy into stunning, user-centric designs and seamlessly brings them to life. We ensure every pixel and line of code reflects your brand's uniqueness."
+        "title": "Strategy",
+        "description": "We map the offer, content, user journeys, and conversion flow before design begins. This becomes the roadmap for everything that follows."
       },
       {
         "i": 3,
+        "title": "Design & Build",
+        "description": "Identity, interface, and development come together in one tight loop. Every page is designed to feel sharp, load fast, and support your business goals."
+      },
+      {
+        "i": 4,
         "title": "Launch & Grow",
-        "description": "After thorough testing, we launch your project with confidence. Our partnership doesn’t end there – we provide ongoing support and enhancements to help your digital presence thrive."
+        "description": "After testing and refinement, we launch with confidence. From there, we keep improving the experience so your digital presence keeps gaining momentum."
       }
     ]
   },
@@ -540,8 +545,8 @@
     ]
   },
   "footer_card": {
-    "title": "Let's bring your brand to new heights.",
-    "subtitle": "Book a free 15-minute discovery call with Media Control Agency and find out if we’re the perfect match (spoiler: we definitely are)!",
+    "title": "Get in touch",
+    "subtitle": "Got a project? Let's make it sharper.",
     "button": {
       "text": "Book a call",
       "link": "/contact"
@@ -585,7 +590,7 @@
       "footer_credit": "© {year} All rights reserved. Made with 💜 by Media Control Agency",
       "newsletter": {
         "title": "Join our newsletter",
-        "description": "Sign up to our mailing list below and be the first to know about new updates. Don't worry, we hate spam too.",
+        "description": "Occasional updates. No noise.",
         "button": {
           "text": "Get notified",
           "link": "/subscribe"

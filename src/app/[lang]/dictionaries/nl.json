@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "Klaar om de concurrentie te overtreffen?",
+    "title": "Klaar om je concurrentie nerveus te maken?",
     "subtitle": "Design-gedreven Digitale Agency",
-    "shortDescription": "Wij bestaan om jou te laten zien hoe je opvalt in de massa en een blijvende indruk online maakt.",
+    "shortDescription": "Wij bouwen scherpe digitale ervaringen voor merken die liever de toon zetten dan opgaan in de massa.",
     "imageLocation": "/img/mesh-gradient-background.png",
     "altImage": "Mesh Gradient Achtergrond",
     "buttons": [
@@ -23,8 +23,8 @@
   },
   "case_studies": {
     "eyebrow": "Geselecteerd werk",
-    "title": "Onze recente projecten.",
-    "subtitle": "Bekijk hoe we bedrijven hebben geholpen hun digitale aanwezigheid te transformeren en te groeien.",
+    "title": "Recent werk met pit.",
+    "subtitle": "Een paar digitale upgrades, brand glow-ups en conversiemachines die we de wereld in hebben gestuurd.",
     "cases": [
       {
         "id": 1,
@@ -37,7 +37,7 @@
             "Webontwikkeling",
             "Betaalde Advertenties"
           ],
-          "description": "We hebben een op maat gemaakte e-commerce website ontworpen en ontwikkeld voor Plus 44, een streetwear merk uit Nederland. Ook hebben we een strategie voor betaalde advertenties opgezet om de naamsbekendheid en verkoop te vergroten.",
+          "description": "We ontwierpen en ontwikkelden een custom e-commerce thuisbasis voor Plus 44, een Nederlands streetwearmerk met karakter. Daarna zetten we advertenties in om aandacht om te zetten in verkoop.",
           "industry": "Kleding",
           "techStack": [
             {
@@ -62,15 +62,15 @@
             }
           ],
           "challenges": {
-            "title": "Plus 44 had een website nodig die hun merk, waarden en imago vertegenwoordigt. Ook hadden ze digitale marketing nodig om hun naamsbekendheid en toegankelijkheid te vergroten.",
+            "title": "Plus 44 had een webshop nodig die net zo scherp voelde als de kleding, plus marketing die het merk bij de juiste doelgroep brengt.",
             "description": [
               "Creatieve oplossingen met 3D-modellering",
               "Slimme oplossingen zoals iDeal-betaling implementeren",
               "Duidelijke merkidentiteit"
             ]
           },
-          "solution": "Media Control Agency bood een op maat gemaakte oplossing met Shopify, custom code en 3D-modellering, waarmee de visie en gewenste functies van de klant succesvol zijn geïmplementeerd.",
-          "result": "Een unieke en moderne website die de identiteit en waarden van het merk vertegenwoordigt, en een succesvolle advertentiecampagne die de naamsbekendheid en toegankelijkheid heeft vergroot.",
+          "solution": "We combineerden Shopify, custom code en 3D-visuals voor een rijkere shopervaring zonder de kooproute ingewikkeld te maken.",
+          "result": "Een moderne e-commerce aanwezigheid met meer merkgevoel, duidelijkere productpresentatie en advertentieondersteuning gericht op groei.",
           "publishDate": "2023-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -87,7 +87,7 @@
         "website": "https://nanie.nl/",
         "project": {
           "scopeOfWork": ["SEO", "Webontwikkeling"],
-          "description": "We hebben de website van Allersnelste Nanie, een Nederlands elektrabedrijf, geoptimaliseerd voor zoekmachines. Ook hebben we hun website opnieuw ontworpen en ontwikkeld om de gebruikerservaring en conversies te verbeteren.",
+          "description": "We gaven de website van Allersnelste Nanie een stevige upgrade voor vindbaarheid, snelheid en vertrouwen, zodat dit elektrabedrijf online harder werkt.",
           "industry": "Elektricien",
           "techStack": [
             {
@@ -97,15 +97,15 @@
             }
           ],
           "challenges": {
-            "title": "Allersnelste Nanie had een update nodig voor hun website om de gebruikerservaring en conversies te verbeteren. Het was onze taak om de website te optimaliseren voor zoekmachines en de prestaties te verbeteren.",
+            "title": "Allersnelste Nanie had een refresh nodig die sneller gevonden wordt, duidelijker voelt en bezoekers sneller richting contact stuurt.",
             "description": [
               "On-page en Off-page SEO optimalisatie",
               "Prestatieoptimalisatie",
               "Verbeteringen in gebruikerservaring"
             ]
           },
-          "solution": "Media Control Agency heeft de bestaande website beoordeeld, een strategie opgesteld en geïmplementeerd. We hebben de website geoptimaliseerd voor zoekmachines, de gebruikerservaring verbeterd en de prestaties verhoogd.",
-          "result": "Een volledig geoptimaliseerde website voor meerdere locaties met verbeterde gebruikerservaring en verhoogde conversies.",
+          "solution": "We analyseerden de bestaande site, verbeterden de zwakke plekken, scherpten de contentstructuur aan en verstevigden de technische SEO-basis.",
+          "result": "Een snellere, duidelijkere website voor meerdere locaties, met een soepelere route van zoekresultaat naar aanvraag.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -122,7 +122,7 @@
         "website": "https://www.a1maatwerk.nl/",
         "project": {
           "scopeOfWork": ["SEO", "Webontwikkeling", "Design"],
-          "description": "We hebben de website van A1 Maatwerk, een Nederlandse aannemer, volledig opnieuw ontworpen en ontwikkeld. Ook hebben we de website geoptimaliseerd voor zoekmachines om de gebruikerservaring en conversies te verbeteren.",
+          "description": "We ontwierpen en bouwden de website van A1 Maatwerk opnieuw, zodat vakwerk niet langer werd voorgesteld door een verouderde eerste indruk.",
           "industry": "Aannemer",
           "techStack": [
             {
@@ -142,7 +142,7 @@
             }
           ],
           "challenges": {
-            "title": "A1 Maatwerk had een update nodig voor hun website om de gebruikerservaring, conversies en het verouderde design te verbeteren. Het was onze taak om een nieuwe website te ontwerpen op basis van de bestaande merkidentiteit, deze te ontwikkelen en te optimaliseren voor zoekmachines.",
+            "title": "A1 Maatwerk had een website nodig die past bij de kwaliteit van het werk: strakker design, betere navigatie, sterkere SEO en meer redenen om contact op te nemen.",
             "description": [
               "Website opnieuw ontwerpen op basis van bestaande merkidentiteit",
               "Implementatie van nieuw design en gebruikerservaring",
@@ -153,8 +153,8 @@
               "Verbeteringen in gebruikerservaring"
             ]
           },
-          "solution": "Media Control Agency heeft de bestaande website beoordeeld, een ontwerp- en ontwikkelplan opgesteld. We hebben de website geoptimaliseerd voor zoekmachines, de gebruikerservaring verbeterd en de prestaties verhoogd.",
-          "result": "Een volledig geoptimaliseerde website met modern design en gebruikerservaring, verbeterde prestaties, verhoogde conversies en geïntegreerd content management systeem.",
+          "solution": "We maakten een custom ontwerp- en ontwikkelplan rond de bestaande merkbasis en bouwden de ervaring opnieuw op met sterkere structuur en performance.",
+          "result": "Een moderne, geoptimaliseerde website met betere UX, hogere performance, sterkere conversieroutes en eenvoudiger contentbeheer.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -171,7 +171,7 @@
         "website": "https://podskrzydlami.nl/",
         "project": {
           "scopeOfWork": ["SEO", "Webontwikkeling", "Branding", "Design"],
-          "description": "Een nieuw bedrijf, Pod Skrzydlami, had een volledige branding en webontwikkeling oplossing nodig. We hebben een nieuwe merkidentiteit gecreëerd, een op maat gemaakte website ontworpen en ontwikkeld, en deze geoptimaliseerd voor zoekmachines.",
+          "description": "Pod Skrzydlami kwam als nieuw bedrijf bij ons voor het volledige digitale startpakket: identiteit, website, SEO en genoeg polish om vanaf dag een gevestigd te voelen.",
           "industry": "Boekhouding",
           "techStack": [
             {
@@ -191,7 +191,7 @@
             }
           ],
           "challenges": {
-            "title": "Pod Skrzydlami is een Nederlands boekhoudbedrijf dat een volledige branding en webontwikkeling oplossing nodig had. Het was onze taak om een nieuwe merkidentiteit te creëren, een op maat gemaakte website te ontwerpen en te ontwikkelen, en deze te optimaliseren voor zoekmachines. We zijn begonnen met het maken van een nieuw logo, kleurenpalet, typografie en algemene merkidentiteit. Daarna hebben we een website ontworpen en ontwikkeld die de waarden en identiteit van het merk vertegenwoordigt.",
+            "title": "Pod Skrzydlami had een volledige identiteit en website nodig die boekhouding toegankelijk, betrouwbaar en veel minder saai laat voelen dan mensen verwachten.",
             "description": [
               "Nieuwe merkidentiteit creëren",
               "Op maat gemaakte website ontwerpen",
@@ -202,8 +202,8 @@
               "Verbeteringen in gebruikerservaring"
             ]
           },
-          "solution": "Media Control Agency bood een op maat gemaakte oplossing met custom code, Adobe XD en ChatGPT. We hebben een nieuwe merkidentiteit gecreëerd, een op maat gemaakte website ontworpen en ontwikkeld, en deze geoptimaliseerd voor zoekmachines.",
-          "result": "Een volledige branding en webontwikkeling oplossing met een nieuwe merkidentiteit, op maat gemaakte website en geoptimaliseerd voor zoekmachines. De website is gebruiksvriendelijk, modern en vertegenwoordigt de waarden en identiteit van het merk.",
+          "solution": "We maakten het logo, kleurensysteem, typografie, websitestructuur en SEO-ready pagina's rond een rustige maar herkenbare merkstijl.",
+          "result": "Een complete merk- en webaanwezigheid die professioneel, vriendelijk, gebruiksvriendelijk en goed vindbaar voelt.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -220,7 +220,7 @@
         "website": "#",
         "project": {
           "scopeOfWork": ["Branding", "Design", "Content Direction"],
-          "description": "We hebben een uitgesproken visuele richting voor The Gaming Monster ontwikkeld, met sterke beelden, duidelijke positionering en een herkenbare digitale identiteit.",
+          "description": "We ontwikkelden een luidere visuele richting voor The Gaming Monster, gebouwd voor directe herkenning, sterke beelden en een digitale identiteit met tanden.",
           "industry": "Gaming",
           "techStack": [
             {
@@ -235,15 +235,15 @@
             }
           ],
           "challenges": {
-            "title": "The Gaming Monster had een visueel systeem nodig dat energiek en onderscheidend voelt, maar tegelijk helder genoeg blijft voor toekomstige digitale toepassingen.",
+            "title": "The Gaming Monster had een visueel systeem nodig met energie, edge en genoeg discipline om verder te gaan dan een losse flashy asset.",
             "description": [
               "Een opvallende visuele richting maken",
               "Flexibele projectassets ontwerpen",
               "De identiteit scherp houden in digitale formats"
             ]
           },
-          "solution": "Media Control Agency ontwikkelde een compact creatief systeem rond de projectcover, de berichtstructuur en herbruikbare digitale presentatiepatronen.",
-          "result": "Een contrastrijke projectidentiteit met een sterke visuele basis en ruimte voor toekomstig brand- en contentwerk.",
+          "solution": "We bouwden een compact creatief systeem rond de cover art, messaging hierarchy en herbruikbare presentatiepatronen.",
+          "result": "Een punchy projectidentiteit met een sterke visuele hook en een flexibele basis voor toekomstig brand- en contentwerk.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -260,7 +260,7 @@
         "website": "#",
         "project": {
           "scopeOfWork": ["Product Design", "Webontwikkeling", "Design"],
-          "description": "We hebben een warme en karaktervolle digitale richting voor Two Sleepy People gemaakt, waarin expressieve visuals samenkomen met een verzorgde projectpresentatie.",
+          "description": "We gaven Two Sleepy People een warme, karaktervolle digitale richting: zacht waar het mag, strak waar het moet.",
           "industry": "Lifestyle",
           "techStack": [
             {
@@ -275,15 +275,15 @@
             }
           ],
           "challenges": {
-            "title": "Two Sleepy People had een projectpresentatie nodig die onderscheidend en rustig voelt zonder helderheid of conversiegerichte structuur te verliezen.",
+            "title": "Two Sleepy People had een presentatie nodig die rustig en memorabel voelt zonder de gebruiker in slaap te wiegen.",
             "description": [
               "Persoonlijkheid en gebruiksgemak balanceren",
               "Een flexibele, beeldgedreven layout maken",
               "Een duidelijke basis voor toekomstige webcontent bouwen"
             ]
           },
-          "solution": "Media Control Agency vertaalde het projectconcept naar een schoon visueel systeem met sterke beeldbehandeling, gerichte copystructuur en responsieve layoutkeuzes.",
-          "result": "Een memorabele projectentry die het merk een verfijnd digitaal startpunt en een sterkere visuele aanwezigheid geeft.",
+          "solution": "We vertaalden het concept naar een schoon visueel systeem met sterkere beeldbehandeling, gerichte copystructuur en responsieve layoutkeuzes.",
+          "result": "Een memorabele projectentry met een verfijnd digitaal startpunt en een sterkere visuele aanwezigheid.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -296,23 +296,28 @@
     ]
   },
   "process": {
-    "title": "Ons eenvoudige 3-stappenproces om jouw bedrijf te laten groeien.",
+    "title": "Ons eenvoudige 4-stappenproces om jouw bedrijf te laten groeien.",
     "subtitle": "Wij geloven in een design- en ontwikkelproces dat niet alleen efficiënt maar ook effectief is. Tijd is geld, en wij zorgen voor hoogwaardige resultaten binnen korte tijd.",
     "steps": [
       {
         "i": 1,
-        "title": "Concept & Strategie",
-        "description": "We verdiepen ons in jouw merk, doelen en doelgroep. Samen stellen we een duidelijke strategie op die de basis legt voor een krachtige digitale aanwezigheid."
+        "title": "Ontdekken",
+        "description": "We duiken in je merk, doelen, doelgroep en markt. Zo vertalen we losse ideeën naar een scherpe richting en een duidelijke briefing."
       },
       {
         "i": 2,
-        "title": "Design & Ontwikkeling",
-        "description": "Ons team vertaalt de strategie naar prachtige, gebruikersgerichte ontwerpen en brengt deze naadloos tot leven. Elk pixel en elke regel code weerspiegelt de uniciteit van jouw merk."
+        "title": "Strategie",
+        "description": "We bepalen de propositie, content, gebruikersroutes en conversiestromen voordat het ontwerp start. Dit wordt de roadmap voor alles wat volgt."
       },
       {
         "i": 3,
+        "title": "Design & Build",
+        "description": "Identiteit, interface en development komen samen in een strak proces. Elke pagina voelt sterk, laadt snel en ondersteunt je bedrijfsdoelen."
+      },
+      {
+        "i": 4,
         "title": "Lancering & Groei",
-        "description": "Na grondige tests lanceren we jouw project met vertrouwen. Onze samenwerking stopt daar niet – we bieden doorlopende ondersteuning en verbeteringen om jouw digitale aanwezigheid te laten groeien."
+        "description": "Na testen en verfijnen lanceren we met vertrouwen. Daarna blijven we optimaliseren, zodat je digitale aanwezigheid steeds meer momentum krijgt."
       }
     ]
   },
@@ -542,8 +547,8 @@
     ]
   },
   "footer_card": {
-    "title": "Laten we jouw merk naar nieuwe hoogten brengen.",
-    "subtitle": "Boek een gratis 15-minuten kennismakingsgesprek met Media Control Agency en ontdek of we de perfecte match zijn (spoiler: dat zijn we zeker)!",
+    "title": "Neem contact op",
+    "subtitle": "Een project in gedachten? Wij maken het scherper.",
     "button": {
       "text": "Boek een gesprek",
       "link": "/contact"
@@ -586,8 +591,8 @@
     "footer": {
       "footer_credit": "© {year} Alle rechten voorbehouden. Gemaakt met 💜 door Media Control Agency",
       "newsletter": {
-        "title": "Blijf op de hoogte van onze laatste projecten en updates.",
-        "description": "Schrijf je in voor onze nieuwsbrief en ontvang exclusieve content, tips en meer. Maak maar geen zorgen, we haten spam ook!",
+        "title": "Blijf op de hoogte.",
+        "description": "Af en toe updates. Geen ruis.",
         "button": {
           "text": "Schrijf je in",
           "link": "/subscribe"
