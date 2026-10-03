@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   motion,
   useInView,
@@ -31,7 +31,7 @@ const ProcessSection = ({ dict }: ProcessSectionProps) => {
   const totalSteps = dict.steps.length;
 
   return (
-    <section className="h-fit py-14" id="process" ref={sectionRef}>
+    <section className="h-fit pb-16 pt-14 lg:py-14" id="process" ref={sectionRef}>
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(280px,0.72fr)_minmax(0,1.28fr)] lg:gap-12">
         <motion.div
           className="flex flex-col gap-5 lg:sticky lg:top-24 lg:self-start"
@@ -89,6 +89,7 @@ type ProcessCardProps = {
 
 const ProcessCard = ({ step, index, totalSteps }: ProcessCardProps) => {
   const cardRef = useRef(null);
+  const [useStackMotion, setUseStackMotion] = useState(false);
   const prefersReducedMotion = useReducedMotion();
   const { scrollYProgress } = useScroll({
     target: cardRef,
@@ -101,15 +102,26 @@ const ProcessCard = ({ step, index, totalSteps }: ProcessCardProps) => {
   const totalLabel = String(totalSteps).padStart(2, "0");
   const stackOffset = index * 14;
 
+  useEffect(() => {
+    const updateStackMotion = () => {
+      setUseStackMotion(window.innerWidth >= 1024);
+    };
+
+    updateStackMotion();
+    window.addEventListener("resize", updateStackMotion);
+
+    return () => window.removeEventListener("resize", updateStackMotion);
+  }, []);
+
   return (
     <motion.article
       ref={cardRef}
       className="relative lg:sticky lg:min-h-[36vh] last:lg:min-h-0"
       style={{
-        top: `calc(5.25rem + ${stackOffset}px)`,
+        top: useStackMotion ? `calc(5.25rem + ${stackOffset}px)` : undefined,
         zIndex: index + 1,
-        scale: prefersReducedMotion ? 1 : scale,
-        y: prefersReducedMotion ? 0 : y,
+        scale: prefersReducedMotion || !useStackMotion ? 1 : scale,
+        y: prefersReducedMotion || !useStackMotion ? 0 : y,
       }}
       initial="hidden"
       whileInView="show"

@@ -11,6 +11,7 @@ import type { Metadata, Viewport } from "next";
 import { getDictionary } from "./dictionaries";
 import { LangContextProvider } from "@/lib/lang-context";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import PageTransition from "@/components/PageTransition";
 
 export async function generateMetadata({
   params,
@@ -23,39 +24,39 @@ export async function generateMetadata({
   return {
     metadataBase: new URL("https://media-control-agency.com"),
     title: isDutch
-      ? "Media Control Agency | Digitale Studio voor Design & Ontwikkeling"
-      : "Media Control Agency | Digital Studio for Design & Development",
+      ? "Media Control Agency | Design-led Software Studio"
+      : "Media Control Agency | Design-led Software Studio",
     description: isDutch
-      ? "Bereik meer digitaal. Wij helpen bedrijven hun doelgroep te bereiken via productdesign en [no] code ontwikkeling."
-      : "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
+      ? "Wij ontwerpen en bouwen websites, apps, backends en digitale producten die scherp voelen en stevig werken."
+      : "We design and build websites, apps, backends, and digital products that feel sharp and work properly.",
     keywords: isDutch
       ? [
           "productontwerp",
           "webontwikkeling",
-          "no code",
-          "digitale studio",
+          "appontwikkeling",
+          "software studio",
           "e-commerce",
           "branding",
-          "SEO",
+          "backend ontwikkeling",
         ]
       : [
           "Product design",
           "web development",
-          "no code",
-          "digital agency",
+          "app development",
+          "software studio",
           "branding",
-          "SEO",
+          "backend development",
         ],
     openGraph: {
       siteName: "Media Control Agency",
       title: isDutch
-        ? "Media Control Agency | Digitale Studio voor Design & Ontwikkeling"
-        : "Media Control Agency | Digital Studio for Design & Development",
+        ? "Media Control Agency | Design-led Software Studio"
+        : "Media Control Agency | Design-led Software Studio",
       locale: isDutch ? "nl_NL" : "en_US",
       type: "website",
       description: isDutch
-        ? "Bereik meer digitaal. Wij helpen bedrijven hun doelgroep te bereiken via productdesign en [no] code ontwikkeling."
-        : "Achieve more digitally. We empower companies to effectively reach their target audience.",
+        ? "Wij ontwerpen en bouwen websites, apps, backends en digitale producten die scherp voelen en stevig werken."
+        : "We design and build websites, apps, backends, and digital products that feel sharp and work properly.",
       images: [
         {
           url: "https://media-control-agency.com/img/og_image.png",
@@ -77,11 +78,11 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: isDutch
-        ? "Media Control Agency - Designgedreven Digitale Agency"
-        : "Media Control Agency - Design Focused Digital Agency",
+        ? "Media Control Agency - Design-led Software Studio"
+        : "Media Control Agency - Design-led Software Studio",
       description: isDutch
-        ? "Bereik meer digitaal met onze creatieve digitale oplossingen."
-        : "Achieve more digitally with our creative digital solutions.",
+        ? "Websites, apps, backends en digitale producten met smaak gebouwd."
+        : "Websites, apps, backends, and digital products built with taste.",
       images: [
         {
           url: "https://media-control-agency.com/img/og_image.png",
@@ -137,7 +138,7 @@ export default async function RootLayout({
                 "https://www.instagram.com/mediacontrolag",
               ],
               description:
-                "Achieve more digitally. We empower companies to effectively reach their target audience through product design and [no] code development.",
+                "Media Control Agency designs and builds websites, apps, backends, and digital products with a strong focus on design quality and solid development.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Narcis 7",
@@ -178,15 +179,17 @@ export default async function RootLayout({
         )}
       >
         <Providers>
-          <GoogleAnalytics />
-          <Navbar lang={params.lang} dict={dict} />
-          <CookiesConsent />
-          <LangContextProvider lang={params.lang} dict={dict}>
-            {children}
-            <LanguageSwitcher />
-          </LangContextProvider>
-          <Toaster />
-          <Footer lang={params.lang} dict={dict} />
+          <PageTransition>
+            <GoogleAnalytics />
+            <Navbar lang={params.lang} dict={dict} />
+            <CookiesConsent />
+            <LangContextProvider lang={params.lang} dict={dict}>
+              {children}
+              <LanguageSwitcher />
+            </LangContextProvider>
+            <Toaster />
+            <Footer lang={params.lang} dict={dict} />
+          </PageTransition>
         </Providers>
       </body>
     </html>

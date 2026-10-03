@@ -2,7 +2,6 @@ import { motion, useInView } from "framer-motion";
 import SectionLabel from "./ui/SectionLabel";
 import { Button } from "./ui/Button";
 import { useRef } from "react";
-import websiteContent from "../../website-content";
 import Image from "next/image";
 import { X } from "lucide-react";
 

@@ -17,12 +17,12 @@ const Footer = ({ lang, dict }: FooterProps) => {
   const cta = dict.footer_card;
   const footerCredit = footer.footer_credit.replace(
     "{year}",
-    String(currentYear)
+    String(currentYear),
   );
 
   return (
     <footer
-      className="relative overflow-hidden bg-[#F3EEE7] pt-20 text-[#111111] sm:pt-24 lg:pt-28"
+      className="relative overflow-hidden bg-[#F3EEE7] text-[#111111]"
       id="contact"
     >
       <MaxWidthWrapper>
@@ -33,7 +33,7 @@ const Footer = ({ lang, dict }: FooterProps) => {
             <FooterVideoText title={cta.title} subtitle={cta.subtitle} />
           </FooterCta>
 
-          <div className="mt-10 grid gap-10 border-t border-[#111111]/15 pt-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-[1fr_1fr_1fr_1.15fr]">
+          <div className="mt-10 grid gap-10 pt-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-[1fr_1fr_1fr_1.15fr]">
             <FooterLinkGroup title="Navigation">
               {navbar.links.map(({ index, name, link }) => (
                 <FooterNavLink
@@ -205,7 +205,7 @@ const FooterVideoText = ({
     >
       <video
         xmlns="http://www.w3.org/1999/xhtml"
-        src="/img/fluid-gradient-loop-1920x1080.mp4"
+        src="/img/fluid-gradient-logo-palette-grain-3840x1620-h264.mp4"
         autoPlay
         muted
         loop

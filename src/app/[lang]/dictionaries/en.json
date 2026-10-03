@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "Ready to make your competition nervous?",
-    "subtitle": "Design-Driven Digital Agency",
-    "shortDescription": "We build sharp digital experiences for brands that would rather lead the room than blend into it.",
+    "title": "Software that does not sit quietly.",
+    "subtitle": "Design-led software studio",
+    "shortDescription": "We design and build websites, apps, and backends with taste, speed, and enough edge to cut through the noise.",
     "imageLocation": "/img/mesh-gradient-background.png",
     "altImage": "Mesh Gradient Background",
     "buttons": [
@@ -17,25 +17,25 @@
     ]
   },
   "about": {
-    "description": "Media Control Agency is a design-driven digital agency that was born out of a love for design and a passion for creating. We specialize in crafting unique, user-centric digital experiences that captivate audiences and elevate brands. Our mission is to help businesses like yours build faster, connect better, and stand out in the digital world."
+    "description": "Media Control Agency is Bart and a tight team of designers and developers building software with taste. We create websites, mobile apps, backends, MVPs, and digital products that look sharp, feel smooth, and actually hold up in the real world. No marketing theater. No template energy. Just well-designed products, built properly."
   },
   "case_studies": {
     "eyebrow": "Selected work",
-    "title": "Recent work with bite.",
-    "subtitle": "A few digital upgrades, brand glow-ups, and conversion machines we have pushed into the world.",
+    "title": "Work with a pulse.",
+    "subtitle": "A few products, platforms, and digital homes we pushed from idea to something people can actually use.",
     "cases": [
       {
         "id": 1,
         "client": "Plus 44",
-        "service": "Web Development & Advertising",
+        "service": "E-commerce Design & Development",
         "website": "https://www.plus44-clo.com/",
         "project": {
           "scopeOfWork": [
             "Product Design",
             "Web Development",
-            "Paid Advertising"
+            "E-commerce Build"
           ],
-          "description": "We designed and developed a custom e-commerce home for Plus 44, a Dutch streetwear brand with attitude. Then we backed it up with paid ads built to turn attention into sales.",
+          "description": "We designed and developed a custom e-commerce home for Plus 44, a Dutch streetwear brand with attitude. The result is a shop that lets the products, visuals, and buying flow do the talking.",
           "industry": "Clothing",
           "techStack": [
             {
@@ -60,7 +60,7 @@
             }
           ],
           "challenges": {
-            "title": "Plus 44 needed a store that looked as sharp as the clothes, plus a marketing engine that could get the brand in front of the right crowd.",
+            "title": "Plus 44 needed a store that looked as sharp as the clothes, with product pages and visuals that could carry the brand without over-explaining it.",
             "description": [
               "Creative solutions using 3D modeling",
               "Implementing smart solutions like IDeal payment",
@@ -68,7 +68,7 @@
             ]
           },
           "solution": "We combined Shopify, custom code, and 3D visuals to create a richer shopping experience without making the buying journey complicated.",
-          "result": "A modern e-commerce presence with stronger brand character, clearer product storytelling, and advertising support built for growth.",
+          "result": "A modern e-commerce presence with stronger brand character, clearer product storytelling, and a smoother path from drop to checkout.",
           "publishDate": "2023-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -81,11 +81,11 @@
       {
         "id": 2,
         "client": "Allersnelste Nanie",
-        "service": "SEO & Web Development",
+        "service": "Web Development & Technical Structure",
         "website": "https://nanie.nl/",
         "project": {
-          "scopeOfWork": ["SEO", "Web Development"],
-          "description": "We tuned up Allersnelste Nanie's website for search, speed, and trust, giving a practical Dutch electrical company a digital presence that works harder.",
+          "scopeOfWork": ["Technical Structure", "Web Development"],
+          "description": "We tuned up Allersnelste Nanie's website for structure, speed, and trust, giving a practical Dutch electrical company a digital presence that works harder.",
           "industry": "Electrician",
           "techStack": [
             {
@@ -95,15 +95,15 @@
             }
           ],
           "challenges": {
-            "title": "Allersnelste Nanie needed a website refresh that could be found faster, feel clearer, and convert visitors before they wandered off.",
+            "title": "Allersnelste Nanie needed a website refresh that could load faster, feel clearer, and help visitors find the right service without wandering off.",
             "description": [
-              "On-page and Off-page SEO optimization",
+              "Cleaner page and content structure",
               "Performance optimization",
               "User experience improvements"
             ]
           },
-          "solution": "We audited the existing site, rebuilt the weak spots, tightened the content structure, and improved the technical SEO foundation.",
-          "result": "A faster, clearer website optimized for multiple locations, with a smoother path from search result to customer inquiry.",
+          "solution": "We audited the existing site, rebuilt the weak spots, tightened the content structure, and improved the technical foundation.",
+          "result": "A faster, clearer website structured for multiple locations, with a smoother path from first click to customer inquiry.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -116,10 +116,10 @@
       {
         "id": 3,
         "client": "A1 Maatwerk",
-        "service": "SEO & Web Development",
+        "service": "Design & Web Development",
         "website": "https://www.a1maatwerk.nl/",
         "project": {
-          "scopeOfWork": ["SEO", "Web Development", "Design"],
+          "scopeOfWork": ["Web Development", "Design", "Technical Structure"],
           "description": "We redesigned and rebuilt A1 Maatwerk's website so a skilled contractor no longer had to rely on an outdated digital first impression.",
           "industry": "Contractor",
           "techStack": [
@@ -140,19 +140,19 @@
             }
           ],
           "challenges": {
-            "title": "A1 Maatwerk needed a site that matched the quality of the work: cleaner design, easier navigation, better SEO, and more reasons to get in touch.",
+            "title": "A1 Maatwerk needed a site that matched the quality of the work: cleaner design, easier navigation, stronger structure, and more reasons to get in touch.",
             "description": [
               "Redesigning the website based on existing brand identity",
               "Implementing a new design and user experience",
               "Developing the website using modern technologies",
               "Integrating the website with a content management system",
-              "On-page and Off-page SEO optimization",
+              "Cleaner page and content structure",
               "Performance optimization",
               "User experience improvements"
             ]
           },
           "solution": "We shaped a custom design and development plan around the existing brand, then rebuilt the experience with stronger structure and performance.",
-          "result": "A modern, optimized website with cleaner UX, improved performance, stronger conversion paths, and an easier content setup.",
+          "result": "A modern website with cleaner UX, improved performance, stronger contact paths, and an easier content setup.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -168,8 +168,13 @@
         "service": "Branding & Web Development",
         "website": "https://podskrzydlami.nl/",
         "project": {
-          "scopeOfWork": ["SEO", "Web Development", "Branding", "Design"],
-          "description": "Pod Skrzydlami came to us as a new business needing the whole digital starter kit: identity, website, SEO, and enough polish to look established from day one.",
+          "scopeOfWork": [
+            "Web Development",
+            "Branding",
+            "Design",
+            "Technical Structure"
+          ],
+          "description": "Pod Skrzydlami came to us as a new business needing the whole digital starter kit: identity, website, structure, and enough polish to look established from day one.",
           "industry": "Accounting",
           "techStack": [
             {
@@ -195,13 +200,13 @@
               "Designing a custom website",
               "Developing the website using modern technologies",
               "Integrating the website with a content management system",
-              "On-page and Off-page SEO optimization",
+              "Cleaner page and content structure",
               "Performance optimization",
               "User experience improvements"
             ]
           },
-          "solution": "We created the logo, color system, typography, website structure, and SEO-ready pages around a calm but distinctive brand direction.",
-          "result": "A complete brand and web presence that feels professional, friendly, easy to use, and ready to be discovered.",
+          "solution": "We created the logo, color system, typography, website structure, and content-ready pages around a calm but distinctive brand direction.",
+          "result": "A complete brand and web presence that feels professional, friendly, easy to use, and ready for real clients.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -290,42 +295,83 @@
           "src": "/img/TWO_SLEEPY_PEOPLE_COVER.png"
         },
         "coverImageAlt": "Two Sleepy People cover image"
+      },
+      {
+        "id": 7,
+        "client": "Cakes it easy",
+        "service": "Web Development & Graphic Design",
+        "website": "#",
+        "project": {
+          "scopeOfWork": ["Web Development", "Graphic Design", "Design"],
+          "description": "We created a sweet, playful website for Cakes it easy, a home bakery making custom cakes, cupcakes, cookies, and special-event treats. The site was custom programmed and paired with original graphics to match the brand's cute, feminine personality.",
+          "industry": "Home Bakery",
+          "techStack": [
+            {
+              "name": "Custom Code",
+              "imageLocation": "/img/icons/code-logo-toolstack.png",
+              "imageAlt": "Custom Code Icon"
+            },
+            {
+              "name": "Adobe XD",
+              "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+              "imageAlt": "Adobe XD Icon"
+            }
+          ],
+          "challenges": {
+            "title": "Cakes it easy needed a website that felt as charming as the bakes themselves: soft, girly, easy to browse, and still clear enough to turn sweet cravings into custom orders.",
+            "description": [
+              "Creating a cute visual direction without losing readability",
+              "Designing custom graphics that support the bakery's personality",
+              "Building a responsive website for special-event orders",
+              "Presenting cakes, cookies, and cupcakes in a clear service structure"
+            ]
+          },
+          "solution": "We designed and programmed a custom website around soft visuals, playful graphic elements, and a simple content flow that makes the bakery's offer feel personal and easy to understand.",
+          "result": "A charming digital home for Cakes it easy with a recognizable look, custom-made graphics, and a polished website experience that fits the brand's handmade sweetness.",
+          "publishDate": "2024-09-01",
+          "ogImageUrl": "img/og_image.png"
+        },
+        "coverImageLocation": {
+          "type": "image",
+          "src": "/img/CAKES_IT_EASY_CASE_STUDY.png"
+        },
+        "coverImageAlt": "Cakes it easy case study cover image"
       }
     ]
   },
   "process": {
-    "title": "Our simple 4-step process to skyrocket your business.",
-    "subtitle": "We believe in a design and development process that is not only efficient but also effective. Time is money, and we make sure to deliver high-quality results in a timely manner.",
+    "title": "From fuzzy idea to shipped product.",
+    "subtitle": "We keep the process lean, visual, and honest. You always know what we are making, why it matters, and what happens next.",
     "steps": [
       {
         "i": 1,
         "title": "Discover",
-        "description": "We get close to your brand, goals, audience, and market. The result is a clear brief that turns scattered ideas into a focused direction."
+        "description": "We get close to the idea, the users, the constraints, and the thing you are really trying to build. Then we turn the messy parts into a clear brief."
       },
       {
         "i": 2,
-        "title": "Strategy",
-        "description": "We map the offer, content, user journeys, and conversion flow before design begins. This becomes the roadmap for everything that follows."
+        "title": "Shape",
+        "description": "We map the product flow, screens, features, content, and technical direction before pixels get precious. This becomes the buildable plan."
       },
       {
         "i": 3,
         "title": "Design & Build",
-        "description": "Identity, interface, and development come together in one tight loop. Every page is designed to feel sharp, load fast, and support your business goals."
+        "description": "Design and development move together. Interfaces get polished, backends get wired, and the product starts behaving like a real thing."
       },
       {
         "i": 4,
-        "title": "Launch & Grow",
-        "description": "After testing and refinement, we launch with confidence. From there, we keep improving the experience so your digital presence keeps gaining momentum."
+        "title": "Launch & Tune",
+        "description": "We test, polish, ship, and stay close after launch. The first version should feel solid, and the next version should already make sense."
       }
     ]
   },
   "services": {
-    "title": "What we do best.",
+    "title": "We design it. We build it. We make it feel right.",
     "list": [
       {
         "i": 1,
         "title": "Product Design",
-        "description": "Craft sleek, user-focused designs that bring your ideas to life. We combine creativity with strategic thinking to create products that stand out and captivate your audience.",
+        "description": "Sharp interfaces for digital products that need more than a pretty layer. We shape flows, screens, systems, and details so the product feels obvious in the hand.",
         "imageLocation": "/img/product-design.gif",
         "altImage": "Product Design Image",
         "detailPage": "/services/product-design",
@@ -345,7 +391,7 @@
       {
         "i": 2,
         "title": "Web Development",
-        "description": "Build modern, responsive websites that deliver seamless user experiences. From concept to launch, we create high-performing websites tailored to your brand.",
+        "description": "Custom websites and web apps with clean interaction, strong visual direction, and code that does not fold the moment the idea grows.",
         "imageLocation": "/img/web-development.gif",
         "altImage": "Web Development Image",
         "detailPage": "/services/web-development",
@@ -370,7 +416,7 @@
       {
         "i": 3,
         "title": "App Development",
-        "description": "Transform your vision into dynamic, user-friendly mobile apps. We design and develop apps that are intuitive, engaging, and optimized for performance across all devices.",
+        "description": "Mobile apps designed around real use, not app-store wallpaper. Smooth flows, solid performance, and a product experience people can understand fast.",
         "imageLocation": "/img/app-development.gif",
         "altImage": "App Development Image",
         "detailPage": "/services/app-development",
@@ -385,7 +431,7 @@
       {
         "i": 4,
         "title": "MVP Building",
-        "description": "Launch quickly with a Minimum Viable Product that captures your core idea. We help you test, validate, and refine your product with agility and speed.",
+        "description": "When the idea needs to move, we build the first serious version: focused, usable, testable, and ready to teach you what the market actually wants.",
         "imageLocation": "/img/mvp-building.gif",
         "altImage": "MVP Building Image",
         "detailPage": "/services/mvp-building",
@@ -400,7 +446,7 @@
       {
         "i": 5,
         "title": "E-commerce",
-        "description": "Boost your sales with a custom-built e-commerce platform that’s tailored for growth. We create seamless shopping experiences that convert visitors into loyal customers.",
+        "description": "Stores that look like the product, not like a default theme in a nice jacket. We build clean buying journeys, custom details, and a shop that feels alive.",
         "imageLocation": "/img/e-commerce.gif",
         "altImage": "E-commerce Image",
         "detailPage": "/services/e-commerce",
@@ -418,56 +464,56 @@
       "list": [
         {
           "id": 1,
-          "description": "Fast delivery time"
+          "description": "Fast, focused delivery"
         },
         {
           "id": 2,
-          "description": "Client-centric approach"
+          "description": "Direct collaboration with the people building"
         },
         {
           "id": 3,
-          "description": "Excellent quality and attention to detail"
+          "description": "Strong design taste and technical care"
         },
         {
           "id": 4,
-          "description": "Best practices in development & marketing"
+          "description": "Modern product, web, app, and backend practice"
         }
       ]
     }
   },
   "comparison": {
-    "title": "Why Choose Us Over the Competition?",
-    "subtitle": "We're not just another digital agency. We're your design partner, your growth engine, and your secret weapon in the digital world.",
+    "title": "Why build with us?",
+    "subtitle": "Because the internet is full of bland products with expensive invoices. We would rather make something sharp, useful, and hard to ignore.",
     "competitors": {
-      "title": "What others do.",
+      "title": "The usual studio fog.",
       "list": [
-        "Generic, templated designs",
-        "Overpriced services with hidden fees",
-        "Slow, drawn-out project timelines",
-        "Limited understanding of user experience",
-        "Inconsistent communication and follow-ups",
-        "One-size-fits-all solutions"
+        "Generic layouts dressed up as strategy",
+        "Big decks before anything useful exists",
+        "Slow feedback loops and vague timelines",
+        "Design that looks fine but feels awkward",
+        "Handovers that leave you guessing",
+        "One-size-fits-all tech decisions"
       ]
     },
     "mca": {
-      "title": "What Media Control Agency do.",
+      "title": "The MCA way.",
       "list": [
-        "Tailored best-fit solutions",
-        "Transparent pricing with no hidden costs",
-        "Avg. 24-48 hours delivery time",
-        "6+ years of industry specific expertise",
-        "24/7 Whatsapp support",
-        "Fully customized strategies aligned with your goals"
+        "Custom product thinking from day one",
+        "Transparent pricing and straight answers",
+        "Fast iterations without sloppy shortcuts",
+        "6+ years across design and development",
+        "Direct WhatsApp access when things move",
+        "Websites, apps, and backends built around your actual goal"
       ]
     }
   },
   "pricing": {
-    "title": "Ready to invest in your business?",
-    "subtitle": "Clear monthly pricing, no lock-in, cancel anytime.",
+    "title": "Ready to build the thing properly?",
+    "subtitle": "Clear pricing, clean collaboration, no weird lock-in.",
     "packages": [
       {
         "title": "Design Partnership",
-        "description": "Ideal for businesses looking for a consistent design experience to elevate their brand across all digital touchpoints.",
+        "description": "For companies that need ongoing design and development without hiring a full product team.",
         "price": "€1,999/mo",
         "additionalInfo": "Pause or cancel anytime",
         "features": [
@@ -486,7 +532,7 @@
       },
       {
         "title": "Single Project",
-        "description": "Best for one-off website, design, or app development projects with comprehensive support.",
+        "description": "For one focused website, app, MVP, backend, or product design project with the right team around it.",
         "price": "€2,500+",
         "additionalInfo": "Starting at",
         "features": [],
@@ -496,7 +542,7 @@
       },
       {
         "title": "Starter Package",
-        "description": "For startups or small businesses that need professional designs or development without a large investment.",
+        "description": "For early ideas and small businesses that need a sharp first version without turning the budget upside down.",
         "withGradient": false,
         "buttonText": "Book a call",
         "secondaryButtonText": "Schedule a call"
@@ -504,49 +550,49 @@
     ]
   },
   "FAQ": {
-    "title": "Still Have Questions?",
-    "subtitle": "We've gathered some of the most common questions our clients ask. Feel free to reach out to us directly if you need more information.",
+    "title": "Questions before we build?",
+    "subtitle": "Good. The best projects start with a few sharp questions and zero pretending.",
     "faq_tiles": [
       {
         "title": "Who is behind Media Control Agency?",
-        "description": "Media Control Agency is led by a passionate designer and developer duo with over 6+ years of experience in the industry.",
+        "description": "Media Control Agency is run by Bart with a compact team of designers and developers. Small enough to stay sharp, experienced enough to build serious products.",
         "index": 1
       },
       {
         "title": "What is included in your plans?",
-        "description": "Our plans are comprehensive and include everything from initial concept design, website/app development, revisions, to final deployment. We ensure a seamless experience with unlimited requests, revisions, and ongoing support to bring your ideas to life.",
+        "description": "Depending on the project, we cover product thinking, UX/UI design, web or app development, backend work, revisions, testing, and launch support. The scope is clear before we start.",
         "index": 2
       },
       {
         "title": "Why choose us over hiring a full-time designer and developer?",
-        "description": "Hiring us offers flexibility, expertise, and cost-efficiency. You'll gain access to a team of experienced professionals at a fraction of the cost of hiring full-time staff, without the long-term commitment. Plus, our diverse skills mean you get design, development, and strategy in one package.",
+        "description": "You get a design-and-build team without payroll, recruitment, management overhead, or waiting three months to move. We bring the product taste and the technical hands.",
         "index": 3
       },
       {
         "title": "What if I'm not satisfied with the design or result?",
-        "description": "Your satisfaction is our priority. We offer unlimited revisions to ensure that the final design or product meets your expectations. We’ll work closely with you every step of the way to guarantee that you’re happy with the outcome.",
+        "description": "We work in visible steps, so surprises stay small. If something is not there yet, we refine it together until the product feels right and does what it needs to do.",
         "index": 4
       },
       {
         "title": "How quickly will I receive my project?",
-        "description": "We pride ourselves on efficient delivery times. Typically, we provide an average turnaround of 2-3 business days per request, with larger projects having tailored timelines. We’ll keep you informed at every stage to ensure timely completion.",
+        "description": "Small requests can move in a few business days. Larger products get a real timeline based on scope, complexity, and launch goals. We keep it honest.",
         "index": 5
       },
       {
         "title": "What if I only have a single request?",
-        "description": "No problem at all! We offer a 'Single Project' plan specifically designed for clients who have one-off design or development needs. This allows you to benefit from our expertise without committing to a long-term partnership.",
+        "description": "Absolutely. A single project is perfect for a website, MVP, app screen set, backend feature, or focused product rebuild.",
         "index": 6
       },
       {
         "title": "Do you offer refunds if I'm not satisfied with the service?",
-        "description": "We are committed to delivering high-quality results, and while refunds are not typically offered, we will work tirelessly to ensure you are satisfied with the final product. Your happiness and success are our top priorities.",
+        "description": "Refunds depend on the agreement and project stage. Our real focus is avoiding that situation by setting a clear scope, showing work early, and keeping the collaboration direct.",
         "index": 7
       }
     ]
   },
   "footer_card": {
     "title": "Get in touch",
-    "subtitle": "Got a project? Let's make it sharper.",
+    "subtitle": "Got a product idea, messy platform, or website that deserves better? Let's sharpen it.",
     "button": {
       "text": "Book a call",
       "link": "/contact"
@@ -614,7 +660,7 @@
     },
     "contact": {
       "subtitle": "Ready to collaborate?",
-      "phone": "+31 629 628 588",
+      "phone": "+31 619 628 588",
       "email": "info@media-control-agency.com",
       "kvk": "91179947",
       "tax": "NL004874490B47",
@@ -650,11 +696,11 @@
       "imageLocation": "/img/icons/404-error.svg"
     },
     "contact_page": {
-      "title": "Reach out to us.",
-      "subtitle_1": "Our team is growing. We’d love for you to join us. Reach us by filling up this form...",
-      "subtitle_2": "...or book a meeting with the founder and discuss your project and possible approaches!",
-      "meeting_button_title": "Plan een afspraak",
-      "meeting_description": "By the end of this meeting, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with outstanding websites & paid advertising.",
+      "title": "Tell us what you want to build.",
+      "subtitle_1": "Drop the idea, the problem, or the messy current version. Short is fine. Weirdly specific is even better.",
+      "subtitle_2": "Prefer talking it through? Book a call with Bart and we will shape the first clean direction together.",
+      "meeting_button_title": "Book a call",
+      "meeting_description": "By the end of the call, you will know what the product needs, what we would build first, and what a realistic next step looks like.",
       "meeting_link": "https://calendly.com/media-control-agency/consultation",
       "form": {
         "fields": {
@@ -664,7 +710,7 @@
           "company": "Company",
           "message": "Your message"
         },
-        "submit": "Send form",
+        "submit": "Send it over",
         "errors": {
           "fullName": "Please enter a valid name.",
           "email": "Please enter a valid email address.",
@@ -674,7 +720,7 @@
         },
         "success": {
           "title": "Email sent!",
-          "description": "We will contact you as soon as possible."
+          "description": "We got it. Bart or someone from the team will get back to you soon."
         },
         "error": {
           "title": "Something went wrong!",
@@ -776,7 +822,7 @@
           "list": [
             "Improving and facilitating access to the website",
             "Personalizing the website for users",
-            "Advertising services",
+            "Analytics and site performance",
             "Tracking statistics",
             "Providing multimedia services"
           ]
@@ -790,7 +836,7 @@
             "- Ensuring the legitimate interest of the administrator",
             "Anonymous data is processed for:",
             "- Tracking statistics",
-            "- Offering personalized advertisements",
+            "- Understanding how visitors use the website",
             "- Ensuring the legitimate interest of the administrator"
           ]
         },
@@ -799,8 +845,7 @@
           "paragraphs": [
             "The administrator uses scripts from partners who may place cookies. Users can manage these cookies via browser settings.",
             "Partners include:",
-            "- Google Adsense (advertising)",
-            "- Google Analytics, WordPress Stats (statistics)",
+            "- Google Analytics (statistics)",
             "These services are beyond the administrator's control and may change their privacy policy or cookie behavior."
           ]
         },

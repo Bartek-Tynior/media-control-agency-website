@@ -13,7 +13,7 @@ const Services = ({ dict }: { dict: any }) => {
 
   return (
     <>
-      <section className="h-fit py-14" id="services" ref={sectionRef}>
+      <section className="h-fit py-10 lg:py-14" id="services" ref={sectionRef}>
         {/* Label Section */}
         <div className="flex flex-col gap-5">
           <SectionLabel sectionName="Services" />
@@ -72,7 +72,7 @@ const ServiceRow: FC<ServiceRowProps> = ({ service }) => {
   return (
     <motion.div
       variants={cardVariants}
-      className="grid grid-cols-1 gap-6 border-t border-white/15 pt-6 first:border-t-0 first:pt-0 sm:pt-8 lg:grid-cols-[minmax(280px,0.9fr)_minmax(0,1.1fr)] lg:gap-10"
+      className="grid grid-cols-1 gap-10 border-t border-white/15 pt-10 first:border-t-0 first:pt-0 sm:pt-8 lg:grid-cols-[minmax(280px,0.9fr)_minmax(0,1.1fr)] lg:gap-10"
     >
       <div className="flex items-start">
         <h3 className="text-3xl font-bold leading-none text-white sm:text-4xl lg:text-5xl">

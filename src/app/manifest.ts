@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Media Control Agency",
     short_name: "MCA",
     description:
-      "Media Control Agency is a design driven digital agency that creates engaging experiences for brands worldwide.",
+      "Media Control Agency is a design-led software studio building websites, apps, backends, and digital products.",
     start_url: "/",
     display: "standalone",
     background_color: "#0F0F0F",

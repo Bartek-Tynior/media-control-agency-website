@@ -2,23 +2,32 @@
 
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { useParams } from "next/navigation";
-import websiteContent from "../../../../../website-content";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { ArrowRight } from "lucide-react";
-import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/Button";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import Head from "next/head";
 import { useLang } from "@/lib/lang-context";
-
-// Dynamic imports for performance optimization
-const Toolstack = dynamic(() => import("@/components/Toolstack"));
+import Toolstack from "@/components/Toolstack";
 
 const Page = () => {
   const { lang, dict } = useLang();
   const params = useParams();
   const slug = params.slug;
+  const isDutch = lang === "nl";
+  const labels = {
+    caseStudy: isDutch ? "Case" : "Case Study",
+    notFound: isDutch ? "Case niet gevonden" : "Case study not found",
+    industry: isDutch ? "Branche" : "Industry",
+    scope: isDutch ? "Scope" : "Scope of Work",
+    techStack: isDutch ? "Tech Stack" : "Tech Stack",
+    website: isDutch ? "Website" : "Website",
+    visitWebsite: isDutch ? "Bekijk website" : "Visit Website",
+    challenge: isDutch ? "Uitdaging" : "Challenge",
+    solution: isDutch ? "Oplossing" : "Solution",
+    result: isDutch ? "Resultaat" : "Result",
+  };
 
   // Find the content based on the slug parameter
   const content = dict.case_studies.cases.find(
@@ -46,16 +55,16 @@ const Page = () => {
 
   // If no content is found, return null (you might want to add an error state here)
   if (!content) {
-    return <p className="text-center pt-20">Case Study not found</p>;
+    return <p className="text-center pt-20">{labels.notFound}</p>;
   }
 
   return (
     <>
-      {/* SEO Optimization with Dynamic Metadata */}
+      {/* Dynamic metadata */}
       <Head>
-        <title>{`${content.client} - Case Study | Media Control Agency`}</title>
+        <title>{`${content.client} - ${labels.caseStudy} | Media Control Agency`}</title>
         <meta name="description" content={content.project.description} />
-        <meta property="og:title" content={`${content.client} - Case Study`} />
+        <meta property="og:title" content={`${content.client} - ${labels.caseStudy}`} />
         <meta property="og:description" content={content.project.description} />
         <meta
           property="og:image"
@@ -66,7 +75,7 @@ const Page = () => {
           content={`https://media-control-agency.com/case-studies/${params.slug}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${content.client} - Case Study`} />
+        <meta name="twitter:title" content={`${content.client} - ${labels.caseStudy}`} />
         <meta
           name="twitter:description"
           content={content.project.description}
@@ -99,7 +108,7 @@ const Page = () => {
 
       <MaxWidthWrapper>
         <div className="pt-36 pb-14 flex flex-col gap-5">
-          <SectionLabel sectionName="Case Study" />
+          <SectionLabel sectionName={labels.caseStudy} />
           <div className="flex flex-col md:flex-row gap-14">
             <div className="flex flex-col gap-5 w-full md:w-1/2">
               <h1 className="text-2xl font-bold leading-tight">
@@ -112,14 +121,14 @@ const Page = () => {
 
             <div className="flex flex-col w-full md:w-1/2 gap-5">
               <div>
-                <h2 className="font-bold text-base">Industry</h2>
+                <h2 className="font-bold text-base">{labels.industry}</h2>
                 <p className="text-sm text-gray-300">
                   {content.project.industry}
                 </p>
               </div>
 
               <div>
-                <h2 className="font-bold text-base">Scope of Work</h2>
+                <h2 className="font-bold text-base">{labels.scope}</h2>
                 <div className="flex gap-2 pt-3 flex-wrap">
                   {content.project.scopeOfWork.map((item, index) => (
                     <SectionLabel key={index} sectionName={item} />
@@ -128,12 +137,12 @@ const Page = () => {
               </div>
 
               <div>
-                <h2 className="font-bold text-base pb-3">Tech Stack</h2>
+                <h2 className="font-bold text-base pb-3">{labels.techStack}</h2>
                 <Toolstack toolstack={content.project.techStack} />
               </div>
 
               <div>
-                <h2 className="font-bold text-base mb-2">Website</h2>
+                <h2 className="font-bold text-base mb-2">{labels.website}</h2>
                 <a
                   href={content.website}
                   target="_blank"
@@ -144,7 +153,7 @@ const Page = () => {
                     variant="third"
                     size="lg"
                   >
-                    Visit Website
+                    {labels.visitWebsite}
                     <ArrowRight className="group-hover:translate-x-2 transition-all" />
                   </Button>
                 </a>
@@ -157,7 +166,7 @@ const Page = () => {
 
             <div className="py-12">
               <h2 className="text-2xl lg:w-1/2 font-bold leading-tight">
-                Challenge
+                {labels.challenge}
               </h2>
               <p className="pt-4 text-sm text-gray-300">
                 {content.project.challenges.title}
@@ -176,7 +185,7 @@ const Page = () => {
 
             <div className="py-12">
               <h2 className="text-2xl lg:w-1/2 font-bold leading-tight">
-                Solution
+                {labels.solution}
               </h2>
               <p className="pt-4 text-sm text-gray-300">
                 {content.project.solution}
@@ -187,7 +196,7 @@ const Page = () => {
 
             <div className="py-12">
               <h2 className="text-2xl lg:w-1/2 font-bold leading-tight">
-                Result
+                {labels.result}
               </h2>
               <p className="pt-4 text-sm text-gray-300">
                 {content.project.result}

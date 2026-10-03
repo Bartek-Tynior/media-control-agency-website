@@ -20,7 +20,7 @@ const BenefitsSection = ({ dict }) => {
         freeMode={true}
         grabCursor={true}
         spaceBetween={10}
-        slidesPerView={2}
+        slidesPerView={1}
         loop={true}
         modules={[Autoplay]}
         autoplay={{
@@ -29,15 +29,19 @@ const BenefitsSection = ({ dict }) => {
         }}
         breakpoints={{
           0: {
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 24,
           },
           480: {
-            spaceBetween: 50,
+            slidesPerView: 1.35,
+            spaceBetween: 36,
           },
-          767: {
+          640: {
+            slidesPerView: 2,
             spaceBetween: 50,
           },
           1024: {
+            slidesPerView: 2,
             spaceBetween: 50,
           },
         }}

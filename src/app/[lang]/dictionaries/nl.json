@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "Klaar om je concurrentie nerveus te maken?",
-    "subtitle": "Design-gedreven Digitale Agency",
-    "shortDescription": "Wij bouwen scherpe digitale ervaringen voor merken die liever de toon zetten dan opgaan in de massa.",
+    "title": "Software die niet stilletjes in een hoek gaat zitten.",
+    "subtitle": "Design-led software studio",
+    "shortDescription": "Wij ontwerpen en bouwen websites, apps en backends met smaak, snelheid en genoeg lef om door de ruis heen te breken.",
     "imageLocation": "/img/mesh-gradient-background.png",
     "altImage": "Mesh Gradient Achtergrond",
     "buttons": [
@@ -19,25 +19,25 @@
     ]
   },
   "about": {
-    "description": "Media Control Agency is een design-gedreven digitale agency ontstaan uit liefde voor design en passie voor creatie. Wij zijn gespecialiseerd in het creëren van unieke, gebruikersgerichte digitale ervaringen die het publiek boeien en merken versterken. Onze missie is om bedrijven zoals die van jou te helpen sneller te bouwen, beter te verbinden en op te vallen in de digitale wereld."
+    "description": "Media Control Agency wordt gerund door Bart en zijn team. We bouwen websites, mobiele apps, backends, MVP's en digitale producten die er scherp uitzien, soepel voelen en in de echte wereld overeind blijven. Geen marketingtheater. Geen template-energie. Gewoon goed ontworpen producten, netjes gebouwd."
   },
   "case_studies": {
     "eyebrow": "Geselecteerd werk",
-    "title": "Recent werk met pit.",
-    "subtitle": "Een paar digitale upgrades, brand glow-ups en conversiemachines die we de wereld in hebben gestuurd.",
+    "title": "Werk met een hartslag.",
+    "subtitle": "Een paar producten, platforms en digitale thuisbasissen die we van idee naar iets bruikbaars hebben gebracht.",
     "cases": [
       {
         "id": 1,
         "client": "Plus 44",
-        "service": "Webontwikkeling & Advertenties",
+        "service": "E-commerce Design & Development",
         "website": "https://www.plus44-clo.com/",
         "project": {
           "scopeOfWork": [
             "Product Design",
             "Webontwikkeling",
-            "Betaalde Advertenties"
+            "E-commerce Build"
           ],
-          "description": "We ontwierpen en ontwikkelden een custom e-commerce thuisbasis voor Plus 44, een Nederlands streetwearmerk met karakter. Daarna zetten we advertenties in om aandacht om te zetten in verkoop.",
+          "description": "We ontwierpen en ontwikkelden een custom e-commerce thuisbasis voor Plus 44, een Nederlands streetwearmerk met karakter. De shop laat de producten, visuals en koopflow zelf het werk doen.",
           "industry": "Kleding",
           "techStack": [
             {
@@ -62,7 +62,7 @@
             }
           ],
           "challenges": {
-            "title": "Plus 44 had een webshop nodig die net zo scherp voelde als de kleding, plus marketing die het merk bij de juiste doelgroep brengt.",
+            "title": "Plus 44 had een webshop nodig die net zo scherp voelde als de kleding, met productpagina's en visuals die het merk dragen zonder alles uit te hoeven leggen.",
             "description": [
               "Creatieve oplossingen met 3D-modellering",
               "Slimme oplossingen zoals iDeal-betaling implementeren",
@@ -70,7 +70,7 @@
             ]
           },
           "solution": "We combineerden Shopify, custom code en 3D-visuals voor een rijkere shopervaring zonder de kooproute ingewikkeld te maken.",
-          "result": "Een moderne e-commerce aanwezigheid met meer merkgevoel, duidelijkere productpresentatie en advertentieondersteuning gericht op groei.",
+          "result": "Een moderne e-commerce aanwezigheid met meer merkgevoel, duidelijkere productpresentatie en een soepelere route van drop naar checkout.",
           "publishDate": "2023-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -83,11 +83,11 @@
       {
         "id": 2,
         "client": "Allersnelste Nanie",
-        "service": "SEO & Webontwikkeling",
+        "service": "Webontwikkeling & Technische Structuur",
         "website": "https://nanie.nl/",
         "project": {
-          "scopeOfWork": ["SEO", "Webontwikkeling"],
-          "description": "We gaven de website van Allersnelste Nanie een stevige upgrade voor vindbaarheid, snelheid en vertrouwen, zodat dit elektrabedrijf online harder werkt.",
+          "scopeOfWork": ["Technische Structuur", "Webontwikkeling"],
+          "description": "We gaven de website van Allersnelste Nanie een stevige upgrade voor structuur, snelheid en vertrouwen, zodat dit elektrabedrijf online harder werkt.",
           "industry": "Elektricien",
           "techStack": [
             {
@@ -97,15 +97,15 @@
             }
           ],
           "challenges": {
-            "title": "Allersnelste Nanie had een refresh nodig die sneller gevonden wordt, duidelijker voelt en bezoekers sneller richting contact stuurt.",
+            "title": "Allersnelste Nanie had een refresh nodig die sneller laadt, duidelijker voelt en bezoekers zonder omwegen naar de juiste dienst stuurt.",
             "description": [
-              "On-page en Off-page SEO optimalisatie",
+              "Schonere pagina- en contentstructuur",
               "Prestatieoptimalisatie",
               "Verbeteringen in gebruikerservaring"
             ]
           },
-          "solution": "We analyseerden de bestaande site, verbeterden de zwakke plekken, scherpten de contentstructuur aan en verstevigden de technische SEO-basis.",
-          "result": "Een snellere, duidelijkere website voor meerdere locaties, met een soepelere route van zoekresultaat naar aanvraag.",
+          "solution": "We analyseerden de bestaande site, verbeterden de zwakke plekken, scherpten de contentstructuur aan en verstevigden de technische basis.",
+          "result": "Een snellere, duidelijkere website voor meerdere locaties, met een soepelere route van eerste klik naar aanvraag.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -118,10 +118,10 @@
       {
         "id": 3,
         "client": "A1 Maatwerk",
-        "service": "SEO & Webontwikkeling",
+        "service": "Design & Webontwikkeling",
         "website": "https://www.a1maatwerk.nl/",
         "project": {
-          "scopeOfWork": ["SEO", "Webontwikkeling", "Design"],
+          "scopeOfWork": ["Webontwikkeling", "Design", "Technische Structuur"],
           "description": "We ontwierpen en bouwden de website van A1 Maatwerk opnieuw, zodat vakwerk niet langer werd voorgesteld door een verouderde eerste indruk.",
           "industry": "Aannemer",
           "techStack": [
@@ -142,19 +142,19 @@
             }
           ],
           "challenges": {
-            "title": "A1 Maatwerk had een website nodig die past bij de kwaliteit van het werk: strakker design, betere navigatie, sterkere SEO en meer redenen om contact op te nemen.",
+            "title": "A1 Maatwerk had een website nodig die past bij de kwaliteit van het werk: strakker design, betere navigatie, sterkere structuur en meer redenen om contact op te nemen.",
             "description": [
               "Website opnieuw ontwerpen op basis van bestaande merkidentiteit",
               "Implementatie van nieuw design en gebruikerservaring",
               "Ontwikkeling met moderne technologieën",
               "Integratie met content management systeem",
-              "On-page en Off-page SEO optimalisatie",
+              "Schonere pagina- en contentstructuur",
               "Prestatieoptimalisatie",
               "Verbeteringen in gebruikerservaring"
             ]
           },
           "solution": "We maakten een custom ontwerp- en ontwikkelplan rond de bestaande merkbasis en bouwden de ervaring opnieuw op met sterkere structuur en performance.",
-          "result": "Een moderne, geoptimaliseerde website met betere UX, hogere performance, sterkere conversieroutes en eenvoudiger contentbeheer.",
+          "result": "Een moderne website met betere UX, hogere performance, sterkere contactroutes en eenvoudiger contentbeheer.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -170,8 +170,13 @@
         "service": "Branding & Webontwikkeling",
         "website": "https://podskrzydlami.nl/",
         "project": {
-          "scopeOfWork": ["SEO", "Webontwikkeling", "Branding", "Design"],
-          "description": "Pod Skrzydlami kwam als nieuw bedrijf bij ons voor het volledige digitale startpakket: identiteit, website, SEO en genoeg polish om vanaf dag een gevestigd te voelen.",
+          "scopeOfWork": [
+            "Webontwikkeling",
+            "Branding",
+            "Design",
+            "Technische Structuur"
+          ],
+          "description": "Pod Skrzydlami kwam als nieuw bedrijf bij ons voor het volledige digitale startpakket: identiteit, website, structuur en genoeg polish om vanaf dag een gevestigd te voelen.",
           "industry": "Boekhouding",
           "techStack": [
             {
@@ -197,13 +202,13 @@
               "Op maat gemaakte website ontwerpen",
               "Website ontwikkelen met moderne technologieën",
               "Integratie met content management systeem",
-              "On-page en Off-page SEO optimalisatie",
+              "Schonere pagina- en contentstructuur",
               "Prestatieoptimalisatie",
               "Verbeteringen in gebruikerservaring"
             ]
           },
-          "solution": "We maakten het logo, kleurensysteem, typografie, websitestructuur en SEO-ready pagina's rond een rustige maar herkenbare merkstijl.",
-          "result": "Een complete merk- en webaanwezigheid die professioneel, vriendelijk, gebruiksvriendelijk en goed vindbaar voelt.",
+          "solution": "We maakten het logo, kleurensysteem, typografie, websitestructuur en content-ready pagina's rond een rustige maar herkenbare merkstijl.",
+          "result": "Een complete merk- en webaanwezigheid die professioneel, vriendelijk, gebruiksvriendelijk en klaar voor echte klanten voelt.",
           "publishDate": "2024-09-01",
           "ogImageUrl": "img/og_image.png"
         },
@@ -292,42 +297,83 @@
           "src": "/img/TWO_SLEEPY_PEOPLE_COVER.png"
         },
         "coverImageAlt": "Two Sleepy People coverafbeelding"
+      },
+      {
+        "id": 7,
+        "client": "Cakes it easy",
+        "service": "Webontwikkeling & Graphic Design",
+        "website": "#",
+        "project": {
+          "scopeOfWork": ["Webontwikkeling", "Graphic Design", "Design"],
+          "description": "We maakten een zoete, speelse website voor Cakes it easy, een home bakery voor custom taarten, cupcakes, koekjes en lekkernijen voor speciale events. De site is custom geprogrammeerd en aangevuld met originele graphics die passen bij de cute en girly uitstraling van het merk.",
+          "industry": "Home Bakery",
+          "techStack": [
+            {
+              "name": "Custom Code",
+              "imageLocation": "/img/icons/code-logo-toolstack.png",
+              "imageAlt": "Custom Code Icoon"
+            },
+            {
+              "name": "Adobe XD",
+              "imageLocation": "/img/icons/adobe-xd-logo-toolstack.png",
+              "imageAlt": "Adobe XD Icoon"
+            }
+          ],
+          "challenges": {
+            "title": "Cakes it easy had een website nodig die net zo charmant voelt als de baksels zelf: zacht, girly, makkelijk te bekijken en duidelijk genoeg om interesse om te zetten in custom bestellingen.",
+            "description": [
+              "Een cute visuele richting maken zonder leesbaarheid te verliezen",
+              "Custom graphics ontwerpen die de persoonlijkheid van de bakery versterken",
+              "Een responsive website bouwen voor aanvragen rond speciale events",
+              "Taarten, koekjes en cupcakes presenteren in een duidelijke servicestructuur"
+            ]
+          },
+          "solution": "We ontwierpen en programmeerden een custom website rond zachte visuals, speelse grafische elementen en een eenvoudige contentflow die het aanbod persoonlijk en begrijpelijk maakt.",
+          "result": "Een charmante digitale thuisbasis voor Cakes it easy met een herkenbare look, zelfgemaakte graphics en een gepolijste website-ervaring die past bij de handgemaakte zoetheid van het merk.",
+          "publishDate": "2024-09-01",
+          "ogImageUrl": "img/og_image.png"
+        },
+        "coverImageLocation": {
+          "type": "image",
+          "src": "/img/CAKES_IT_EASY_CASE_STUDY.png"
+        },
+        "coverImageAlt": "Cakes it easy case study coverafbeelding"
       }
     ]
   },
   "process": {
-    "title": "Ons eenvoudige 4-stappenproces om jouw bedrijf te laten groeien.",
-    "subtitle": "Wij geloven in een design- en ontwikkelproces dat niet alleen efficiënt maar ook effectief is. Tijd is geld, en wij zorgen voor hoogwaardige resultaten binnen korte tijd.",
+    "title": "Van vaag idee naar gelanceerd product.",
+    "subtitle": "We houden het proces lean, visueel en eerlijk. Je weet steeds wat we maken, waarom het ertoe doet en wat de volgende stap is.",
     "steps": [
       {
         "i": 1,
         "title": "Ontdekken",
-        "description": "We duiken in je merk, doelen, doelgroep en markt. Zo vertalen we losse ideeën naar een scherpe richting en een duidelijke briefing."
+        "description": "We duiken in het idee, de gebruikers, de beperkingen en wat je eigenlijk probeert te bouwen. Daarna maken we van de losse eindjes een heldere briefing."
       },
       {
         "i": 2,
-        "title": "Strategie",
-        "description": "We bepalen de propositie, content, gebruikersroutes en conversiestromen voordat het ontwerp start. Dit wordt de roadmap voor alles wat volgt."
+        "title": "Vormgeven",
+        "description": "We brengen de productflow, schermen, features, content en technische richting in kaart voordat pixels heilig worden. Dit wordt het bouwbare plan."
       },
       {
         "i": 3,
         "title": "Design & Build",
-        "description": "Identiteit, interface en development komen samen in een strak proces. Elke pagina voelt sterk, laadt snel en ondersteunt je bedrijfsdoelen."
+        "description": "Design en development bewegen samen. Interfaces worden strak, backends worden aangesloten en het product begint zich als een echt ding te gedragen."
       },
       {
         "i": 4,
-        "title": "Lancering & Groei",
-        "description": "Na testen en verfijnen lanceren we met vertrouwen. Daarna blijven we optimaliseren, zodat je digitale aanwezigheid steeds meer momentum krijgt."
+        "title": "Lanceren & Tunen",
+        "description": "We testen, polijsten, lanceren en blijven dichtbij na livegang. De eerste versie moet stevig voelen, en de volgende stap moet logisch zijn."
       }
     ]
   },
   "services": {
-    "title": "Onze diensten.",
+    "title": "We ontwerpen het. We bouwen het. We zorgen dat het klopt.",
     "list": [
       {
         "i": 1,
         "title": "Product Design",
-        "description": "Ontwerp strakke, gebruikersgerichte designs die jouw ideeën tot leven brengen. Wij combineren creativiteit met strategisch denken om producten te creëren die opvallen en jouw publiek boeien.",
+        "description": "Scherpe interfaces voor digitale producten die meer nodig hebben dan een mooi laagje. We vormen flows, schermen, systemen en details zodat het product vanzelfsprekend voelt.",
         "imageLocation": "/img/product-design.gif",
         "altImage": "Product Design Afbeelding",
         "detailPage": "/services/product-design",
@@ -347,7 +393,7 @@
       {
         "i": 2,
         "title": "Webontwikkeling",
-        "description": "Bouw moderne, responsieve websites die zorgen voor een naadloze gebruikerservaring. Van concept tot lancering creëren wij hoogwaardige websites op maat van jouw merk.",
+        "description": "Custom websites en webapps met sterke interactie, duidelijke visuele richting en code die niet instort zodra het idee groter wordt.",
         "imageLocation": "/img/web-development.gif",
         "altImage": "Webontwikkeling Afbeelding",
         "detailPage": "/services/web-development",
@@ -372,7 +418,7 @@
       {
         "i": 3,
         "title": "App Ontwikkeling",
-        "description": "Transformeer jouw visie in dynamische, gebruiksvriendelijke mobiele apps. Wij ontwerpen en ontwikkelen apps die intuïtief, boeiend en geoptimaliseerd zijn voor prestaties op alle apparaten.",
+        "description": "Mobiele apps gebouwd rond echt gebruik, niet rond app-store behang. Soepele flows, sterke performance en een productervaring die mensen snel snappen.",
         "imageLocation": "/img/app-development.gif",
         "altImage": "App Ontwikkeling Afbeelding",
         "detailPage": "/services/app-development",
@@ -387,7 +433,7 @@
       {
         "i": 4,
         "title": "MVP Bouwen",
-        "description": "Start snel met een Minimum Viable Product dat jouw kernidee vastlegt. Wij helpen je testen, valideren en verfijnen met flexibiliteit en snelheid.",
+        "description": "Als het idee moet bewegen, bouwen we de eerste serieuze versie: gefocust, bruikbaar, testbaar en klaar om te laten zien wat de markt echt wil.",
         "imageLocation": "/img/mvp-building.gif",
         "altImage": "MVP Bouwen Afbeelding",
         "detailPage": "/services/mvp-building",
@@ -402,7 +448,7 @@
       {
         "i": 5,
         "title": "E-commerce",
-        "description": "Vergroot je omzet met een op maat gemaakt e-commerce platform dat is ontworpen voor groei. Wij creëren naadloze winkelervaringen die bezoekers omzetten in loyale klanten.",
+        "description": "Webshops die voelen als het product, niet als een standaardtheme in een nette jas. We bouwen heldere kooproutes, custom details en een shop die leeft.",
         "imageLocation": "/img/e-commerce.gif",
         "altImage": "E-commerce Afbeelding",
         "detailPage": "/services/e-commerce",
@@ -420,56 +466,56 @@
       "list": [
         {
           "id": 1,
-          "description": "Snelle levertijd"
+          "description": "Snel en gefocust leveren"
         },
         {
           "id": 2,
-          "description": "Klantgerichte aanpak"
+          "description": "Direct samenwerken met de mensen die bouwen"
         },
         {
           "id": 3,
-          "description": "Uitstekende kwaliteit"
+          "description": "Sterke designsmaak en technische zorg"
         },
         {
           "id": 4,
-          "description": "Best practices in ontwikkeling & marketing"
+          "description": "Moderne product-, web-, app- en backendpraktijk"
         }
       ]
     }
   },
   "comparison": {
-    "title": "Waarom voor ons kiezen boven de concurrentie?",
-    "subtitle": "Wij zijn niet zomaar een digitale agency. Wij zijn jouw designpartner, groeimotor en geheime wapen in de digitale wereld.",
+    "title": "Waarom met ons bouwen?",
+    "subtitle": "Omdat het internet vol staat met vlakke producten en dure facturen. Wij maken liever iets scherps, bruikbaars en moeilijk te negeren.",
     "competitors": {
-      "title": "Wat anderen bieden.",
+      "title": "De gebruikelijke studio-mist.",
       "list": [
-        "Standaard, generieke ontwerpen",
-        "Verborgen kosten en onduidelijke prijzen",
-        "Langzame levertijden",
-        "Beperkte branche-expertise",
-        "Beperkte ondersteuning",
-        "One-size-fits-all oplossingen"
+        "Generieke layouts vermomd als strategie",
+        "Grote decks voordat er iets bruikbaars bestaat",
+        "Trage feedbackrondes en vage planningen",
+        "Design dat er prima uitziet maar stroef voelt",
+        "Opleveringen waarbij je zelf moet uitzoeken wat nu",
+        "One-size-fits-all techkeuzes"
       ]
     },
     "mca": {
-      "title": "Wat Media Control Agency biedt.",
+      "title": "De MCA-manier.",
       "list": [
-        "Op maat gemaakte best-fit oplossingen",
-        "Transparante prijzen zonder verborgen kosten",
-        "Gemiddeld 24-48 uur levertijd",
-        "6+ jaar branche-specifieke expertise",
-        "24/7 Whatsapp ondersteuning",
-        "Volledig aangepaste strategieën afgestemd op jouw doelen"
+        "Custom productdenken vanaf dag een",
+        "Transparante prijzen en eerlijke antwoorden",
+        "Snelle iteraties zonder slordige shortcuts",
+        "6+ jaar ervaring in design en development",
+        "Direct WhatsApp-contact wanneer het tempo omhoog gaat",
+        "Websites, apps en backends gebouwd rond je echte doel"
       ]
     }
   },
   "pricing": {
-    "title": "Klaar om te investeren in jouw bedrijf?",
-    "subtitle": "Duidelijke maandelijkse prijzen, geen contract, op elk moment opzegbaar.",
+    "title": "Klaar om het goed te bouwen?",
+    "subtitle": "Heldere prijzen, soepele samenwerking en geen gekke lock-in.",
     "packages": [
       {
         "title": "Design Abonnement",
-        "description": "Ideaal voor bedrijven die een consistente designervaring willen om hun merk te versterken op alle digitale touchpoints.",
+        "description": "Voor bedrijven die doorlopend design en development nodig hebben zonder meteen een volledig productteam aan te nemen.",
         "price": "€1.999/maand",
         "additionalInfo": "Pauzeer of annuleer op elk moment",
         "features": [
@@ -488,7 +534,7 @@
       },
       {
         "title": "Eenmalig Project",
-        "description": "Beste keuze voor eenmalige website-, design- of app-ontwikkelingsprojecten met uitgebreide ondersteuning.",
+        "description": "Voor een gericht website-, app-, MVP-, backend- of productdesignproject met het juiste team eromheen.",
         "price": "€2.500+",
         "additionalInfo": "Vanaf",
         "features": [],
@@ -498,7 +544,7 @@
       },
       {
         "title": "Startpakket",
-        "description": "Voor startende ondernemers of kleine bedrijven die professionele designs nodig hebben, zonder grote investering.",
+        "description": "Voor vroege ideeën en kleine bedrijven die een scherpe eerste versie nodig hebben zonder het budget om te gooien.",
         "withGradient": false,
         "buttonText": "Boek een gesprek",
         "secondaryButtonText": "Plan een gesprek"
@@ -506,49 +552,49 @@
     ]
   },
   "FAQ": {
-    "title": "Nog vragen?",
-    "subtitle": "We hebben de meest gestelde vragen van onze klanten verzameld. Neem gerust contact met ons op als je meer informatie wilt.",
+    "title": "Vragen voordat we bouwen?",
+    "subtitle": "Mooi. De beste projecten starten met scherpe vragen en nul toneelspel.",
     "faq_tiles": [
       {
         "title": "Wie zit er achter Media Control Agency?",
-        "description": "Media Control Agency wordt geleid door een gepassioneerd designer- en developerduo met meer dan 6+ jaar ervaring in de branche.",
+        "description": "Media Control Agency wordt gerund door Bart met een compact team van designers en developers. Klein genoeg om scherp te blijven, ervaren genoeg om serieuze producten te bouwen.",
         "index": 1
       },
       {
         "title": "Wat is inbegrepen in jullie plannen?",
-        "description": "Onze plannen zijn compleet en omvatten alles van het eerste conceptontwerp, website/app-ontwikkeling, revisies tot de uiteindelijke livegang. We zorgen voor een naadloze ervaring met onbeperkte verzoeken, revisies en doorlopende ondersteuning om jouw ideeën tot leven te brengen.",
+        "description": "Afhankelijk van het project pakken we productdenken, UX/UI design, web- of appdevelopment, backendwerk, revisies, testen en launchsupport op. De scope is helder voordat we starten.",
         "index": 2
       },
       {
         "title": "Waarom kiezen voor jullie in plaats van een fulltime designer en developer?",
-        "description": "Ons inhuren biedt flexibiliteit, expertise en kostenefficiëntie. Je krijgt toegang tot een team van ervaren professionals tegen een fractie van de kosten van fulltime personeel, zonder langdurige verplichtingen. Bovendien krijg je design, ontwikkeling en strategie in één pakket.",
+        "description": "Je krijgt een design-en-build team zonder salarislasten, recruitment, managementruis of maanden wachten voordat er iets gebeurt. Wij brengen productsmaak en technische handen.",
         "index": 3
       },
       {
         "title": "Wat als ik niet tevreden ben met het ontwerp of resultaat?",
-        "description": "Jouw tevredenheid is onze prioriteit. We bieden onbeperkte revisies om ervoor te zorgen dat het eindresultaat aan jouw verwachtingen voldoet. We werken nauw met je samen om te garanderen dat je tevreden bent met het resultaat.",
+        "description": "We werken in zichtbare stappen, zodat verrassingen klein blijven. Als iets nog niet klopt, scherpen we het samen aan tot het product goed voelt en doet wat het moet doen.",
         "index": 4
       },
       {
         "title": "Hoe snel ontvang ik mijn project?",
-        "description": "We zijn trots op onze snelle levertijden. Meestal leveren we binnen 2-3 werkdagen per verzoek, grotere projecten krijgen een aangepaste planning. We houden je op de hoogte in elke fase voor een tijdige oplevering.",
+        "description": "Kleine requests kunnen binnen een paar werkdagen bewegen. Grotere producten krijgen een echte planning op basis van scope, complexiteit en launchdoelen. We houden het eerlijk.",
         "index": 5
       },
       {
         "title": "Wat als ik maar één verzoek heb?",
-        "description": "Geen probleem! We bieden een 'Single Project'-plan speciaal voor klanten met eenmalige design- of ontwikkelingsbehoeften. Zo profiteer je van onze expertise zonder een langdurige samenwerking.",
+        "description": "Zeker. Een eenmalig project is perfect voor een website, MVP, set appschermen, backendfeature of gerichte productrebuild.",
         "index": 6
       },
       {
         "title": "Bieden jullie refunds als ik niet tevreden ben?",
-        "description": "We streven naar hoogwaardige resultaten, en hoewel refunds niet standaard zijn, doen we er alles aan om jou tevreden te stellen met het eindproduct. Jouw geluk en succes zijn onze topprioriteit.",
+        "description": "Refunds hangen af van de afspraak en projectfase. Onze echte focus is voorkomen dat het zover komt: heldere scope, vroeg werk laten zien en direct samenwerken.",
         "index": 7
       }
     ]
   },
   "footer_card": {
     "title": "Neem contact op",
-    "subtitle": "Een project in gedachten? Wij maken het scherper.",
+    "subtitle": "Een productidee, rommelig platform of website die beter verdient? We maken het scherper.",
     "button": {
       "text": "Boek een gesprek",
       "link": "/contact"
@@ -616,7 +662,7 @@
     },
     "contact": {
       "subtitle": "Klaar om samen te werken?",
-      "phone": "+31 629 628 588",
+      "phone": "+31 619 628 588",
       "email": "info@media-control-agency.com",
       "kvk": "91179947",
       "tax": "NL004874490B47",
@@ -652,11 +698,11 @@
       "imageLocation": "/img/icons/404-error.svg"
     },
     "contact_page": {
-      "title": "Neem contact met ons op.",
-      "subtitle_1": "Ons team groeit. We zouden het geweldig vinden als jij erbij komt. Neem contact op door dit formulier in te vullen...",
-      "subtitle_2": "...of boek een afspraak met de oprichter en bespreek jouw project en mogelijke aanpak!",
+      "title": "Vertel ons wat je wilt bouwen.",
+      "subtitle_1": "Drop je idee, het probleem of de rommelige huidige versie. Kort is prima. Heel specifiek is nog beter.",
+      "subtitle_2": "Praat je het liever door? Boek een call met Bart en we zetten samen de eerste scherpe richting neer.",
       "meeting_button_title": "Plan een afspraak",
-      "meeting_description": "Na deze afspraak weet je precies welke stappen je kunt nemen om jouw bedrijf online consistente en betrouwbare resultaten te laten genereren met uitstekende websites & betaalde advertenties.",
+      "meeting_description": "Na de call weet je wat het product nodig heeft, wat we als eerste zouden bouwen en hoe een realistische volgende stap eruitziet.",
       "meeting_link": "https://calendly.com/media-control-agency/consultation",
       "form": {
         "fields": {
@@ -666,7 +712,7 @@
           "company": "Bedrijf",
           "message": "Je bericht"
         },
-        "submit": "Verstuur formulier",
+        "submit": "Stuur maar door",
         "errors": {
           "fullName": "Voer een geldige naam in.",
           "email": "Voer een geldig e-mailadres in.",
@@ -676,7 +722,7 @@
         },
         "success": {
           "title": "E-mail verzonden!",
-          "description": "We nemen zo snel mogelijk contact met je op."
+          "description": "We hebben 'm. Bart of iemand uit het team komt snel bij je terug."
         },
         "error": {
           "title": "Er ging iets mis!",
@@ -778,7 +824,7 @@
           "list": [
             "Verbeteren en vergemakkelijken van toegang tot de website",
             "Personalisatie van de website voor gebruikers",
-            "Advertentiediensten",
+            "Analytics en websiteprestaties",
             "Bijhouden van statistieken",
             "Levering van multimediadiensten"
           ]
@@ -792,7 +838,7 @@
             "- Waarborgen van het legitieme belang van de beheerder",
             "Anonieme gegevens worden verwerkt voor:",
             "- Bijhouden van statistieken",
-            "- Aanbieden van gepersonaliseerde advertenties",
+            "- Begrijpen hoe bezoekers de website gebruiken",
             "- Waarborgen van het legitieme belang van de beheerder"
           ]
         },
@@ -801,8 +847,7 @@
           "paragraphs": [
             "De beheerder gebruikt scripts van partners die cookies kunnen plaatsen. Gebruikers kunnen deze cookies beheren via de browserinstellingen.",
             "Partners zijn onder andere:",
-            "- Google Adsense (advertenties)",
-            "- Google Analytics, WordPress Stats (statistieken)",
+            "- Google Analytics (statistieken)",
             "Deze diensten vallen buiten de controle van de beheerder en kunnen hun privacybeleid of cookiegedrag wijzigen."
           ]
         },

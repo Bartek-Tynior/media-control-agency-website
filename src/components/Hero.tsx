@@ -7,7 +7,6 @@ import {
   useTransform,
 } from "framer-motion";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 type Media = {
@@ -56,7 +55,7 @@ const Hero = ({
           style={{ backgroundColor: solidColor }}
         >
           <motion.div
-            className="absolute left-5 top-28 z-50 w-[calc(100%-2.5rem)] max-h-14 sm:left-8 sm:top-20 sm:w-full lg:left-12 lg:top-12"
+            className="absolute left-5 top-28 z-50 w-[calc(100%-2.5rem)] max-h-14 sm:left-8 sm:top-24 sm:w-full"
             initial={{ opacity: 0, y: 12, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.9, delay: 0.45, ease: "easeOut" }}
@@ -73,7 +72,7 @@ const Hero = ({
 
           <div className="absolute inset-x-0 bottom-0 z-0 h-[38%] overflow-hidden sm:h-[42%] lg:inset-0 lg:h-full lg:w-full">
             <video
-              src="/img/fluid-gradient-loop-1920x1080.mp4"
+              src="/img/fluid-gradient-logo-palette-grain-3840x1620-h264.mp4"
               className="h-full w-full object-cover"
               autoPlay
               muted
@@ -83,7 +82,7 @@ const Hero = ({
               poster="/img/fluid_gradient_loop_logo_dot_style_preview.png"
             >
               <source
-                src="/img/fluid-gradient-loop-1920x1080.mp4"
+                src="/img/fluid-gradient-logo-palette-grain-3840x1620-h264.mp4"
                 type="video/mp4"
               />
             </video>
@@ -102,7 +101,7 @@ const Hero = ({
           <div className="relative z-10 flex h-full flex-col px-5 py-5 sm:px-7 sm:py-7 lg:px-8 lg:py-8">
             <div className="flex flex-1 items-start justify-center text-center lg:items-center">
               <motion.div
-                className="mx-auto w-full max-w-none pt-[24rem] min-[390px]:pt-[25.5rem] sm:pt-[19rem] lg:pt-0"
+                className="mx-auto w-full max-w-none pt-[24rem] min-[390px]:pt-[20rem] sm:pt-[19rem] lg:pt-0"
                 initial={{ opacity: 0, y: 22 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.12 }}
@@ -141,9 +140,7 @@ const SplitHeroCopy = ({
     <div className="relative mx-auto w-full lg:w-[min(92vw,78rem)]">
       <div className="lg:hidden">
         <h1 className={`${headlineClass} text-[#111111]`}>{title}</h1>
-        <p className={`${descriptionClass} text-[#111111]/68`}>
-          {description}
-        </p>
+        <p className={`${descriptionClass} text-[#111111]/68`}>{description}</p>
       </div>
 
       <div className="relative hidden lg:block">
@@ -258,7 +255,7 @@ const FluidVideoTitle = ({
       >
         <video
           xmlns="http://www.w3.org/1999/xhtml"
-          src="/img/fluid-gradient-loop-1920x1080.mp4"
+          src="/img/fluid-gradient-logo-palette-grain-3840x1620-h264.mp4"
           autoPlay
           muted
           loop
@@ -366,7 +363,7 @@ const PortfolioWall = ({ projects }: { projects: ProjectCollection }) => {
     const nextIndex = Math.round(latest * (projects.cases.length - 1));
     const clampedIndex = Math.min(
       projects.cases.length - 1,
-      Math.max(0, nextIndex)
+      Math.max(0, nextIndex),
     );
 
     setActiveIndex(clampedIndex);
@@ -395,7 +392,10 @@ const PortfolioWall = ({ projects }: { projects: ProjectCollection }) => {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.24 }}
-              transition={{ duration: 0.5, delay: Math.min(index * 0.06, 0.24) }}
+              transition={{
+                duration: 0.5,
+                delay: Math.min(index * 0.06, 0.24),
+              }}
               aria-label={`View ${project.client} case study`}
             >
               <ProjectCardMedia project={project} sizes="100vw" isActive />
@@ -423,39 +423,36 @@ const PortfolioWall = ({ projects }: { projects: ProjectCollection }) => {
             )}
           </div>
 
-        <div
-          ref={viewportRef}
-          className="overflow-hidden"
-        >
-          <motion.div
-            ref={trackRef}
-            className="flex w-max gap-6 px-[max(1.25rem,calc((100vw-82rem)/2))] pb-8 will-change-transform"
-            style={{ x: trackX }}
-          >
-            {projects.cases.map((project, index) => {
-              const isActive = activeIndex === index;
+          <div ref={viewportRef} className="overflow-hidden">
+            <motion.div
+              ref={trackRef}
+              className="flex w-max gap-6 px-[max(1.25rem,calc((100vw-82rem)/2))] pb-8 will-change-transform"
+              style={{ x: trackX }}
+            >
+              {projects.cases.map((project, index) => {
+                const isActive = activeIndex === index;
 
-              return (
-                <motion.a
-                  href={getProjectHref(project.client)}
-                  key={project.id}
-                  className="group relative block w-[84vw] max-w-[22rem] shrink-0 overflow-hidden rounded-xl text-white outline-none sm:w-[64vw] sm:max-w-[45rem] lg:w-[34rem] xl:w-[38rem]"
-                  initial={{ opacity: 0, y: 28 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.55, delay: (index % 4) * 0.06 }}
-                  aria-label={`View ${project.client} case study`}
-                >
-                  <ProjectCardMedia
-                    project={project}
-                    sizes="(min-width: 1280px) 38rem, (min-width: 1024px) 34rem, 100vw"
-                    isActive={isActive}
-                  />
-                </motion.a>
-              );
-            })}
-          </motion.div>
-        </div>
+                return (
+                  <motion.a
+                    href={getProjectHref(project.client)}
+                    key={project.id}
+                    className="group relative block w-[84vw] max-w-[22rem] shrink-0 overflow-hidden rounded-xl text-white outline-none sm:w-[64vw] sm:max-w-[45rem] lg:w-[34rem] xl:w-[38rem]"
+                    initial={{ opacity: 0, y: 28 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.55, delay: (index % 4) * 0.06 }}
+                    aria-label={`View ${project.client} case study`}
+                  >
+                    <ProjectCardMedia
+                      project={project}
+                      sizes="(min-width: 1280px) 38rem, (min-width: 1024px) 34rem, 100vw"
+                      isActive={isActive}
+                    />
+                  </motion.a>
+                );
+              })}
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

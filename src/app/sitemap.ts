@@ -7,6 +7,7 @@ const projects = [
   "/projects/a1-maatwerk",
   "/projects/allersnelste-nanie",
   "/projects/pod-skrzydlami",
+  "/projects/cakes-it-easy",
 ];
 
 const locales = ["en", "nl"];

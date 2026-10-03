@@ -13,11 +13,11 @@ export async function generateMetadata({
 
   return {
     title: isDutch
-      ? "Contact | Media Control Agency - Digitale Studio"
-      : "Contact | Media Control Agency - Digital Studio",
+      ? "Contact | Media Control Agency - Software Studio"
+      : "Contact | Media Control Agency - Software Studio",
     description: isDutch
-      ? "Neem contact met ons op voor samenwerking of vragen. We helpen je graag verder."
-      : "Get in touch with us for collaboration, inquiries, or any questions. We are here to assist you.",
+      ? "Vertel ons over je website, app, backend, MVP of digitaal product. We denken graag met je mee."
+      : "Tell us about your website, app, backend, MVP, or digital product. We will help shape the next step.",
     alternates: {
       canonical: `https://media-control-agency.com/${params.lang}/contact`,
       languages: {
@@ -30,8 +30,8 @@ export async function generateMetadata({
         ? "Contact | Media Control Agency"
         : "Contact | Media Control Agency",
       description: isDutch
-        ? "Neem contact op met Media Control Agency voor samenwerkingen en vragen."
-        : "Reach out to Media Control Agency for any queries or business inquiries.",
+        ? "Neem contact op met Media Control Agency voor design en development projecten."
+        : "Reach out to Media Control Agency for design and development projects.",
       url: `https://media-control-agency.com/${params.lang}/contact`,
       images: [
         {
@@ -46,8 +46,8 @@ export async function generateMetadata({
         ? "Contact | Media Control Agency"
         : "Contact | Media Control Agency",
       description: isDutch
-        ? "Neem contact met ons op voor samenwerking of vragen."
-        : "Get in touch with us for any inquiries or collaborations.",
+        ? "Vertel ons wat je wilt bouwen."
+        : "Tell us what you want to build.",
       images: [
         {
           url: "https://media-control-agency.com/img/og_image.png",

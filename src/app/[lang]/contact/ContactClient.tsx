@@ -102,14 +102,16 @@ const ContactPage = ({}) => {
     <>
       <MaxWidthWrapper>
         <motion.div
-          className="pt-28 mb-14"
+          className="min-h-[100vh] pt-28"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <div className="flex flex-col gap-5">
             <motion.div variants={itemVariants}>
-              <SectionLabel sectionName="Contact Form" />
+              <SectionLabel
+                sectionName={lang === "nl" ? "Project Intake" : "Project Intake"}
+              />
             </motion.div>
             <motion.h1
               className="text-2xl mb-8 font-bold antialiased"
@@ -119,7 +121,7 @@ const ContactPage = ({}) => {
             </motion.h1>
           </div>
 
-          <div className="gap-10 md:gap-20 grid grid-cols-1 md:grid-cols-12">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-x-6 lg:gap-x-20">
             {typeof window !== "undefined" ? (
               <PopupModal
                 url={dict.other_pages.contact_page.meeting_link}
@@ -211,14 +213,21 @@ const ContactPage = ({}) => {
                   </motion.div>
 
                   <motion.div variants={itemVariants}>
-                    <Input
-                      className="px-4 py-2 text-sm rounded-lg bg-white/10 text-white border-none focus:outline-none"
-                      size={32}
+                    <textarea
+                      className="min-h-[7rem] w-full resize-y overflow-hidden rounded-lg border-none bg-white/10 px-4 py-3 text-sm text-white transition-[height] duration-150 placeholder:text-white/50 focus:outline-none"
+                      rows={4}
                       id="message"
+                      maxLength={2000}
                       placeholder={
                         dict.other_pages.contact_page.form.fields.message
                       }
-                      {...register("message")}
+                      {...register("message", {
+                        onChange: (event) => {
+                          const field = event.target as HTMLTextAreaElement;
+                          field.style.height = "auto";
+                          field.style.height = `${field.scrollHeight}px`;
+                        },
+                      })}
                     />
                     {errors?.message && (
                       <p className="text-sm font-semibold text-red-700">
@@ -240,7 +249,10 @@ const ContactPage = ({}) => {
               </div>
             </motion.div>
 
-            <motion.div className="col-span-6 mx-auto" variants={itemVariants}>
+            <motion.div
+              className="col-span-6 w-full max-w-md md:ml-auto"
+              variants={itemVariants}
+            >
               <h2 className="text-base font-normal antialiased">
                 {dict.other_pages.contact_page.subtitle_2}
               </h2>

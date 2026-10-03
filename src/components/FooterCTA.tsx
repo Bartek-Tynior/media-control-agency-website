@@ -1,5 +1,4 @@
 import { Button } from "./ui/Button";
-import websiteContent from "../../website-content";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 

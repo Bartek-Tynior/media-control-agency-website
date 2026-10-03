@@ -3,11 +3,13 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useLang } from "@/lib/lang-context";
 import { Languages } from "lucide-react";
+import { usePageTransition } from "./PageTransition";
 
 const LanguageSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
   const { lang } = useLang();
+  const pageTransition = usePageTransition();
 
   const switchTo = lang === "en" ? "nl" : "en";
 
@@ -15,7 +17,14 @@ const LanguageSwitcher = () => {
   const newPath = pathname.replace(/^\/(en|nl)/, "");
 
   const handleLanguageSwitch = () => {
-    router.push(`/${switchTo}${newPath}`);
+    const href = `/${switchTo}${newPath}`;
+
+    if (pageTransition) {
+      pageTransition.navigate(href);
+      return;
+    }
+
+    router.push(href);
   };
 
   return (

@@ -4,11 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/Button";
 import { AlignJustify, ArrowRight, X } from "lucide-react";
-import websiteContent from "../../website-content";
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { motion } from "framer-motion";
+import { usePageTransition } from "./PageTransition";
 
 const Navbar = ({ lang, dict }) => {
   const content = dict.essential_elements.navbar;
@@ -16,6 +16,7 @@ const Navbar = ({ lang, dict }) => {
   const [isOpen, setOpen] = useState(true);
   const router = useRouter();
   const pathname = usePathname();
+  const pageTransition = usePageTransition();
   const [isHomePage, setIsHomePage] = useState(false);
 
   const toggleNavbar = () => {
@@ -45,7 +46,7 @@ const Navbar = ({ lang, dict }) => {
     >
       <MaxWidthWrapper className="flex items-center justify-between max-lg:py-3 py-6">
         {/* Logo Section */}
-        <div className="navbar_logo z-50 flex h-fit w-fit rounded-md border border-white/10 bg-[rgba(15,15,15,0.84)] px-2.5 py-2 shadow-[0_16px_45px_rgba(0,0,0,.24)] backdrop-blur-xl lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:backdrop-blur-0">
+        <div className="navbar_logo z-50 flex h-fit w-fit rounded-md border border-white/25 bg-[#0F0F0F]/95 px-2.5 py-2 shadow-[0_16px_45px_rgba(0,0,0,.34)] backdrop-blur-2xl">
           <Link href={"/"}>
             <Image
               src={content.logo.imageLocation}
@@ -102,7 +103,16 @@ const Navbar = ({ lang, dict }) => {
         <div className="hidden items-center justify-center lg:flex h-[40px] w-[155px]">
           <button
             className="group inline-flex h-[40px] w-full items-center justify-center gap-2 rounded-md border border-white/25 bg-[#0F0F0F]/95 px-6 text-xs font-medium text-white shadow-[0_16px_45px_rgba(0,0,0,.34)] backdrop-blur-2xl transition hover:bg-black"
-            onClick={() => router.push(`/${lang}${contact.CTA.link}`)}
+            onClick={() => {
+              const href = `/${lang}${contact.CTA.link}`;
+
+              if (pageTransition) {
+                pageTransition.navigate(href);
+                return;
+              }
+
+              router.push(href);
+            }}
             type="button"
           >
             {contact.CTA.text}

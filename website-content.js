@@ -529,8 +529,8 @@ export default {
     contact: {
       subtitle: "Ready to collaborate?",
       phone: (
-        <a href="tel:+31629628588" className="">
-          +31 629 628 588
+        <a href="tel:+31619628588" className="">
+          +31 619 628 588
         </a>
       ),
       email: (
